@@ -1,0 +1,277 @@
+{
+  "created_at": "2026-05-16 08:04:56",
+  "config": {
+    "base_api_url": "http://127.0.0.1:8000/api/v1",
+    "concurrency": 1,
+    "requests": 20,
+    "top_k": 3,
+    "temperature": 0.0,
+    "stream": false,
+    "fixed_session": false,
+    "eval_set": "scripts\\eval_set.json"
+  },
+  "summary": {
+    "total_requests": 20,
+    "success_count": 20,
+    "failure_count": 0,
+    "success_rate": 1.0,
+    "wall_time_seconds": 57.675,
+    "throughput_rps": 0.347,
+    "client_elapsed_ms": {
+      "avg": 2883.62,
+      "min": 2352.89,
+      "p50": 2765.01,
+      "p95": 3388.29,
+      "p99": 4272.56,
+      "max": 4493.62
+    },
+    "server_latency_ms": {
+      "avg": 2879.5,
+      "p50": 2771.0,
+      "p95": 3383.25,
+      "p99": 4238.25,
+      "max": 4452
+    },
+    "tokens_used": {
+      "avg": 1365.25,
+      "max": 1599
+    },
+    "by_role": {
+      "doctor_01": {
+        "count": 14,
+        "success_rate": 1.0,
+        "avg_elapsed_ms": 2679.23,
+        "p95_elapsed_ms": 2930.53
+      },
+      "lawyer_01": {
+        "count": 6,
+        "success_rate": 1.0,
+        "avg_elapsed_ms": 3360.51,
+        "p95_elapsed_ms": 4202.75
+      }
+    },
+    "errors": []
+  },
+  "samples": [
+    {
+      "index": 1,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2352.89,
+      "server_latency_ms": 2349,
+      "tokens_used": 1467,
+      "role_id": "doctor_01",
+      "query": "如果咳嗽、咳痰持续两周以上，一般建议怎么做？",
+      "error": ""
+    },
+    {
+      "index": 2,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2600.33,
+      "server_latency_ms": 2606,
+      "tokens_used": 1061,
+      "role_id": "doctor_01",
+      "query": "体温持续超过39摄氏度并伴有呼吸困难或意识改变时，一般应如何处理？",
+      "error": ""
+    },
+    {
+      "index": 3,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2946.25,
+      "server_latency_ms": 2970,
+      "tokens_used": 1335,
+      "role_id": "lawyer_01",
+      "query": "合同发生违约后，通常第一步应该做什么？",
+      "error": ""
+    },
+    {
+      "index": 4,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2856.26,
+      "server_latency_ms": 2878,
+      "tokens_used": 1488,
+      "role_id": "doctor_01",
+      "query": "肺结核常见的主要检查项目有哪些？",
+      "error": ""
+    },
+    {
+      "index": 5,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2726.32,
+      "server_latency_ms": 2742,
+      "tokens_used": 1324,
+      "role_id": "doctor_01",
+      "query": "哪些人群在高热时需要更加谨慎处理？",
+      "error": ""
+    },
+    {
+      "index": 6,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2868.39,
+      "server_latency_ms": 2883,
+      "tokens_used": 1335,
+      "role_id": "lawyer_01",
+      "query": "合同发生违约后，通常第一步应该做什么？",
+      "error": ""
+    },
+    {
+      "index": 7,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 3223.68,
+      "server_latency_ms": 3237,
+      "tokens_used": 1413,
+      "role_id": "lawyer_01",
+      "query": "公司调整认缴出资额、出资方式或者出资期限后，多长时间内需要公示？",
+      "error": ""
+    },
+    {
+      "index": 8,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2972.91,
+      "server_latency_ms": 2983,
+      "tokens_used": 1485,
+      "role_id": "doctor_01",
+      "query": "国家对活动性肺结核患者通常提供哪些免费项目？",
+      "error": ""
+    },
+    {
+      "index": 9,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2754.62,
+      "server_latency_ms": 2763,
+      "tokens_used": 1324,
+      "role_id": "doctor_01",
+      "query": "哪些人群在高热时需要更加谨慎处理？",
+      "error": ""
+    },
+    {
+      "index": 10,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2682.88,
+      "server_latency_ms": 2547,
+      "tokens_used": 1061,
+      "role_id": "doctor_01",
+      "query": "体温持续超过39摄氏度并伴有呼吸困难或意识改变时，一般应如何处理？",
+      "error": ""
+    },
+    {
+      "index": 11,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2738.73,
+      "server_latency_ms": 2746,
+      "tokens_used": 1061,
+      "role_id": "doctor_01",
+      "query": "体温持续超过39摄氏度并伴有呼吸困难或意识改变时，一般应如何处理？",
+      "error": ""
+    },
+    {
+      "index": 12,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 4493.62,
+      "server_latency_ms": 4452,
+      "tokens_used": 1599,
+      "role_id": "lawyer_01",
+      "query": "遇到付款拖欠、交付延期或者质量不合格时，应该优先保留哪些证据？",
+      "error": ""
+    },
+    {
+      "index": 13,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2460.96,
+      "server_latency_ms": 2450,
+      "tokens_used": 1467,
+      "role_id": "doctor_01",
+      "query": "如果咳嗽、咳痰持续两周以上，一般建议怎么做？",
+      "error": ""
+    },
+    {
+      "index": 14,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2428.36,
+      "server_latency_ms": 2419,
+      "tokens_used": 1467,
+      "role_id": "doctor_01",
+      "query": "如果咳嗽、咳痰持续两周以上，一般建议怎么做？",
+      "error": ""
+    },
+    {
+      "index": 15,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2907.71,
+      "server_latency_ms": 2902,
+      "tokens_used": 1485,
+      "role_id": "doctor_01",
+      "query": "国家对活动性肺结核患者通常提供哪些免费项目？",
+      "error": ""
+    },
+    {
+      "index": 16,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 3330.12,
+      "server_latency_ms": 3327,
+      "tokens_used": 1413,
+      "role_id": "lawyer_01",
+      "query": "公司调整认缴出资额、出资方式或者出资期限后，多长时间内需要公示？",
+      "error": ""
+    },
+    {
+      "index": 17,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2735.01,
+      "server_latency_ms": 2734,
+      "tokens_used": 1324,
+      "role_id": "doctor_01",
+      "query": "哪些人群在高热时需要更加谨慎处理？",
+      "error": ""
+    },
+    {
+      "index": 18,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 3301.01,
+      "server_latency_ms": 3304,
+      "tokens_used": 1405,
+      "role_id": "lawyer_01",
+      "query": "合同纠纷里，如果协商不成，通常可以走哪些争议解决方式？",
+      "error": ""
+    },
+    {
+      "index": 19,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2516.91,
+      "server_latency_ms": 2519,
+      "tokens_used": 1467,
+      "role_id": "doctor_01",
+      "query": "如果咳嗽、咳痰持续两周以上，一般建议怎么做？",
+      "error": ""
+    },
+    {
+      "index": 20,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 2775.41,
+      "server_latency_ms": 2779,
+      "tokens_used": 1324,
+      "role_id": "doctor_01",
+      "query": "哪些人群在高热时需要更加谨慎处理？",
+      "error": ""
+    }
+  ]
+}

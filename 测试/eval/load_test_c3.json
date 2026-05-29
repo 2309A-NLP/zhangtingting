@@ -1,0 +1,277 @@
+{
+  "created_at": "2026-05-16 08:06:04",
+  "config": {
+    "base_api_url": "http://127.0.0.1:8000/api/v1",
+    "concurrency": 3,
+    "requests": 20,
+    "top_k": 3,
+    "temperature": 0.0,
+    "stream": false,
+    "fixed_session": false,
+    "eval_set": "scripts\\eval_set.json"
+  },
+  "summary": {
+    "total_requests": 20,
+    "success_count": 20,
+    "failure_count": 0,
+    "success_rate": 1.0,
+    "wall_time_seconds": 57.762,
+    "throughput_rps": 0.346,
+    "client_elapsed_ms": {
+      "avg": 8323.16,
+      "min": 3893.6,
+      "p50": 8409.42,
+      "p95": 10658.6,
+      "p99": 10971.16,
+      "max": 11049.3
+    },
+    "server_latency_ms": {
+      "avg": 8322.6,
+      "p50": 8397.5,
+      "p95": 10686.95,
+      "p99": 10959.79,
+      "max": 11028
+    },
+    "tokens_used": {
+      "avg": 1399.4,
+      "max": 1599
+    },
+    "by_role": {
+      "lawyer_01": {
+        "count": 12,
+        "success_rate": 1.0,
+        "avg_elapsed_ms": 8452.9,
+        "p95_elapsed_ms": 10823.11
+      },
+      "doctor_01": {
+        "count": 8,
+        "success_rate": 1.0,
+        "avg_elapsed_ms": 8128.56,
+        "p95_elapsed_ms": 8692.56
+      }
+    },
+    "errors": []
+  },
+  "samples": [
+    {
+      "index": 1,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 3893.6,
+      "server_latency_ms": 3853,
+      "tokens_used": 1413,
+      "role_id": "lawyer_01",
+      "query": "公司调整认缴出资额、出资方式或者出资期限后，多长时间内需要公示？",
+      "error": ""
+    },
+    {
+      "index": 2,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 11049.3,
+      "server_latency_ms": 11028,
+      "tokens_used": 1599,
+      "role_id": "lawyer_01",
+      "query": "遇到付款拖欠、交付延期或者质量不合格时，应该优先保留哪些证据？",
+      "error": ""
+    },
+    {
+      "index": 3,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 7367.31,
+      "server_latency_ms": 7334,
+      "tokens_used": 1411,
+      "role_id": "lawyer_01",
+      "query": "公司法新规下，2024年6月30日前登记设立的公司，剩余认缴出资期限过长时要怎么调整？",
+      "error": ""
+    },
+    {
+      "index": 4,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 8625.62,
+      "server_latency_ms": 8632,
+      "tokens_used": 1324,
+      "role_id": "doctor_01",
+      "query": "哪些人群在高热时需要更加谨慎处理？",
+      "error": ""
+    },
+    {
+      "index": 5,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 7760.96,
+      "server_latency_ms": 7780,
+      "tokens_used": 1061,
+      "role_id": "doctor_01",
+      "query": "体温持续超过39摄氏度并伴有呼吸困难或意识改变时，一般应如何处理？",
+      "error": ""
+    },
+    {
+      "index": 6,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 6813.76,
+      "server_latency_ms": 6846,
+      "tokens_used": 1485,
+      "role_id": "doctor_01",
+      "query": "国家对活动性肺结核患者通常提供哪些免费项目？",
+      "error": ""
+    },
+    {
+      "index": 7,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 9373.67,
+      "server_latency_ms": 9419,
+      "tokens_used": 1599,
+      "role_id": "lawyer_01",
+      "query": "遇到付款拖欠、交付延期或者质量不合格时，应该优先保留哪些证据？",
+      "error": ""
+    },
+    {
+      "index": 8,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 8411.9,
+      "server_latency_ms": 8447,
+      "tokens_used": 1324,
+      "role_id": "doctor_01",
+      "query": "哪些人群在高热时需要更加谨慎处理？",
+      "error": ""
+    },
+    {
+      "index": 9,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 8567.84,
+      "server_latency_ms": 8586,
+      "tokens_used": 1413,
+      "role_id": "lawyer_01",
+      "query": "公司调整认缴出资额、出资方式或者出资期限后，多长时间内需要公示？",
+      "error": ""
+    },
+    {
+      "index": 10,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 7785.66,
+      "server_latency_ms": 7751,
+      "tokens_used": 1411,
+      "role_id": "lawyer_01",
+      "query": "公司法新规下，2024年6月30日前登记设立的公司，剩余认缴出资期限过长时要怎么调整？",
+      "error": ""
+    },
+    {
+      "index": 11,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 8406.95,
+      "server_latency_ms": 8348,
+      "tokens_used": 1324,
+      "role_id": "doctor_01",
+      "query": "哪些人群在高热时需要更加谨慎处理？",
+      "error": ""
+    },
+    {
+      "index": 12,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 8209.37,
+      "server_latency_ms": 8129,
+      "tokens_used": 1485,
+      "role_id": "doctor_01",
+      "query": "国家对活动性肺结核患者通常提供哪些免费项目？",
+      "error": ""
+    },
+    {
+      "index": 13,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 7837.55,
+      "server_latency_ms": 7781,
+      "tokens_used": 1405,
+      "role_id": "lawyer_01",
+      "query": "合同纠纷里，如果协商不成，通常可以走哪些争议解决方式？",
+      "error": ""
+    },
+    {
+      "index": 14,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 8071.29,
+      "server_latency_ms": 8054,
+      "tokens_used": 1324,
+      "role_id": "doctor_01",
+      "query": "哪些人群在高热时需要更加谨慎处理？",
+      "error": ""
+    },
+    {
+      "index": 15,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 7824.59,
+      "server_latency_ms": 7842,
+      "tokens_used": 1335,
+      "role_id": "lawyer_01",
+      "query": "合同发生违约后，通常第一步应该做什么？",
+      "error": ""
+    },
+    {
+      "index": 16,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 9521.22,
+      "server_latency_ms": 9571,
+      "tokens_used": 1599,
+      "role_id": "lawyer_01",
+      "query": "遇到付款拖欠、交付延期或者质量不合格时，应该优先保留哪些证据？",
+      "error": ""
+    },
+    {
+      "index": 17,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 9006.86,
+      "server_latency_ms": 9043,
+      "tokens_used": 1405,
+      "role_id": "lawyer_01",
+      "query": "合同纠纷里，如果协商不成，通常可以走哪些争议解决方式？",
+      "error": ""
+    },
+    {
+      "index": 18,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 10638.04,
+      "server_latency_ms": 10669,
+      "tokens_used": 1599,
+      "role_id": "lawyer_01",
+      "query": "遇到付款拖欠、交付延期或者质量不合格时，应该优先保留哪些证据？",
+      "error": ""
+    },
+    {
+      "index": 19,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 8569.21,
+      "server_latency_ms": 8593,
+      "tokens_used": 1411,
+      "role_id": "lawyer_01",
+      "query": "公司法新规下，2024年6月30日前登记设立的公司，剩余认缴出资期限过长时要怎么调整？",
+      "error": ""
+    },
+    {
+      "index": 20,
+      "ok": true,
+      "status_code": 200,
+      "elapsed_ms": 8728.6,
+      "server_latency_ms": 8746,
+      "tokens_used": 1061,
+      "role_id": "doctor_01",
+      "query": "体温持续超过39摄氏度并伴有呼吸困难或意识改变时，一般应如何处理？",
+      "error": ""
+    }
+  ]
+}
