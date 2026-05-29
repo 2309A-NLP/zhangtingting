@@ -1,0 +1,386 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # ${变量名:-默认值} 语法：如果 .env 文件或系统环境里设了这个变量就用它的值，否则用 - 后面的默认值
+        DEBIAN_MIRROR: ${DEBIAN_MIRROR:-https://mirrors.aliyun.com/debian}
+        DEBIAN_SECURITY_MIRROR: ${DEBIAN_SECURITY_MIRROR:-https://mirrors.aliyun.com/debian-security}
+    container_name: rag-api
+    restart: unless-stopped
+    environment:
+      APP_ENV: ${APP_ENV:-dev}
+      APP_HOST: 0.0.0.0
+      APP_PORT: 8000
+      APP_DEBUG: ${APP_DEBUG:-true}
+      APP_LOG_LEVEL: ${APP_LOG_LEVEL:-INFO}
+      APP_CORS_ORIGINS: ${APP_CORS_ORIGINS:-http://localhost:3000,http://127.0.0.1:3000}
+      APP_CORS_ORIGIN_REGEX: ${APP_CORS_ORIGIN_REGEX:-}
+      APP_API_PREFIX: ${APP_API_PREFIX:-/api/v1}
+      APP_TIMEZONE: ${APP_TIMEZONE:-Asia/Shanghai}
+      APP_SECRET_KEY: ${APP_SECRET_KEY:-replace-with-a-long-random-secret}
+      APP_ACCESS_TOKEN_EXPIRE_MINUTES: ${APP_ACCESS_TOKEN_EXPIRE_MINUTES:-1440}
+      AUTH_JWT_ALGORITHM: ${AUTH_JWT_ALGORITHM:-HS256}
+      AUTH_ENABLE_DEV_HEADER: ${AUTH_ENABLE_DEV_HEADER:-true}
+      HF_ENDPOINT: ${HF_ENDPOINT:-https://hf-mirror.com}
+      HF_HOME: ${HF_HOME:-/app/data/hf-home}
+      HUGGINGFACE_HUB_CACHE: ${HUGGINGFACE_HUB_CACHE:-/app/data/hf-home/hub}
+      TRANSFORMERS_CACHE: ${TRANSFORMERS_CACHE:-/app/data/hf-home/transformers}
+      MYSQL_HOST: mysql
+      MYSQL_PORT: 3306
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-rag_app}
+      MYSQL_USER: ${MYSQL_USER:-rag_user}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-rag_password}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root_password}
+      MYSQL_POOL_SIZE: ${MYSQL_POOL_SIZE:-20}
+      MYSQL_MAX_OVERFLOW: ${MYSQL_MAX_OVERFLOW:-20}
+      MYSQL_POOL_RECYCLE: ${MYSQL_POOL_RECYCLE:-1800}
+      MYSQL_POOL_PRE_PING: ${MYSQL_POOL_PRE_PING:-true}
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_DB: ${REDIS_DB:-0}
+      REDIS_PASSWORD: ${REDIS_PASSWORD:-}
+      REDIS_MAX_CONNECTIONS: ${REDIS_MAX_CONNECTIONS:-200}
+      REDIS_KEY_PREFIX: ${REDIS_KEY_PREFIX:-rag}
+      REDIS_CHAT_RECENT_TTL_SECONDS: ${REDIS_CHAT_RECENT_TTL_SECONDS:-86400}
+      REDIS_CHAT_SESSION_TTL_SECONDS: ${REDIS_CHAT_SESSION_TTL_SECONDS:-1800}
+      REDIS_QUERY_CACHE_TTL_SECONDS: ${REDIS_QUERY_CACHE_TTL_SECONDS:-3600}
+      REDIS_RATE_LIMIT_TTL_SECONDS: ${REDIS_RATE_LIMIT_TTL_SECONDS:-60}
+      REDIS_MEMORY_SUMMARY_TTL_SECONDS: ${REDIS_MEMORY_SUMMARY_TTL_SECONDS:-604800}
+      REDIS_INGEST_STATUS_TTL_SECONDS: ${REDIS_INGEST_STATUS_TTL_SECONDS:-604800}
+      REDIS_LOCK_TTL_SECONDS: ${REDIS_LOCK_TTL_SECONDS:-300}
+      MILVUS_URI: http://milvus:19530
+      MILVUS_TOKEN: ${MILVUS_TOKEN:-root:Milvus}
+      MILVUS_DB_NAME: ${MILVUS_DB_NAME:-default}
+      MILVUS_COLLECTION_NAME: ${MILVUS_COLLECTION_NAME:-rag_chunks}
+      MILVUS_INDEX_TYPE: ${MILVUS_INDEX_TYPE:-IVF_FLAT}
+      MILVUS_METRIC_TYPE: ${MILVUS_METRIC_TYPE:-COSINE}
+      MILVUS_NLIST: ${MILVUS_NLIST:-2048}
+      MILVUS_SEARCH_NPROBE: ${MILVUS_SEARCH_NPROBE:-32}
+      MILVUS_CONSISTENCY_LEVEL: ${MILVUS_CONSISTENCY_LEVEL:-Bounded}
+      MINIO_ENDPOINT: minio:9000
+      MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY:-minioadmin}
+      MINIO_SECRET_KEY: ${MINIO_SECRET_KEY:-minioadmin}
+      MINIO_SECURE: ${MINIO_SECURE:-false}
+      MINIO_BUCKET_RAW: ${MINIO_BUCKET_RAW:-rag-raw}
+      MINIO_BUCKET_PARSED: ${MINIO_BUCKET_PARSED:-rag-parsed}
+      VLLM_BASE_URL: ${VLLM_BASE_URL:-http://host.docker.internal:8001/v1}
+      VLLM_API_KEY: ${VLLM_API_KEY:-EMPTY}
+      VLLM_MODEL: ${VLLM_MODEL:-Qwen2.5-0.5B-Instruct}
+      VLLM_TIMEOUT_SECONDS: ${VLLM_TIMEOUT_SECONDS:-120}
+      VLLM_MAX_RETRIES: ${VLLM_MAX_RETRIES:-2}
+      VLLM_HEALTH_TIMEOUT_SECONDS: ${VLLM_HEALTH_TIMEOUT_SECONDS:-5}
+      VLLM_STARTUP_MAX_WAIT_SECONDS: ${VLLM_STARTUP_MAX_WAIT_SECONDS:-180}
+      VLLM_STARTUP_POLL_INTERVAL_SECONDS: ${VLLM_STARTUP_POLL_INTERVAL_SECONDS:-2}
+      VLLM_HF_MODEL: ${VLLM_HF_MODEL:-Qwen/Qwen2.5-0.5B-Instruct}
+      VLLM_TENSOR_PARALLEL_SIZE: ${VLLM_TENSOR_PARALLEL_SIZE:-1}
+      VLLM_GPU_MEMORY_UTILIZATION: ${VLLM_GPU_MEMORY_UTILIZATION:-0.9}
+      VLLM_MAX_MODEL_LEN: ${VLLM_MAX_MODEL_LEN:-8192}
+      VLLM_DTYPE: ${VLLM_DTYPE:-auto}
+      SILICONFLOW_BASE_URL: ${SILICONFLOW_BASE_URL:-https://api.siliconflow.cn/v1}
+      SILICONFLOW_API_KEY: ${SILICONFLOW_API_KEY:-}
+      SILICONFLOW_MODEL: ${SILICONFLOW_MODEL:-Qwen/Qwen2.5-0.5B-Instruct}
+      SILICONFLOW_TIMEOUT_SECONDS: ${SILICONFLOW_TIMEOUT_SECONDS:-120}
+      SILICONFLOW_MAX_RETRIES: ${SILICONFLOW_MAX_RETRIES:-2}
+      LLM_WARMUP_ENABLED: ${LLM_WARMUP_ENABLED:-true}
+      LLM_WARMUP_ON_STARTUP: ${LLM_WARMUP_ON_STARTUP:-true}
+      LLM_WARMUP_MAX_TOKENS: ${LLM_WARMUP_MAX_TOKENS:-8}
+      EMBEDDING_MODEL_NAME: ${EMBEDDING_MODEL_NAME:-moka-ai/m3e-base}
+      EMBEDDING_MODEL_PATH: ${EMBEDDING_MODEL_PATH:-/app/data/models/m3e-base}
+      EMBEDDING_DIMENSION: ${EMBEDDING_DIMENSION:-768}
+      EMBEDDING_DEVICE: ${EMBEDDING_DEVICE:-cpu}
+      EMBEDDING_BATCH_SIZE_MIN: ${EMBEDDING_BATCH_SIZE_MIN:-8}
+      EMBEDDING_BATCH_SIZE_MAX: ${EMBEDDING_BATCH_SIZE_MAX:-64}
+      RERANK_MODEL_NAME: ${RERANK_MODEL_NAME:-BAAI/bge-reranker-base}
+      RERANK_MODEL_PATH: ${RERANK_MODEL_PATH:-/app/data/models/bge-reranker-base}
+      RERANK_DEVICE: ${RERANK_DEVICE:-cpu}
+      RERANK_TOP_K: ${RERANK_TOP_K:-20}
+      UPLOAD_DIR: /app/data/uploads
+      PARSED_DIR: /app/data/parsed
+      MAX_UPLOAD_SIZE_MB: ${MAX_UPLOAD_SIZE_MB:-50}
+      ALLOWED_UPLOAD_TYPES: ${ALLOWED_UPLOAD_TYPES:-pdf,txt,json,html}
+      OCR_ENABLED: ${OCR_ENABLED:-true}
+      OCR_LANGUAGE: ${OCR_LANGUAGE:-ch}
+      CHUNK_SIZE: ${CHUNK_SIZE:-512}
+      CHUNK_OVERLAP: ${CHUNK_OVERLAP:-51}
+      MIN_CHUNK_TEXT_LENGTH: ${MIN_CHUNK_TEXT_LENGTH:-20}
+      SENSITIVE_WORDS_PATH: /app/app/resources/sensitive_words.txt
+      RETRIEVAL_TOP_K: ${RETRIEVAL_TOP_K:-8}
+      RETRIEVAL_BM25_TOP_K: ${RETRIEVAL_BM25_TOP_K:-12}
+      RETRIEVAL_VECTOR_TOP_K: ${RETRIEVAL_VECTOR_TOP_K:-12}
+      RETRIEVAL_RRF_K: ${RETRIEVAL_RRF_K:-60}
+      RETRIEVAL_ENABLE_QUERY_REWRITE: ${RETRIEVAL_ENABLE_QUERY_REWRITE:-true}
+      RETRIEVAL_ENABLE_RERANK: ${RETRIEVAL_ENABLE_RERANK:-true}
+      CHAT_RECENT_ROUNDS: ${CHAT_RECENT_ROUNDS:-10}
+      CHAT_HISTORY_LOAD_LIMIT: ${CHAT_HISTORY_LOAD_LIMIT:-20}
+      RATE_LIMIT_REQUESTS_PER_MINUTE: ${RATE_LIMIT_REQUESTS_PER_MINUTE:-60}
+      RATE_LIMIT_BURST: ${RATE_LIMIT_BURST:-20}
+      SSE_HEARTBEAT_SECONDS: ${SSE_HEARTBEAT_SECONDS:-15}
+      TRACE_ENABLED: ${TRACE_ENABLED:-false}
+      OTEL_EXPORTER_OTLP_ENDPOINT: ${OTEL_EXPORTER_OTLP_ENDPOINT:-}
+      METRICS_ENABLED: ${METRICS_ENABLED:-false}
+      WATCHFILES_FORCE_POLLING: ${WATCHFILES_FORCE_POLLING:-true}
+      TEST_USER_ID: ${TEST_USER_ID:-test-user-001}
+      TEST_ROLE_ID: ${TEST_ROLE_ID:-lawyer_01}
+      # 用户问题
+      #   ↓
+      # ├─ BM25 关键词检索（12条）  → 精确匹配
+      # ├─ 向量语义检索（12条）     → 模糊语义
+      #   ↓
+      # RRF 融合去重排序（k=60）
+      #   ↓
+      # bge-reranker 精细排序（取前20重排）
+      #   ↓
+      # 最终取 TOP 8 传给大模型
+    ports:
+      - "${APP_PORT:-8000}:8000"
+    volumes:
+      - ./app:/app/app
+      - ./scripts:/app/scripts
+      - ./data:/app/data
+    command:
+      [
+        "uvicorn",
+        "app.main:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000",
+        "--reload",
+        "--reload-dir",
+        "/app/app",
+        "--reload-dir",
+        "/app/scripts"
+      ]
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      milvus:
+        condition: service_started
+      vllm:
+        condition: service_healthy
+    networks:
+      - rag-net
+
+  vllm:
+    image: vllm/vllm-openai:latest
+    container_name: rag-vllm
+    restart: unless-stopped
+    ipc: host
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./data/hf-home:/root/.cache/huggingface
+      - ./data/models:/models
+    environment:
+      HF_ENDPOINT: ${HF_ENDPOINT:-https://hf-mirror.com}
+      HF_HOME: /root/.cache/huggingface
+      HUGGINGFACE_HUB_CACHE: /root/.cache/huggingface/hub
+      TRANSFORMERS_CACHE: /root/.cache/huggingface/transformers
+      HF_TOKEN: ${HF_TOKEN:-}
+    command: >
+      --model ${VLLM_HF_MODEL:-Qwen/Qwen2.5-0.5B-Instruct}
+      --served-model-name ${VLLM_MODEL:-Qwen2.5-0.5B-Instruct}
+      --host 0.0.0.0
+      --port 8000
+      --api-key ${VLLM_API_KEY:-EMPTY}
+      --dtype ${VLLM_DTYPE:-auto}
+      --max-model-len ${VLLM_MAX_MODEL_LEN:-8192}
+      --gpu-memory-utilization ${VLLM_GPU_MEMORY_UTILIZATION:-0.9}
+      --tensor-parallel-size ${VLLM_TENSOR_PARALLEL_SIZE:-1}
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "curl -fsS -H 'Authorization: Bearer ${VLLM_API_KEY:-EMPTY}' http://127.0.0.1:8000/v1/models >/dev/null || exit 1"
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 18
+      start_period: 30s
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    networks:
+      - rag-net
+
+  mineru:
+    image: mineru:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.mineru-official
+    container_name: rag-mineru
+    restart: unless-stopped
+    profiles: ["mineru"]
+    ipc: host
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    environment:
+      MINERU_MODEL_SOURCE: local
+    entrypoint: mineru-api
+    ports:
+      - "8002:8000"
+    command:
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8000"
+      - --gpu-memory-utilization
+      - "0.5"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 60s
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["0"]
+              capabilities: [gpu]
+    networks:
+      - rag-net
+
+  mysql:
+    image: mysql:8.0.41
+    container_name: rag-mysql
+    restart: unless-stopped
+    environment:
+      # 这四个变量是 MySQL 官方镜像规定的，只在容器首次创建时生效：
+      # 这里会创建两个账号和一个数据库
+      # root (管理员，拥有所有权限)
+      # └── rag_user (应用用户，只操作 rag_app 数据库)
+      # 这就是最小权限原则——后端 API 只用 rag_user 连接，就算代码有 SQL 注入漏洞，攻击者也只能影响 rag_app 这个库，不会波及 MySQL 系统库。
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-rag_app}
+      MYSQL_USER: ${MYSQL_USER:-rag_user}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-rag_password}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root_password}
+    command:
+      - --default-authentication-plugin=mysql_native_password
+      - --character-set-server=utf8mb4
+      # ci = Case Insensitive，查询时不分大小写
+      - --collation-server=utf8mb4_unicode_ci
+      # 最大并发连接数	连接池 20 + 溢出 20 + 余量 = 300
+      - --max_connections=300
+    ports:
+      - "${MYSQL_PORT:-3306}:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./scripts/mysql-init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p$${MYSQL_ROOT_PASSWORD} --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
+    networks:
+      - rag-net
+
+  redis:
+    image: redis:7.4.2
+    container_name: rag-redis
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+    networks:
+      - rag-net
+
+  etcd:
+    image: quay.io/coreos/etcd:v3.5.16
+    container_name: rag-etcd
+    restart: unless-stopped
+    environment:
+      ETCD_AUTO_COMPACTION_MODE: revision
+      ETCD_AUTO_COMPACTION_RETENTION: "1000"
+      ETCD_QUOTA_BACKEND_BYTES: "4294967296"
+      ETCD_SNAPSHOT_COUNT: "50000"
+    command: >
+      etcd
+      -advertise-client-urls=http://etcd:2379
+      -listen-client-urls=http://0.0.0.0:2379
+      --data-dir=/etcd
+    volumes:
+      - etcd_data:/etcd
+    ports:
+      - "2379:2379"
+    networks:
+      - rag-net
+
+  minio:
+    image: minio/minio:RELEASE.2025-02-07T23-21-09Z
+    container_name: rag-minio
+    restart: unless-stopped
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY:-minioadmin}
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+    networks:
+      - rag-net
+
+  milvus:
+    image: milvusdb/milvus:v2.4.15
+    container_name: rag-milvus
+    restart: unless-stopped
+    command: ["milvus", "run", "standalone"]
+    environment:
+      ETCD_ENDPOINTS: etcd:2379
+      MINIO_ADDRESS: minio:9000
+      COMMON_STORAGETYPE: local
+    volumes:
+      - milvus_data:/var/lib/milvus
+    ports:
+      - "19530:19530"
+      - "9091:9091"
+    depends_on:
+      - etcd
+      - minio
+    networks:
+      - rag-net
+
+  attu:
+    image: zilliz/attu:v2.4
+    container_name: rag-attu
+    restart: unless-stopped
+    environment:
+      MILVUS_URL: milvus:19530
+    ports:
+      - "3001:3000"
+    depends_on:
+      - milvus
+    networks:
+      - rag-net
+
+volumes:
+  mysql_data:
+  redis_data:
+  etcd_data:
+  minio_data:
+  milvus_data:
+  mineru_models:
+
+networks:
+  rag-net:
+    driver: bridge

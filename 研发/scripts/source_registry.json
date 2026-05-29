@@ -1,0 +1,47 @@
+{
+  "lawyer_01": {
+    "collector": "lawyer_manual",
+    "source_name": "lawyer_manual",
+    "source_tier": "mixed",
+    "role_id": "lawyer_01",
+    "max_docs_default": 200,
+    "source_root": "data/raw_sources/lawyer_manual",
+    "folders": [
+      "statutes",
+      "judicial_interpretations",
+      "cases"
+    ]
+  },
+  "doctor_01": {
+    "collector": "doctor_nhc",
+    "source_name": "nhc.gov.cn",
+    "source_tier": "official",
+    "role_id": "doctor_01",
+    "max_docs_default": 200,
+    "min_interval_seconds": 2.5,
+    "seed_urls": [
+      "https://www.nhc.gov.cn/wjw/jbyfykz/list_3.shtml",
+      "https://www.nhc.gov.cn/kppypt/index.shtml"
+    ]
+  },
+  "history_01": {
+    "collector": "history_zgbk",
+    "source_name": "www.zgbk.com",
+    "source_tier": "reference",
+    "role_id": "history_01",
+    "max_docs_default": 100,
+    "min_interval_seconds": 2.5,
+    "seed_names": [
+      "秦始皇",
+      "诸葛亮",
+      "王安石",
+      "孔子",
+      "司马迁",
+      "武则天",
+      "曹操",
+      "岳飞",
+      "李白",
+      "杜甫"
+    ]
+  }
+}

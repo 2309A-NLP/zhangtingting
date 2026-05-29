@@ -1,0 +1,3 @@
+# one word per line
+# replace with production-approved list
+违禁词示例
