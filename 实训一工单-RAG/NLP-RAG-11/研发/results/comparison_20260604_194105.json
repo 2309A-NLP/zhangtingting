@@ -1,0 +1,104 @@
+{
+  "before": {
+    "Recall@1": 0.19387755102040816,
+    "Precision@1": 0.19387755102040816,
+    "MRR@1": 0.19387755102040816,
+    "Recall@3": 0.37755102040816324,
+    "Precision@3": 0.12585034013605442,
+    "MRR@3": 0.27210884353741494,
+    "Recall@5": 0.45918367346938777,
+    "Precision@5": 0.09183673469387756,
+    "MRR@5": 0.2909863945578231,
+    "Recall@10": 0.6428571428571429,
+    "Precision@10": 0.06428571428571428,
+    "MRR@10": 0.3154073534175575
+  },
+  "after": {
+    "Recall@1": 0.19387755102040816,
+    "Precision@1": 0.19387755102040816,
+    "MRR@1": 0.19387755102040816,
+    "Recall@3": 0.37755102040816324,
+    "Precision@3": 0.12585034013605442,
+    "MRR@3": 0.27210884353741494,
+    "Recall@5": 0.45918367346938777,
+    "Precision@5": 0.09183673469387756,
+    "MRR@5": 0.2909863945578231,
+    "Recall@10": 0.6428571428571429,
+    "Precision@10": 0.06428571428571428,
+    "MRR@10": 0.3156503077421445
+  },
+  "improvement": {
+    "Recall@1": {
+      "before": 0.19387755102040816,
+      "after": 0.19387755102040816,
+      "absolute_change": 0.0,
+      "percentage_change": 0.0
+    },
+    "Precision@1": {
+      "before": 0.19387755102040816,
+      "after": 0.19387755102040816,
+      "absolute_change": 0.0,
+      "percentage_change": 0.0
+    },
+    "MRR@1": {
+      "before": 0.19387755102040816,
+      "after": 0.19387755102040816,
+      "absolute_change": 0.0,
+      "percentage_change": 0.0
+    },
+    "Recall@3": {
+      "before": 0.37755102040816324,
+      "after": 0.37755102040816324,
+      "absolute_change": 0.0,
+      "percentage_change": 0.0
+    },
+    "Precision@3": {
+      "before": 0.12585034013605442,
+      "after": 0.12585034013605442,
+      "absolute_change": 0.0,
+      "percentage_change": 0.0
+    },
+    "MRR@3": {
+      "before": 0.27210884353741494,
+      "after": 0.27210884353741494,
+      "absolute_change": 0.0,
+      "percentage_change": 0.0
+    },
+    "Recall@5": {
+      "before": 0.45918367346938777,
+      "after": 0.45918367346938777,
+      "absolute_change": 0.0,
+      "percentage_change": 0.0
+    },
+    "Precision@5": {
+      "before": 0.09183673469387756,
+      "after": 0.09183673469387756,
+      "absolute_change": 0.0,
+      "percentage_change": 0.0
+    },
+    "MRR@5": {
+      "before": 0.2909863945578231,
+      "after": 0.2909863945578231,
+      "absolute_change": 0.0,
+      "percentage_change": 0.0
+    },
+    "Recall@10": {
+      "before": 0.6428571428571429,
+      "after": 0.6428571428571429,
+      "absolute_change": 0.0,
+      "percentage_change": 0.0
+    },
+    "Precision@10": {
+      "before": 0.06428571428571428,
+      "after": 0.06428571428571428,
+      "absolute_change": 0.0,
+      "percentage_change": 0.0
+    },
+    "MRR@10": {
+      "before": 0.3154073534175575,
+      "after": 0.3156503077421445,
+      "absolute_change": 0.00024295432458698585,
+      "percentage_change": 0.07702874455984751
+    }
+  }
+}

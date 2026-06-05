@@ -1,0 +1,20 @@
+{
+  "source": "PSBC 2019 Annual Report",
+  "total_pages": 421,
+  "paragraphs": 323,
+  "sections": 16,
+  "train_sections": 13,
+  "test_sections": 3,
+  "test_section_names": [
+    "glossary",
+    "leadership",
+    "supervisory_report"
+  ],
+  "datasets": {
+    "train_positive_pairs": 1433,
+    "test_positive_pairs": 98,
+    "triplets": 1433,
+    "cosine_pairs": 2143,
+    "combined": 2866
+  }
+}

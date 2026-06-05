@@ -1,0 +1,17 @@
+{
+  "num_epochs": 10,
+  "batch_size": 16,
+  "learning_rate": 2e-05,
+  "warmup_steps": 500,
+  "weight_decay": 0.01,
+  "optimizer": "AdamW",
+  "scheduler": "warmupcosine",
+  "output_dir": "/mnt/d/Desktop/NLP-RAG-11/models/finetuned_legal",
+  "save_best_model": true,
+  "evaluation_steps": 100,
+  "max_seq_length": null,
+  "use_amp": true,
+  "use_matryoshka": false,
+  "matryoshka_sizes": null,
+  "matryoshka_weight": 0.5
+}

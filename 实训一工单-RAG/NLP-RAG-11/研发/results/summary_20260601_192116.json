@@ -1,0 +1,92 @@
+{
+  "project": "NLP-RAG-11",
+  "task": "Embeddings Model Fine-tuning",
+  "domain": "legal",
+  "base_model": "BAAI/bge-base-en-v1.5",
+  "loss_function": "cosine_similarity",
+  "use_matryoshka": false,
+  "training_config": {
+    "num_epochs": 1,
+    "batch_size": 16,
+    "learning_rate": 2e-05
+  },
+  "evaluation_before": {},
+  "evaluation_after": {
+    "Recall@1": 0.8666666666666667,
+    "Precision@1": 0.8666666666666667,
+    "MRR@1": 0.8666666666666667,
+    "Recall@3": 0.8666666666666667,
+    "Precision@3": 0.28888888888888886,
+    "MRR@3": 0.8666666666666667,
+    "Recall@5": 0.9333333333333333,
+    "Precision@5": 0.1866666666666667,
+    "MRR@5": 0.88,
+    "Recall@10": 1.0,
+    "Precision@10": 0.10000000000000003,
+    "MRR@10": 0.8866666666666666
+  },
+  "improvement": {
+    "Recall@1": {
+      "before": 0.8666666666666667,
+      "after": 0.8666666666666667,
+      "change_pct": 0.0
+    },
+    "Precision@1": {
+      "before": 0.8666666666666667,
+      "after": 0.8666666666666667,
+      "change_pct": 0.0
+    },
+    "MRR@1": {
+      "before": 0.8666666666666667,
+      "after": 0.8666666666666667,
+      "change_pct": 0.0
+    },
+    "Recall@3": {
+      "before": 0.8666666666666667,
+      "after": 0.8666666666666667,
+      "change_pct": 0.0
+    },
+    "Precision@3": {
+      "before": 0.28888888888888886,
+      "after": 0.28888888888888886,
+      "change_pct": 0.0
+    },
+    "MRR@3": {
+      "before": 0.8666666666666667,
+      "after": 0.8666666666666667,
+      "change_pct": 0.0
+    },
+    "Recall@5": {
+      "before": 0.9333333333333333,
+      "after": 0.9333333333333333,
+      "change_pct": 0.0
+    },
+    "Precision@5": {
+      "before": 0.1866666666666667,
+      "after": 0.1866666666666667,
+      "change_pct": 0.0
+    },
+    "MRR@5": {
+      "before": 0.88,
+      "after": 0.88,
+      "change_pct": 0.0
+    },
+    "Recall@10": {
+      "before": 1.0,
+      "after": 1.0,
+      "change_pct": 0.0
+    },
+    "Precision@10": {
+      "before": 0.10000000000000003,
+      "after": 0.10000000000000003,
+      "change_pct": 0.0
+    },
+    "MRR@10": {
+      "before": 0.8866666666666666,
+      "after": 0.8866666666666666,
+      "change_pct": 0.0
+    }
+  },
+  "verification": "微调后模型检索效果优于微调前",
+  "completion_time": "2026-06-01T19:23:43.460734"
+}

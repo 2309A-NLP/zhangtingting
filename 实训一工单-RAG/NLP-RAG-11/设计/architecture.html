@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLP-RAG-11 架构图</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #020617;
+      min-height: 100vh;
+      padding: 2rem;
+      color: white;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .header { margin-bottom: 2rem; }
+    .header-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
+    .pulse-dot {
+      width: 12px; height: 12px; background: #22d3ee; border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.025em; }
+    .subtitle { color: #94a3b8; font-size: 0.875rem; margin-left: 1.75rem; }
+    .diagram-container {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 1rem;
+      border: 1px solid #1e293b;
+      padding: 1.5rem;
+      overflow-x: auto;
+    }
+    svg { width: 100%; min-width: 900px; display: block; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 0.75rem;
+      border: 1px solid #1e293b;
+      padding: 1.25rem;
+    }
+    .card-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; }
+    .card-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .card-dot.cyan { background: #22d3ee; }
+    .card-dot.emerald { background: #34d399; }
+    .card-dot.violet { background: #a78bfa; }
+    .card-dot.amber { background: #fbbf24; }
+    .card-dot.rose { background: #fb7185; }
+    .card h3 { font-size: 0.875rem; font-weight: 600; }
+    .card ul { list-style: none; color: #94a3b8; font-size: 0.75rem; }
+    .card li { margin-bottom: 0.375rem; }
+    .footer { text-align: center; margin-top: 1.5rem; color: #475569; font-size: 0.75rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-row">
+        <div class="pulse-dot"></div>
+        <h1>NLP-RAG-11 Embedding Fine-tuning Pipeline</h1>
+      </div>
+      <p class="subtitle">BAAI/bge-base-en-v1.5 领域微调系统架构</p>
+    </div>
+
+    <div class="diagram-container">
+      <svg viewBox="0 0 1000 720">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+          </marker>
+          <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#34d399" />
+          </marker>
+          <marker id="arrow-cyan" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#22d3ee" />
+          </marker>
+          <marker id="arrow-violet" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa" />
+          </marker>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+
+        <rect width="100%" height="100%" fill="url(#grid)" />
+
+        <!-- Phase 1: Data Pipeline -->
+        <text x="30" y="35" fill="#22d3ee" font-size="11" font-weight="600">Phase 1: 数据流水线</text>
+
+        <!-- PDF Input -->
+        <rect x="30" y="55" width="130" height="55" rx="6" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+        <text x="95" y="76" fill="white" font-size="10" font-weight="600" text-anchor="middle">PDF 输入</text>
+        <text x="95" y="92" fill="#94a3b8" font-size="8" text-anchor="middle">PSBC 2019 年报</text>
+        <text x="95" y="104" fill="#94a3b8" font-size="7" text-anchor="middle">421 页 / 9.1 MB</text>
+
+        <!-- PyMuPDF Extraction -->
+        <rect x="230" y="55" width="140" height="55" rx="6" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+        <rect x="230" y="55" width="140" height="55" rx="6" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+        <text x="300" y="76" fill="white" font-size="10" font-weight="600" text-anchor="middle">PyMuPDF 文本提取</text>
+        <text x="300" y="92" fill="#94a3b8" font-size="8" text-anchor="middle">逐页提取 + 段落拆分</text>
+        <text x="300" y="104" fill="#94a3b8" font-size="7" text-anchor="middle">323 段落</text>
+
+        <!-- Section Split -->
+        <rect x="440" y="55" width="140" height="55" rx="6" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+        <text x="510" y="76" fill="white" font-size="10" font-weight="600" text-anchor="middle">TOC 章节切分</text>
+        <text x="510" y="92" fill="#94a3b8" font-size="8" text-anchor="middle">硬编码页范围</text>
+        <text x="510" y="104" fill="#94a3b8" font-size="7" text-anchor="middle">16 章节 / 16 训练</text>
+
+        <!-- Train/Test Split -->
+        <rect x="650" y="55" width="140" height="55" rx="6" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="1.5"/>
+        <text x="720" y="76" fill="white" font-size="10" font-weight="600" text-anchor="middle">训练/测试 划分</text>
+        <text x="720" y="92" fill="#94a3b8" font-size="8" text-anchor="middle">13 训练 + 3 测试</text>
+        <text x="720" y="104" fill="#94a3b8" font-size="7" text-anchor="middle">1433 / 98 对</text>
+
+        <!-- Query Generation -->
+        <rect x="30" y="160" width="330" height="70" rx="6" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="195" y="182" fill="white" font-size="10" font-weight="600" text-anchor="middle">5 种查询生成策略</text>
+        <text x="195" y="198" fill="#94a3b8" font-size="8" text-anchor="middle">原文摘录 | 关键词替换 | 摘要式 | 追问式 | 段落融合</text>
+        <text x="195" y="215" fill="#94a3b8" font-size="8" text-anchor="middle">1531 查询-文档对 (含分数)</text>
+
+        <!-- Negative Sampling -->
+        <rect x="420" y="160" width="370" height="70" rx="6" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="605" y="182" fill="white" font-size="10" font-weight="600" text-anchor="middle">跨章节负采样</text>
+        <text x="605" y="198" fill="#94a3b8" font-size="8" text-anchor="middle">4 域组: biz / risk / fin / gov</text>
+        <text x="605" y="215" fill="#94a3b8" font-size="8" text-anchor="middle">同组内取其他章节段落作为负例</text>
+
+        <!-- Arrows Phase 1 -->
+        <line x1="160" y1="82" x2="228" y2="82" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+        <line x1="370" y1="82" x2="438" y2="82" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+        <line x1="580" y1="82" x2="648" y2="82" stroke="#fb7185" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <line x1="195" y1="125" x2="195" y2="158" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow-cyan)"/>
+        <line x1="720" y1="125" x2="720" y2="158" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+        <!-- Phase 2: Training Pipeline -->
+        <text x="30" y="275" fill="#34d399" font-size="11" font-weight="600">Phase 2: 微调流水线</text>
+
+        <!-- Model Loading -->
+        <rect x="30" y="295" width="160" height="55" rx="6" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+        <text x="110" y="316" fill="white" font-size="10" font-weight="600" text-anchor="middle">模型加载</text>
+        <text x="110" y="332" fill="#94a3b8" font-size="8" text-anchor="middle">BAAI/bge-base-en-v1.5</text>
+        <text x="110" y="344" fill="#94a3b8" font-size="7" text-anchor="middle">768d / 512 seq</text>
+
+        <!-- Loss Definition -->
+        <rect x="250" y="295" width="170" height="55" rx="6" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+        <text x="335" y="316" fill="white" font-size="10" font-weight="600" text-anchor="middle">损失函数定义</text>
+        <text x="335" y="332" fill="#94a3b8" font-size="8" text-anchor="middle">MNRL (选型最优)</text>
+        <text x="335" y="344" fill="#94a3b8" font-size="7" text-anchor="middle">+ Matryoshka 可选</text>
+
+        <!-- Training Execution -->
+        <rect x="480" y="295" width="160" height="55" rx="6" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+        <text x="560" y="316" fill="white" font-size="10" font-weight="600" text-anchor="middle">训练执行</text>
+        <text x="560" y="332" fill="#94a3b8" font-size="8" text-anchor="middle">10 epoch / batch=16</text>
+        <text x="560" y="344" fill="#94a3b8" font-size="7" text-anchor="middle">AdamW / Cosine Sched</text>
+
+        <!-- Model Output -->
+        <rect x="700" y="295" width="160" height="55" rx="6" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+        <text x="780" y="316" fill="white" font-size="10" font-weight="600" text-anchor="middle">微调模型输出</text>
+        <text x="780" y="332" fill="#94a3b8" font-size="8" text-anchor="middle">finetuned_psbc/</text>
+        <text x="780" y="344" fill="#94a3b8" font-size="7" text-anchor="middle">验证: Recall@1 +4.08%</text>
+
+        <!-- Arrows Phase 2 -->
+        <line x1="190" y1="322" x2="248" y2="322" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+        <line x1="420" y1="322" x2="478" y2="322" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <line x1="640" y1="322" x2="698" y2="322" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrow-violet)"/>
+
+        <!-- Phase 3: Evaluation Pipeline -->
+        <text x="30" y="400" fill="#a78bfa" font-size="11" font-weight="600">Phase 3: 评估流水线</text>
+
+        <!-- Before Eval -->
+        <rect x="30" y="420" width="170" height="55" rx="6" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="1.5"/>
+        <text x="115" y="441" fill="white" font-size="10" font-weight="600" text-anchor="middle">微调前评估</text>
+        <text x="115" y="457" fill="#94a3b8" font-size="8" text-anchor="middle">InformationRetrievalEval</text>
+        <text x="115" y="469" fill="#94a3b8" font-size="7" text-anchor="middle">Recall@1: 27.55%</text>
+
+        <!-- After Eval -->
+        <rect x="280" y="420" width="170" height="55" rx="6" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="1.5"/>
+        <text x="365" y="441" fill="white" font-size="10" font-weight="600" text-anchor="middle">微调后评估</text>
+        <text x="365" y="457" fill="#94a3b8" font-size="8" text-anchor="middle">InformationRetrievalEval</text>
+        <text x="365" y="469" fill="#94a3b8" font-size="7" text-anchor="middle">Recall@1: 31.63%</text>
+
+        <!-- Comparison -->
+        <rect x="520" y="420" width="170" height="55" rx="6" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="605" y="441" fill="white" font-size="10" font-weight="600" text-anchor="middle">对比分析</text>
+        <text x="605" y="457" fill="#94a3b8" font-size="8" text-anchor="middle">Delta 计算 + JSON 输出</text>
+        <text x="605" y="469" fill="#94a3b8" font-size="7" text-anchor="middle">Recall@1 +4.08%</text>
+
+        <!-- Charts -->
+        <rect x="760" y="420" width="170" height="55" rx="6" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="845" y="441" fill="white" font-size="10" font-weight="600" text-anchor="middle">图表生成</text>
+        <text x="845" y="457" fill="#94a3b8" font-size="8" text-anchor="middle">Matplotlib 对比图</text>
+        <text x="845" y="469" fill="#94a3b8" font-size="7" text-anchor="middle">metrics + improvement</text>
+
+        <!-- Arrows Phase 3 -->
+        <line x1="200" y1="447" x2="278" y2="447" stroke="#fb7185" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <line x1="450" y1="447" x2="518" y2="447" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow-cyan)"/>
+        <line x1="690" y1="447" x2="758" y2="447" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow-cyan)"/>
+
+        <!-- Cross-phase arrows -->
+        <line x1="840" y1="350" x2="840" y2="418" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#arrow-violet)"/>
+        <text x="852" y="390" fill="#94a3b8" font-size="7">模型传递</text>
+
+        <!-- Overall System Boundary -->
+        <rect x="15" y="20" width="930" height="475" rx="12" fill="transparent" stroke="#fbbf24" stroke-width="1" stroke-dasharray="8,4"/>
+        <text x="25" y="485" fill="#fbbf24" font-size="8">NLP-RAG-11 System</text>
+
+        <!-- Legend -->
+        <text x="30" y="525" fill="white" font-size="10" font-weight="600">图例</text>
+        
+        <rect x="30" y="535" width="14" height="10" rx="2" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1"/>
+        <text x="50" y="543" fill="#94a3b8" font-size="8">数据/训练处理</text>
+        
+        <rect x="30" y="553" width="14" height="10" rx="2" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1"/>
+        <text x="50" y="561" fill="#94a3b8" font-size="8">数据生成 / 可视化</text>
+        
+        <rect x="30" y="571" width="14" height="10" rx="2" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1"/>
+        <text x="50" y="579" fill="#94a3b8" font-size="8">模型管理</text>
+
+        <rect x="280" y="535" width="14" height="10" rx="2" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="1"/>
+        <text x="300" y="543" fill="#94a3b8" font-size="8">评估 / 数据划分</text>
+        
+        <rect x="280" y="553" width="14" height="10" rx="2" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1"/>
+        <text x="300" y="561" fill="#94a3b8" font-size="8">训练执行 / 系统边界</text>
+        
+        <rect x="280" y="571" width="14" height="10" rx="2" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1"/>
+        <text x="300" y="579" fill="#94a3b8" font-size="8">外部输入</text>
+        
+        <line x1="560" y1="538" x2="574" y2="538" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="578" y="543" fill="#94a3b8" font-size="8">数据流方向</text>
+
+        <line x1="560" y1="558" x2="574" y2="558" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#arrow-violet)"/>
+        <text x="578" y="563" fill="#94a3b8" font-size="8">跨阶段传递</text>
+      </svg>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot cyan"></div>
+          <h3>微调结果</h3>
+        </div>
+        <ul>
+          <li>Recall@1: 27.55% → 31.63% (+4.08%)</li>
+          <li>MRR@10: 38.88% → 40.79% (+1.91%)</li>
+          <li>Recall@3: 43.88% → 46.94% (+3.06%)</li>
+          <li>损失函数: MNRL (已验证最优)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot emerald"></div>
+          <h3>数据概览</h3>
+        </div>
+        <ul>
+          <li>PDF 源: PSBC 2019 年报 (421 页)</li>
+          <li>训练对: 1433 对 (13 章节)</li>
+          <li>测试对: 98 对 (3 章节)</li>
+          <li>查询策略: 5 种 / 负采样: 4 域组</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot violet"></div>
+          <h3>技术细节</h3>
+        </div>
+        <ul>
+          <li>框架: SentenceTransformers 5.5.1</li>
+          <li>GPU: CUDA 12.8 / AMP 混合精度</li>
+          <li>训练: 10 epoch / batch=16 / 6.4min</li>
+          <li>优化器: AdamW / lr=2e-5 / warmupcosine</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer">NLP-RAG-11 嵌入模型微调系统  |  八维文化与产业研究院  |  2026-06</p>
+  </div>
+</body>
+</html>

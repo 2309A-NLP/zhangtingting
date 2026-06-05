@@ -1,0 +1,104 @@
+{
+  "before": {
+    "Recall@1": 0.2755,
+    "Precision@1": 0.2755,
+    "MRR@1": 0.2755,
+    "Recall@3": 0.4388,
+    "Precision@3": 0.1463,
+    "MRR@3": 0.3452,
+    "Recall@5": 0.5408,
+    "Precision@5": 0.1082,
+    "MRR@5": 0.3687,
+    "Recall@10": 0.6939,
+    "Precision@10": 0.0694,
+    "MRR@10": 0.3888
+  },
+  "after": {
+    "Recall@1": 0.3163,
+    "Precision@1": 0.3163,
+    "MRR@1": 0.3163,
+    "Recall@3": 0.4694,
+    "Precision@3": 0.1565,
+    "MRR@3": 0.3793,
+    "Recall@5": 0.5102,
+    "Precision@5": 0.102,
+    "MRR@5": 0.3884,
+    "Recall@10": 0.6633,
+    "Precision@10": 0.0663,
+    "MRR@10": 0.4079
+  },
+  "improvement": {
+    "Recall@1": {
+      "before": 0.2755,
+      "after": 0.3163,
+      "absolute_change": 0.0408,
+      "percentage_change": 14.81
+    },
+    "Precision@1": {
+      "before": 0.2755,
+      "after": 0.3163,
+      "absolute_change": 0.0408,
+      "percentage_change": 14.81
+    },
+    "MRR@1": {
+      "before": 0.2755,
+      "after": 0.3163,
+      "absolute_change": 0.0408,
+      "percentage_change": 14.81
+    },
+    "Recall@3": {
+      "before": 0.4388,
+      "after": 0.4694,
+      "absolute_change": 0.0306,
+      "percentage_change": 6.97
+    },
+    "Precision@3": {
+      "before": 0.1463,
+      "after": 0.1565,
+      "absolute_change": 0.0102,
+      "percentage_change": 6.97
+    },
+    "MRR@3": {
+      "before": 0.3452,
+      "after": 0.3793,
+      "absolute_change": 0.0341,
+      "percentage_change": 9.88
+    },
+    "Recall@5": {
+      "before": 0.5408,
+      "after": 0.5102,
+      "absolute_change": -0.0306,
+      "percentage_change": -5.66
+    },
+    "Precision@5": {
+      "before": 0.1082,
+      "after": 0.102,
+      "absolute_change": -0.0062,
+      "percentage_change": -5.73
+    },
+    "MRR@5": {
+      "before": 0.3687,
+      "after": 0.3884,
+      "absolute_change": 0.0197,
+      "percentage_change": 5.34
+    },
+    "Recall@10": {
+      "before": 0.6939,
+      "after": 0.6633,
+      "absolute_change": -0.0306,
+      "percentage_change": -4.41
+    },
+    "Precision@10": {
+      "before": 0.0694,
+      "after": 0.0663,
+      "absolute_change": -0.0031,
+      "percentage_change": -4.47
+    },
+    "MRR@10": {
+      "before": 0.3888,
+      "after": 0.4079,
+      "absolute_change": 0.0191,
+      "percentage_change": 4.91
+    }
+  }
+}
