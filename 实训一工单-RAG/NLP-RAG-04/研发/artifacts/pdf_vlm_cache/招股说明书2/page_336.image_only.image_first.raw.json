@@ -1,0 +1,28 @@
+{
+  "page_number": 336,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6de8b3233fd14fdd2da5c4ad07",
+    "object": "chat.completion",
+    "created": 1780237593,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"公司发展计划与现有业务的关系\",\n        \"value\": \"公司已在技术研发、客户积累、市场营销、物流管理、品牌知名度和美誉度塑造、管理经验积累及信息运作系统建设等方面有长足发展，基本确立了细分市场上本土企业领先地位。\",\n        \"evidence\": \"四、公司发展计划与现有业务的关系：公司经过多年努力，在技术研发、客户积累、市场营销、物流管理、品牌知名度和美誉度塑造、管理经验积累以及信息运作系统建设等方面已有长足发展，并基本确立了细分市场上本土企业领先地位，这为公司实现上述业务发展计划打下了良好的基础。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 151,
+      "total_tokens": 1303
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"公司发展计划与现有业务的关系\",\n        \"value\": \"公司已在技术研发、客户积累、市场营销、物流管理、品牌知名度和美誉度塑造、管理经验积累及信息运作系统建设等方面有长足发展，基本确立了细分市场上本土企业领先地位。\",\n        \"evidence\": \"四、公司发展计划与现有业务的关系：公司经过多年努力，在技术研发、客户积累、市场营销、物流管理、品牌知名度和美誉度塑造、管理经验积累以及信息运作系统建设等方面已有长足发展，并基本确立了细分市场上本土企业领先地位，这为公司实现上述业务发展计划打下了良好的基础。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 64,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4e32cdfff239456e6aaba9556d",
+    "object": "chat.completion",
+    "created": 1780235514,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"控股股东及实际控制人\",\n        \"value\": \"赵马克 (Mark Zhao)\",\n        \"evidence\": \"公司控股股东及实际控制人赵马克 (Mark Zhao)\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"承诺事项\",\n        \"value\": \"遵守法律法规，不存在重大违法违规行为\",\n        \"evidence\": \"“本人近三年能够遵守中华人民共和国相关法律法规的规定，不存在重大违法违规行为。”\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 110,
+      "total_tokens": 1261
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"控股股东及实际控制人\",\n        \"value\": \"赵马克 (Mark Zhao)\",\n        \"evidence\": \"公司控股股东及实际控制人赵马克 (Mark Zhao)\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"承诺事项\",\n        \"value\": \"遵守法律法规，不存在重大违法违规行为\",\n        \"evidence\": \"“本人近三年能够遵守中华人民共和国相关法律法规的规定，不存在重大违法违规行为。”\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

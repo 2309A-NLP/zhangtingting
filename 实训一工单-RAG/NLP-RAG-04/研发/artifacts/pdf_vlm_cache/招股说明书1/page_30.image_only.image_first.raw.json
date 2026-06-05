@@ -1,0 +1,28 @@
+{
+  "page_number": 30,
+  "logical_page": "29",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e0aed2bc954ef68b0333e6e349d",
+    "object": "chat.completion",
+    "created": 1780231106,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"募集资金用途\",\"value\":\"募集资金将投资于基于云联邦架构的军用视频指挥平台升级及产业化项目、研发中心建设项目和补充流动资金。\",\"evidence\":\"项目名称列包含：基于云联邦架构的军用视频指挥平台升级及产业化项目、研发中心建设项目、补充流动资金。\",\"type\":\"table_summary\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 76,
+      "total_tokens": 1228
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"募集资金用途\",\"value\":\"募集资金将投资于基于云联邦架构的军用视频指挥平台升级及产业化项目、研发中心建设项目和补充流动资金。\",\"evidence\":\"项目名称列包含：基于云联邦架构的军用视频指挥平台升级及产业化项目、研发中心建设项目、补充流动资金。\",\"type\":\"table_summary\"}\n]"
+}

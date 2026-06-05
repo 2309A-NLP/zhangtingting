@@ -1,0 +1,28 @@
+{
+  "page_number": 177,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e5a1ee0b23da81ee01df0f46a3f",
+    "object": "chat.completion",
+    "created": 1780236296,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"法定代表人\",\"value\":\"赵马克\",\"evidence\":\"本公司董事长兼总经理赵马克(Mark Zhao)\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 30,
+      "total_tokens": 1182
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"法定代表人\",\"value\":\"赵马克\",\"evidence\":\"本公司董事长兼总经理赵马克(Mark Zhao)\",\"type\":\"field\"}]"
+}

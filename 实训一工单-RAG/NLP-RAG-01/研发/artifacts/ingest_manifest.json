@@ -1,0 +1,7 @@
+{
+  "pdf": "D:\\Desktop\\NLP-RAG-01\\data\\招股说明书1.pdf",
+  "chunks": 1428,
+  "embedding_backend": "sentence_transformers:bge-m3",
+  "dimension": 1024,
+  "vector_store": "milvus"
+}

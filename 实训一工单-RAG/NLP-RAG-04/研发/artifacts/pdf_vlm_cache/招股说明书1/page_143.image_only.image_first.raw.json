@@ -1,0 +1,28 @@
+{
+  "page_number": 143,
+  "logical_page": "142",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e1605d8b66624bee6c4490ff644",
+    "object": "chat.completion",
+    "created": 1780231833,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"国防指挥信息系统\",\"value\":\"包含指挥（Command）、控制（Control）、通信（Communication）、计算机（Computer）、情报（Intelligence）、监视（Surveillance）、侦察（Reconnaissance）七个部分。\",\"evidence\":\"国防指挥信息系统也称综合电子信息系统，我军早期称为指挥自动化系统，美军称之为C4ISR系统，包括指挥（Command）、控制（Control）、通信（Communication）、计算机（Computer）、情报（Intelligence）、监视（Surveillance）、侦察（Reconnaissance）七个部分。\",\"type\":\"chart_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 117,
+      "total_tokens": 1271
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"国防指挥信息系统\",\"value\":\"包含指挥（Command）、控制（Control）、通信（Communication）、计算机（Computer）、情报（Intelligence）、监视（Surveillance）、侦察（Reconnaissance）七个部分。\",\"evidence\":\"国防指挥信息系统也称综合电子信息系统，我军早期称为指挥自动化系统，美军称之为C4ISR系统，包括指挥（Command）、控制（Control）、通信（Communication）、计算机（Computer）、情报（Intelligence）、监视（Surveillance）、侦察（Reconnaissance）七个部分。\",\"type\":\"chart_summary\"}]"
+}

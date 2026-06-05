@@ -1,0 +1,28 @@
+{
+  "page_number": 43,
+  "logical_page": "42",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e0c8b4fbfe0d968b5b30a84a91b",
+    "object": "chat.completion",
+    "created": 1780231212,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"截至2019年6月30日存货账面余额\",\n        \"value\": \"3,897.65万元\",\n        \"evidence\": \"截至2019年6月30日，发行人存货账面余额3,897.65万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2-3年存货余额\",\n        \"value\": \"185.55万元\",\n        \"evidence\": \"其中2-3年存货余额185.55万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"3年及以上存货余额\",\n        \"value\": \"435.99万元\",\n        \"evidence\": \"3年及以上的存货余额435.99万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"对应合计计提存货减值准备\",\n        \"value\": \"397.99万元\",\n        \"evidence\": \"对应合计计提存货减值准备397.99万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2年以上存货余额占比\",\n        \"value\": \"64.32%\",\n        \"evidence\": \"占2年以上存货余额的比重达到64.32%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"存货跌价准备占当期营业利润比例\",\n        \"value\": \"0.00%、0.61%、6.80%和38.59%\",\n        \"evidence\": \"占当期营业利润的比重分别为0.00%、0.61%、6.80%和38.59%\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 407,
+      "total_tokens": 1559
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"截至2019年6月30日存货账面余额\",\n        \"value\": \"3,897.65万元\",\n        \"evidence\": \"截至2019年6月30日，发行人存货账面余额3,897.65万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2-3年存货余额\",\n        \"value\": \"185.55万元\",\n        \"evidence\": \"其中2-3年存货余额185.55万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"3年及以上存货余额\",\n        \"value\": \"435.99万元\",\n        \"evidence\": \"3年及以上的存货余额435.99万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"对应合计计提存货减值准备\",\n        \"value\": \"397.99万元\",\n        \"evidence\": \"对应合计计提存货减值准备397.99万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2年以上存货余额占比\",\n        \"value\": \"64.32%\",\n        \"evidence\": \"占2年以上存货余额的比重达到64.32%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"存货跌价准备占当期营业利润比例\",\n        \"value\": \"0.00%、0.61%、6.80%和38.59%\",\n        \"evidence\": \"占当期营业利润的比重分别为0.00%、0.61%、6.80%和38.59%\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

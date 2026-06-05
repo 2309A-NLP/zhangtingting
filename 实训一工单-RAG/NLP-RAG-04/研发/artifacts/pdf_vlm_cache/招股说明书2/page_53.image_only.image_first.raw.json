@@ -1,0 +1,28 @@
+{
+  "page_number": 53,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4d3b2d10e9799928f551f88ccf",
+    "object": "chat.completion",
+    "created": 1780235451,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"武汉博润简要财务数据\",\n        \"value\": \"2010年1-6月净利润为-5,765.93元，2009年度净利润为365,608.50元。\",\n        \"evidence\": \"表格中'净利润'行，2010年1-6月对应值为'-5,765.93'，2009年度对应值为'365,608.50'。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 134,
+      "total_tokens": 1285
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"武汉博润简要财务数据\",\n        \"value\": \"2010年1-6月净利润为-5,765.93元，2009年度净利润为365,608.50元。\",\n        \"evidence\": \"表格中'净利润'行，2010年1-6月对应值为'-5,765.93'，2009年度对应值为'365,608.50'。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

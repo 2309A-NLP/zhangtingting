@@ -1,0 +1,28 @@
+{
+  "page_number": 343,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6ec373caca3fe0c784dec60dd5",
+    "object": "chat.completion",
+    "created": 1780237648,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"全体董事签名\",\"value\":\"赵马克、胡戎、胡斌、胡志斌、王芹生、张兆国、邹明春\",\"evidence\":\"签名下方对应姓名：赵马克、胡戎、胡斌、胡志斌、王芹生、张兆国、邹明春\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 73,
+      "total_tokens": 1225
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"全体董事签名\",\"value\":\"赵马克、胡戎、胡斌、胡志斌、王芹生、张兆国、邹明春\",\"evidence\":\"签名下方对应姓名：赵马克、胡戎、胡斌、胡志斌、王芹生、张兆国、邹明春\",\"type\":\"field\"}]"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 98,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e510ed45796a7c26d346a0eabbc",
+    "object": "chat.completion",
+    "created": 1780235702,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"Farnell集团\",\n        \"value\": \"Farnell隶属于英国Premier Farnell集团，成立于1996年，业务覆盖21个国家，拥有50万余种现货库存，提供400多万种产品。\",\n        \"evidence\": \"Farnell隶属于英国Premier Farnell集团。Premier Farnell成立于1996年...业务范围涵盖了英国、欧洲大陆、北美及亚太地区。Premier Farnell在21个国家设有分支机构...拥有50万余种现货库存，并能给客户提供400多万种产品。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"Mouser\",\n        \"value\": \"Mouser成立于1964年，2000年成为无源元件分销商TTI的子公司，拥有约1亿美元库存和400多家供应商，重点发展亚洲和欧洲市场。\",\n        \"evidence\": \"Mouser成立于1964年...目前拥有大约1亿美元的库存和400多家供应商，正在重点发展亚洲和欧洲市场。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"RS Components\",\n        \"value\": \"RS Components是Electro Components Plc.旗下成员，是全球大型电子、机电及工业元件目录及网络分销商之一，为全球超过80个国家近160万客户提供服务。\",\n        \"evidence\": \"RS Components(RS)是Electro Components Plc.旗下一员...为全球超过80个国家近160万客户提供服务。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"广州周立功单片机发展有限公司\",\n        \"value\": \"该公司成立于1999年，专业从事单片机及其外围元器件的应用推广、技术服务、嵌入式产品的开发和生产。\",\n        \"evidence\": \"该公司成立于1999年，是专业从事单片机及其外围元器件的应用推广、技术服务、嵌入式产品的开发和生产的公司。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 454,
+      "total_tokens": 1605
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"Farnell集团\",\n        \"value\": \"Farnell隶属于英国Premier Farnell集团，成立于1996年，业务覆盖21个国家，拥有50万余种现货库存，提供400多万种产品。\",\n        \"evidence\": \"Farnell隶属于英国Premier Farnell集团。Premier Farnell成立于1996年...业务范围涵盖了英国、欧洲大陆、北美及亚太地区。Premier Farnell在21个国家设有分支机构...拥有50万余种现货库存，并能给客户提供400多万种产品。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"Mouser\",\n        \"value\": \"Mouser成立于1964年，2000年成为无源元件分销商TTI的子公司，拥有约1亿美元库存和400多家供应商，重点发展亚洲和欧洲市场。\",\n        \"evidence\": \"Mouser成立于1964年...目前拥有大约1亿美元的库存和400多家供应商，正在重点发展亚洲和欧洲市场。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"RS Components\",\n        \"value\": \"RS Components是Electro Components Plc.旗下成员，是全球大型电子、机电及工业元件目录及网络分销商之一，为全球超过80个国家近160万客户提供服务。\",\n        \"evidence\": \"RS Components(RS)是Electro Components Plc.旗下一员...为全球超过80个国家近160万客户提供服务。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"广州周立功单片机发展有限公司\",\n        \"value\": \"该公司成立于1999年，专业从事单片机及其外围元器件的应用推广、技术服务、嵌入式产品的开发和生产。\",\n        \"evidence\": \"该公司成立于1999年，是专业从事单片机及其外围元器件的应用推广、技术服务、嵌入式产品的开发和生产的公司。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

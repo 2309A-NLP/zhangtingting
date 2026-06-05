@@ -1,0 +1,28 @@
+{
+  "page_number": 157,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e5725b1dcedb1badfbfd5599433",
+    "object": "chat.completion",
+    "created": 1780236101,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"关联方及关联交易\",\n        \"value\": \"赵马克为公司控股股东，持股比例42.35%。\",\n        \"evidence\": \"表格中‘关联方名称’为‘赵马克’，‘持股比例’为‘42.35%’，‘与本公司关系’为‘公司控股股东’。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"关联方及关联交易\",\n        \"value\": \"融冰投资、武汉博润、上海博润、听音投资、联众聚源为持有公司股份5%以上的股东。\",\n        \"evidence\": \"表格中‘企业名称’列包含上述五家公司，‘与本公司关系’列均为‘持有公司股份5%以上的股东’。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"关联方及关联交易\",\n        \"value\": \"力源贸易和普芯达为同一实际控制人控制的企业或实际控制人近亲属控制的公司。\",\n        \"evidence\": \"表格中‘企业名称’为‘力源贸易’和‘普芯达’，‘与本公司关系’分别为‘同一实际控制人控制的企业’和‘实际控制人近亲属控制的公司’。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 281,
+      "total_tokens": 1433
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"关联方及关联交易\",\n        \"value\": \"赵马克为公司控股股东，持股比例42.35%。\",\n        \"evidence\": \"表格中‘关联方名称’为‘赵马克’，‘持股比例’为‘42.35%’，‘与本公司关系’为‘公司控股股东’。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"关联方及关联交易\",\n        \"value\": \"融冰投资、武汉博润、上海博润、听音投资、联众聚源为持有公司股份5%以上的股东。\",\n        \"evidence\": \"表格中‘企业名称’列包含上述五家公司，‘与本公司关系’列均为‘持有公司股份5%以上的股东’。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"关联方及关联交易\",\n        \"value\": \"力源贸易和普芯达为同一实际控制人控制的企业或实际控制人近亲属控制的公司。\",\n        \"evidence\": \"表格中‘企业名称’为‘力源贸易’和‘普芯达’，‘与本公司关系’分别为‘同一实际控制人控制的企业’和‘实际控制人近亲属控制的公司’。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

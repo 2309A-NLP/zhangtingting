@@ -1,0 +1,28 @@
+{
+  "page_number": 276,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e660530d42419e6f5d20ef75358",
+    "object": "chat.completion",
+    "created": 1780237076,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"存货周转率对比\",\"value\":\"2007-2009年，本公司存货周转率呈上升趋势，但低于同行业上市公司平均值。\",\"evidence\":\"2007年本公司2.23，2008年2.31，2009年2.59；行业平均2007年2.85，2008年2.83，2009年2.69。\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 112,
+      "total_tokens": 1264
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"存货周转率对比\",\"value\":\"2007-2009年，本公司存货周转率呈上升趋势，但低于同行业上市公司平均值。\",\"evidence\":\"2007年本公司2.23，2008年2.31，2009年2.59；行业平均2007年2.85，2008年2.83，2009年2.69。\",\"type\":\"table_summary\"}]"
+}

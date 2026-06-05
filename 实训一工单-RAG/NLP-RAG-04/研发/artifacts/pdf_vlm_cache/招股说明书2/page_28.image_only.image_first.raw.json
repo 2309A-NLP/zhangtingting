@@ -1,0 +1,28 @@
+{
+  "page_number": 28,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4b52d807a416605285ada9ab48",
+    "object": "chat.completion",
+    "created": 1780235326,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"风险因素\",\n        \"value\": \"公司面临市场需求波动风险、市场开发风险、存货采购风险等。\",\n        \"evidence\": \"第四节 风险因素 下设 一、市场需求波动风险；二、存货风险，其中包含（一）存货采购风险。\",\n        \"type\": \"chart_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 82,
+      "total_tokens": 1233
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"风险因素\",\n        \"value\": \"公司面临市场需求波动风险、市场开发风险、存货采购风险等。\",\n        \"evidence\": \"第四节 风险因素 下设 一、市场需求波动风险；二、存货风险，其中包含（一）存货采购风险。\",\n        \"type\": \"chart_summary\"\n    }\n]\n```"
+}

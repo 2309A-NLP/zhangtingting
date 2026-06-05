@@ -1,0 +1,28 @@
+{
+  "page_number": 491,
+  "logical_page": "490",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e45366f69c9bd6de89998c44f38",
+    "object": "chat.completion",
+    "created": 1780234925,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"公司未来2-3年资产规模和经营规模还将继续扩大\",\"value\":\"公司未来2-3年资产规模和经营规模将继续扩大\",\"evidence\":\"预计公司未来2-3年的资产规模和经营规模还将继续扩大\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 59,
+      "total_tokens": 1213
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"公司未来2-3年资产规模和经营规模还将继续扩大\",\"value\":\"公司未来2-3年资产规模和经营规模将继续扩大\",\"evidence\":\"预计公司未来2-3年的资产规模和经营规模还将继续扩大\",\"type\":\"field\"}]"
+}

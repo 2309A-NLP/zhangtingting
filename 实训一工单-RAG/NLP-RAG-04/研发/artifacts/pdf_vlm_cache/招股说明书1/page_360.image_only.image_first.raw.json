@@ -1,0 +1,28 @@
+{
+  "page_number": 360,
+  "logical_page": "359",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e33853489fa68fe2bac3cde1d97",
+    "object": "chat.completion",
+    "created": 1780233766,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"收入确认依据\",\"value\":\"公司大部分合同以产品验收确认单为收入确认依据\",\"evidence\":\"公司大部分合同以产品验收确认单为收入确认依据\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 44,
+      "total_tokens": 1198
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"收入确认依据\",\"value\":\"公司大部分合同以产品验收确认单为收入确认依据\",\"evidence\":\"公司大部分合同以产品验收确认单为收入确认依据\",\"type\":\"field\"}]"
+}

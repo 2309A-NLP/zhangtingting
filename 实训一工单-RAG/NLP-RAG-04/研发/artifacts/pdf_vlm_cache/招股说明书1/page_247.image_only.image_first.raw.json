@@ -1,0 +1,28 @@
+{
+  "page_number": 247,
+  "logical_page": "246",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e212921cbd8f689e8807dbb5215",
+    "object": "chat.completion",
+    "created": 1780232563,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"监事会会议召开情况\",\n        \"value\": \"报告期内共召开10次会议，时间从2016年5月31日至2019年8月20日。\",\n        \"evidence\": \"表格中序号1至10对应10次会议及其具体召开日期。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 86,
+      "total_tokens": 1240
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"监事会会议召开情况\",\n        \"value\": \"报告期内共召开10次会议，时间从2016年5月31日至2019年8月20日。\",\n        \"evidence\": \"表格中序号1至10对应10次会议及其具体召开日期。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

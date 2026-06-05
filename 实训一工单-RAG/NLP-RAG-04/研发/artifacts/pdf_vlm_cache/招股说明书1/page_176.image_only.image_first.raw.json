@@ -1,0 +1,28 @@
+{
+  "page_number": 176,
+  "logical_page": "175",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e18c85a7a84413a8946a2c3705c",
+    "object": "chat.completion",
+    "created": 1780232014,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"研发人员数量\",\"value\":\"185人\",\"evidence\":\"公司研发人员185人\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 31,
+      "total_tokens": 1185
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"研发人员数量\",\"value\":\"185人\",\"evidence\":\"公司研发人员185人\",\"type\":\"field\"}]"
+}

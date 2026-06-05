@@ -1,0 +1,28 @@
+{
+  "page_number": 47,
+  "logical_page": "46",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e0d57f02fe53903f162338c5fa4",
+    "object": "chat.completion",
+    "created": 1780231264,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"实际控制人控制的风险\",\"value\":\"实际控制人程家明直接持有公司52.29%股权，通过兴图投资间接控制19.28%股权，合计控制71.57%股权。\",\"evidence\":\"本公司控股股东、实际控制人为程家明，直接持有公司52.29%的股权，通过兴图投资间接控制公司19.28%的股权，合计控制公司71.57%股权。\",\"type\":\"field\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 110,
+      "total_tokens": 1262
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"实际控制人控制的风险\",\"value\":\"实际控制人程家明直接持有公司52.29%股权，通过兴图投资间接控制19.28%股权，合计控制71.57%股权。\",\"evidence\":\"本公司控股股东、实际控制人为程家明，直接持有公司52.29%的股权，通过兴图投资间接控制公司19.28%的股权，合计控制公司71.57%股权。\",\"type\":\"field\"}\n]"
+}

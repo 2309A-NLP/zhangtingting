@@ -1,0 +1,28 @@
+{
+  "page_number": 220,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e5fdd4a673ebf0d9a18260d0f9b",
+    "object": "chat.completion",
+    "created": 1780236672,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"合并财务报表范围及变化情况\",\n        \"value\": \"纳入合并报表范围的子公司为香港力源，注册地香港，实际投资额10万美元，持股比例100%，合并期间为2008年度、2009年度及2010年1~6月。\",\n        \"evidence\": \"表格中显示控股子公司名称为‘香港力源’，注册地‘香港’，实际投资额‘10万美元’，持股比例‘100%’，合并期间‘2008年度、2009年度、2010年1~6月’。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 156,
+      "total_tokens": 1308
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"合并财务报表范围及变化情况\",\n        \"value\": \"纳入合并报表范围的子公司为香港力源，注册地香港，实际投资额10万美元，持股比例100%，合并期间为2008年度、2009年度及2010年1~6月。\",\n        \"evidence\": \"表格中显示控股子公司名称为‘香港力源’，注册地‘香港’，实际投资额‘10万美元’，持股比例‘100%’，合并期间‘2008年度、2009年度、2010年1~6月’。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

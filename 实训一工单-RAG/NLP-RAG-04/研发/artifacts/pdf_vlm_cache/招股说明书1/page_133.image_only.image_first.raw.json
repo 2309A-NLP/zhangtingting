@@ -1,0 +1,28 @@
+{
+  "page_number": 133,
+  "logical_page": "132",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e159984fb590308838354f2dbd0",
+    "object": "chat.completion",
+    "created": 1780231805,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"截至报告期末应收账款账龄情况\",\"value\":\"1年以内账面价值为9,169.90万元，占总账面价值的69.87%\",\"evidence\":\"账龄1年以内，账面价值9,169.90，占比69.87%\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 80,
+      "total_tokens": 1234
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"截至报告期末应收账款账龄情况\",\"value\":\"1年以内账面价值为9,169.90万元，占总账面价值的69.87%\",\"evidence\":\"账龄1年以内，账面价值9,169.90，占比69.87%\",\"type\":\"table_fact\"}\n]"
+}

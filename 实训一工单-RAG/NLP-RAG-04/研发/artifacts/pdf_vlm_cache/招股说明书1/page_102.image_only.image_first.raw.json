@@ -1,0 +1,28 @@
+{
+  "page_number": 102,
+  "logical_page": "101",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e136d5fa4020f0789821ddbbc2c",
+    "object": "chat.completion",
+    "created": 1780231663,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"多媒体协同交互结构示意图\",\"value\":\"系统通过多媒体协同交互平台整合用户终端接入、设备接入、业务系统对接与资源调度，实现协同交互、视频监控、视频会议、生产调度和智能导播功能。\",\"evidence\":\"图中展示“多媒体协同交互平台”连接“实现用户终端接入”、“实现监控设备接入”、“完成平台功能开发”、“完成基础业务系统对接”和“实现资源图像调度上屏”等模块。\",\"type\":\"chart_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 110,
+      "total_tokens": 1264
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"多媒体协同交互结构示意图\",\"value\":\"系统通过多媒体协同交互平台整合用户终端接入、设备接入、业务系统对接与资源调度，实现协同交互、视频监控、视频会议、生产调度和智能导播功能。\",\"evidence\":\"图中展示“多媒体协同交互平台”连接“实现用户终端接入”、“实现监控设备接入”、“完成平台功能开发”、“完成基础业务系统对接”和“实现资源图像调度上屏”等模块。\",\"type\":\"chart_summary\"}]"
+}

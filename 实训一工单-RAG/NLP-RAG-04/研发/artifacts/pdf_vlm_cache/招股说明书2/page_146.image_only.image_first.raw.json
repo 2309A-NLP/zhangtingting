@@ -1,0 +1,28 @@
+{
+  "page_number": 146,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e564d28596e2f28416594b202a0",
+    "object": "chat.completion",
+    "created": 1780236045,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"无形资产账面原值\",\n        \"value\": \"3,463,380.12 元\",\n        \"evidence\": \"表格中序号1，名称为ERP系统，账面原值为3,463,380.12元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"无形资产账面净值\",\n        \"value\": \"3,145,903.62 元\",\n        \"evidence\": \"表格中序号1，名称为ERP系统，账面净值为3,145,903.62元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"房产租赁合同签订日期\",\n        \"value\": \"2010年6月18日\",\n        \"evidence\": \"表格中“签订日期”列显示为2010年6月18日\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"房产租赁合同租期\",\n        \"value\": \"2010年6月18日至2011年6月30日\",\n        \"evidence\": \"表格中“租赁期限”列显示为2010年6月18日至2011年6月30日\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"房产租赁合同承租人\",\n        \"value\": \"力源信息\",\n        \"evidence\": \"表格中“承租人”列显示为力源信息\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"房产租赁合同出租人\",\n        \"value\": \"创业服务\",\n        \"evidence\": \"表格中“出租人”列显示为创业服务\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"房产租赁合同地址\",\n        \"value\": \"武汉市洪山区珞瑜路424号洪山科技创业大厦13018室、13048室、13088室\",\n        \"evidence\": \"表格中“创业大厦室号”列显示为13018室、13048室、13088室\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 517,
+      "total_tokens": 1669
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"无形资产账面原值\",\n        \"value\": \"3,463,380.12 元\",\n        \"evidence\": \"表格中序号1，名称为ERP系统，账面原值为3,463,380.12元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"无形资产账面净值\",\n        \"value\": \"3,145,903.62 元\",\n        \"evidence\": \"表格中序号1，名称为ERP系统，账面净值为3,145,903.62元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"房产租赁合同签订日期\",\n        \"value\": \"2010年6月18日\",\n        \"evidence\": \"表格中“签订日期”列显示为2010年6月18日\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"房产租赁合同租期\",\n        \"value\": \"2010年6月18日至2011年6月30日\",\n        \"evidence\": \"表格中“租赁期限”列显示为2010年6月18日至2011年6月30日\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"房产租赁合同承租人\",\n        \"value\": \"力源信息\",\n        \"evidence\": \"表格中“承租人”列显示为力源信息\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"房产租赁合同出租人\",\n        \"value\": \"创业服务\",\n        \"evidence\": \"表格中“出租人”列显示为创业服务\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"房产租赁合同地址\",\n        \"value\": \"武汉市洪山区珞瑜路424号洪山科技创业大厦13018室、13048室、13088室\",\n        \"evidence\": \"表格中“创业大厦室号”列显示为13018室、13048室、13088室\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

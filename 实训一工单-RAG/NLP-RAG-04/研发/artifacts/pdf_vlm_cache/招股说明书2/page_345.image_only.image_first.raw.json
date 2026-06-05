@@ -1,0 +1,28 @@
+{
+  "page_number": 345,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6ed723898ee685c0a2639ca503",
+    "object": "chat.completion",
+    "created": 1780237653,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"法定代表人\",\"value\":\"何如\",\"evidence\":\"法定代表人: 何如\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 27,
+      "total_tokens": 1179
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"法定代表人\",\"value\":\"何如\",\"evidence\":\"法定代表人: 何如\",\"type\":\"field\"}]"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 1,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e48e40f7b52a964a508f40e562d",
+    "object": "chat.completion",
+    "created": 1780235166,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"公司名称\",\"value\":\"武汉力源信息技术股份有限公司\",\"evidence\":\"武汉力源信息技术股份有限公司\",\"type\":\"field\"},{\"title\":\"英文名称\",\"value\":\"Wuhan P&S Information Technology Co., Ltd.\",\"evidence\":\"Wuhan P&S Information Technology Co., Ltd.\",\"type\":\"field\"},{\"title\":\"公司地址\",\"value\":\"武汉市洪山区珞瑜路 424 号洪山创业大厦\",\"evidence\":\"(武汉市洪山区珞瑜路 424 号洪山创业大厦)\",\"type\":\"field\"},{\"title\":\"保荐机构\",\"value\":\"国信证券股份有限公司\",\"evidence\":\"国信证券股份有限公司\",\"type\":\"field\"},{\"title\":\"保荐机构地址\",\"value\":\"深圳市红岭中路 1012 号国信证券大厦 16～26 层\",\"evidence\":\"(深圳市红岭中路 1012 号国信证券大厦 16～26 层)\",\"type\":\"field\"},{\"title\":\"文件类型\",\"value\":\"首次公开发行股票并在创业板上市招股意向书\",\"evidence\":\"首次公开发行股票并在创业板上市招股意向书\",\"type\":\"field\"},{\"title\":\"风险提示\",\"value\":\"创业板市场具有较高的投资风险，业绩不稳定、经营风险高、退市风险大\",\"evidence\":\"创业板公司具有业绩不稳定、经营风险高、退市风险大等特点，投资者面临较大的市场风险。\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1150,
+      "completion_tokens": 294,
+      "total_tokens": 1444
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"公司名称\",\"value\":\"武汉力源信息技术股份有限公司\",\"evidence\":\"武汉力源信息技术股份有限公司\",\"type\":\"field\"},{\"title\":\"英文名称\",\"value\":\"Wuhan P&S Information Technology Co., Ltd.\",\"evidence\":\"Wuhan P&S Information Technology Co., Ltd.\",\"type\":\"field\"},{\"title\":\"公司地址\",\"value\":\"武汉市洪山区珞瑜路 424 号洪山创业大厦\",\"evidence\":\"(武汉市洪山区珞瑜路 424 号洪山创业大厦)\",\"type\":\"field\"},{\"title\":\"保荐机构\",\"value\":\"国信证券股份有限公司\",\"evidence\":\"国信证券股份有限公司\",\"type\":\"field\"},{\"title\":\"保荐机构地址\",\"value\":\"深圳市红岭中路 1012 号国信证券大厦 16～26 层\",\"evidence\":\"(深圳市红岭中路 1012 号国信证券大厦 16～26 层)\",\"type\":\"field\"},{\"title\":\"文件类型\",\"value\":\"首次公开发行股票并在创业板上市招股意向书\",\"evidence\":\"首次公开发行股票并在创业板上市招股意向书\",\"type\":\"field\"},{\"title\":\"风险提示\",\"value\":\"创业板市场具有较高的投资风险，业绩不稳定、经营风险高、退市风险大\",\"evidence\":\"创业板公司具有业绩不稳定、经营风险高、退市风险大等特点，投资者面临较大的市场风险。\",\"type\":\"field\"}]"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 178,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e59fa12801fc9c97d596ab78cd9",
+    "object": "chat.completion",
+    "created": 1780236287,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"赵马克先生持股变化\",\n        \"value\": \"2009年12月8日至今，赵马克先生持有2,117.70万股，持股比例42.35%。\",\n        \"evidence\": \"持股期间：2009年12月8日至今；所持股本：2,117.70万股；持股比例：42.35%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"胡戊间接持股情况\",\n        \"value\": \"胡戊间接持有公司282.01万股，持股比例5.64%。\",\n        \"evidence\": \"股东姓名：胡戊；间接持有公司股份数：282.01万股；间接持股比例：5.64%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"胡斌间接持股情况\",\n        \"value\": \"胡斌间接持有公司327.50万股，持股比例6.55%。\",\n        \"evidence\": \"股东姓名：胡斌；间接持有公司股份数：327.50万股；间接持股比例：6.55%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"胡志斌间接持股情况\",\n        \"value\": \"胡志斌间接持有公司318万股，持股比例6.36%。\",\n        \"evidence\": \"股东姓名：胡志斌；间接持有公司股份数：318万股；间接持股比例：6.36%。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 369,
+      "total_tokens": 1521
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"赵马克先生持股变化\",\n        \"value\": \"2009年12月8日至今，赵马克先生持有2,117.70万股，持股比例42.35%。\",\n        \"evidence\": \"持股期间：2009年12月8日至今；所持股本：2,117.70万股；持股比例：42.35%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"胡戊间接持股情况\",\n        \"value\": \"胡戊间接持有公司282.01万股，持股比例5.64%。\",\n        \"evidence\": \"股东姓名：胡戊；间接持有公司股份数：282.01万股；间接持股比例：5.64%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"胡斌间接持股情况\",\n        \"value\": \"胡斌间接持有公司327.50万股，持股比例6.55%。\",\n        \"evidence\": \"股东姓名：胡斌；间接持有公司股份数：327.50万股；间接持股比例：6.55%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"胡志斌间接持股情况\",\n        \"value\": \"胡志斌间接持有公司318万股，持股比例6.36%。\",\n        \"evidence\": \"股东姓名：胡志斌；间接持有公司股份数：318万股；间接持股比例：6.36%。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

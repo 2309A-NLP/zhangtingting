@@ -1,0 +1,28 @@
+{
+  "page_number": 464,
+  "logical_page": "463",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e419996c65ce70efa29b88b5f09",
+    "object": "chat.completion",
+    "created": 1780234689,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"注册资本\",\"value\":\"204.23万元\",\"evidence\":\"光谷人才创投出资1,800.00万元，认缴公司注册资本204.23万元；广垦太证出资800.00万元，认缴公司注册资本90.77万元。\",\"type\":\"field\"},\n    {\"title\":\"持股数量\",\"value\":\"光谷人才创投持股352.10万股，广垦太证持股151.90万股\",\"evidence\":\"光谷人才创投和广垦太证剩余投资计入公司资本公积。一二期出资确认完成后，光谷人才创投持股数量合计352.10万股，广垦太证持股数量合计151.90万股。\",\"type\":\"field\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 172,
+      "total_tokens": 1326
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"注册资本\",\"value\":\"204.23万元\",\"evidence\":\"光谷人才创投出资1,800.00万元，认缴公司注册资本204.23万元；广垦太证出资800.00万元，认缴公司注册资本90.77万元。\",\"type\":\"field\"},\n    {\"title\":\"持股数量\",\"value\":\"光谷人才创投持股352.10万股，广垦太证持股151.90万股\",\"evidence\":\"光谷人才创投和广垦太证剩余投资计入公司资本公积。一二期出资确认完成后，光谷人才创投持股数量合计352.10万股，广垦太证持股数量合计151.90万股。\",\"type\":\"field\"}\n]"
+}

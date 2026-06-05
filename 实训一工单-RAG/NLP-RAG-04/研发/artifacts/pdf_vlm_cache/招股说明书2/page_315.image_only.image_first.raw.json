@@ -1,0 +1,28 @@
+{
+  "page_number": 315,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6c3e24df4866fcaaafdde2d6f8",
+    "object": "chat.completion",
+    "created": 1780237483,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"扩充产品种类和数量具备较好的盈利前景\",\n        \"value\": \"公司拥有15,000个型号的现货产品，涵盖10多个大类，包括微控制器、系统管理器件、接口器件、数据转换等，具备多原厂、多产品线、多产品型号的业务管理经验。\",\n        \"evidence\": \"目前，本公司经销英特矽尔(Intersil)、安森美(ON)、意法(ST)、德州仪器(TI)、塞普拉斯(Cypress)、富士通(Fujitsu)、微芯(Microchip)、飞思卡尔(Freescale)、立迪斯(Leadis)、禾伸堂、风华高科、普芯达、ROHM、光宝科技、芯唐科技、创达特科技、香港晶体、圣邦微电子等国内外著名半导体生产商的产品，拥有15,000个型号的现货产品，包括微控制器、系统管理器件、接口器件、数据转换等10多个大类，基本涵盖了所有传统的通用类别，已积累起了较为丰富的多原厂、多产品线、多产品型号的业务管理经验和能力。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 271,
+      "total_tokens": 1423
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"扩充产品种类和数量具备较好的盈利前景\",\n        \"value\": \"公司拥有15,000个型号的现货产品，涵盖10多个大类，包括微控制器、系统管理器件、接口器件、数据转换等，具备多原厂、多产品线、多产品型号的业务管理经验。\",\n        \"evidence\": \"目前，本公司经销英特矽尔(Intersil)、安森美(ON)、意法(ST)、德州仪器(TI)、塞普拉斯(Cypress)、富士通(Fujitsu)、微芯(Microchip)、飞思卡尔(Freescale)、立迪斯(Leadis)、禾伸堂、风华高科、普芯达、ROHM、光宝科技、芯唐科技、创达特科技、香港晶体、圣邦微电子等国内外著名半导体生产商的产品，拥有15,000个型号的现货产品，包括微控制器、系统管理器件、接口器件、数据转换等10多个大类，基本涵盖了所有传统的通用类别，已积累起了较为丰富的多原厂、多产品线、多产品型号的业务管理经验和能力。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

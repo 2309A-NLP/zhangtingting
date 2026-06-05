@@ -1,0 +1,28 @@
+{
+  "page_number": 46,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4c8a7cf646480bf4293aeb6ff5",
+    "object": "chat.completion",
+    "created": 1780235406,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"本公司控股股东、实际控制人赵马克持股情况\",\n        \"value\": \"赵马克持有本公司42.35%的股份，还持有力源贸易74.00%的股权。\",\n        \"evidence\": \"截至本招股意向书签署日，本公司控股股东、实际控制人赵马克(Mark Zhao)除持有本公司42.35%的股份外，还持有力源贸易74.00%的股权。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 116,
+      "total_tokens": 1267
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"本公司控股股东、实际控制人赵马克持股情况\",\n        \"value\": \"赵马克持有本公司42.35%的股份，还持有力源贸易74.00%的股权。\",\n        \"evidence\": \"截至本招股意向书签署日，本公司控股股东、实际控制人赵马克(Mark Zhao)除持有本公司42.35%的股份外，还持有力源贸易74.00%的股权。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

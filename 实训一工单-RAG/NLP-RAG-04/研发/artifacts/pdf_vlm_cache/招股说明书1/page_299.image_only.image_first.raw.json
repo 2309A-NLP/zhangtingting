@@ -1,0 +1,28 @@
+{
+  "page_number": 299,
+  "logical_page": "298",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e2974479332b0a430371f7b4b51",
+    "object": "chat.completion",
+    "created": 1780233107,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"存货分类\",\"value\":\"存货包括在日常活动中持有以备出售的产成品或商品、处在生产过程中的在产品、在生产过程或提供劳务过程中耗用的材料和物料等。\",\"evidence\":\"(十二)存货 1、存货的分类：存货包括在日常活动中持有以备出售的产成品或商品、处在生产过程中的在产品、在生产过程或提供劳务过程中耗用的材料和物料等。\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 105,
+      "total_tokens": 1259
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"存货分类\",\"value\":\"存货包括在日常活动中持有以备出售的产成品或商品、处在生产过程中的在产品、在生产过程或提供劳务过程中耗用的材料和物料等。\",\"evidence\":\"(十二)存货 1、存货的分类：存货包括在日常活动中持有以备出售的产成品或商品、处在生产过程中的在产品、在生产过程或提供劳务过程中耗用的材料和物料等。\",\"type\":\"table_summary\"}]"
+}

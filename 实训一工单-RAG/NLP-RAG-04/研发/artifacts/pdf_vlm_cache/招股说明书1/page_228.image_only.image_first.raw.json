@@ -1,0 +1,28 @@
+{
+  "page_number": 228,
+  "logical_page": "227",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e1f7367d1ee4e5fb8d179ffb7c8",
+    "object": "chat.completion",
+    "created": 1780232451,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"高可靠性相关技术\",\"value\":\"基于媒体边缘路由技术，可实现媒体流热迁移时间最大不超过5秒。\",\"evidence\":\"基于媒体边缘路由技术，动态地将媒体流从故障的媒体负载服务实例迁移到正常工作的媒体负载服务中，可以实现流量热迁移时间最大不超过5秒，\",\"type\":\"chart_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 78,
+      "total_tokens": 1232
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"高可靠性相关技术\",\"value\":\"基于媒体边缘路由技术，可实现媒体流热迁移时间最大不超过5秒。\",\"evidence\":\"基于媒体边缘路由技术，动态地将媒体流从故障的媒体负载服务实例迁移到正常工作的媒体负载服务中，可以实现流量热迁移时间最大不超过5秒，\",\"type\":\"chart_fact\"}]"
+}

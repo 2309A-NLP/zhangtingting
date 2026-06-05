@@ -1,0 +1,28 @@
+{
+  "page_number": 245,
+  "logical_page": "244",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e21445933d70f1fea4897697c59",
+    "object": "chat.completion",
+    "created": 1780232570,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"股东大会召开情况\",\"value\":\"报告期内共召开12次股东大会\",\"evidence\":\"表格中序号1至12共12行数据\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 41,
+      "total_tokens": 1195
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"股东大会召开情况\",\"value\":\"报告期内共召开12次股东大会\",\"evidence\":\"表格中序号1至12共12行数据\",\"type\":\"table_summary\"}]"
+}

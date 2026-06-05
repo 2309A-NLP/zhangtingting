@@ -1,0 +1,28 @@
+{
+  "page_number": 170,
+  "logical_page": null,
+  "mode": "full",
+  "response": {
+    "id": "019e7e590b3753d3cae40fc6203ed2fe",
+    "object": "chat.completion",
+    "created": 1780236225,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"关联交易决策权限\",\n        \"value\": \"公司《公司章程》和《关联交易决策制度》对关联交易决策权限有明确规定，但具体权限内容未在当前页面展示。\",\n        \"evidence\": \"本地正文末尾提及‘公司《公司章程》和《关联交易决策制度》对关联交易决策权限的规定如下：’，但未提供具体内容。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1620,
+      "completion_tokens": 95,
+      "total_tokens": 1715
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"关联交易决策权限\",\n        \"value\": \"公司《公司章程》和《关联交易决策制度》对关联交易决策权限有明确规定，但具体权限内容未在当前页面展示。\",\n        \"evidence\": \"本地正文末尾提及‘公司《公司章程》和《关联交易决策制度》对关联交易决策权限的规定如下：’，但未提供具体内容。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

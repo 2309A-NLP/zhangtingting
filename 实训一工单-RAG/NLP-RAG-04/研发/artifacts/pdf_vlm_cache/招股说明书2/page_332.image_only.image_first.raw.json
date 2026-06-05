@@ -1,0 +1,28 @@
+{
+  "page_number": 332,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6d6b7f055228ce0bcdbda1e01c",
+    "object": "chat.completion",
+    "created": 1780237561,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"IC目录销售储备仓库年销售额\",\n        \"value\": \"预计每年人民币6亿元\",\n        \"evidence\": \"预计项目建成后可形成：IC目录销售储备仓库能支持每年销售额人民币6亿元规模。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"IC样品物流服务仓库年样片发放规模\",\n        \"value\": \"每年2~3万片\",\n        \"evidence\": \"预计项目建成后可形成：IC样品物流服务仓库支持每年样片发放规模达到2~3万行；\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"IC上游商品暂存仓库年销售规模\",\n        \"value\": \"每年0.8~1.2亿元\",\n        \"evidence\": \"预计项目建成后可形成：IC上游商品暂存仓库能支持每年0.8~1.2亿元销售规模。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 213,
+      "total_tokens": 1365
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"IC目录销售储备仓库年销售额\",\n        \"value\": \"预计每年人民币6亿元\",\n        \"evidence\": \"预计项目建成后可形成：IC目录销售储备仓库能支持每年销售额人民币6亿元规模。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"IC样品物流服务仓库年样片发放规模\",\n        \"value\": \"每年2~3万片\",\n        \"evidence\": \"预计项目建成后可形成：IC样品物流服务仓库支持每年样片发放规模达到2~3万行；\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"IC上游商品暂存仓库年销售规模\",\n        \"value\": \"每年0.8~1.2亿元\",\n        \"evidence\": \"预计项目建成后可形成：IC上游商品暂存仓库能支持每年0.8~1.2亿元销售规模。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

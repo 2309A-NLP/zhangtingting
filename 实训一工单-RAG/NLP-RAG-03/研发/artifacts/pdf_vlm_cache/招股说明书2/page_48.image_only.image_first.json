@@ -1,0 +1,56 @@
+[
+  {
+    "title": "法定代表人",
+    "value": "胡戎",
+    "evidence": "法定代表人胡戎，住所：洪山区珞瑜路424号洪山科技创业大厦9068号",
+    "type": "field"
+  },
+  {
+    "title": "注册资本",
+    "value": "6,095,100元",
+    "evidence": "注册资本6,095,100元",
+    "type": "field"
+  },
+  {
+    "title": "出资额(万元)",
+    "value": "327.50",
+    "evidence": "出资额(万元) 327.50",
+    "type": "table_fact"
+  },
+  {
+    "title": "出资比例(%)",
+    "value": "53.73",
+    "evidence": "出资比例(%) 53.73",
+    "type": "table_fact"
+  },
+  {
+    "title": "出资额(万元)",
+    "value": "282.01",
+    "evidence": "出资额(万元) 282.01",
+    "type": "table_fact"
+  },
+  {
+    "title": "出资比例(%)",
+    "value": "46.27",
+    "evidence": "出资比例(%) 46.27",
+    "type": "table_fact"
+  },
+  {
+    "title": "合计出资额(万元)",
+    "value": "609.51",
+    "evidence": "合计 609.51",
+    "type": "table_fact"
+  },
+  {
+    "title": "合计出资比例(%)",
+    "value": "100.00",
+    "evidence": "合计 100.00",
+    "type": "table_fact"
+  },
+  {
+    "title": "持股比例",
+    "value": "12.19%",
+    "evidence": "融冰投资持有公司609.50万股股份，持股比例为12.19%",
+    "type": "field"
+  }
+]

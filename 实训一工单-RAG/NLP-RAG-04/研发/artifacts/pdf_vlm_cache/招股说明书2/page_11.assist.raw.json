@@ -1,0 +1,28 @@
+{
+  "page_number": 11,
+  "logical_page": null,
+  "mode": "full",
+  "response": {
+    "id": "019e7e49ce37d6dcfcb76908c2b29b5f",
+    "object": "chat.completion",
+    "created": 1780235226,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"关联方定义\",\"value\":\"博润投资为上海博润投资管理有限公司关联方，与本公司无股权关系；宁波博润、上海博丰为本公司股东。\",\"evidence\":\"本地正文：博润投资指上海博润投资有限公司，为上海博润投资管理有限公司关联方，与本公司无股权关系；宁波博润指宁波博润创业投资股份有限公司，本公司股东；上海博丰指上海博丰创业投资有限公司，本公司股东。\",\"type\":\"field\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1662,
+      "completion_tokens": 113,
+      "total_tokens": 1775
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"关联方定义\",\"value\":\"博润投资为上海博润投资管理有限公司关联方，与本公司无股权关系；宁波博润、上海博丰为本公司股东。\",\"evidence\":\"本地正文：博润投资指上海博润投资有限公司，为上海博润投资管理有限公司关联方，与本公司无股权关系；宁波博润指宁波博润创业投资股份有限公司，本公司股东；上海博丰指上海博丰创业投资有限公司，本公司股东。\",\"type\":\"field\"}\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 30,
+  "logical_page": "29",
+  "mode": "image_only",
+  "response": {
+    "id": "019e71303277a838f412666e0821cec1",
+    "object": "chat.completion",
+    "created": 1780015445,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"募集资金总额\",\n        \"value\": \"40,584.83万元\",\n        \"evidence\": \"以上项目所需募集资金投入合计40,584.83万元。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"项目1名称\",\n        \"value\": \"基于云联邦架构的军用视频指挥平台升级及产业化项目\",\n        \"evidence\": \"基于云联邦架构的军用视频指挥平台升级及产业化项目\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"项目1投资金额\",\n        \"value\": \"20,658.33万元\",\n        \"evidence\": \"项目总投资（万元） 20,658.33\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"项目2名称\",\n        \"value\": \"研发中心建设项目\",\n        \"evidence\": \"研发中心建设项目\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"项目2投资金额\",\n        \"value\": \"4,926.50万元\",\n        \"evidence\": \"项目总投资（万元） 4,926.50\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"项目3名称\",\n        \"value\": \"补充流动资金\",\n        \"evidence\": \"补充流动资金\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"项目3投资金额\",\n        \"value\": \"15,000.00万元\",\n        \"evidence\": \"项目总投资（万元） 15,000.00\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1076,
+      "completion_tokens": 385,
+      "total_tokens": 1461
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"募集资金总额\",\n        \"value\": \"40,584.83万元\",\n        \"evidence\": \"以上项目所需募集资金投入合计40,584.83万元。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"项目1名称\",\n        \"value\": \"基于云联邦架构的军用视频指挥平台升级及产业化项目\",\n        \"evidence\": \"基于云联邦架构的军用视频指挥平台升级及产业化项目\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"项目1投资金额\",\n        \"value\": \"20,658.33万元\",\n        \"evidence\": \"项目总投资（万元） 20,658.33\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"项目2名称\",\n        \"value\": \"研发中心建设项目\",\n        \"evidence\": \"研发中心建设项目\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"项目2投资金额\",\n        \"value\": \"4,926.50万元\",\n        \"evidence\": \"项目总投资（万元） 4,926.50\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"项目3名称\",\n        \"value\": \"补充流动资金\",\n        \"evidence\": \"补充流动资金\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"项目3投资金额\",\n        \"value\": \"15,000.00万元\",\n        \"evidence\": \"项目总投资（万元） 15,000.00\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

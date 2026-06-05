@@ -1,0 +1,28 @@
+{
+  "page_number": 50,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e73ca93065f6ff57439010b862a6b",
+    "object": "chat.completion",
+    "created": 1780059116,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"注册资本\",\"value\":\"426万元\",\"evidence\":\"2009年6月24日成立，注册资本426万元\",\"type\":\"field\"},\n    {\"title\":\"法定代表人\",\"value\":\"胡涛\",\"evidence\":\"法定代表人胡涛，住所“武汉市洪山区424号洪山科技创业中心”\",\"type\":\"field\"},\n    {\"title\":\"股东出资情况\",\"value\":\"29位股东，合计出资426.00万元，出资比例100.00%\",\"evidence\":\"表格中序号1至29，合计行显示出资额426.00万元，出资比例100.00%\",\"type\":\"table_summary\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1075,
+      "completion_tokens": 159,
+      "total_tokens": 1234
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"注册资本\",\"value\":\"426万元\",\"evidence\":\"2009年6月24日成立，注册资本426万元\",\"type\":\"field\"},\n    {\"title\":\"法定代表人\",\"value\":\"胡涛\",\"evidence\":\"法定代表人胡涛，住所“武汉市洪山区424号洪山科技创业中心”\",\"type\":\"field\"},\n    {\"title\":\"股东出资情况\",\"value\":\"29位股东，合计出资426.00万元，出资比例100.00%\",\"evidence\":\"表格中序号1至29，合计行显示出资额426.00万元，出资比例100.00%\",\"type\":\"table_summary\"}\n]\n```"
+}

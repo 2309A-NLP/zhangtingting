@@ -1,0 +1,28 @@
+{
+  "page_number": 454,
+  "logical_page": "453",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e406f683f30dd4efff170273ed3",
+    "object": "chat.completion",
+    "created": 1780234613,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"应付账款账龄结构\",\"value\":\"2019年6月30日应付账款账龄1年以内占比78.67%\",\"evidence\":\"各报告期末，公司账龄在1年以内的应付账款占比分别为78.67%、83.05%、92.03%和96.62%。\",\"type\":\"table_fact\"},\n    {\"title\":\"应付账款前五大供应商\",\"value\":\"2019年6月30日应付账款前五大供应商中，武汉玉航科技有限公司占比最高，为33.83%\",\"evidence\":\"2019年6月30日应付账款前五大具体情况表中，序号1供应商武汉玉航科技有限公司占比33.83%。\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 187,
+      "total_tokens": 1341
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"应付账款账龄结构\",\"value\":\"2019年6月30日应付账款账龄1年以内占比78.67%\",\"evidence\":\"各报告期末，公司账龄在1年以内的应付账款占比分别为78.67%、83.05%、92.03%和96.62%。\",\"type\":\"table_fact\"},\n    {\"title\":\"应付账款前五大供应商\",\"value\":\"2019年6月30日应付账款前五大供应商中，武汉玉航科技有限公司占比最高，为33.83%\",\"evidence\":\"2019年6月30日应付账款前五大具体情况表中，序号1供应商武汉玉航科技有限公司占比33.83%。\",\"type\":\"table_fact\"}\n]"
+}

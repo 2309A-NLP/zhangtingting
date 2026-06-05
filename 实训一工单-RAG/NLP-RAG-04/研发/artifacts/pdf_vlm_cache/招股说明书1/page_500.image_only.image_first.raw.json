@@ -1,0 +1,28 @@
+{
+  "page_number": 500,
+  "logical_page": "499",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e459f276694d425bc7ff8db4adc",
+    "object": "chat.completion",
+    "created": 1780234953,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"利润分配决策程序\",\n        \"value\": \"利润分配方案需经董事会全体董事过半数以上表决通过，并经全体独立董事三分之二以上表决通过，监事会审议并经全体监事过半数以上表决通过，股东大会审议并经出席股东大会的股东所持表决权的1/2以上通过。\",\n        \"evidence\": \"7. 利润分配的决策程序和机制（1）至（4）条内容。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 117,
+      "total_tokens": 1271
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"利润分配决策程序\",\n        \"value\": \"利润分配方案需经董事会全体董事过半数以上表决通过，并经全体独立董事三分之二以上表决通过，监事会审议并经全体监事过半数以上表决通过，股东大会审议并经出席股东大会的股东所持表决权的1/2以上通过。\",\n        \"evidence\": \"7. 利润分配的决策程序和机制（1）至（4）条内容。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

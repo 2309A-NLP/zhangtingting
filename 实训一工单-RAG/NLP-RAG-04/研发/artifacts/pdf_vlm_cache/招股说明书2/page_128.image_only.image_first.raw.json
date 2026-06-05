@@ -1,0 +1,28 @@
+{
+  "page_number": 128,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e53fa57678a13dc889e5021ec33",
+    "object": "chat.completion",
+    "created": 1780235893,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"仓储控制措施\",\n        \"value\": \"公司通过信息系统管理库存，每年安排一次整体库存盘存，每月进行随机抽查，确保库存商品与数据库一致。\",\n        \"evidence\": \"公司每年安排一次整体库存盘存，每月对库存数量做一次随机抽查，保证仓库商品与数据库一致。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 88,
+      "total_tokens": 1240
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"仓储控制措施\",\n        \"value\": \"公司通过信息系统管理库存，每年安排一次整体库存盘存，每月进行随机抽查，确保库存商品与数据库一致。\",\n        \"evidence\": \"公司每年安排一次整体库存盘存，每月对库存数量做一次随机抽查，保证仓库商品与数据库一致。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

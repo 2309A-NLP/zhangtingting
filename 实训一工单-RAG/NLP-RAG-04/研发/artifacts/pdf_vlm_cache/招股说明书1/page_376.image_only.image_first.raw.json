@@ -1,0 +1,28 @@
+{
+  "page_number": 376,
+  "logical_page": "375",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e35158f1aa75e7426cca89bb423",
+    "object": "chat.completion",
+    "created": 1780233869,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"分产品的毛利率分析\",\n        \"value\": \"视频指指控类产品毛利率分别为76.33%、67.48%、72.99%和85.24%。\",\n        \"evidence\": \"报告期内，视频指指控类产品毛利率维持较高水平，分别为 76.33%、67.48%、72.99% 和 85.24%。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"2017年度毛利率较低的原因\",\n        \"value\": \"2017年度毛利率较低主要因签订部分装备维修器材设备采购合同，影响毛利率25.10%。\",\n        \"evidence\": \"2017年度毛利率较报告期内其他年度相对较低，主要影响因素是2017年与客户签订了部分装备维修器材设备采购合同...毛利率仅为25.10%。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 222,
+      "total_tokens": 1376
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"分产品的毛利率分析\",\n        \"value\": \"视频指指控类产品毛利率分别为76.33%、67.48%、72.99%和85.24%。\",\n        \"evidence\": \"报告期内，视频指指控类产品毛利率维持较高水平，分别为 76.33%、67.48%、72.99% 和 85.24%。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"2017年度毛利率较低的原因\",\n        \"value\": \"2017年度毛利率较低主要因签订部分装备维修器材设备采购合同，影响毛利率25.10%。\",\n        \"evidence\": \"2017年度毛利率较报告期内其他年度相对较低，主要影响因素是2017年与客户签订了部分装备维修器材设备采购合同...毛利率仅为25.10%。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

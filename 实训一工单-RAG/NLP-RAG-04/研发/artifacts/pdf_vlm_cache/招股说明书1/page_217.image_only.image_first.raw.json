@@ -1,0 +1,28 @@
+{
+  "page_number": 217,
+  "logical_page": "216",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e1eba48c53bfc05b14d8a1e6313",
+    "object": "chat.completion",
+    "created": 1780232403,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"截至2019年6月30日已授权专利总数\",\"value\":\"35项\",\"evidence\":\"截至2019年6月30日，兴图新科及其子公司拥有已授权专利35项\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 61,
+      "total_tokens": 1215
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"截至2019年6月30日已授权专利总数\",\"value\":\"35项\",\"evidence\":\"截至2019年6月30日，兴图新科及其子公司拥有已授权专利35项\",\"type\":\"table_summary\"}]"
+}

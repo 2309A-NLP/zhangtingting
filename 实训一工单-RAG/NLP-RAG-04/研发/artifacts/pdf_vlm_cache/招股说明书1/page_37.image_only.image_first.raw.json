@@ -1,0 +1,28 @@
+{
+  "page_number": 37,
+  "logical_page": "36",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e0becbde309c5df653af1c987b8",
+    "object": "chat.completion",
+    "created": 1780231171,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"军品销售额变动率与营业利润变动关系\",\"value\":\"军品销售额每增加或减少1%，营业利润相应变动幅度为36.58万元（+1%）或-36.58万元（-1%）\",\"evidence\":\"军品销售额变动率1%对应营业利润变动额36.58万元，-1%对应-36.58万元\",\"type\":\"table_fact\"},\n    {\"title\":\"营业收入变动率与营业利润变动关系\",\"value\":\"营业收入每增加或减少1%，营业利润相应变动幅度为38.78万元（+1%）或-38.78万元（-1%）\",\"evidence\":\"营业收入变动率1%对应营业利润变动额38.78万元，-1%对应-38.78万元\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 189,
+      "total_tokens": 1341
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"军品销售额变动率与营业利润变动关系\",\"value\":\"军品销售额每增加或减少1%，营业利润相应变动幅度为36.58万元（+1%）或-36.58万元（-1%）\",\"evidence\":\"军品销售额变动率1%对应营业利润变动额36.58万元，-1%对应-36.58万元\",\"type\":\"table_fact\"},\n    {\"title\":\"营业收入变动率与营业利润变动关系\",\"value\":\"营业收入每增加或减少1%，营业利润相应变动幅度为38.78万元（+1%）或-38.78万元（-1%）\",\"evidence\":\"营业收入变动率1%对应营业利润变动额38.78万元，-1%对应-38.78万元\",\"type\":\"table_fact\"}\n]"
+}

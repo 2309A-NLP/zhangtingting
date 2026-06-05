@@ -1,0 +1,28 @@
+{
+  "page_number": 103,
+  "logical_page": "102",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e13a87ae62c8cfe0bcd50e37ed5",
+    "object": "chat.completion",
+    "created": 1780231678,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"公司主要产品构成\",\"value\":\"公司主要产品包括便携式微型投影仪、智能安全帽及视频指挥控制系统平台软件。\",\"evidence\":\"(3)其他产品下包含①便携式微型投影仪和②智能安全帽；3.公司主要产品构成部分描述了产品技术角度和物理呈现形态。\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 82,
+      "total_tokens": 1236
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"公司主要产品构成\",\"value\":\"公司主要产品包括便携式微型投影仪、智能安全帽及视频指挥控制系统平台软件。\",\"evidence\":\"(3)其他产品下包含①便携式微型投影仪和②智能安全帽；3.公司主要产品构成部分描述了产品技术角度和物理呈现形态。\",\"type\":\"table_summary\"}]"
+}

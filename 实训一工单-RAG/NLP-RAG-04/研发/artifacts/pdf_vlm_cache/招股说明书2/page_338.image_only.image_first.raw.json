@@ -1,0 +1,28 @@
+{
+  "page_number": 338,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6e3a80db159f0bbe042edf3096",
+    "object": "chat.completion",
+    "created": 1780237613,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"信息披露制度相关情况\",\n        \"value\": \"发行人建立了信息披露制度，证券部电话为027-87526790，董事会秘书为王晓东，证券事务代表为廖莉华。\",\n        \"evidence\": \"证券部电话：027-87526790；董事会秘书：王晓东；证券事务代表：廖莉华。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 105,
+      "total_tokens": 1257
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"信息披露制度相关情况\",\n        \"value\": \"发行人建立了信息披露制度，证券部电话为027-87526790，董事会秘书为王晓东，证券事务代表为廖莉华。\",\n        \"evidence\": \"证券部电话：027-87526790；董事会秘书：王晓东；证券事务代表：廖莉华。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

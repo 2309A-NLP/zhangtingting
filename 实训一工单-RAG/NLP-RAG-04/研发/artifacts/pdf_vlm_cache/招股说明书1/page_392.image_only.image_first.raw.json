@@ -1,0 +1,28 @@
+{
+  "page_number": 392,
+  "logical_page": "391",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e381bd92515a527d97b39e2ce09",
+    "object": "chat.completion",
+    "created": 1780234067,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"研发费用加计扣除情况\",\"value\":\"2019年1-6月申请加计扣除的研发费用为672.27万元，实际发生研发费用为1,512.81万元，差异为840.54万元。\",\"evidence\":\"表格中2019年1-6月行，申请加计扣除的研发费用为672.27，实际发生的研发费用为1,512.81，差异为840.54。\",\"type\":\"table_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 123,
+      "total_tokens": 1277
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"研发费用加计扣除情况\",\"value\":\"2019年1-6月申请加计扣除的研发费用为672.27万元，实际发生研发费用为1,512.81万元，差异为840.54万元。\",\"evidence\":\"表格中2019年1-6月行，申请加计扣除的研发费用为672.27，实际发生的研发费用为1,512.81，差异为840.54。\",\"type\":\"table_fact\"}]"
+}

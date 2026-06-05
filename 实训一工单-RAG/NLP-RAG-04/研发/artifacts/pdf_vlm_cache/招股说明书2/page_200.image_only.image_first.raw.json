@@ -1,0 +1,28 @@
+{
+  "page_number": 200,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e5c56932b72673695d235f199cd",
+    "object": "chat.completion",
+    "created": 1780236441,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"交易标的为公司股权时的合并报表范围变更处理\",\n        \"value\": \"交易标的为公司股权且购买或出售将导致公司合并报表范围发生变更的，该股权所对应的公司的资产总额和主营业务收入，视为上述交易涉及的资产总额和与交易标的相关的主营业务收入。\",\n        \"evidence\": \"交易标的为公司股权，且购买或者出售该股权将导致公司合并报表范围发生变更的，该股权所对应的公司的资产总额和主营业务收入，视为上述交易涉及的资产总额和与交易标的相关的主营业务收入。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 139,
+      "total_tokens": 1291
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"交易标的为公司股权时的合并报表范围变更处理\",\n        \"value\": \"交易标的为公司股权且购买或出售将导致公司合并报表范围发生变更的，该股权所对应的公司的资产总额和主营业务收入，视为上述交易涉及的资产总额和与交易标的相关的主营业务收入。\",\n        \"evidence\": \"交易标的为公司股权，且购买或者出售该股权将导致公司合并报表范围发生变更的，该股权所对应的公司的资产总额和主营业务收入，视为上述交易涉及的资产总额和与交易标的相关的主营业务收入。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

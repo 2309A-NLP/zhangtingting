@@ -1,0 +1,28 @@
+{
+  "page_number": 237,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e610cb3ef9a1b5592608eb821a0",
+    "object": "chat.completion",
+    "created": 1780236750,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"出口业务发货流程\",\n        \"value\": \"国外客户通过网络下单，销售代表与客户签订合同，指定联邦快递、DHL、UPS三家快递公司发货，交易价格为离岸价，运输费用由客户承担。\",\n        \"evidence\": \"国外客户通过网络下单，销售代表与客户通过传真或邮件方式签订合同，合同中明确指定公司通过联邦快递、DHL、UPS三家快递公司对客户进行发货，交易价格为离岸价格，运输费用由客户承担。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 129,
+      "total_tokens": 1281
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"出口业务发货流程\",\n        \"value\": \"国外客户通过网络下单，销售代表与客户签订合同，指定联邦快递、DHL、UPS三家快递公司发货，交易价格为离岸价，运输费用由客户承担。\",\n        \"evidence\": \"国外客户通过网络下单，销售代表与客户通过传真或邮件方式签订合同，合同中明确指定公司通过联邦快递、DHL、UPS三家快递公司对客户进行发货，交易价格为离岸价格，运输费用由客户承担。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 442,
+  "logical_page": "441",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e3fd550868b4b153aac8c0979bd",
+    "object": "chat.completion",
+    "created": 1780234573,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"某部队项目资本化开始时点\",\n        \"value\": \"2016年12月22日完成合同签订，自资本化开始时点至合同签订共发生研发投入34.24万元。\",\n        \"evidence\": \"2016年12月22日该项目完成合同签订，自资本化开始时点至合同签订共发生研发投入34.24万元。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 111,
+      "total_tokens": 1265
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"某部队项目资本化开始时点\",\n        \"value\": \"2016年12月22日完成合同签订，自资本化开始时点至合同签订共发生研发投入34.24万元。\",\n        \"evidence\": \"2016年12月22日该项目完成合同签订，自资本化开始时点至合同签订共发生研发投入34.24万元。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

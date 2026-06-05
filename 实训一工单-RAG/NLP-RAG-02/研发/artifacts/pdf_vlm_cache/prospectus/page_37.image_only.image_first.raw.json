@@ -1,0 +1,28 @@
+{
+  "page_number": 37,
+  "logical_page": "36",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7130c953c8f23466da4154097be4",
+    "object": "chat.completion",
+    "created": 1780015483,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动额\",\n        \"value\": \"38.78万元\",\n        \"evidence\": \"营业收入变动率1%时，2019年1-6月营业利润变动额为38.78\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动率\",\n        \"value\": \"30.99%\",\n        \"evidence\": \"营业收入变动率1%时，2019年1-6月营业利润变动率为30.99%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动额\",\n        \"value\": \"140.16万元\",\n        \"evidence\": \"营业收入变动率1%时，2018年度营业利润变动额为140.16\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动率\",\n        \"value\": \"2.73%\",\n        \"evidence\": \"营业收入变动率1%时，2018年度营业利润变动率为2.73%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动额\",\n        \"value\": \"98.37万元\",\n        \"evidence\": \"营业收入变动率1%时，2017年度营业利润变动额为98.37\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动率\",\n        \"value\": \"2.60%\",\n        \"evidence\": \"营业收入变动率1%时，2017年度营业利润变动率为2.60%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动额\",\n        \"value\": \"60.21万元\",\n        \"evidence\": \"营业收入变动率1%时，2016年度营业利润变动额为60.21\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动率\",\n        \"value\": \"26.03%\",\n        \"evidence\": \"营业收入变动率1%时，2016年度营业利润变动率为26.03%\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1076,
+      "completion_tokens": 564,
+      "total_tokens": 1640
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动额\",\n        \"value\": \"38.78万元\",\n        \"evidence\": \"营业收入变动率1%时，2019年1-6月营业利润变动额为38.78\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动率\",\n        \"value\": \"30.99%\",\n        \"evidence\": \"营业收入变动率1%时，2019年1-6月营业利润变动率为30.99%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动额\",\n        \"value\": \"140.16万元\",\n        \"evidence\": \"营业收入变动率1%时，2018年度营业利润变动额为140.16\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动率\",\n        \"value\": \"2.73%\",\n        \"evidence\": \"营业收入变动率1%时，2018年度营业利润变动率为2.73%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动额\",\n        \"value\": \"98.37万元\",\n        \"evidence\": \"营业收入变动率1%时，2017年度营业利润变动额为98.37\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动率\",\n        \"value\": \"2.60%\",\n        \"evidence\": \"营业收入变动率1%时，2017年度营业利润变动率为2.60%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动额\",\n        \"value\": \"60.21万元\",\n        \"evidence\": \"营业收入变动率1%时，2016年度营业利润变动额为60.21\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"营业收入变动率1%时的营业利润变动率\",\n        \"value\": \"26.03%\",\n        \"evidence\": \"营业收入变动率1%时，2016年度营业利润变动率为26.03%\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 324,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6ceb307af948b428e8191e5eb3",
+    "object": "chat.completion",
+    "created": 1780237528,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"项目建设期\",\"value\":\"24个月\",\"evidence\":\"本项目建设期预计为24个月\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 30,
+      "total_tokens": 1182
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"项目建设期\",\"value\":\"24个月\",\"evidence\":\"本项目建设期预计为24个月\",\"type\":\"field\"}]"
+}

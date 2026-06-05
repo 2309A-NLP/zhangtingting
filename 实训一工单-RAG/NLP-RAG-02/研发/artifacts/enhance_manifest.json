@@ -1,0 +1,42 @@
+{
+  "pdf": "D:\\Desktop\\NLP-RAG-02\\data\\prospectus.pdf",
+  "mode": "enhancement",
+  "chunks": 2351,
+  "base_chunks": 1904,
+  "enhanced_chunks": 386,
+  "vlm_enhanced_chunks": 61,
+  "vlm_selected_pages": [
+    4,
+    5,
+    11,
+    23,
+    30,
+    32,
+    33,
+    37,
+    38,
+    42,
+    52,
+    53
+  ],
+  "vlm_failed_pages": [],
+  "vlm_cache_hit_pages": [],
+  "vlm_api_success_pages": [
+    4,
+    5,
+    11,
+    23,
+    30,
+    32,
+    33,
+    37,
+    38,
+    42,
+    52,
+    53
+  ],
+  "embedding_backend": "sentence_transformers:bge-m3",
+  "dimension": 1024,
+  "vector_store": "milvus",
+  "pdf_parser_backend": "parse2"
+}

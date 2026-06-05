@@ -1,0 +1,28 @@
+{
+  "page_number": 116,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e527814ff20313d831c3981569b",
+    "object": "chat.completion",
+    "created": 1780235794,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"公司参考设计的主要流程\",\"value\":\"①根据市场调研确定研发方向，结合行业趋势、应用趋势、客户需求立项；②分析客户需求，结合现有方案研究新方案；③形成新方案并论证，论证通过后通过销售渠道推广；④客户采纳后销售IC产品并获利。\",\"evidence\":\"公司参考设计的主要流程如下：①...②...③...④...\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 99,
+      "total_tokens": 1251
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"公司参考设计的主要流程\",\"value\":\"①根据市场调研确定研发方向，结合行业趋势、应用趋势、客户需求立项；②分析客户需求，结合现有方案研究新方案；③形成新方案并论证，论证通过后通过销售渠道推广；④客户采纳后销售IC产品并获利。\",\"evidence\":\"公司参考设计的主要流程如下：①...②...③...④...\",\"type\":\"table_summary\"}]"
+}

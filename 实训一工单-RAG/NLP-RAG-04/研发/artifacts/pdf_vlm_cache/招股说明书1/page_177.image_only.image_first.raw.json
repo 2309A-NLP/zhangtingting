@@ -1,0 +1,28 @@
+{
+  "page_number": 177,
+  "logical_page": "176",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e18ce7e5a35af7a212a614f9221",
+    "object": "chat.completion",
+    "created": 1780232015,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"公司获得的专利认证和软件著作权数量\",\"value\":\"截至报告期末，公司获得专利认证35项、软件著作权66项。\",\"evidence\":\"截至报告期末，公司获得专利认证35项、软件著作权66项，且未包括公司尚未申请和尚未获得授权的专利技术和软件著作权。\",\"type\":\"table_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 79,
+      "total_tokens": 1233
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"公司获得的专利认证和软件著作权数量\",\"value\":\"截至报告期末，公司获得专利认证35项、软件著作权66项。\",\"evidence\":\"截至报告期末，公司获得专利认证35项、软件著作权66项，且未包括公司尚未申请和尚未获得授权的专利技术和软件著作权。\",\"type\":\"table_fact\"}]"
+}

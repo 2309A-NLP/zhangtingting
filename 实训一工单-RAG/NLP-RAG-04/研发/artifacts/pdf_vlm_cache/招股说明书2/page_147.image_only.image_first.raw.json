@@ -1,0 +1,28 @@
+{
+  "page_number": 147,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e5647773c6a136be647d58da353",
+    "object": "chat.completion",
+    "created": 1780236046,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"注册资本\",\n        \"value\": \"500万元\",\n        \"evidence\": \"创业服务成立于2000年12月25日，注册资本500万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"法定代表人\",\n        \"value\": \"赵马克(Mark Zhao)\",\n        \"evidence\": \"赵马克(Mark Zhao)已承诺，如果因公司办公场所没有取得产权证而给公司带来任何损失，由赵马克(Mark Zhao)承担。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"租赁面积\",\n        \"value\": \"2144.60平方米\",\n        \"evidence\": \"本公司现有房屋的租赁协议...租赁面积共计2144.60平方米\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"租赁价格\",\n        \"value\": \"每平方米20元\",\n        \"evidence\": \"租赁价格均为每平方米20元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"特许经营权\",\n        \"value\": \"无\",\n        \"evidence\": \"本公司无特许经营权。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 275,
+      "total_tokens": 1427
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"注册资本\",\n        \"value\": \"500万元\",\n        \"evidence\": \"创业服务成立于2000年12月25日，注册资本500万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"法定代表人\",\n        \"value\": \"赵马克(Mark Zhao)\",\n        \"evidence\": \"赵马克(Mark Zhao)已承诺，如果因公司办公场所没有取得产权证而给公司带来任何损失，由赵马克(Mark Zhao)承担。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"租赁面积\",\n        \"value\": \"2144.60平方米\",\n        \"evidence\": \"本公司现有房屋的租赁协议...租赁面积共计2144.60平方米\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"租赁价格\",\n        \"value\": \"每平方米20元\",\n        \"evidence\": \"租赁价格均为每平方米20元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"特许经营权\",\n        \"value\": \"无\",\n        \"evidence\": \"本公司无特许经营权。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

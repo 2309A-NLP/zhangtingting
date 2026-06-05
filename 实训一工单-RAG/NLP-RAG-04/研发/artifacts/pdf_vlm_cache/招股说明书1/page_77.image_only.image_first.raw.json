@@ -1,0 +1,28 @@
+{
+  "page_number": 77,
+  "logical_page": "76",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e117281a09233da4183d44b0bba",
+    "object": "chat.completion",
+    "created": 1780231533,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"高级管理人员职务\",\"value\":\"程家明担任董事长、总经理\",\"evidence\":\"程家明，职务：董事长、总经理\",\"type\":\"field\"},\n    {\"title\":\"高级管理人员职务\",\"value\":\"陈爱民担任董事、副总经理\",\"evidence\":\"陈爱民，职务：董事、副总经理\",\"type\":\"field\"},\n    {\"title\":\"高级管理人员职务\",\"value\":\"姚小华担任董事、副总经理、董事会秘书\",\"evidence\":\"姚小华，职务：董事、副总经理、董事会秘书\",\"type\":\"field\"},\n    {\"title\":\"高级管理人员职务\",\"value\":\"马超担任财务总监\",\"evidence\":\"马超，职务：财务总监\",\"type\":\"field\"},\n    {\"title\":\"高级管理人员职务\",\"value\":\"孔繁东担任副总经理\",\"evidence\":\"孔繁东，职务：副总经理\",\"type\":\"field\"},\n    {\"title\":\"高级管理人员职务\",\"value\":\"王显利担任副总经理\",\"evidence\":\"王显利，职务：副总经理\",\"type\":\"field\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 206,
+      "total_tokens": 1358
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"高级管理人员职务\",\"value\":\"程家明担任董事长、总经理\",\"evidence\":\"程家明，职务：董事长、总经理\",\"type\":\"field\"},\n    {\"title\":\"高级管理人员职务\",\"value\":\"陈爱民担任董事、副总经理\",\"evidence\":\"陈爱民，职务：董事、副总经理\",\"type\":\"field\"},\n    {\"title\":\"高级管理人员职务\",\"value\":\"姚小华担任董事、副总经理、董事会秘书\",\"evidence\":\"姚小华，职务：董事、副总经理、董事会秘书\",\"type\":\"field\"},\n    {\"title\":\"高级管理人员职务\",\"value\":\"马超担任财务总监\",\"evidence\":\"马超，职务：财务总监\",\"type\":\"field\"},\n    {\"title\":\"高级管理人员职务\",\"value\":\"孔繁东担任副总经理\",\"evidence\":\"孔繁东，职务：副总经理\",\"type\":\"field\"},\n    {\"title\":\"高级管理人员职务\",\"value\":\"王显利担任副总经理\",\"evidence\":\"王显利，职务：副总经理\",\"type\":\"field\"}\n]"
+}

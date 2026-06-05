@@ -1,0 +1,28 @@
+{
+  "page_number": 367,
+  "logical_page": "366",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e33ecfe244c6dd8a08a62e1ed77",
+    "object": "chat.completion",
+    "created": 1780233793,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"合同金额\",\"value\":\"1.80亿元\",\"evidence\":\"合同金额 1.80 亿元\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 33,
+      "total_tokens": 1187
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"合同金额\",\"value\":\"1.80亿元\",\"evidence\":\"合同金额 1.80 亿元\",\"type\":\"field\"}]"
+}

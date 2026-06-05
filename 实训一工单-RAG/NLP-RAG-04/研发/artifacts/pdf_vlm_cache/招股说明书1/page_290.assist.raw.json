@@ -1,0 +1,28 @@
+{
+  "page_number": 290,
+  "logical_page": "289",
+  "mode": "full",
+  "response": {
+    "id": "019e7e28a91d655ed8046d7f7a2e14f1",
+    "object": "chat.completion",
+    "created": 1780233054,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"金融资产和金融负债的公允价值确定方法\",\n        \"value\": \"公司采用估值技术确定公允价值，输入值分三层：第一层为活跃市场未调整报价；第二层为可观察输入值（如类似资产报价、利率曲线等）；第三层为不可观察输入值（如自身财务预测）。\",\n        \"evidence\": \"（4）金融资产和金融负债的公允价值确定方法：第一层次输入值...第二层次输入值...第三层次输入值...\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1659,
+      "completion_tokens": 131,
+      "total_tokens": 1790
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"金融资产和金融负债的公允价值确定方法\",\n        \"value\": \"公司采用估值技术确定公允价值，输入值分三层：第一层为活跃市场未调整报价；第二层为可观察输入值（如类似资产报价、利率曲线等）；第三层为不可观察输入值（如自身财务预测）。\",\n        \"evidence\": \"（4）金融资产和金融负债的公允价值确定方法：第一层次输入值...第二层次输入值...第三层次输入值...\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

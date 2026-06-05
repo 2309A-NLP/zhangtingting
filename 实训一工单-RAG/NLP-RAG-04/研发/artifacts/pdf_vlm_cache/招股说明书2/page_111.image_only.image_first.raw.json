@@ -1,0 +1,28 @@
+{
+  "page_number": 111,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e520772e9297400dff7ec6f235d",
+    "object": "chat.completion",
+    "created": 1780235766,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"合作零售网点数量\",\"value\":\"26个\",\"evidence\":\"力源信息目前在全国拥有26个合作零售网点\",\"type\":\"field\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 41,
+      "total_tokens": 1193
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"合作零售网点数量\",\"value\":\"26个\",\"evidence\":\"力源信息目前在全国拥有26个合作零售网点\",\"type\":\"field\"}\n]\n```"
+}

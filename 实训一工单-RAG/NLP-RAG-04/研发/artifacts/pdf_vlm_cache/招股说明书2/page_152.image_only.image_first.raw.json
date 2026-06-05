@@ -1,0 +1,28 @@
+{
+  "page_number": 152,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e56ea04857024ca06c4401fcc27",
+    "object": "chat.completion",
+    "created": 1780236085,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"研发投入情况\",\"value\":\"2010年1-6月母公司研发投入为289.20万元，占母公司营业收入比例为4.19%。\",\"evidence\":\"2010年1-6月母公司研发投入(万元) 289.20；占母公司营业收入比例(%) 4.19\",\"type\":\"table_fact\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 89,
+      "total_tokens": 1241
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"研发投入情况\",\"value\":\"2010年1-6月母公司研发投入为289.20万元，占母公司营业收入比例为4.19%。\",\"evidence\":\"2010年1-6月母公司研发投入(万元) 289.20；占母公司营业收入比例(%) 4.19\",\"type\":\"table_fact\"}\n]\n```"
+}

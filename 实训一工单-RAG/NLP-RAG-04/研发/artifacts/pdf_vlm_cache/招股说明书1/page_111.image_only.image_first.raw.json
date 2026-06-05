@@ -1,0 +1,28 @@
+{
+  "page_number": 111,
+  "logical_page": "110",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e142f70c81edbfb9c8c7f486be0",
+    "object": "chat.completion",
+    "created": 1780231712,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"研发方向\",\"value\":\"公司研发方向分为基础技术研究和产品开发两个方向\",\"evidence\":\"公司的研发方向主要分为基础技术研究、产品开发两个方向\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 44,
+      "total_tokens": 1198
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"研发方向\",\"value\":\"公司研发方向分为基础技术研究和产品开发两个方向\",\"evidence\":\"公司的研发方向主要分为基础技术研究、产品开发两个方向\",\"type\":\"field\"}]"
+}

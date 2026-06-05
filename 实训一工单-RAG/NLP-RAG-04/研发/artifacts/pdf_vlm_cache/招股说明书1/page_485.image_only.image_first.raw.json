@@ -1,0 +1,28 @@
+{
+  "page_number": 485,
+  "logical_page": "484",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e44ffa7c57b626f2fa4cda09310",
+    "object": "chat.completion",
+    "created": 1780234911,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"项目建设内容及投资概算\",\"value\":\"项目总投资20,658.33万元，其中工程建设费12,602.20万元，开发费用4,574.50万元，基本预备费343.53万元，铺底流动资金3,138.10万元。\",\"evidence\":\"本项目总投资20,658.33万元。其中，12,602.20万元用于工程建设，包括场地购置及装修，软件和硬件设备的购置，4,574.50万元用于开发费用，基本预备费343.53万元，铺底流动资金3,138.10万元。\",\"type\":\"table_summary\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 169,
+      "total_tokens": 1323
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"项目建设内容及投资概算\",\"value\":\"项目总投资20,658.33万元，其中工程建设费12,602.20万元，开发费用4,574.50万元，基本预备费343.53万元，铺底流动资金3,138.10万元。\",\"evidence\":\"本项目总投资20,658.33万元。其中，12,602.20万元用于工程建设，包括场地购置及装修，软件和硬件设备的购置，4,574.50万元用于开发费用，基本预备费343.53万元，铺底流动资金3,138.10万元。\",\"type\":\"table_summary\"}\n]"
+}

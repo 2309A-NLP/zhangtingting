@@ -1,0 +1,28 @@
+{
+  "page_number": 67,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4e5fae17e917b7336855e415c0",
+    "object": "chat.completion",
+    "created": 1780235526,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"销售网络规模\",\"value\":\"公司拥有1个电话及网络销售中心、6家销售处和26家合作零售网点。\",\"evidence\":\"的1个电话及网络销售中心和遍布全国的6家销售处、26家合作零售网点，为客户提服务。\",\"type\":\"field\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 75,
+      "total_tokens": 1226
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"销售网络规模\",\"value\":\"公司拥有1个电话及网络销售中心、6家销售处和26家合作零售网点。\",\"evidence\":\"的1个电话及网络销售中心和遍布全国的6家销售处、26家合作零售网点，为客户提服务。\",\"type\":\"field\"}\n]\n```"
+}

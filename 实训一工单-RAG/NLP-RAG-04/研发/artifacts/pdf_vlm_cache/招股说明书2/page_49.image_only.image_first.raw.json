@@ -1,0 +1,28 @@
+{
+  "page_number": 49,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4cd4bdf0ee7f1305f91f4cd48f",
+    "object": "chat.completion",
+    "created": 1780235425,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"法定代表人\",\"value\":\"张小莉\",\"evidence\":\"2009年6月23日成立，注册资本530万元，法定代表人张小莉\",\"type\":\"field\"},\n    {\"title\":\"注册资本\",\"value\":\"530万元\",\"evidence\":\"2009年6月23日成立，注册资本530万元\",\"type\":\"field\"},\n    {\"title\":\"出资比例\",\"value\":\"李庆堂33.79%\",\"evidence\":\"股东出资额及比例表中序号1，李庆堂出资额179.06万元，出资比例33.79%\",\"type\":\"table_fact\"},\n    {\"title\":\"出资额\",\"value\":\"李庆堂179.06万元\",\"evidence\":\"股东出资额及比例表中序号1，李庆堂出资额179.06万元\",\"type\":\"table_fact\"},\n    {\"title\":\"持股比例\",\"value\":\"10.59%\",\"evidence\":\"股权转让后，听音投资持有本公司529.53万股股份，持股比例为10.59%\",\"type\":\"field\"},\n    {\"title\":\"净资产\",\"value\":\"2010年6月30日为5,287,079.27元\",\"evidence\":\"听音投资简要财务数据表中，2010年6月30日净资产为5,287,079.27元\",\"type\":\"table_fact\"},\n    {\"title\":\"净利润\",\"value\":\"2010年1-6月为-5,074.66元\",\"evidence\":\"听音投资简要财务数据表中，2010年1-6月净利润为-5,074.66元\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 393,
+      "total_tokens": 1544
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"法定代表人\",\"value\":\"张小莉\",\"evidence\":\"2009年6月23日成立，注册资本530万元，法定代表人张小莉\",\"type\":\"field\"},\n    {\"title\":\"注册资本\",\"value\":\"530万元\",\"evidence\":\"2009年6月23日成立，注册资本530万元\",\"type\":\"field\"},\n    {\"title\":\"出资比例\",\"value\":\"李庆堂33.79%\",\"evidence\":\"股东出资额及比例表中序号1，李庆堂出资额179.06万元，出资比例33.79%\",\"type\":\"table_fact\"},\n    {\"title\":\"出资额\",\"value\":\"李庆堂179.06万元\",\"evidence\":\"股东出资额及比例表中序号1，李庆堂出资额179.06万元\",\"type\":\"table_fact\"},\n    {\"title\":\"持股比例\",\"value\":\"10.59%\",\"evidence\":\"股权转让后，听音投资持有本公司529.53万股股份，持股比例为10.59%\",\"type\":\"field\"},\n    {\"title\":\"净资产\",\"value\":\"2010年6月30日为5,287,079.27元\",\"evidence\":\"听音投资简要财务数据表中，2010年6月30日净资产为5,287,079.27元\",\"type\":\"table_fact\"},\n    {\"title\":\"净利润\",\"value\":\"2010年1-6月为-5,074.66元\",\"evidence\":\"听音投资简要财务数据表中，2010年1-6月净利润为-5,074.66元\",\"type\":\"table_fact\"}\n]"
+}

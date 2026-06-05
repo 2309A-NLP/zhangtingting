@@ -1,0 +1,28 @@
+{
+  "page_number": 247,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e61e70978f0a2b566377a9bbd9d",
+    "object": "chat.completion",
+    "created": 1780236806,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"非经常性损益对利润总额的影响的合计\",\n        \"value\": \"2,881,543.46\",\n        \"evidence\": \"非经常性损益对利润总额的影响的合计行，对应金额为2,881,543.46\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"其他符合非经常性损益定义的损益项目\",\n        \"value\": \"236.00\",\n        \"evidence\": \"其他符合非经常性损益定义的损益项目行，对应金额为236.00\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"除上述各项之外的其他营业外收入和支出\",\n        \"value\": \"1,000.00\",\n        \"evidence\": \"除上述各项之外的其他营业外收入和支出行，对应金额为1,000.00\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 234,
+      "total_tokens": 1386
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"非经常性损益对利润总额的影响的合计\",\n        \"value\": \"2,881,543.46\",\n        \"evidence\": \"非经常性损益对利润总额的影响的合计行，对应金额为2,881,543.46\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"其他符合非经常性损益定义的损益项目\",\n        \"value\": \"236.00\",\n        \"evidence\": \"其他符合非经常性损益定义的损益项目行，对应金额为236.00\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"除上述各项之外的其他营业外收入和支出\",\n        \"value\": \"1,000.00\",\n        \"evidence\": \"除上述各项之外的其他营业外收入和支出行，对应金额为1,000.00\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

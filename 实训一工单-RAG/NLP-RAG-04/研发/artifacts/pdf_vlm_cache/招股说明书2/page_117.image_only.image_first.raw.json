@@ -1,0 +1,28 @@
+{
+  "page_number": 117,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e525757ead9ee374186a1cf5ded",
+    "object": "chat.completion",
+    "created": 1780235786,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"销售模式\",\"value\":\"公司采用电话/网络销售、渠道销售、大客户销售三种相互补充的销售渠道。\",\"evidence\":\"(6)各种销售渠道之间的协调运作：电话/网络销售、渠道销售、大客户销售都是基于产品目录和公司丰富的现货库存，这三种方式构成相互补充的有机整体。\",\"type\":\"chart_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 79,
+      "total_tokens": 1231
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"销售模式\",\"value\":\"公司采用电话/网络销售、渠道销售、大客户销售三种相互补充的销售渠道。\",\"evidence\":\"(6)各种销售渠道之间的协调运作：电话/网络销售、渠道销售、大客户销售都是基于产品目录和公司丰富的现货库存，这三种方式构成相互补充的有机整体。\",\"type\":\"chart_summary\"}]"
+}

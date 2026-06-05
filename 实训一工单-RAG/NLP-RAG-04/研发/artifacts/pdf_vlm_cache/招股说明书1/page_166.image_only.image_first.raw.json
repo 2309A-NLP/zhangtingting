@@ -1,0 +1,28 @@
+{
+  "page_number": 166,
+  "logical_page": "165",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e17ee2f174888f287cec8ce4e3e",
+    "object": "chat.completion",
+    "created": 1780231958,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"产品对比表\",\"value\":\"发行人产品在分辨率解码输出、AVS2标准解码支持及端到端延时方面具有优势，但在4K解码和SVAC标准解码支持方面存在劣势。\",\"evidence\":\"对比表中明确列出了发行人产品在分辨率、AVS2解码、延时等方面的优劣势。\",\"type\":\"table_summary\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 90,
+      "total_tokens": 1244
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"产品对比表\",\"value\":\"发行人产品在分辨率解码输出、AVS2标准解码支持及端到端延时方面具有优势，但在4K解码和SVAC标准解码支持方面存在劣势。\",\"evidence\":\"对比表中明确列出了发行人产品在分辨率、AVS2解码、延时等方面的优劣势。\",\"type\":\"table_summary\"}\n]\n```"
+}

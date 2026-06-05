@@ -1,0 +1,28 @@
+{
+  "page_number": 178,
+  "logical_page": "177",
+  "mode": "full",
+  "response": {
+    "id": "019e7e18db8eb28bdd15695cc112aece",
+    "object": "chat.completion",
+    "created": 1780232019,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"2018年版武器装备科研生产许可目录项目数量\",\n        \"value\": \"285项\",\n        \"evidence\": \"2018年版许可目录包括导弹武器与运载火箭等7大类共285项\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年版许可目录较2015年版减少比例\",\n        \"value\": \"62%\",\n        \"evidence\": \"在2015年版许可目录的基础上减少了62%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年版许可目录保留的项目特征\",\n        \"value\": \"仅保留对国家战略安全、社会公共安全有重要影响的许可项目\",\n        \"evidence\": \"仅保留对国家战略安全、社会公共安全有重要影响的许可项目\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图新科产品所属许可范畴\",\n        \"value\": \"属于对国家战略安全有重要影响的许可项目\",\n        \"evidence\": \"发行人提供的指挥控制系统产品仍然属于武器科研生产许可范畴，属于对国家战略安全有重要影响的许可项目\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1684,
+      "completion_tokens": 287,
+      "total_tokens": 1971
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"2018年版武器装备科研生产许可目录项目数量\",\n        \"value\": \"285项\",\n        \"evidence\": \"2018年版许可目录包括导弹武器与运载火箭等7大类共285项\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年版许可目录较2015年版减少比例\",\n        \"value\": \"62%\",\n        \"evidence\": \"在2015年版许可目录的基础上减少了62%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年版许可目录保留的项目特征\",\n        \"value\": \"仅保留对国家战略安全、社会公共安全有重要影响的许可项目\",\n        \"evidence\": \"仅保留对国家战略安全、社会公共安全有重要影响的许可项目\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图新科产品所属许可范畴\",\n        \"value\": \"属于对国家战略安全有重要影响的许可项目\",\n        \"evidence\": \"发行人提供的指挥控制系统产品仍然属于武器科研生产许可范畴，属于对国家战略安全有重要影响的许可项目\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

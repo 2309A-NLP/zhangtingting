@@ -1,0 +1,28 @@
+{
+  "page_number": 304,
+  "logical_page": "303",
+  "mode": "full",
+  "response": {
+    "id": "019e7e29bd0a30a78ff00fe6f60e692e",
+    "object": "chat.completion",
+    "created": 1780233125,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"设定受益计划会计处理步骤\",\n        \"value\": \"设定受益计划的会计处理包括：1）计量义务并折现；2）确认净负债或净资产；3）将职工薪酬成本分三部分确认（服务成本、利息净额、重新计量变动），其中前两者计入当期损益或资产成本，后者计入其他综合收益且后续不允许转回损益。\",\n        \"evidence\": \"本地正文第(2)条1）-3）及表格内容\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1664,
+      "completion_tokens": 128,
+      "total_tokens": 1792
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"设定受益计划会计处理步骤\",\n        \"value\": \"设定受益计划的会计处理包括：1）计量义务并折现；2）确认净负债或净资产；3）将职工薪酬成本分三部分确认（服务成本、利息净额、重新计量变动），其中前两者计入当期损益或资产成本，后者计入其他综合收益且后续不允许转回损益。\",\n        \"evidence\": \"本地正文第(2)条1）-3）及表格内容\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

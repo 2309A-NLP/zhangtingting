@@ -1,0 +1,28 @@
+{
+  "page_number": 316,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6c25283dac55adcf07ee60d507",
+    "object": "chat.completion",
+    "created": 1780237477,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"制造商小批量采购时注重的因素\",\n        \"value\": \"产品品质（排名1，回复比例34%）是制造商最注重的因素，其次是交货速度（排名2，回复比例30%）。\",\n        \"evidence\": \"表格中显示产品品质排名第一，回复比例34%；交货速度排名第二，回复比例30%。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 100,
+      "total_tokens": 1252
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"制造商小批量采购时注重的因素\",\n        \"value\": \"产品品质（排名1，回复比例34%）是制造商最注重的因素，其次是交货速度（排名2，回复比例30%）。\",\n        \"evidence\": \"表格中显示产品品质排名第一，回复比例34%；交货速度排名第二，回复比例30%。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

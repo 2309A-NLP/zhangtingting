@@ -1,0 +1,28 @@
+{
+  "page_number": 138,
+  "logical_page": "137",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e15e724d426f3ca64a0d3921b94",
+    "object": "chat.completion",
+    "created": 1780231825,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"政策法规列表\",\n        \"value\": \"2013年至2016年间，国家相关部门陆续发布多项政策法规，涉及军品科研生产、信息安全、装备管理等领域。\",\n        \"evidence\": \"表格中列出了2013年至2016年发布的多项政策法规，包括《中国人民解放军军装备管理条例》、《产业结构调整指导目录（2011年本）》、《中华人民共和国国家保密法实施条例》等。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 123,
+      "total_tokens": 1277
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"政策法规列表\",\n        \"value\": \"2013年至2016年间，国家相关部门陆续发布多项政策法规，涉及军品科研生产、信息安全、装备管理等领域。\",\n        \"evidence\": \"表格中列出了2013年至2016年发布的多项政策法规，包括《中国人民解放军军装备管理条例》、《产业结构调整指导目录（2011年本）》、《中华人民共和国国家保密法实施条例》等。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 357,
+  "logical_page": "356",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e330602d797925b33a4de0c6cfe",
+    "object": "chat.completion",
+    "created": 1780233734,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"合同金额\",\n        \"value\": \"260.58万元\",\n        \"evidence\": \"XT2015095行，金额列显示260.58，单位为万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"合同金额\",\n        \"value\": \"260.00万元\",\n        \"evidence\": \"XT2016108行，金额列显示260.00，单位为万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"合同金额\",\n        \"value\": \"214.84万元\",\n        \"evidence\": \"XT2016105行，金额列显示214.84，单位为万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"合同金额\",\n        \"value\": \"198.70万元\",\n        \"evidence\": \"ZCX2015-4338/W338行，金额列显示198.70，单位为万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"合同金额\",\n        \"value\": \"190.74万元\",\n        \"evidence\": \"XT2015100行，金额列显示190.74，单位为万元\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 328,
+      "total_tokens": 1482
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"合同金额\",\n        \"value\": \"260.58万元\",\n        \"evidence\": \"XT2015095行，金额列显示260.58，单位为万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"合同金额\",\n        \"value\": \"260.00万元\",\n        \"evidence\": \"XT2016108行，金额列显示260.00，单位为万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"合同金额\",\n        \"value\": \"214.84万元\",\n        \"evidence\": \"XT2016105行，金额列显示214.84，单位为万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"合同金额\",\n        \"value\": \"198.70万元\",\n        \"evidence\": \"ZCX2015-4338/W338行，金额列显示198.70，单位为万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"合同金额\",\n        \"value\": \"190.74万元\",\n        \"evidence\": \"XT2015100行，金额列显示190.74，单位为万元\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

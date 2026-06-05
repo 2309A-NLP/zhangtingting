@@ -1,0 +1,28 @@
+{
+  "page_number": 200,
+  "logical_page": "199",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e1ae45ed399a3aa49e5bf08772a",
+    "object": "chat.completion",
+    "created": 1780232152,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"与山东神沃及擎天讯达签订合同毛利率较高的原因\",\"value\":\"毛利率较高主要因：成熟产品研发投入已费用化、软件占比大（超收入90%）、无低毛利率外采配套产品。\",\"evidence\":\"① 成熟产品研发投入已费用化；② 软件占比大，毛利率近100%；③ 合同中无低毛利率外采配套产品。\",\"type\":\"table_summary\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 103,
+      "total_tokens": 1257
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"与山东神沃及擎天讯达签订合同毛利率较高的原因\",\"value\":\"毛利率较高主要因：成熟产品研发投入已费用化、软件占比大（超收入90%）、无低毛利率外采配套产品。\",\"evidence\":\"① 成熟产品研发投入已费用化；② 软件占比大，毛利率近100%；③ 合同中无低毛利率外采配套产品。\",\"type\":\"table_summary\"}\n]"
+}

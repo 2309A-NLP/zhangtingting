@@ -1,0 +1,28 @@
+{
+  "page_number": 56,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e73cb39bcbe87d66ee5725b1cb7bc",
+    "object": "chat.completion",
+    "created": 1780059159,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"听音投资股东结构及任职情况\",\"value\":\"股东包括李庆堂、易国平、任建芳等9人，出资额合计530.00万元，出资比例合计100.00%。\",\"evidence\":\"听音投资的股东结构及其股东在本公司任职情况如下：表格中序号1至9列出股东姓名、出资额（万元）及出资比例（%），合计行显示出资额530.00万元，出资比例100.00%。\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1075,
+      "completion_tokens": 124,
+      "total_tokens": 1199
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"听音投资股东结构及任职情况\",\"value\":\"股东包括李庆堂、易国平、任建芳等9人，出资额合计530.00万元，出资比例合计100.00%。\",\"evidence\":\"听音投资的股东结构及其股东在本公司任职情况如下：表格中序号1至9列出股东姓名、出资额（万元）及出资比例（%），合计行显示出资额530.00万元，出资比例100.00%。\",\"type\":\"table_summary\"}]"
+}

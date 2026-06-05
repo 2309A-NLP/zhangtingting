@@ -1,0 +1,28 @@
+{
+  "page_number": 378,
+  "logical_page": "377",
+  "mode": "full",
+  "response": {
+    "id": "019e7e3592c31f892e03643aebaf82c9",
+    "object": "chat.completion",
+    "created": 1780233901,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"2019年1-6月间接军方毛利率\",\n        \"value\": \"85.69%\",\n        \"evidence\": \"2019年1-6月间接军方毛利率为85.69%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2019年1-6月民品客户毛利率\",\n        \"value\": \"-3.65%\",\n        \"evidence\": \"2019年1-6月民品客户毛利率为-3.65%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2019年1-6月间接军方销售收入占比\",\n        \"value\": \"83.07%\",\n        \"evidence\": \"2019年1-6月间接军方销售收入占比为83.07%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2019年1-6月直接军方销售收入占比\",\n        \"value\": \"11.27%\",\n        \"evidence\": \"2019年1-6月直接军方销售收入占比为11.27%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2019年1-6月民品客户销售收入\",\n        \"value\": \"277.57万元\",\n        \"evidence\": \"2019年1-6月民品客户销售收入为277.57万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2019年1-6月合计毛利率\",\n        \"value\": \"79.06%\",\n        \"evidence\": \"2019年1-6月合计毛利率为79.06%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年度间接军方毛利率\",\n        \"value\": \"79.54%\",\n        \"evidence\": \"2018年度间接军方毛利率为79.54%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年度直接军方毛利率\",\n        \"value\": \"57.12%\",\n        \"evidence\": \"2018年度直接军方毛利率为57.12%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年度民品客户毛利率\",\n        \"value\": \"32.05%\",\n        \"evidence\": \"2018年度民品客户毛利率为32.05%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年度合计毛利率\",\n        \"value\": \"70.74%\",\n        \"evidence\": \"2018年度合计毛利率为70.74%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度间接军方毛利率\",\n        \"value\": \"79.30%\",\n        \"evidence\": \"2017年度间接军方毛利率为79.30%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度直接军方毛利率\",\n        \"value\": \"52.23%\",\n        \"evidence\": \"2017年度直接军方毛利率为52.23%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度民品客户毛利率\",\n        \"value\": \"14.62%\",\n        \"evidence\": \"2017年度民品客户毛利率为14.62%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度合计毛利率\",\n        \"value\": \"66.09%\",\n        \"evidence\": \"2017年度合计毛利率为66.09%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2016年度间接"
+        },
+        "finish_reason": "length"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3487,
+      "completion_tokens": 900,
+      "total_tokens": 4387
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"2019年1-6月间接军方毛利率\",\n        \"value\": \"85.69%\",\n        \"evidence\": \"2019年1-6月间接军方毛利率为85.69%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2019年1-6月民品客户毛利率\",\n        \"value\": \"-3.65%\",\n        \"evidence\": \"2019年1-6月民品客户毛利率为-3.65%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2019年1-6月间接军方销售收入占比\",\n        \"value\": \"83.07%\",\n        \"evidence\": \"2019年1-6月间接军方销售收入占比为83.07%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2019年1-6月直接军方销售收入占比\",\n        \"value\": \"11.27%\",\n        \"evidence\": \"2019年1-6月直接军方销售收入占比为11.27%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2019年1-6月民品客户销售收入\",\n        \"value\": \"277.57万元\",\n        \"evidence\": \"2019年1-6月民品客户销售收入为277.57万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2019年1-6月合计毛利率\",\n        \"value\": \"79.06%\",\n        \"evidence\": \"2019年1-6月合计毛利率为79.06%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年度间接军方毛利率\",\n        \"value\": \"79.54%\",\n        \"evidence\": \"2018年度间接军方毛利率为79.54%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年度直接军方毛利率\",\n        \"value\": \"57.12%\",\n        \"evidence\": \"2018年度直接军方毛利率为57.12%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年度民品客户毛利率\",\n        \"value\": \"32.05%\",\n        \"evidence\": \"2018年度民品客户毛利率为32.05%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年度合计毛利率\",\n        \"value\": \"70.74%\",\n        \"evidence\": \"2018年度合计毛利率为70.74%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度间接军方毛利率\",\n        \"value\": \"79.30%\",\n        \"evidence\": \"2017年度间接军方毛利率为79.30%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度直接军方毛利率\",\n        \"value\": \"52.23%\",\n        \"evidence\": \"2017年度直接军方毛利率为52.23%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度民品客户毛利率\",\n        \"value\": \"14.62%\",\n        \"evidence\": \"2017年度民品客户毛利率为14.62%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度合计毛利率\",\n        \"value\": \"66.09%\",\n        \"evidence\": \"2017年度合计毛利率为66.09%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2016年度间接"
+}

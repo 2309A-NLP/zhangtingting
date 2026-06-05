@@ -1,0 +1,28 @@
+{
+  "page_number": 119,
+  "logical_page": "118",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e1484b0b39faad853ed3752a8fb",
+    "object": "chat.completion",
+    "created": 1780231734,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"生产模式\",\"value\":\"公司采取哑铃型的经营模式，注重前端技术研发和终端客户销售，采取以销定产模式安排生产任务，生产过程聚焦音视频系统核心硬件，主要包括编解码器。\",\"evidence\":\"公司采取哑铃型的经营方式，注重前端技术研发和终端客户销售，采取以销定产模式安排生产任务，生产过程聚焦音视频系统核心硬件，主要包括编解码器。\",\"type\":\"field\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 107,
+      "total_tokens": 1261
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"生产模式\",\"value\":\"公司采取哑铃型的经营模式，注重前端技术研发和终端客户销售，采取以销定产模式安排生产任务，生产过程聚焦音视频系统核心硬件，主要包括编解码器。\",\"evidence\":\"公司采取哑铃型的经营方式，注重前端技术研发和终端客户销售，采取以销定产模式安排生产任务，生产过程聚焦音视频系统核心硬件，主要包括编解码器。\",\"type\":\"field\"}\n]\n```"
+}

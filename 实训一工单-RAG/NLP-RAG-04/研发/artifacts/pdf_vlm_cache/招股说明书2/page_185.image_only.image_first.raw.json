@@ -1,0 +1,28 @@
+{
+  "page_number": 185,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e5b119d1e93717058d42aa55dd9",
+    "object": "chat.completion",
+    "created": 1780236358,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"博润投资注册资本\",\n        \"value\": \"3000万元\",\n        \"evidence\": \"博润投资成立于2001年6月11日，注册资本为3000万元，实收资本为3000万元。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"博润投资法定代表人\",\n        \"value\": \"乔秋生\",\n        \"evidence\": \"法定代表人为乔秋生。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"江通动画注册资本\",\n        \"value\": \"14,200万元\",\n        \"evidence\": \"江通动画成立于2000年1月4日，注册资本为14,200万元。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"江通动画法定代表人\",\n        \"value\": \"朱佑兰\",\n        \"evidence\": \"法定代表人为朱佑兰。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 227,
+      "total_tokens": 1379
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"博润投资注册资本\",\n        \"value\": \"3000万元\",\n        \"evidence\": \"博润投资成立于2001年6月11日，注册资本为3000万元，实收资本为3000万元。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"博润投资法定代表人\",\n        \"value\": \"乔秋生\",\n        \"evidence\": \"法定代表人为乔秋生。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"江通动画注册资本\",\n        \"value\": \"14,200万元\",\n        \"evidence\": \"江通动画成立于2000年1月4日，注册资本为14,200万元。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"江通动画法定代表人\",\n        \"value\": \"朱佑兰\",\n        \"evidence\": \"法定代表人为朱佑兰。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

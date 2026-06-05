@@ -1,0 +1,28 @@
+{
+  "page_number": 486,
+  "logical_page": "485",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e450bf4b1bd593dc8ca6703c794",
+    "object": "chat.completion",
+    "created": 1780234914,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"项目总投资\",\"value\":\"14,353.85万元\",\"evidence\":\"合计行金额14,353.85\",\"type\":\"table_fact\"},\n    {\"title\":\"项目投资构成\",\"value\":\"开发费用占比最高，为22.14%\",\"evidence\":\"开发费用行金额1,975.00，占比22.14%\",\"type\":\"table_summary\"},\n    {\"title\":\"项目实施时间\",\"value\":\"建设期2年，第一年完成方案设计与评审、场地购置及装修，第二年完成设备购置、人员引进及平台开发\",\"evidence\":\"项目时间进度安排段落描述\",\"type\":\"table_summary\"},\n    {\"title\":\"项目选址\",\"value\":\"拟购置7,320平方米办公场所\",\"evidence\":\"项目选址及用地段落描述\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 187,
+      "total_tokens": 1341
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"项目总投资\",\"value\":\"14,353.85万元\",\"evidence\":\"合计行金额14,353.85\",\"type\":\"table_fact\"},\n    {\"title\":\"项目投资构成\",\"value\":\"开发费用占比最高，为22.14%\",\"evidence\":\"开发费用行金额1,975.00，占比22.14%\",\"type\":\"table_summary\"},\n    {\"title\":\"项目实施时间\",\"value\":\"建设期2年，第一年完成方案设计与评审、场地购置及装修，第二年完成设备购置、人员引进及平台开发\",\"evidence\":\"项目时间进度安排段落描述\",\"type\":\"table_summary\"},\n    {\"title\":\"项目选址\",\"value\":\"拟购置7,320平方米办公场所\",\"evidence\":\"项目选址及用地段落描述\",\"type\":\"table_fact\"}\n]"
+}

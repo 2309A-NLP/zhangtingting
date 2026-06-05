@@ -1,0 +1,28 @@
+{
+  "page_number": 109,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e51eaee2feeb2eddd6ac2920fac",
+    "object": "chat.completion",
+    "created": 1780235758,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"电话/网络销售业务流程\",\n        \"value\": \"潜在客户通过查阅产品目录或网站发现产品，注册成为客户，然后可选择网络下单或电话联系销售代表，完成付款后通知发货；无论是否购买，客户资料均进入客户资料库并更新。\",\n        \"evidence\": \"电话/网络销售的具体流程如下：①...②...③...④...⑤...原有注册客户...与上述步骤③～⑤相同。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 123,
+      "total_tokens": 1275
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"电话/网络销售业务流程\",\n        \"value\": \"潜在客户通过查阅产品目录或网站发现产品，注册成为客户，然后可选择网络下单或电话联系销售代表，完成付款后通知发货；无论是否购买，客户资料均进入客户资料库并更新。\",\n        \"evidence\": \"电话/网络销售的具体流程如下：①...②...③...④...⑤...原有注册客户...与上述步骤③～⑤相同。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 78,
+  "logical_page": "77",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e118d5e5fc9e789d629d7363fc6",
+    "object": "chat.completion",
+    "created": 1780231540,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"核心技术人员名单\",\"value\":\"程家明、孔繁东、王显利、陈升亮\",\"evidence\":\"表格中列出的姓名：程家明、孔繁东、王显利、陈升亮\",\"type\":\"table_fact\"},\n    {\"title\":\"核心技术人员职务\",\"value\":\"程家明任董事长、总经理；孔繁东任副总经理；王显利任副总经理；陈升亮任监事会主席、平台研究部负责人\",\"evidence\":\"表格中对应职务：程家明-董事长、总经理；孔繁东-副总经理；王显利-副总经理；陈升亮-监事会主席、平台研究部负责人\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 145,
+      "total_tokens": 1297
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"核心技术人员名单\",\"value\":\"程家明、孔繁东、王显利、陈升亮\",\"evidence\":\"表格中列出的姓名：程家明、孔繁东、王显利、陈升亮\",\"type\":\"table_fact\"},\n    {\"title\":\"核心技术人员职务\",\"value\":\"程家明任董事长、总经理；孔繁东任副总经理；王显利任副总经理；陈升亮任监事会主席、平台研究部负责人\",\"evidence\":\"表格中对应职务：程家明-董事长、总经理；孔繁东-副总经理；王显利-副总经理；陈升亮-监事会主席、平台研究部负责人\",\"type\":\"table_fact\"}\n]"
+}

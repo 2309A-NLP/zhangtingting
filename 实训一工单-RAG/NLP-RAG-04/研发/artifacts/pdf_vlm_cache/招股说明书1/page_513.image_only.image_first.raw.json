@@ -1,0 +1,28 @@
+{
+  "page_number": 513,
+  "logical_page": "512",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e46afa543e6b3872ec65f35df03",
+    "object": "chat.completion",
+    "created": 1780235022,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"稳定股价的措施和承诺\",\n        \"value\": \"公司及控股股东、实际控制人、董事（独立董事及不在公司领取薪酬的董事除外）及高级管理人员承诺，若公司股价持续低于每股净资产，将通过回购公司股票或增持公司股份来稳定股价。\",\n        \"evidence\": \"“本次公开发行上市后三年内，若公司股价持续低于每股净资产，公司将通过回购公司股票或公司控股股东、实际控制人、董事、高级管理人员增持公司股份”\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 122,
+      "total_tokens": 1276
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"稳定股价的措施和承诺\",\n        \"value\": \"公司及控股股东、实际控制人、董事（独立董事及不在公司领取薪酬的董事除外）及高级管理人员承诺，若公司股价持续低于每股净资产，将通过回购公司股票或增持公司股份来稳定股价。\",\n        \"evidence\": \"“本次公开发行上市后三年内，若公司股价持续低于每股净资产，公司将通过回购公司股票或公司控股股东、实际控制人、董事、高级管理人员增持公司股份”\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

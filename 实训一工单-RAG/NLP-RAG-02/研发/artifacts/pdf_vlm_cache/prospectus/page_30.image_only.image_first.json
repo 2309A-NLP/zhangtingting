@@ -1,0 +1,44 @@
+[
+  {
+    "title": "募集资金总额",
+    "value": "40,584.83万元",
+    "evidence": "以上项目所需募集资金投入合计40,584.83万元。",
+    "type": "table_summary"
+  },
+  {
+    "title": "项目1名称",
+    "value": "基于云联邦架构的军用视频指挥平台升级及产业化项目",
+    "evidence": "基于云联邦架构的军用视频指挥平台升级及产业化项目",
+    "type": "table_fact"
+  },
+  {
+    "title": "项目1投资金额",
+    "value": "20,658.33万元",
+    "evidence": "项目总投资（万元） 20,658.33",
+    "type": "table_fact"
+  },
+  {
+    "title": "项目2名称",
+    "value": "研发中心建设项目",
+    "evidence": "研发中心建设项目",
+    "type": "table_fact"
+  },
+  {
+    "title": "项目2投资金额",
+    "value": "4,926.50万元",
+    "evidence": "项目总投资（万元） 4,926.50",
+    "type": "table_fact"
+  },
+  {
+    "title": "项目3名称",
+    "value": "补充流动资金",
+    "evidence": "补充流动资金",
+    "type": "table_fact"
+  },
+  {
+    "title": "项目3投资金额",
+    "value": "15,000.00万元",
+    "evidence": "项目总投资（万元） 15,000.00",
+    "type": "table_fact"
+  }
+]

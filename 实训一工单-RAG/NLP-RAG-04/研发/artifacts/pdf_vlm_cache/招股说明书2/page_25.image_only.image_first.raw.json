@@ -1,0 +1,28 @@
+{
+  "page_number": 25,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4b5d3c04a3b73c61436ea672ab",
+    "object": "chat.completion",
+    "created": 1780235328,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"发行人法定代表人\",\"value\":\"赵马克\",\"evidence\":\"(一)发行人：武汉力源信息技术股份有限公司\\n1、法定代表人：赵马克\",\"type\":\"field\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 46,
+      "total_tokens": 1197
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"发行人法定代表人\",\"value\":\"赵马克\",\"evidence\":\"(一)发行人：武汉力源信息技术股份有限公司\\n1、法定代表人：赵马克\",\"type\":\"field\"}\n]\n```"
+}

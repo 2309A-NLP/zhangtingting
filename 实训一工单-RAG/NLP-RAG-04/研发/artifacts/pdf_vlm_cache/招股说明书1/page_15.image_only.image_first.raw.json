@@ -1,0 +1,28 @@
+{
+  "page_number": 15,
+  "logical_page": "14",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e08badc6a311b55fc95cf417ae8",
+    "object": "chat.completion",
+    "created": 1780230962,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"目录结构\",\n        \"value\": \"第七节公司治理与独立性包含13个子项，第八节财务会计信息与管理层分析包含11个子项。\",\n        \"evidence\": \"第七节下有13个编号条目，第八节下有11个编号条目。\",\n        \"type\": \"layout_fix\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 88,
+      "total_tokens": 1240
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"目录结构\",\n        \"value\": \"第七节公司治理与独立性包含13个子项，第八节财务会计信息与管理层分析包含11个子项。\",\n        \"evidence\": \"第七节下有13个编号条目，第八节下有11个编号条目。\",\n        \"type\": \"layout_fix\"\n    }\n]\n```"
+}

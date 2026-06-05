@@ -1,0 +1,28 @@
+{
+  "page_number": 132,
+  "logical_page": null,
+  "mode": "full",
+  "response": {
+    "id": "019e7e54331d0749673a121bcb847419",
+    "object": "chat.completion",
+    "created": 1780235908,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"销售体系构成\",\"value\":\"1个电话/网络销售中心，6个销售处，26个合作零售网点\",\"evidence\":\"建立了包括1个设在武汉的电话/网络销售中心以及遍布全国的6个销售处、26个合作零售网点的完整销售体系。\",\"type\":\"table_summary\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1715,
+      "completion_tokens": 78,
+      "total_tokens": 1793
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"销售体系构成\",\"value\":\"1个电话/网络销售中心，6个销售处，26个合作零售网点\",\"evidence\":\"建立了包括1个设在武汉的电话/网络销售中心以及遍布全国的6个销售处、26个合作零售网点的完整销售体系。\",\"type\":\"table_summary\"}\n]\n```"
+}

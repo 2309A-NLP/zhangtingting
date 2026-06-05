@@ -1,0 +1,28 @@
+{
+  "page_number": 62,
+  "logical_page": "61",
+  "mode": "full",
+  "response": {
+    "id": "019e7e0ef202831726c69ecd37280e97",
+    "object": "chat.completion",
+    "created": 1780231369,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"兴图天建武汉分公司负责人\",\n        \"value\": \"陈爱民\",\n        \"evidence\": \"表格中'负责人'行对应'陈爱民'\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图天建2019年1-6月净利润\",\n        \"value\": \"-407.86万元\",\n        \"evidence\": \"表格中'净利润'行2019年6月30日/2019年1-6月列对应'-407.86'\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图天建武汉分公司统一社会信用代码\",\n        \"value\": \"91420100MA4K23G700\",\n        \"evidence\": \"表格中'统一社会信用代码'行对应'91420100MA4K23G700'\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图天建2018年度总资产\",\n        \"value\": \"964.36万元\",\n        \"evidence\": \"表格中'总资产'行2018年12月31日/2018年度列对应'964.36'\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图天建武汉分公司注册地\",\n        \"value\": \"武汉东湖新技术开发区东信路光谷创业街1栋13层02室\",\n        \"evidence\": \"表格中'注册地及主要生产经营地'行对应'武汉东湖新技术开发区东信路光谷创业街1栋13层02室'\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2767,
+      "completion_tokens": 403,
+      "total_tokens": 3170
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"兴图天建武汉分公司负责人\",\n        \"value\": \"陈爱民\",\n        \"evidence\": \"表格中'负责人'行对应'陈爱民'\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图天建2019年1-6月净利润\",\n        \"value\": \"-407.86万元\",\n        \"evidence\": \"表格中'净利润'行2019年6月30日/2019年1-6月列对应'-407.86'\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图天建武汉分公司统一社会信用代码\",\n        \"value\": \"91420100MA4K23G700\",\n        \"evidence\": \"表格中'统一社会信用代码'行对应'91420100MA4K23G700'\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图天建2018年度总资产\",\n        \"value\": \"964.36万元\",\n        \"evidence\": \"表格中'总资产'行2018年12月31日/2018年度列对应'964.36'\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图天建武汉分公司注册地\",\n        \"value\": \"武汉东湖新技术开发区东信路光谷创业街1栋13层02室\",\n        \"evidence\": \"表格中'注册地及主要生产经营地'行对应'武汉东湖新技术开发区东信路光谷创业街1栋13层02室'\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

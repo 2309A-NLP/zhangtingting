@@ -1,0 +1,28 @@
+{
+  "page_number": 343,
+  "logical_page": "342",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e30dab2b59ec83c760e122e3bc6",
+    "object": "chat.completion",
+    "created": 1780233591,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"军用领域收入占比\",\n        \"value\": \"2019年1-6月军用领域收入占比为94.34%。\",\n        \"evidence\": \"表格中'军用领域'行'小计'列'2019年1-6月'占比为94.34%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"军用领域收入金额\",\n        \"value\": \"2019年1-6月军用领域收入金额为4,627.15万元。\",\n        \"evidence\": \"表格中'军用领域'行'小计'列'2019年1-6月'金额为4,627.15万元。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"民品收入占比\",\n        \"value\": \"2019年1-6月民品收入占比为5.66%。\",\n        \"evidence\": \"表格中'民品领域'行'小计'列'2019年1-6月'占比为5.66%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"民品收入金额\",\n        \"value\": \"2019年1-6月民品收入金额为277.57万元。\",\n        \"evidence\": \"表格中'民品领域'行'小计'列'2019年1-6月'金额为277.57万元。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2019年1-6月总收入\",\n        \"value\": \"2019年1-6月总收入为4,904.71万元。\",\n        \"evidence\": \"表格中'合计'行'2019年1-6月'金额为4,904.71万元。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 453,
+      "total_tokens": 1607
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"军用领域收入占比\",\n        \"value\": \"2019年1-6月军用领域收入占比为94.34%。\",\n        \"evidence\": \"表格中'军用领域'行'小计'列'2019年1-6月'占比为94.34%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"军用领域收入金额\",\n        \"value\": \"2019年1-6月军用领域收入金额为4,627.15万元。\",\n        \"evidence\": \"表格中'军用领域'行'小计'列'2019年1-6月'金额为4,627.15万元。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"民品收入占比\",\n        \"value\": \"2019年1-6月民品收入占比为5.66%。\",\n        \"evidence\": \"表格中'民品领域'行'小计'列'2019年1-6月'占比为5.66%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"民品收入金额\",\n        \"value\": \"2019年1-6月民品收入金额为277.57万元。\",\n        \"evidence\": \"表格中'民品领域'行'小计'列'2019年1-6月'金额为277.57万元。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2019年1-6月总收入\",\n        \"value\": \"2019年1-6月总收入为4,904.71万元。\",\n        \"evidence\": \"表格中'合计'行'2019年1-6月'金额为4,904.71万元。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

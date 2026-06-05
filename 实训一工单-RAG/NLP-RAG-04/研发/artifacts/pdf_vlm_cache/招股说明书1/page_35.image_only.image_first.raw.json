@@ -1,0 +1,28 @@
+{
+  "page_number": 35,
+  "logical_page": "34",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e0ba4622b42aaa8bac105e3d25d",
+    "object": "chat.completion",
+    "created": 1780231153,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"技术风险分类\",\"value\":\"技术风险包括新技术新产品研发试制风险、技术失密风险、技术产品被赶超风险\",\"evidence\":\"第四节 风险因素 下设（一）至（三）小节标题\",\"type\":\"table_summary\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 66,
+      "total_tokens": 1218
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"技术风险分类\",\"value\":\"技术风险包括新技术新产品研发试制风险、技术失密风险、技术产品被赶超风险\",\"evidence\":\"第四节 风险因素 下设（一）至（三）小节标题\",\"type\":\"table_summary\"}\n]\n```"
+}

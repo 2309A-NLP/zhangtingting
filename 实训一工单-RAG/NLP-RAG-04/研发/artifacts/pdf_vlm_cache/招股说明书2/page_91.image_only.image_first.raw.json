@@ -1,0 +1,28 @@
+{
+  "page_number": 91,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e505ad51c7cea805eb650247d2b",
+    "object": "chat.completion",
+    "created": 1780235656,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"业务模式的优势\",\"value\":\"公司采用目录销售模式，该模式针对大批量客户及大批量产品市场特性，形成专业化营销模式，具有系统性、可选择性和可执行性。\",\"evidence\":\"在IC分销行业中，有针对大批量需求的授权分销、按照产品市场供需关系以卖产品为主的独立分销、针对中小客户市场的目录销售等多种业务模式。目录销售是针对大批量客户以及大批量产品的市场特性，而形成的一种专业化营销模式。目录销售有如下特点：(1)系统性；(2)可选择性；(3)可执行性。\",\"type\":\"table_summary\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 144,
+      "total_tokens": 1295
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"业务模式的优势\",\"value\":\"公司采用目录销售模式，该模式针对大批量客户及大批量产品市场特性，形成专业化营销模式，具有系统性、可选择性和可执行性。\",\"evidence\":\"在IC分销行业中，有针对大批量需求的授权分销、按照产品市场供需关系以卖产品为主的独立分销、针对中小客户市场的目录销售等多种业务模式。目录销售是针对大批量客户以及大批量产品的市场特性，而形成的一种专业化营销模式。目录销售有如下特点：(1)系统性；(2)可选择性；(3)可执行性。\",\"type\":\"table_summary\"}\n]\n```"
+}

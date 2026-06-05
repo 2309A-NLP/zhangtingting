@@ -1,0 +1,28 @@
+{
+  "page_number": 230,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e607c66a0f5a931e8cad9853515",
+    "object": "chat.completion",
+    "created": 1780236713,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"固定资产折旧方法\",\n        \"value\": \"采用年限平均法计提折旧\",\n        \"evidence\": \"本公司固定资产主要分为：机器设备、运输设备、办公设备等；折旧方法采用年限平均法。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"固定资产预计使用寿命\",\n        \"value\": \"5年\",\n        \"evidence\": \"资产类别：机器设备、运输设备、办公设备、其他设备，预计使用寿命(年)均为5年。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"固定资产预计净残值率\",\n        \"value\": \"5%\",\n        \"evidence\": \"资产类别：机器设备、运输设备、办公设备、其他设备，预计净残值率均为5%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"固定资产年折旧率\",\n        \"value\": \"19.00%\",\n        \"evidence\": \"资产类别：机器设备、运输设备、办公设备、其他设备，年折旧率均为19.00%。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 257,
+      "total_tokens": 1409
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"固定资产折旧方法\",\n        \"value\": \"采用年限平均法计提折旧\",\n        \"evidence\": \"本公司固定资产主要分为：机器设备、运输设备、办公设备等；折旧方法采用年限平均法。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"固定资产预计使用寿命\",\n        \"value\": \"5年\",\n        \"evidence\": \"资产类别：机器设备、运输设备、办公设备、其他设备，预计使用寿命(年)均为5年。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"固定资产预计净残值率\",\n        \"value\": \"5%\",\n        \"evidence\": \"资产类别：机器设备、运输设备、办公设备、其他设备，预计净残值率均为5%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"固定资产年折旧率\",\n        \"value\": \"19.00%\",\n        \"evidence\": \"资产类别：机器设备、运输设备、办公设备、其他设备，年折旧率均为19.00%。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

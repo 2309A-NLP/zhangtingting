@@ -1,0 +1,28 @@
+{
+  "page_number": 52,
+  "logical_page": "51",
+  "mode": "image_only",
+  "response": {
+    "id": "019e71315c0742c5b7261c8a974ec592",
+    "object": "chat.completion",
+    "created": 1780015520,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"法定代表人\",\"value\":\"程家明\",\"evidence\":\"法定代表人：程家明\",\"type\":\"field\"},{\"title\":\"注册资本\",\"value\":\"5,520万元\",\"evidence\":\"注册资本：5,520万元\",\"type\":\"field\"},{\"title\":\"实收资本\",\"value\":\"5,520万元\",\"evidence\":\"实收资本：5,520万元\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1076,
+      "completion_tokens": 90,
+      "total_tokens": 1166
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"法定代表人\",\"value\":\"程家明\",\"evidence\":\"法定代表人：程家明\",\"type\":\"field\"},{\"title\":\"注册资本\",\"value\":\"5,520万元\",\"evidence\":\"注册资本：5,520万元\",\"type\":\"field\"},{\"title\":\"实收资本\",\"value\":\"5,520万元\",\"evidence\":\"实收资本：5,520万元\",\"type\":\"field\"}]"
+}

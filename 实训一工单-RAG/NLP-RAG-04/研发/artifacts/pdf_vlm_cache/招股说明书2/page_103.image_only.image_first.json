@@ -1,0 +1,20 @@
+[
+  {
+    "title": "主要产品类别",
+    "value": "微控制器器件、电源管理器件、系统管理器件、通信接口器件、信号放大调理器件、分立半导体器件、数字电位器器件、数据变换器件",
+    "evidence": "表格中“产品类别”列内容",
+    "type": "table_summary"
+  },
+  {
+    "title": "主要原厂",
+    "value": "ST、Freescale、TI、Fujitsu、Intersil、Microchip、ON、Cypress",
+    "evidence": "表格中“原厂”列内容",
+    "type": "table_summary"
+  },
+  {
+    "title": "主要用途",
+    "value": "嵌入式电子产品主控芯片、电子产品系统供电和管理、系统电压监控和异常管理、有线和无线通信收发器、模拟信号放大和调理、信号放大、整流、电子开关、信号挡位、静电防护、电压分配调节、模拟和数字信号的相互转换",
+    "evidence": "表格中“用途”列内容",
+    "type": "table_summary"
+  }
+]

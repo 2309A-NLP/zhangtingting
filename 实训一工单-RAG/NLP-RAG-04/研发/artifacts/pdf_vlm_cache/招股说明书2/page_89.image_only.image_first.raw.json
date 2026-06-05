@@ -1,0 +1,28 @@
+{
+  "page_number": 89,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e503b235193728505de114d77f3",
+    "object": "chat.completion",
+    "created": 1780235648,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"发行人主营业务的竞争分析\",\n        \"value\": \"中国是全球最大的电子产品制造基地和出口国，2008年中国IC市场规模为5,973.30亿元，预计2011年将达到7,485.80亿元。\",\n        \"evidence\": \"据CCID统计，2008年中国IC市场规模为5,973.30亿元，约为全球IC市场的1/3，是全球第一大IC市场；预计2011年中国IC市场规模将达到7,485.80亿元。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 142,
+      "total_tokens": 1293
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"发行人主营业务的竞争分析\",\n        \"value\": \"中国是全球最大的电子产品制造基地和出口国，2008年中国IC市场规模为5,973.30亿元，预计2011年将达到7,485.80亿元。\",\n        \"evidence\": \"据CCID统计，2008年中国IC市场规模为5,973.30亿元，约为全球IC市场的1/3，是全球第一大IC市场；预计2011年中国IC市场规模将达到7,485.80亿元。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

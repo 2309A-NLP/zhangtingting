@@ -1,0 +1,28 @@
+{
+  "page_number": 239,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e61134e88e90affeb92fb57e2a2",
+    "object": "chat.completion",
+    "created": 1780236752,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"香港力源销售收入区域分布\",\n        \"value\": \"销售收入按销售对象区域分为中国大陆销售、香港境外销售（不含中国大陆）和香港本地客户销售。\",\n        \"evidence\": \"香港力源销售收入从销售对象区域分布可分为对中国大陆销售、香港境外销售(不含中国大陆)、香港本地客户销售。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 90,
+      "total_tokens": 1242
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"香港力源销售收入区域分布\",\n        \"value\": \"销售收入按销售对象区域分为中国大陆销售、香港境外销售（不含中国大陆）和香港本地客户销售。\",\n        \"evidence\": \"香港力源销售收入从销售对象区域分布可分为对中国大陆销售、香港境外销售(不含中国大陆)、香港本地客户销售。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

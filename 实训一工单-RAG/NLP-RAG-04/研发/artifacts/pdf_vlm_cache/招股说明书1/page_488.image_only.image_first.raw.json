@@ -1,0 +1,28 @@
+{
+  "page_number": 488,
+  "logical_page": "487",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e44f8d739ad08c0dba23c1d21ac",
+    "object": "chat.completion",
+    "created": 1780234910,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"项目建设内容及投资概算\",\"value\":\"项目总投资4,926.50万元，其中工程建设项目投资2,388.90万元，研发费用2,441.00万元，基本预备费96.60万元。\",\"evidence\":\"本项目总投资4,926.50万元。其中，2,388.90万元用于工程建设，2,441.00万元用于研发费用，基本预备费96.60万元。\",\"type\":\"table_summary\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 123,
+      "total_tokens": 1277
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"项目建设内容及投资概算\",\"value\":\"项目总投资4,926.50万元，其中工程建设项目投资2,388.90万元，研发费用2,441.00万元，基本预备费96.60万元。\",\"evidence\":\"本项目总投资4,926.50万元。其中，2,388.90万元用于工程建设，2,441.00万元用于研发费用，基本预备费96.60万元。\",\"type\":\"table_summary\"}\n]"
+}

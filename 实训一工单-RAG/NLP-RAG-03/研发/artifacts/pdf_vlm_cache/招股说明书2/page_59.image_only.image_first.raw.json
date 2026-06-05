@@ -1,0 +1,28 @@
+{
+  "page_number": 59,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e73cb6771b340fc1cf845c234789b",
+    "object": "chat.completion",
+    "created": 1780059171,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"宁波博润注册资本\",\n        \"value\": \"1亿元\",\n        \"evidence\": \"宁波博润于2007年9月26日成立，注册资本为1亿元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润实收资本\",\n        \"value\": \"5千万元\",\n        \"evidence\": \"宁波博润于2007年9月26日成立，注册资本为1亿元，实收资本5千万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润法定代表人\",\n        \"value\": \"罗森鹤\",\n        \"evidence\": \"法定代表人为罗森鹤\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润股东出资额合计\",\n        \"value\": \"10,000万元\",\n        \"evidence\": \"表格中'合计'行'出资额(万元)'列值为'10,000'\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"宁波博润股东出资比例合计\",\n        \"value\": \"100%\",\n        \"evidence\": \"表格中'合计'行'出资比例(%)'列值为'100'\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"宁波博润主要股东\",\n        \"value\": \"宁波东方琴业有限公司\",\n        \"evidence\": \"罗森鹤为宁波博润法定代表人，持有宁波博润主要股东宁波东方琴业有限公司55%的股权\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润主要股东持股比例\",\n        \"value\": \"55%\",\n        \"evidence\": \"罗森鹤为宁波博润法定代表人，持有宁波博润主要股东宁波东方琴业有限公司55%的股权\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1075,
+      "completion_tokens": 429,
+      "total_tokens": 1504
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"宁波博润注册资本\",\n        \"value\": \"1亿元\",\n        \"evidence\": \"宁波博润于2007年9月26日成立，注册资本为1亿元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润实收资本\",\n        \"value\": \"5千万元\",\n        \"evidence\": \"宁波博润于2007年9月26日成立，注册资本为1亿元，实收资本5千万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润法定代表人\",\n        \"value\": \"罗森鹤\",\n        \"evidence\": \"法定代表人为罗森鹤\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润股东出资额合计\",\n        \"value\": \"10,000万元\",\n        \"evidence\": \"表格中'合计'行'出资额(万元)'列值为'10,000'\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"宁波博润股东出资比例合计\",\n        \"value\": \"100%\",\n        \"evidence\": \"表格中'合计'行'出资比例(%)'列值为'100'\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"宁波博润主要股东\",\n        \"value\": \"宁波东方琴业有限公司\",\n        \"evidence\": \"罗森鹤为宁波博润法定代表人，持有宁波博润主要股东宁波东方琴业有限公司55%的股权\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润主要股东持股比例\",\n        \"value\": \"55%\",\n        \"evidence\": \"罗森鹤为宁波博润法定代表人，持有宁波博润主要股东宁波东方琴业有限公司55%的股权\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

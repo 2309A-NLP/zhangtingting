@@ -1,0 +1,28 @@
+{
+  "page_number": 188,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e5b6de19212ffdf73e1b98c3afb",
+    "object": "chat.completion",
+    "created": 1780236381,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"公司治理结构\",\"value\":\"发行人建立了符合股份公司上市要求的法人治理结构，包括股东大会、董事会、监事会和相关生产经营管理机构。\",\"evidence\":\"发行人严格按法律法规要求，修订了《公司章程》（草案），制定了多项规则和制度，设立了股东大会、董事会、监事会和相关生产经营管理机构，建立健全了法人治理结构。\",\"type\":\"table_summary\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 88,
+      "total_tokens": 1240
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"公司治理结构\",\"value\":\"发行人建立了符合股份公司上市要求的法人治理结构，包括股东大会、董事会、监事会和相关生产经营管理机构。\",\"evidence\":\"发行人严格按法律法规要求，修订了《公司章程》（草案），制定了多项规则和制度，设立了股东大会、董事会、监事会和相关生产经营管理机构，建立健全了法人治理结构。\",\"type\":\"table_summary\"}\n]\n```"
+}

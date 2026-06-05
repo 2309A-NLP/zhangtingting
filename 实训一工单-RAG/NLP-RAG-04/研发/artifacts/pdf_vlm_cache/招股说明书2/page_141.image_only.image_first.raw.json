@@ -1,0 +1,28 @@
+{
+  "page_number": 141,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e55522df03f4a8da0dd6a101457",
+    "object": "chat.completion",
+    "created": 1780235981,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"存货管理能力\",\"value\":\"公司拥有完善的仓储及物流系统，其仓储物流系统发达，产品种类齐全。\",\"evidence\":\"公司...必须拥有完善的仓储及物流系统。目前国际上知名的电子元器件目录销售商有 Digi-Key、派容电子、RS、Mouser 等，其共同的特点是仓储物流系统发达，运营平台电子化程度高，产品种类齐全。\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 96,
+      "total_tokens": 1248
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"存货管理能力\",\"value\":\"公司拥有完善的仓储及物流系统，其仓储物流系统发达，产品种类齐全。\",\"evidence\":\"公司...必须拥有完善的仓储及物流系统。目前国际上知名的电子元器件目录销售商有 Digi-Key、派容电子、RS、Mouser 等，其共同的特点是仓储物流系统发达，运营平台电子化程度高，产品种类齐全。\",\"type\":\"table_summary\"}]"
+}

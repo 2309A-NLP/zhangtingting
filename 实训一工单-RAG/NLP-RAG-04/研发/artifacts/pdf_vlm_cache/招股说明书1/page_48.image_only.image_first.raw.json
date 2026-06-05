@@ -1,0 +1,28 @@
+{
+  "page_number": 48,
+  "logical_page": "47",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e0d66b34f68abe5473d27626b16",
+    "object": "chat.completion",
+    "created": 1780231268,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"净资产收益率下降风险\",\n        \"value\": \"报告期内发行人加权平均净资产收益率分别为5.16%、26.50%、24.50%和0.36%。\",\n        \"evidence\": \"报告期内，发行人加权平均净资产收益率分别为 5.16%、26.50%、24.50%和 0.36%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"基本每股收益\",\n        \"value\": \"报告期内基本每股收益分别为0.09元/股、0.61元/股、0.79元/股和0.01元/股。\",\n        \"evidence\": \"基本每股收益分别为 0.09 元/股、0.61 元/股、0.79 元/股和 0.01 元/股。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 221,
+      "total_tokens": 1373
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"净资产收益率下降风险\",\n        \"value\": \"报告期内发行人加权平均净资产收益率分别为5.16%、26.50%、24.50%和0.36%。\",\n        \"evidence\": \"报告期内，发行人加权平均净资产收益率分别为 5.16%、26.50%、24.50%和 0.36%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"基本每股收益\",\n        \"value\": \"报告期内基本每股收益分别为0.09元/股、0.61元/股、0.79元/股和0.01元/股。\",\n        \"evidence\": \"基本每股收益分别为 0.09 元/股、0.61 元/股、0.79 元/股和 0.01 元/股。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

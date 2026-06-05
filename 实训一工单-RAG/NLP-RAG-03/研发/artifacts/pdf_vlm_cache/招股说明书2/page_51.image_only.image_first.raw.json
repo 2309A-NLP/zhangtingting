@@ -1,0 +1,28 @@
+{
+  "page_number": 51,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e73ca8a047c688f4ce3615937db32",
+    "object": "chat.completion",
+    "created": 1780059114,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"法定代表人\",\"value\":\"胡志斌\",\"evidence\":\"2007 年 8 月 6 日成立，注册资本 1,000 万元，法定代表人胡志斌\",\"type\":\"field\"},\n    {\"title\":\"注册资本\",\"value\":\"1,000 万元\",\"evidence\":\"2007 年 8 月 6 日成立，注册资本 1,000 万元\",\"type\":\"field\"},\n    {\"title\":\"出资比例(%)\",\"value\":\"79.50\",\"evidence\":\"胡志斌，出资额(万元) 795.00，出资比例(%) 79.50\",\"type\":\"table_fact\"},\n    {\"title\":\"持股比例(%)\",\"value\":\"14.28\",\"evidence\":\"湖北午时药业股份有限公司，持股比例(%) 14.28\",\"type\":\"table_fact\"},\n    {\"title\":\"持股比例(%)\",\"value\":\"50.00\",\"evidence\":\"上海吉润置业有限公司，持股比例(%) 50.00\",\"type\":\"table_fact\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1075,
+      "completion_tokens": 243,
+      "total_tokens": 1318
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"法定代表人\",\"value\":\"胡志斌\",\"evidence\":\"2007 年 8 月 6 日成立，注册资本 1,000 万元，法定代表人胡志斌\",\"type\":\"field\"},\n    {\"title\":\"注册资本\",\"value\":\"1,000 万元\",\"evidence\":\"2007 年 8 月 6 日成立，注册资本 1,000 万元\",\"type\":\"field\"},\n    {\"title\":\"出资比例(%)\",\"value\":\"79.50\",\"evidence\":\"胡志斌，出资额(万元) 795.00，出资比例(%) 79.50\",\"type\":\"table_fact\"},\n    {\"title\":\"持股比例(%)\",\"value\":\"14.28\",\"evidence\":\"湖北午时药业股份有限公司，持股比例(%) 14.28\",\"type\":\"table_fact\"},\n    {\"title\":\"持股比例(%)\",\"value\":\"50.00\",\"evidence\":\"上海吉润置业有限公司，持股比例(%) 50.00\",\"type\":\"table_fact\"}\n]\n```"
+}

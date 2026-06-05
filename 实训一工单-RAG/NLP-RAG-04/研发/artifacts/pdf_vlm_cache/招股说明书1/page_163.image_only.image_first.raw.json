@@ -1,0 +1,28 @@
+{
+  "page_number": 163,
+  "logical_page": "162",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e17dada96720a5f4869ca90f1a5",
+    "object": "chat.completion",
+    "created": 1780231953,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"视频编码技术标准\",\"value\":\"H.264\",\"evidence\":\"H.264 是一种数字视频编码技术标准\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 38,
+      "total_tokens": 1192
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"视频编码技术标准\",\"value\":\"H.264\",\"evidence\":\"H.264 是一种数字视频编码技术标准\",\"type\":\"field\"}]"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 235,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e610487a1b1722cee2f78ec6df4",
+    "object": "chat.completion",
+    "created": 1780236748,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"开发阶段支出资本化的条件\",\n        \"value\": \"开发阶段支出在满足五个条件时才能资本化。\",\n        \"evidence\": \"公司根据实际情况，开发阶段的支出在满足以下五个条件时才能资本化：①...②...③...④...⑤...\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 86,
+      "total_tokens": 1238
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"开发阶段支出资本化的条件\",\n        \"value\": \"开发阶段支出在满足五个条件时才能资本化。\",\n        \"evidence\": \"公司根据实际情况，开发阶段的支出在满足以下五个条件时才能资本化：①...②...③...④...⑤...\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

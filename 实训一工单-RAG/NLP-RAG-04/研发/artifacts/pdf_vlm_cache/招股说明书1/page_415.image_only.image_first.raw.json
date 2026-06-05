@@ -1,0 +1,28 @@
+{
+  "page_number": 415,
+  "logical_page": "414",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e3bc15f461910074d5ee9af5b17",
+    "object": "chat.completion",
+    "created": 1780234306,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"2019年6月30日客户应收账款合计\",\n        \"value\": \"5105.12万元\",\n        \"evidence\": \"2019.6.30表格中'合计'列，单位A的值为5105.12\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年12月31日客户应收账款合计\",\n        \"value\": \"7530.19万元\",\n        \"evidence\": \"2018.12.31表格中'合计'列，单位A的值为7530.19\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年12月31日客户应收账款合计\",\n        \"value\": \"2684.81万元\",\n        \"evidence\": \"2017.12.31表格中'合计'列，单位A的值为2684.81\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 250,
+      "total_tokens": 1404
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"2019年6月30日客户应收账款合计\",\n        \"value\": \"5105.12万元\",\n        \"evidence\": \"2019.6.30表格中'合计'列，单位A的值为5105.12\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年12月31日客户应收账款合计\",\n        \"value\": \"7530.19万元\",\n        \"evidence\": \"2018.12.31表格中'合计'列，单位A的值为7530.19\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年12月31日客户应收账款合计\",\n        \"value\": \"2684.81万元\",\n        \"evidence\": \"2017.12.31表格中'合计'列，单位A的值为2684.81\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

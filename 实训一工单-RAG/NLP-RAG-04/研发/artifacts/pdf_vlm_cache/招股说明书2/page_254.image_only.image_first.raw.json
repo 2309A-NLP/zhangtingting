@@ -1,0 +1,28 @@
+{
+  "page_number": 254,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e626c92b995cb38013b2e1cc043",
+    "object": "chat.completion",
+    "created": 1780236840,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"资产结构分析\",\n        \"value\": \"2010年6月30日流动资产占比94.06%，非流动资产占比5.94%。\",\n        \"evidence\": \"表格中2010-6-30行，流动资产(%)为94.06，非流动资产(%)为5.94。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 102,
+      "total_tokens": 1254
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"资产结构分析\",\n        \"value\": \"2010年6月30日流动资产占比94.06%，非流动资产占比5.94%。\",\n        \"evidence\": \"表格中2010-6-30行，流动资产(%)为94.06，非流动资产(%)为5.94。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

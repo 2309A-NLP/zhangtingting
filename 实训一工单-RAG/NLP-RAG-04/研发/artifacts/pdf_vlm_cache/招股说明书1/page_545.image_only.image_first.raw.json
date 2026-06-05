@@ -1,0 +1,28 @@
+{
+  "page_number": 545,
+  "logical_page": "544",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e487f33c48e258c8703e7a0d817",
+    "object": "chat.completion",
+    "created": 1780235141,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"验资机构声明签署日期\",\"value\":\"2019年12月16日\",\"evidence\":\"天健会计师事务所(特殊普通合伙) 二〇一九年 12月 16日\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 58,
+      "total_tokens": 1212
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"验资机构声明签署日期\",\"value\":\"2019年12月16日\",\"evidence\":\"天健会计师事务所(特殊普通合伙) 二〇一九年 12月 16日\",\"type\":\"field\"}]"
+}

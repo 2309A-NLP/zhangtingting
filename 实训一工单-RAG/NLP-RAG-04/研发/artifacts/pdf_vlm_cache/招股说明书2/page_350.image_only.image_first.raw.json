@@ -1,0 +1,28 @@
+{
+  "page_number": 350,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6f12378232018ce15192c146dc",
+    "object": "chat.completion",
+    "created": 1780237669,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"发行人名称\",\"value\":\"武汉力源信息技术股份有限公司\",\"evidence\":\"武汉力源信息技术股份有限公司\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 31,
+      "total_tokens": 1183
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"发行人名称\",\"value\":\"武汉力源信息技术股份有限公司\",\"evidence\":\"武汉力源信息技术股份有限公司\",\"type\":\"field\"}]"
+}

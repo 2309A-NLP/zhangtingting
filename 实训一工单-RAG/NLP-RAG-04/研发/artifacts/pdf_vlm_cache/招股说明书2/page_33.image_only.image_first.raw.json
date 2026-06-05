@@ -1,0 +1,28 @@
+{
+  "page_number": 33,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4b9e537f0cb60f8a38a6530c04",
+    "object": "chat.completion",
+    "created": 1780235346,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"实际控制人持股比例\",\n        \"value\": \"赵马克直接持有公司42.35%的股份，为公司控股股东、实际控制人。\",\n        \"evidence\": \"赵马克直接持有本公司股份2,117.70万股，占公司总股本的42.35%，为本公司控股股东、实际控制人。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"实际控制人持股变动\",\n        \"value\": \"本次发行完成后，赵马克持有公司31.75%的股份，仍处于相对控股地位。\",\n        \"evidence\": \"本次发行完成后，赵马克持有公司31.75%的股份，仍然处于相对控股地位。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 171,
+      "total_tokens": 1322
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"实际控制人持股比例\",\n        \"value\": \"赵马克直接持有公司42.35%的股份，为公司控股股东、实际控制人。\",\n        \"evidence\": \"赵马克直接持有本公司股份2,117.70万股，占公司总股本的42.35%，为本公司控股股东、实际控制人。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"实际控制人持股变动\",\n        \"value\": \"本次发行完成后，赵马克持有公司31.75%的股份，仍处于相对控股地位。\",\n        \"evidence\": \"本次发行完成后，赵马克持有公司31.75%的股份，仍然处于相对控股地位。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

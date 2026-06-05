@@ -1,0 +1,28 @@
+{
+  "page_number": 40,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4c2130d6d5930214b1a0d26527",
+    "object": "chat.completion",
+    "created": 1780235379,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"内部职能部门结构\",\n        \"value\": \"市场开发部下设研发中心；销售部下设渠道销售部、电话及网络销售部、大客户销售部和国际贸易部。\",\n        \"evidence\": \"市场开发部下设研发中心...销售部下设渠道销售部、电话及网络销售部、大客户销售部和国际贸易部。\",\n        \"type\": \"org_chart_relation\"\n    },\n    {\n        \"title\": \"大客户销售部客户范围\",\n        \"value\": \"大客户指向本公司采购金额较大的中小电子工业企业，一般为各细分领域的龙头企业。\",\n        \"evidence\": \"本公司的客户均为工业控制应用领域的中小电子工业企业，本公司大客户指的是向本公司采购金额较大的中小电子工业企业，一般为各细分领域的龙头企业。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 182,
+      "total_tokens": 1333
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"内部职能部门结构\",\n        \"value\": \"市场开发部下设研发中心；销售部下设渠道销售部、电话及网络销售部、大客户销售部和国际贸易部。\",\n        \"evidence\": \"市场开发部下设研发中心...销售部下设渠道销售部、电话及网络销售部、大客户销售部和国际贸易部。\",\n        \"type\": \"org_chart_relation\"\n    },\n    {\n        \"title\": \"大客户销售部客户范围\",\n        \"value\": \"大客户指向本公司采购金额较大的中小电子工业企业，一般为各细分领域的龙头企业。\",\n        \"evidence\": \"本公司的客户均为工业控制应用领域的中小电子工业企业，本公司大客户指的是向本公司采购金额较大的中小电子工业企业，一般为各细分领域的龙头企业。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 5,
+  "logical_page": "4",
+  "mode": "image_only",
+  "response": {
+    "id": "019e73c77feebc36835569238aff9457",
+    "object": "chat.completion",
+    "created": 1780058915,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"营业收入变动率1%时对营业利润的影响\",\"value\":\"营业利润影响数：38.78万元，占营业利润比例：30.99%\",\"evidence\":\"单位：万元\\n营业收入变动率\\n2019年1-6月\\n营业利润影响数\\n38.78\\n占营业利润比例\\n30.99%\",\"type\":\"table_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1074,
+      "completion_tokens": 91,
+      "total_tokens": 1165
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"营业收入变动率1%时对营业利润的影响\",\"value\":\"营业利润影响数：38.78万元，占营业利润比例：30.99%\",\"evidence\":\"单位：万元\\n营业收入变动率\\n2019年1-6月\\n营业利润影响数\\n38.78\\n占营业利润比例\\n30.99%\",\"type\":\"table_fact\"}]"
+}

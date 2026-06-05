@@ -1,0 +1,28 @@
+{
+  "page_number": 85,
+  "logical_page": "84",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e1201f71a76415a6c2ba0c1c6ad",
+    "object": "chat.completion",
+    "created": 1780231571,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"董事变动情况\",\n        \"value\": \"2019年3月至今，董事包括程家明（董事长）、陈爱民、姚小华、黄加、崔华强（独立董事）、王清刚（独立董事）、李云钢（独立董事）。\",\n        \"evidence\": \"2019年3月至今，董事名单为程家明（董事长）、陈爱民、姚小华、黄加、崔华强（独立董事）、王清刚（独立董事）、李云钢（独立董事）。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"监事变动情况\",\n        \"value\": \"2018年12月至今，监事包括陈升亮（监事会主席）、程解珍、任青。\",\n        \"evidence\": \"2018年12月至今，监事名单为陈升亮（监事会主席）、程解珍、任青。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 218,
+      "total_tokens": 1370
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"董事变动情况\",\n        \"value\": \"2019年3月至今，董事包括程家明（董事长）、陈爱民、姚小华、黄加、崔华强（独立董事）、王清刚（独立董事）、李云钢（独立董事）。\",\n        \"evidence\": \"2019年3月至今，董事名单为程家明（董事长）、陈爱民、姚小华、黄加、崔华强（独立董事）、王清刚（独立董事）、李云钢（独立董事）。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"监事变动情况\",\n        \"value\": \"2018年12月至今，监事包括陈升亮（监事会主席）、程解珍、任青。\",\n        \"evidence\": \"2018年12月至今，监事名单为陈升亮（监事会主席）、程解珍、任青。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 190,
+  "logical_page": "189",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e19e258074250a3a6eafa3cff59",
+    "object": "chat.completion",
+    "created": 1780232086,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"2019年1-6月前五大客户销售金额\",\"value\":\"4,050.13万元\",\"evidence\":\"2019年1-6月合计行，销售金额列，4,050.13\",\"type\":\"table_fact\"},\n    {\"title\":\"2019年1-6月前五大客户占当期营业收入比重\",\"value\":\"82.55%\",\"evidence\":\"2019年1-6月合计行，占当期营业收入比重列，82.55%\",\"type\":\"table_fact\"},\n    {\"title\":\"2018年度前五大客户销售金额\",\"value\":\"11,456.64万元\",\"evidence\":\"2018年度合计行，销售金额列，11,456.64\",\"type\":\"table_fact\"},\n    {\"title\":\"2018年度前五大客户占当期营业收入比重\",\"value\":\"57.82%\",\"evidence\":\"2018年度合计行，占当期营业收入比重列，57.82%\",\"type\":\"table_fact\"},\n    {\"title\":\"2017年度前五大客户销售金额\",\"value\":\"2,809.61万元\",\"evidence\":\"2017年度第1行，销售金额列，2,809.61\",\"type\":\"table_fact\"},\n    {\"title\":\"2017年度前五大客户占当期营业收入比重\",\"value\":\"18.88%\",\"evidence\":\"2017年度第1行，占当期营业收入比重列，18.88%\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 361,
+      "total_tokens": 1515
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"2019年1-6月前五大客户销售金额\",\"value\":\"4,050.13万元\",\"evidence\":\"2019年1-6月合计行，销售金额列，4,050.13\",\"type\":\"table_fact\"},\n    {\"title\":\"2019年1-6月前五大客户占当期营业收入比重\",\"value\":\"82.55%\",\"evidence\":\"2019年1-6月合计行，占当期营业收入比重列，82.55%\",\"type\":\"table_fact\"},\n    {\"title\":\"2018年度前五大客户销售金额\",\"value\":\"11,456.64万元\",\"evidence\":\"2018年度合计行，销售金额列，11,456.64\",\"type\":\"table_fact\"},\n    {\"title\":\"2018年度前五大客户占当期营业收入比重\",\"value\":\"57.82%\",\"evidence\":\"2018年度合计行，占当期营业收入比重列，57.82%\",\"type\":\"table_fact\"},\n    {\"title\":\"2017年度前五大客户销售金额\",\"value\":\"2,809.61万元\",\"evidence\":\"2017年度第1行，销售金额列，2,809.61\",\"type\":\"table_fact\"},\n    {\"title\":\"2017年度前五大客户占当期营业收入比重\",\"value\":\"18.88%\",\"evidence\":\"2017年度第1行，占当期营业收入比重列，18.88%\",\"type\":\"table_fact\"}\n]"
+}

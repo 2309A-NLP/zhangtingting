@@ -1,0 +1,28 @@
+{
+  "page_number": 134,
+  "logical_page": "133",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e15916c8f23963bcc6ab9b07e9c",
+    "object": "chat.completion",
+    "created": 1780231803,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\n        \"title\": \"收入集中于第四季度\",\n        \"value\": \"2016-2018年，公司第四季度营业收入占比分别为80.08%、80.49%、75.06%，呈现第四季度占比高的特点。\",\n        \"evidence\": \"2016-2018年，公司营业收入四季度占比分别为80.08%、80.49%、75.06%，呈现第四季度占比高的特点。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"2018年度第四季度收入占比\",\n        \"value\": \"75.06%\",\n        \"evidence\": \"2018年度第四季度收入占比75.06%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度第四季度收入占比\",\n        \"value\": \"80.49%\",\n        \"evidence\": \"2017年度第四季度收入占比80.49%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2016年度第四季度收入占比\",\n        \"value\": \"80.08%\",\n        \"evidence\": \"2016年度第四季度收入占比80.08%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年1-6月收入\",\n        \"value\": \"4,904.71万元\",\n        \"evidence\": \"2019年1-6月收入4,904.71万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年度总收入\",\n        \"value\": \"19,802.48万元\",\n        \"evidence\": \"2018年度总收入19,802.48万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度总收入\",\n        \"value\": \"14,812.72万元\",\n        \"evidence\": \"2017年度总收入14,812.72万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2016年度总收入\",\n        \"value\": \"7,873.63万元\",\n        \"evidence\": \"2016年度总收入7,873.63万元\",\n        \"type\": \"table_fact\"\n    }\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 557,
+      "total_tokens": 1711
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\n        \"title\": \"收入集中于第四季度\",\n        \"value\": \"2016-2018年，公司第四季度营业收入占比分别为80.08%、80.49%、75.06%，呈现第四季度占比高的特点。\",\n        \"evidence\": \"2016-2018年，公司营业收入四季度占比分别为80.08%、80.49%、75.06%，呈现第四季度占比高的特点。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"2018年度第四季度收入占比\",\n        \"value\": \"75.06%\",\n        \"evidence\": \"2018年度第四季度收入占比75.06%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度第四季度收入占比\",\n        \"value\": \"80.49%\",\n        \"evidence\": \"2017年度第四季度收入占比80.49%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2016年度第四季度收入占比\",\n        \"value\": \"80.08%\",\n        \"evidence\": \"2016年度第四季度收入占比80.08%\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年1-6月收入\",\n        \"value\": \"4,904.71万元\",\n        \"evidence\": \"2019年1-6月收入4,904.71万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2018年度总收入\",\n        \"value\": \"19,802.48万元\",\n        \"evidence\": \"2018年度总收入19,802.48万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度总收入\",\n        \"value\": \"14,812.72万元\",\n        \"evidence\": \"2017年度总收入14,812.72万元\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2016年度总收入\",\n        \"value\": \"7,873.63万元\",\n        \"evidence\": \"2016年度总收入7,873.63万元\",\n        \"type\": \"table_fact\"\n    }\n]"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 55,
+  "logical_page": "54",
+  "mode": "image_only",
+  "response": {
+    "id": "019e73c8bf771e9885b84c26ee1a7998",
+    "object": "chat.completion",
+    "created": 1780058997,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"注册资本\",\"value\":\"5,016万元\",\"evidence\":\"（一）2017年1月公司注册资本增加至5,016万元\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1076,
+      "completion_tokens": 44,
+      "total_tokens": 1120
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"注册资本\",\"value\":\"5,016万元\",\"evidence\":\"（一）2017年1月公司注册资本增加至5,016万元\",\"type\":\"field\"}]"
+}

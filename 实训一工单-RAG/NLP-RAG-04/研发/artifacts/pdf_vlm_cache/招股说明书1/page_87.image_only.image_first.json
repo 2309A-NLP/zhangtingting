@@ -1,0 +1,86 @@
+[
+  {
+    "title": "持股比例最高的人员",
+    "value": "程家明，持股比例52.29%",
+    "evidence": "程家明，持股比例52.29%",
+    "type": "table_fact"
+  },
+  {
+    "title": "持股数量最多的人员",
+    "value": "程家明，持股数量2,886.29万股",
+    "evidence": "程家明，持股数量2,886.29万股",
+    "type": "table_fact"
+  },
+  {
+    "title": "直接持股的人员",
+    "value": "程家明",
+    "evidence": "程家明，持股方式：直接持有",
+    "type": "table_fact"
+  },
+  {
+    "title": "间接持股的人员",
+    "value": "陈爱民、姚小华、孔繁东、马超、陈升亮、王显利、程解珍",
+    "evidence": "陈爱民、姚小华、孔繁东、马超、陈升亮、王显利、程解珍，持股方式：间接持有",
+    "type": "table_fact"
+  },
+  {
+    "title": "持股比例最低的人员",
+    "value": "程解珍，持股比例0.14%",
+    "evidence": "程解珍，持股比例0.14%",
+    "type": "table_fact"
+  },
+  {
+    "title": "持股数量最少的人员",
+    "value": "程解珍，持股数量7.60万股",
+    "evidence": "程解珍，持股数量7.60万股",
+    "type": "table_fact"
+  },
+  {
+    "title": "部门及职务：董事长、总经理",
+    "value": "程家明",
+    "evidence": "程家明，部门及职务：董事长、总经理",
+    "type": "table_fact"
+  },
+  {
+    "title": "部门及职务：董事、副总经理",
+    "value": "陈爱民",
+    "evidence": "陈爱民，部门及职务：董事、副总经理",
+    "type": "table_fact"
+  },
+  {
+    "title": "部门及职务：董事、董事会秘书、副总经理",
+    "value": "姚小华",
+    "evidence": "姚小华，部门及职务：董事、董事会秘书、副总经理",
+    "type": "table_fact"
+  },
+  {
+    "title": "部门及职务：副总经理",
+    "value": "孔繁东",
+    "evidence": "孔繁东，部门及职务：副总经理",
+    "type": "table_fact"
+  },
+  {
+    "title": "部门及职务：财务总监",
+    "value": "马超",
+    "evidence": "马超，部门及职务：财务总监",
+    "type": "table_fact"
+  },
+  {
+    "title": "部门及职务：监事会主席、平台研究部负责人",
+    "value": "陈升亮",
+    "evidence": "陈升亮，部门及职务：监事会主席、平台研究部负责人",
+    "type": "table_fact"
+  },
+  {
+    "title": "部门及职务：副总经理",
+    "value": "王显利",
+    "evidence": "王显利，部门及职务：副总经理",
+    "type": "table_fact"
+  },
+  {
+    "title": "部门及职务：监事、总经理助理",
+    "value": "程解珍",
+    "evidence": "程解珍，部门及职务：监事、总经理助理",
+    "type": "table_fact"
+  }
+]

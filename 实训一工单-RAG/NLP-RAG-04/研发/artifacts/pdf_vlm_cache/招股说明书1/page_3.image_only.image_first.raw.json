@@ -1,0 +1,28 @@
+{
+  "page_number": 3,
+  "logical_page": "2",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e077d937bdb28b821f2139d94e3",
+    "object": "chat.completion",
+    "created": 1780230881,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"发行股票类型\",\"value\":\"人民币普通股（A股）\",\"evidence\":\"发行股票类型: 人民币普通股（A股）\",\"type\":\"table_fact\"},{\"title\":\"发行股数\",\"value\":\"1.8400万股\",\"evidence\":\"发行股数: 发行人本次公开发行的股份数量1.840.0万股\",\"type\":\"table_fact\"},{\"title\":\"每股面值\",\"value\":\"1.00元\",\"evidence\":\"每股面值: 1.00元\",\"type\":\"table_fact\"},{\"title\":\"每股发行价格\",\"value\":\"【】\",\"evidence\":\"每股发行价格: 【】\",\"type\":\"table_fact\"},{\"title\":\"预计发行日期\",\"value\":\"2019年12月24日\",\"evidence\":\"预计发行日期: 2019年12月24日\",\"type\":\"table_fact\"},{\"title\":\"拟上市的交易所和板块\",\"value\":\"上海证券交易所科创板\",\"evidence\":\"拟上市的交易所和板块: 上海证券交易所科创板\",\"type\":\"table_fact\"},{\"title\":\"发行后总股本\",\"value\":\"7.360.00万股\",\"evidence\":\"发行后总股本: 7.360.00万股\",\"type\":\"table_fact\"},{\"title\":\"保荐人（主承销商）\",\"value\":\"中泰证券股份有限公司\",\"evidence\":\"保荐人（主承销商）: 中泰证券股份有限公司\",\"type\":\"table_fact\"},{\"title\":\"招股意向书签署日期\",\"value\":\"2019年12月16日\",\"evidence\":\"招股意向书签署日期: 2019年12月16日\",\"type\":\"table_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1150,
+      "completion_tokens": 360,
+      "total_tokens": 1510
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"发行股票类型\",\"value\":\"人民币普通股（A股）\",\"evidence\":\"发行股票类型: 人民币普通股（A股）\",\"type\":\"table_fact\"},{\"title\":\"发行股数\",\"value\":\"1.8400万股\",\"evidence\":\"发行股数: 发行人本次公开发行的股份数量1.840.0万股\",\"type\":\"table_fact\"},{\"title\":\"每股面值\",\"value\":\"1.00元\",\"evidence\":\"每股面值: 1.00元\",\"type\":\"table_fact\"},{\"title\":\"每股发行价格\",\"value\":\"【】\",\"evidence\":\"每股发行价格: 【】\",\"type\":\"table_fact\"},{\"title\":\"预计发行日期\",\"value\":\"2019年12月24日\",\"evidence\":\"预计发行日期: 2019年12月24日\",\"type\":\"table_fact\"},{\"title\":\"拟上市的交易所和板块\",\"value\":\"上海证券交易所科创板\",\"evidence\":\"拟上市的交易所和板块: 上海证券交易所科创板\",\"type\":\"table_fact\"},{\"title\":\"发行后总股本\",\"value\":\"7.360.00万股\",\"evidence\":\"发行后总股本: 7.360.00万股\",\"type\":\"table_fact\"},{\"title\":\"保荐人（主承销商）\",\"value\":\"中泰证券股份有限公司\",\"evidence\":\"保荐人（主承销商）: 中泰证券股份有限公司\",\"type\":\"table_fact\"},{\"title\":\"招股意向书签署日期\",\"value\":\"2019年12月16日\",\"evidence\":\"招股意向书签署日期: 2019年12月16日\",\"type\":\"table_fact\"}]"
+}

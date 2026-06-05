@@ -1,0 +1,28 @@
+{
+  "page_number": 496,
+  "logical_page": "495",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4594854a2118ec6aa8e10e549f",
+    "object": "chat.completion",
+    "created": 1780234949,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"投资者关系的主要安排\",\"value\":\"公司制定了《投资者关系管理制度》和《信息披露管理制度》以保障投资者获取公司信息。\",\"evidence\":\"公司制定了《投资者关系管理制度》和《信息披露管理制度》，以保障投资者及时、真实、准确、完整地获取公司相关资料和信息。\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 71,
+      "total_tokens": 1225
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"投资者关系的主要安排\",\"value\":\"公司制定了《投资者关系管理制度》和《信息披露管理制度》以保障投资者获取公司信息。\",\"evidence\":\"公司制定了《投资者关系管理制度》和《信息披露管理制度》，以保障投资者及时、真实、准确、完整地获取公司相关资料和信息。\",\"type\":\"table_summary\"}]"
+}

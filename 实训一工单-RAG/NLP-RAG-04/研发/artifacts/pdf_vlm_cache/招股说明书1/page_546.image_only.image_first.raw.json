@@ -1,0 +1,28 @@
+{
+  "page_number": 546,
+  "logical_page": "545",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e488e52703cd6caaa39f2cd2671",
+    "object": "chat.completion",
+    "created": 1780235145,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"验资复核机构声明\",\"value\":\"天健会计师事务所（特殊普通合伙）于2019年12月16日签署并盖章，确认招股意向书与《实收资本复核报告》内容无矛盾，对引用内容的真实性、准确性、完整性承担责任。\",\"evidence\":\"签字注册会计师：魏五军、周娅；天健会计师事务所负责人：曹国强；日期：二〇一九年十二月十六日；盖章：天健会计师事务所（特殊普通合伙）\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 124,
+      "total_tokens": 1278
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"验资复核机构声明\",\"value\":\"天健会计师事务所（特殊普通合伙）于2019年12月16日签署并盖章，确认招股意向书与《实收资本复核报告》内容无矛盾，对引用内容的真实性、准确性、完整性承担责任。\",\"evidence\":\"签字注册会计师：魏五军、周娅；天健会计师事务所负责人：曹国强；日期：二〇一九年十二月十六日；盖章：天健会计师事务所（特殊普通合伙）\",\"type\":\"field\"}]"
+}

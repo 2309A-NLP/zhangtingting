@@ -1,0 +1,28 @@
+{
+  "page_number": 95,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e50de2c30f8ed187034a8db79a0",
+    "object": "chat.completion",
+    "created": 1780235689,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"产品优势\",\n        \"value\": \"公司销售网络覆盖全国，包含6个销售处和26家合作零售网点，产品涵盖15,000个型号，覆盖微控制器、系统管理器件等10多个大类。\",\n        \"evidence\": \"销售网络由设在武汉的电话及网络销售中心以及遍布全国的6个销售处、26家合作零售网点组成，拥有15,000个型号的现货产品，包括微控制器、系统管理器件、接口器件、数据转换等10多个大类。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 143,
+      "total_tokens": 1294
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"产品优势\",\n        \"value\": \"公司销售网络覆盖全国，包含6个销售处和26家合作零售网点，产品涵盖15,000个型号，覆盖微控制器、系统管理器件等10多个大类。\",\n        \"evidence\": \"销售网络由设在武汉的电话及网络销售中心以及遍布全国的6个销售处、26家合作零售网点组成，拥有15,000个型号的现货产品，包括微控制器、系统管理器件、接口器件、数据转换等10多个大类。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

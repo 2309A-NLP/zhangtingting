@@ -1,0 +1,28 @@
+{
+  "page_number": 224,
+  "logical_page": "223",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e1f127f0d13b0b6ed83d3e1f387",
+    "object": "chat.completion",
+    "created": 1780232426,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"openVone 视音频中间件示意图\",\"value\":\"该图展示了一个由组件A、B、C、D构成的模块化中间件架构，中间件框架位于核心位置，支持图像显示、存储检索、报警管理等功能。\",\"evidence\":\"图中显示了组件A、B、C、D围绕中间件框架（openVone Framework）构建，下方文字说明中间件组件支持图像显示、存储检索、报警管理等功能。\",\"type\":\"chart_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 108,
+      "total_tokens": 1262
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"openVone 视音频中间件示意图\",\"value\":\"该图展示了一个由组件A、B、C、D构成的模块化中间件架构，中间件框架位于核心位置，支持图像显示、存储检索、报警管理等功能。\",\"evidence\":\"图中显示了组件A、B、C、D围绕中间件框架（openVone Framework）构建，下方文字说明中间件组件支持图像显示、存储检索、报警管理等功能。\",\"type\":\"chart_summary\"}]"
+}

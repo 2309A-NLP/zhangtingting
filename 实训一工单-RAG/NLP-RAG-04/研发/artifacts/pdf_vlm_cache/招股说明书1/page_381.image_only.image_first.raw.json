@@ -1,0 +1,28 @@
+{
+  "page_number": 381,
+  "logical_page": "380",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e361af2a7760cb04c9847960af5",
+    "object": "chat.completion",
+    "created": 1780233936,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"选取可比公司基本情况\",\n        \"value\": \"从业务内容角度选取了淳中科技、苏州科达、东土科技；从客户类型角度选取了景嘉微、上海瀚讯。\",\n        \"evidence\": \"选取可比公司的标准及可比公司基本情况如下：本公司主要基于业务内容与客户类型两个角度选取可比公司，从业务内容角度考虑，选取了淳中科技、苏州科达、东土科技三家公司；从面向的客户类型角度考虑，选取了景嘉微、上海瀚讯两家公司。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 141,
+      "total_tokens": 1295
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"选取可比公司基本情况\",\n        \"value\": \"从业务内容角度选取了淳中科技、苏州科达、东土科技；从客户类型角度选取了景嘉微、上海瀚讯。\",\n        \"evidence\": \"选取可比公司的标准及可比公司基本情况如下：本公司主要基于业务内容与客户类型两个角度选取可比公司，从业务内容角度考虑，选取了淳中科技、苏州科达、东土科技三家公司；从面向的客户类型角度考虑，选取了景嘉微、上海瀚讯两家公司。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

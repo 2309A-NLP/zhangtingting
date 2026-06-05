@@ -1,0 +1,21 @@
+﻿{
+    "name":  "02_clear_artifacts",
+    "started_at":  "2026-05-31 13:55:57",
+    "ended_at":  "2026-05-31 13:55:57",
+    "duration_seconds":  0.04,
+    "output":  {
+                   "removed":  [
+                                   "artifacts\\parsed_pages.json",
+                                   "artifacts\\parsed_pages_redacted.json"
+                               ],
+                   "missing":  [
+                                   "artifacts\\ingest_manifest.json",
+                                   "artifacts\\enhance_manifest.json",
+                                   "artifacts\\pdf_vlm_last_failure.json",
+                                   "artifacts\\uploaded_parsed_pages.json",
+                                   "artifacts\\uploaded_parsed_pages_redacted.json",
+                                   "artifacts\\uploaded_ingest_manifest.json",
+                                   "artifacts\\pdf_vlm_cache"
+                               ]
+               }
+}

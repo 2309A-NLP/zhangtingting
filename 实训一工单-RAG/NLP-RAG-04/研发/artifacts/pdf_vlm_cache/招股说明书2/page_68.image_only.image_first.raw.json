@@ -1,0 +1,28 @@
+{
+  "page_number": 68,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4e3ce7243574016b9b52dc2d44",
+    "object": "chat.completion",
+    "created": 1780235517,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"行业主管部门与监管体制\",\n        \"value\": \"工业和信息化部负责制定并实施IC行业政策与规划，中国半导体行业协会（CSIA）是行业自律性全国性社会团体，下设5个分会。\",\n        \"evidence\": \"目前，我国工业和信息化部负责制定并实施关于IC行业的政策与规划...中国半导体行业协会(CSIA)是由全国半导体业从事集成电路、半导体分立器件、半导体材料和设备的生产、设计、科研、开发、经营、应用、教学的单位及其他相关的企、事业单位自愿参加的、非营利性的、行业自律的全国性社会团体，下设集成电路分会、半导体分立器件分会、封装分会、集成电路设计分会和支撑业分会共5个分会。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 180,
+      "total_tokens": 1331
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"行业主管部门与监管体制\",\n        \"value\": \"工业和信息化部负责制定并实施IC行业政策与规划，中国半导体行业协会（CSIA）是行业自律性全国性社会团体，下设5个分会。\",\n        \"evidence\": \"目前，我国工业和信息化部负责制定并实施关于IC行业的政策与规划...中国半导体行业协会(CSIA)是由全国半导体业从事集成电路、半导体分立器件、半导体材料和设备的生产、设计、科研、开发、经营、应用、教学的单位及其他相关的企、事业单位自愿参加的、非营利性的、行业自律的全国性社会团体，下设集成电路分会、半导体分立器件分会、封装分会、集成电路设计分会和支撑业分会共5个分会。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

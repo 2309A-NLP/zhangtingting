@@ -1,0 +1,28 @@
+{
+  "page_number": 294,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e69fb3fa2490ae1472f0c477a39",
+    "object": "chat.completion",
+    "created": 1780237335,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"2009年度增值税应交税额\",\n        \"value\": \"3,735,980.50元\",\n        \"evidence\": \"表格中2009年度‘本期应交数’列对应值\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2009年度增值税已交税额\",\n        \"value\": \"4,368,003.37元\",\n        \"evidence\": \"表格中2009年度‘本期已交数’列对应值\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2009年度所得税应交税额\",\n        \"value\": \"3,478,596.34元\",\n        \"evidence\": \"表格中2009年度‘本期应交数’列对应值\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2009年度所得税已交税额\",\n        \"value\": \"1,121,510.80元\",\n        \"evidence\": \"表格中2009年度‘本期已交数’列对应值\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 286,
+      "total_tokens": 1438
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"2009年度增值税应交税额\",\n        \"value\": \"3,735,980.50元\",\n        \"evidence\": \"表格中2009年度‘本期应交数’列对应值\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2009年度增值税已交税额\",\n        \"value\": \"4,368,003.37元\",\n        \"evidence\": \"表格中2009年度‘本期已交数’列对应值\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2009年度所得税应交税额\",\n        \"value\": \"3,478,596.34元\",\n        \"evidence\": \"表格中2009年度‘本期应交数’列对应值\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2009年度所得税已交税额\",\n        \"value\": \"1,121,510.80元\",\n        \"evidence\": \"表格中2009年度‘本期已交数’列对应值\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

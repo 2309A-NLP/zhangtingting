@@ -1,0 +1,28 @@
+{
+  "page_number": 41,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4c62fe0b5f2be3102218ea75f2",
+    "object": "chat.completion",
+    "created": 1780235396,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"上海分公司负责人\",\n        \"value\": \"胡戊\",\n        \"evidence\": \"负责人：胡戊\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"上海分公司成立日期\",\n        \"value\": \"2009年7月7日\",\n        \"evidence\": \"成立日期：2009年7月7日\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"上海分公司营业场所\",\n        \"value\": \"上海市浦东新区北张家浜路128号\",\n        \"evidence\": \"营业场所：上海市浦东新区北张家浜路128号\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 159,
+      "total_tokens": 1310
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"上海分公司负责人\",\n        \"value\": \"胡戊\",\n        \"evidence\": \"负责人：胡戊\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"上海分公司成立日期\",\n        \"value\": \"2009年7月7日\",\n        \"evidence\": \"成立日期：2009年7月7日\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"上海分公司营业场所\",\n        \"value\": \"上海市浦东新区北张家浜路128号\",\n        \"evidence\": \"营业场所：上海市浦东新区北张家浜路128号\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

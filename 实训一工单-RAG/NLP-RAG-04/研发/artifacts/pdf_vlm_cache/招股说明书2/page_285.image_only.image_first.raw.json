@@ -1,0 +1,28 @@
+{
+  "page_number": 285,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e689a83bb83797cb2958ded11f8",
+    "object": "chat.completion",
+    "created": 1780237245,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"综合毛利率变动\",\"value\":\"2007年至2010年1-6月，综合毛利率从28.23%下降至23.16%。\",\"evidence\":\"2007年28.23%、2008年24.44%、2009年24.23%、2010年1-6月23.16%\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 105,
+      "total_tokens": 1257
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"综合毛利率变动\",\"value\":\"2007年至2010年1-6月，综合毛利率从28.23%下降至23.16%。\",\"evidence\":\"2007年28.23%、2008年24.44%、2009年24.23%、2010年1-6月23.16%\",\"type\":\"table_summary\"}]"
+}

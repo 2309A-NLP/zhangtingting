@@ -1,0 +1,28 @@
+{
+  "page_number": 61,
+  "logical_page": "60",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e0e5a27bed9e5798ac0ce0a2e34",
+    "object": "chat.completion",
+    "created": 1780231330,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"兴图天建基本情况\",\"value\":\"法定代表人为陈爱民，注册资本和实收资本均为1,000万元，成立于2017年12月1日，由兴图新科100%控股。\",\"evidence\":\"公司名称: 湖北兴图天建科技有限公司；法定代表人: 陈爱民；注册资本: 1,000万元；实收资本: 1,000万元；成立日期: 2017年12月01日；股东情况: 兴图新科持有100%股权。\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 141,
+      "total_tokens": 1293
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"兴图天建基本情况\",\"value\":\"法定代表人为陈爱民，注册资本和实收资本均为1,000万元，成立于2017年12月1日，由兴图新科100%控股。\",\"evidence\":\"公司名称: 湖北兴图天建科技有限公司；法定代表人: 陈爱民；注册资本: 1,000万元；实收资本: 1,000万元；成立日期: 2017年12月01日；股东情况: 兴图新科持有100%股权。\",\"type\":\"table_fact\"}\n]"
+}

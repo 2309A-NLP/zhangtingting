@@ -1,0 +1,28 @@
+{
+  "page_number": 164,
+  "logical_page": "163",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e17b61a8f6a2147d0a97e01c789",
+    "object": "chat.completion",
+    "created": 1780231944,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"图像片段错峰编码传输算法技术独特性\",\n        \"value\": \"该算法融合了静态图像编解码算法和基于运动图像多帧编解码算法，以宏块为单位进行帧内预测、帧间预测及运动估计，处理时延可降低至若干行以内（小于2ms）。\",\n        \"evidence\": \"图像片段错峰编码传输算法融合了前两个算法的特点，建立了以宏块为单位的帧内预测、帧间预测及运动估计方法，只需要宏块处理完成后，就可以进入下一个处理环节，可以将数据处理时间降低到若干行以内（处理时延小于2ms）。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 162,
+      "total_tokens": 1316
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"图像片段错峰编码传输算法技术独特性\",\n        \"value\": \"该算法融合了静态图像编解码算法和基于运动图像多帧编解码算法，以宏块为单位进行帧内预测、帧间预测及运动估计，处理时延可降低至若干行以内（小于2ms）。\",\n        \"evidence\": \"图像片段错峰编码传输算法融合了前两个算法的特点，建立了以宏块为单位的帧内预测、帧间预测及运动估计方法，只需要宏块处理完成后，就可以进入下一个处理环节，可以将数据处理时间降低到若干行以内（处理时延小于2ms）。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

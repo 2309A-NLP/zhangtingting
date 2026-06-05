@@ -1,0 +1,28 @@
+{
+  "page_number": 139,
+  "logical_page": "138",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e15c5478a8ba6053cc661b32132",
+    "object": "chat.completion",
+    "created": 1780231817,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"行业发展情况\",\n        \"value\": \"计算机通信技术发展历程从19世纪电报电话开始，到如今的电脑智能手机，实现了全球便捷的信息交流。\",\n        \"evidence\": \"（二）行业发展情况 1、计算机通信技术发展历程：在漫长的历史长河中，远距离的信息交流长期依赖车马传递的纸质书信...自19世纪以电信号为载体的通信手段出现以来，人类才真正开始实现便捷的信息交流，从起初的电报、电话，到如今的电脑、智能手机，几乎在全球的每个角落，人们都能够自由的进行文字、声音或图像的沟通传递。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 155,
+      "total_tokens": 1309
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"行业发展情况\",\n        \"value\": \"计算机通信技术发展历程从19世纪电报电话开始，到如今的电脑智能手机，实现了全球便捷的信息交流。\",\n        \"evidence\": \"（二）行业发展情况 1、计算机通信技术发展历程：在漫长的历史长河中，远距离的信息交流长期依赖车马传递的纸质书信...自19世纪以电信号为载体的通信手段出现以来，人类才真正开始实现便捷的信息交流，从起初的电报、电话，到如今的电脑、智能手机，几乎在全球的每个角落，人们都能够自由的进行文字、声音或图像的沟通传递。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

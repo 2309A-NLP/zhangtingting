@@ -1,0 +1,28 @@
+{
+  "page_number": 249,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e61e3bb843d7500a69fa765acac",
+    "object": "chat.completion",
+    "created": 1780236806,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"加权平均净资产收益率\",\n        \"value\": \"2007年度为49.33%\",\n        \"evidence\": \"表格中'加权平均净资产收益率(%)'列下'2007年度'对应值为49.33\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"基本每股收益\",\n        \"value\": \"2007年度为0.47元\",\n        \"evidence\": \"表格中'基本每股收益(元)'列下'2007年度'对应值为0.47\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"稀释每股收益\",\n        \"value\": \"2007年度为0.47元\",\n        \"evidence\": \"表格中'稀释每股收益(元)'列下'2007年度'对应值为0.47\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 223,
+      "total_tokens": 1375
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"加权平均净资产收益率\",\n        \"value\": \"2007年度为49.33%\",\n        \"evidence\": \"表格中'加权平均净资产收益率(%)'列下'2007年度'对应值为49.33\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"基本每股收益\",\n        \"value\": \"2007年度为0.47元\",\n        \"evidence\": \"表格中'基本每股收益(元)'列下'2007年度'对应值为0.47\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"稀释每股收益\",\n        \"value\": \"2007年度为0.47元\",\n        \"evidence\": \"表格中'稀释每股收益(元)'列下'2007年度'对应值为0.47\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

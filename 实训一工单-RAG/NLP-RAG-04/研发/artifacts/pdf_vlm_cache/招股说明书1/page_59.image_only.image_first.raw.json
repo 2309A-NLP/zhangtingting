@@ -1,0 +1,28 @@
+{
+  "page_number": 59,
+  "logical_page": "58",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e0e6cb3536b78562d736e18b693",
+    "object": "chat.completion",
+    "created": 1780231335,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\n        \"title\": \"公司股权结构\",\n        \"value\": \"程家明持股2,886.29万股，占比52.29%，为最大股东；其他股东包括兴图投资（1,064.00万股，19.28%）、光谷人才创投（352.10万股，6.38%）等。\",\n        \"evidence\": \"表格中序号1至10的股东姓名、持股数量（万股）及持股比例（%）数据。\",\n        \"type\": \"table_summary\"\n    }\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 129,
+      "total_tokens": 1281
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\n        \"title\": \"公司股权结构\",\n        \"value\": \"程家明持股2,886.29万股，占比52.29%，为最大股东；其他股东包括兴图投资（1,064.00万股，19.28%）、光谷人才创投（352.10万股，6.38%）等。\",\n        \"evidence\": \"表格中序号1至10的股东姓名、持股数量（万股）及持股比例（%）数据。\",\n        \"type\": \"table_summary\"\n    }\n]"
+}

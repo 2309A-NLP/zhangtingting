@@ -1,0 +1,28 @@
+{
+  "page_number": 20,
+  "logical_page": "19",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e09293d562196e16748fe91c790",
+    "object": "chat.completion",
+    "created": 1780230990,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"术语定义表\",\"value\":\"该页为术语定义表，包含模拟信号、数字信号、TCP/IP协议、PCB、DVI/VGA/HDMI/CVBS、MPEG、H.26X、AVS、JAVS、SIP、G.711、AAC、终端、高速KVM、GB/T28181等术语的定义。\",\"evidence\":\"页面中包含多个术语及其定义，如模拟信号、数字信号、TCP/IP协议、PCB、DVI/VGA/HDMI/CVBS、MPEG、H.26X、AVS、JAVS、SIP、G.711、AAC、终端、高速KVM、GB/T28181等。\",\"type\":\"table_summary\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 176,
+      "total_tokens": 1328
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"术语定义表\",\"value\":\"该页为术语定义表，包含模拟信号、数字信号、TCP/IP协议、PCB、DVI/VGA/HDMI/CVBS、MPEG、H.26X、AVS、JAVS、SIP、G.711、AAC、终端、高速KVM、GB/T28181等术语的定义。\",\"evidence\":\"页面中包含多个术语及其定义，如模拟信号、数字信号、TCP/IP协议、PCB、DVI/VGA/HDMI/CVBS、MPEG、H.26X、AVS、JAVS、SIP、G.711、AAC、终端、高速KVM、GB/T28181等。\",\"type\":\"table_summary\"}\n]\n```"
+}

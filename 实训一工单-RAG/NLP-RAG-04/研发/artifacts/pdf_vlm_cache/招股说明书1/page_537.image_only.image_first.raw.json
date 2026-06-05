@@ -1,0 +1,28 @@
+{
+  "page_number": 537,
+  "logical_page": "536",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e485c38ca69e71f44a470c28d08",
+    "object": "chat.completion",
+    "created": 1780235132,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"法定代表人\",\"value\":\"崔华强\",\"evidence\":\"签名栏中“崔华强”位于“全体董事”部分，且为手写签名，符合法定代表人签署声明的常规位置\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 51,
+      "total_tokens": 1205
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"法定代表人\",\"value\":\"崔华强\",\"evidence\":\"签名栏中“崔华强”位于“全体董事”部分，且为手写签名，符合法定代表人签署声明的常规位置\",\"type\":\"field\"}]"
+}

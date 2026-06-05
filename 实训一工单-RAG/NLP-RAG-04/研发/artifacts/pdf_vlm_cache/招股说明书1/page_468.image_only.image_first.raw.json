@@ -1,0 +1,28 @@
+{
+  "page_number": 468,
+  "logical_page": "467",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e421acdc23e6946eadf80308755",
+    "object": "chat.completion",
+    "created": 1780234722,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"2017年末股本增加金额\",\"value\":\"1,925.00万元\",\"evidence\":\"2017年末较2016年末股本增加1,925.00万元\",\"type\":\"field\"},\n    {\"title\":\"2018年末股本增加金额\",\"value\":\"295.00万元\",\"evidence\":\"2018年末较2017年末股本增加295.00万元\",\"type\":\"field\"},\n    {\"title\":\"2017年末资本公积增加金额\",\"value\":\"722.50万元\",\"evidence\":\"2017年末资本公积较2016年末增加722.50万元\",\"type\":\"field\"},\n    {\"title\":\"2018年末资本公积增加金额\",\"value\":\"2,477.76万元\",\"evidence\":\"2018年末较2017年末资本公积增加2,477.76万元\",\"type\":\"field\"},\n    {\"title\":\"2019年6月末资本公积增加金额\",\"value\":\"21.65万元\",\"evidence\":\"2019年6月末，资本公积较上年末增加21.65万元\",\"type\":\"field\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 271,
+      "total_tokens": 1425
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"2017年末股本增加金额\",\"value\":\"1,925.00万元\",\"evidence\":\"2017年末较2016年末股本增加1,925.00万元\",\"type\":\"field\"},\n    {\"title\":\"2018年末股本增加金额\",\"value\":\"295.00万元\",\"evidence\":\"2018年末较2017年末股本增加295.00万元\",\"type\":\"field\"},\n    {\"title\":\"2017年末资本公积增加金额\",\"value\":\"722.50万元\",\"evidence\":\"2017年末资本公积较2016年末增加722.50万元\",\"type\":\"field\"},\n    {\"title\":\"2018年末资本公积增加金额\",\"value\":\"2,477.76万元\",\"evidence\":\"2018年末较2017年末资本公积增加2,477.76万元\",\"type\":\"field\"},\n    {\"title\":\"2019年6月末资本公积增加金额\",\"value\":\"21.65万元\",\"evidence\":\"2019年6月末，资本公积较上年末增加21.65万元\",\"type\":\"field\"}\n]"
+}

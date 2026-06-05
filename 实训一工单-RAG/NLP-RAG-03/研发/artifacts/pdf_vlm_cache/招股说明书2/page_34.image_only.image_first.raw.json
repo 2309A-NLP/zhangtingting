@@ -1,0 +1,28 @@
+{
+  "page_number": 34,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e73c9b25a3a232b5403b3b3b55fa8",
+    "object": "chat.completion",
+    "created": 1780059059,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"注册资本\",\"value\":\"5,000万元\",\"evidence\":\"将经大信审字[2009]第3-0382号《审计报告》确认的公司净资产8,475.48万元中的5,000万元折为股本\",\"type\":\"field\"},\n    {\"title\":\"法定代表人\",\"value\":\"赵马克(Mark Zhao)\",\"evidence\":\"本公司发起人中，赵马克(Mark Zhao)为本公司实际控制人，现任本公司董事长及总经理\",\"type\":\"field\"},\n    {\"title\":\"发起人持股数量及持股比例\",\"value\":\"赵马克(Mark Zhao)持股2,117.70万股，持股比例42.35%；融冰投资持股609.50万股，持股比例12.19%\",\"evidence\":\"表格中赵马克(Mark Zhao)持股数量2,117.70万股，持股比例42.35%；融冰投资持股数量609.50万股，持股比例12.19%\",\"type\":\"table_fact\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1075,
+      "completion_tokens": 240,
+      "total_tokens": 1315
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"注册资本\",\"value\":\"5,000万元\",\"evidence\":\"将经大信审字[2009]第3-0382号《审计报告》确认的公司净资产8,475.48万元中的5,000万元折为股本\",\"type\":\"field\"},\n    {\"title\":\"法定代表人\",\"value\":\"赵马克(Mark Zhao)\",\"evidence\":\"本公司发起人中，赵马克(Mark Zhao)为本公司实际控制人，现任本公司董事长及总经理\",\"type\":\"field\"},\n    {\"title\":\"发起人持股数量及持股比例\",\"value\":\"赵马克(Mark Zhao)持股2,117.70万股，持股比例42.35%；融冰投资持股609.50万股，持股比例12.19%\",\"evidence\":\"表格中赵马克(Mark Zhao)持股数量2,117.70万股，持股比例42.35%；融冰投资持股数量609.50万股，持股比例12.19%\",\"type\":\"table_fact\"}\n]\n```"
+}

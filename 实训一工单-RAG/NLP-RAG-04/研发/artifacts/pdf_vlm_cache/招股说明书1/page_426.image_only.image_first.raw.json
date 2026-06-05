@@ -1,0 +1,28 @@
+{
+  "page_number": 426,
+  "logical_page": "425",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e3dbca46bd466b895085e27801c",
+    "object": "chat.completion",
+    "created": 1780234435,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"民品客户5年以上应收账款情况\",\"value\":\"截至2019年6月30日，民品客户5年以上应收账款合计账面余额622.85万元，收入确认金额2,168.99万元。\",\"evidence\":\"表格中'合计'行显示账面余额622.85，收入确认金额2,168.99。\",\"type\":\"table_summary\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 98,
+      "total_tokens": 1252
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"民品客户5年以上应收账款情况\",\"value\":\"截至2019年6月30日，民品客户5年以上应收账款合计账面余额622.85万元，收入确认金额2,168.99万元。\",\"evidence\":\"表格中'合计'行显示账面余额622.85，收入确认金额2,168.99。\",\"type\":\"table_summary\"}\n]"
+}

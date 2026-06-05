@@ -1,0 +1,28 @@
+{
+  "page_number": 320,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6c7b97c0055cf29114fb34c82a",
+    "object": "chat.completion",
+    "created": 1780237500,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"2005-2009年市场增长预测\",\"value\":\"2005年市场规模83.6亿元人民币，2009年预计130.0亿元人民币，2008年同比增长12.0%\",\"evidence\":\"柱状图显示2005-2009年市场规模（亿元RMB）分别为83.6、94.1、107.1、120.0、130.0；折线图显示2005-2009年同比增长率（%）分别为9.5、12.6、13.8、12.0、8.0\",\"type\":\"chart_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 160,
+      "total_tokens": 1312
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"2005-2009年市场增长预测\",\"value\":\"2005年市场规模83.6亿元人民币，2009年预计130.0亿元人民币，2008年同比增长12.0%\",\"evidence\":\"柱状图显示2005-2009年市场规模（亿元RMB）分别为83.6、94.1、107.1、120.0、130.0；折线图显示2005-2009年同比增长率（%）分别为9.5、12.6、13.8、12.0、8.0\",\"type\":\"chart_fact\"}]"
+}

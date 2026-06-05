@@ -1,0 +1,28 @@
+{
+  "page_number": 80,
+  "logical_page": "79",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e11d233d50aa072beb6bd639803",
+    "object": "chat.completion",
+    "created": 1780231557,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\n        \"title\": \"董事、监事及高级管理人员兼职情况\",\n        \"value\": \"程家明兼任兴图投资执行董事，其任职单位与公司关系为员工持股平台。\",\n        \"evidence\": \"表格中显示程家明的职务为董事长、总经理，兼职企业/单位为兴图投资，担任职务为执行董事，与公司关系为员工持股平台。\",\n        \"type\": \"table_fact\"\n    }\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 96,
+      "total_tokens": 1248
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\n        \"title\": \"董事、监事及高级管理人员兼职情况\",\n        \"value\": \"程家明兼任兴图投资执行董事，其任职单位与公司关系为员工持股平台。\",\n        \"evidence\": \"表格中显示程家明的职务为董事长、总经理，兼职企业/单位为兴图投资，担任职务为执行董事，与公司关系为员工持股平台。\",\n        \"type\": \"table_fact\"\n    }\n]"
+}

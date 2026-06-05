@@ -1,0 +1,28 @@
+{
+  "page_number": 233,
+  "logical_page": "232",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e1fe1ec7f918733912dc24c40e1",
+    "object": "chat.completion",
+    "created": 1780232479,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"核心技术\",\"value\":\"高可靠、高并发、大容量的视频中间件技术\",\"evidence\":\"序号1，核心技术列\",\"type\":\"table_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 38,
+      "total_tokens": 1192
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"核心技术\",\"value\":\"高可靠、高并发、大容量的视频中间件技术\",\"evidence\":\"序号1，核心技术列\",\"type\":\"table_fact\"}]"
+}

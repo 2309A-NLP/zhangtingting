@@ -1,0 +1,28 @@
+{
+  "page_number": 52,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4d193bdaa1652584688342924b",
+    "object": "chat.completion",
+    "created": 1780235443,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"武汉博润注册资本\",\n        \"value\": \"2,000万元\",\n        \"evidence\": \"2006年12月18日成立，注册资本2,000万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"武汉博润法定代表人\",\n        \"value\": \"胡桃荣\",\n        \"evidence\": \"法定代表人胡桃荣\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"武汉博润主要对外投资\",\n        \"value\": \"江通动画股份有限公司，持股比例4.8%\",\n        \"evidence\": \"江通动画股份有限公司，持股比例(%) 4.8\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"湖北佳信物贸股份有限公司注册资本\",\n        \"value\": \"2,000万元\",\n        \"evidence\": \"注册资本为2,000万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"湖北佳信物贸股份有限公司法定代表人\",\n        \"value\": \"吴祖新\",\n        \"evidence\": \"法定代表人为吴祖新\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"湖北佳信物贸股份有限公司股东出资额\",\n        \"value\": \"吴祖新出资600万元，占比30%\",\n        \"evidence\": \"序号1，吴祖新，出资额(万元)600，出资比例(%)30\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"武汉博润2010年1-6月净利润\",\n        \"value\": \"-1,455,917.71元\",\n        \"evidence\": \"2010年1-6月，净利润 -1,455,917.71\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"武汉博润2010年1-6月营业收入\",\n        \"value\": \"850,000.00元\",\n        \"evidence\": \"2010年1-6月，营业收入 850,000.00\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 503,
+      "total_tokens": 1654
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"武汉博润注册资本\",\n        \"value\": \"2,000万元\",\n        \"evidence\": \"2006年12月18日成立，注册资本2,000万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"武汉博润法定代表人\",\n        \"value\": \"胡桃荣\",\n        \"evidence\": \"法定代表人胡桃荣\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"武汉博润主要对外投资\",\n        \"value\": \"江通动画股份有限公司，持股比例4.8%\",\n        \"evidence\": \"江通动画股份有限公司，持股比例(%) 4.8\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"湖北佳信物贸股份有限公司注册资本\",\n        \"value\": \"2,000万元\",\n        \"evidence\": \"注册资本为2,000万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"湖北佳信物贸股份有限公司法定代表人\",\n        \"value\": \"吴祖新\",\n        \"evidence\": \"法定代表人为吴祖新\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"湖北佳信物贸股份有限公司股东出资额\",\n        \"value\": \"吴祖新出资600万元，占比30%\",\n        \"evidence\": \"序号1，吴祖新，出资额(万元)600，出资比例(%)30\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"武汉博润2010年1-6月净利润\",\n        \"value\": \"-1,455,917.71元\",\n        \"evidence\": \"2010年1-6月，净利润 -1,455,917.71\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"武汉博润2010年1-6月营业收入\",\n        \"value\": \"850,000.00元\",\n        \"evidence\": \"2010年1-6月，营业收入 850,000.00\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

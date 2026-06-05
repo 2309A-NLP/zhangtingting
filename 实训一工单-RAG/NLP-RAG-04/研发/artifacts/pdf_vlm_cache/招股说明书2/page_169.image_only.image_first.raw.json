@@ -1,0 +1,28 @@
+{
+  "page_number": 169,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e58b14f9ab36a3dbb932167ea0b",
+    "object": "chat.completion",
+    "created": 1780236203,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"2007年12月31日应收账款余额\",\n        \"value\": \"1,360,235.29元\",\n        \"evidence\": \"表格中'应收账款'行，'2007年12月31日'列对应值为'1,360,235.29'。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年12月31日应付票据余额\",\n        \"value\": \"40,183.47元\",\n        \"evidence\": \"表格中'应付票据'行，'2007年12月31日'列对应值为'40,183.47'。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2009年12月31日预付账款余额\",\n        \"value\": \"7,777,743.45元\",\n        \"evidence\": \"表格中'预付款项'行，'2009年12月31日'列对应值为'7,777,743.45'。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2008年12月31日其他应付款余额\",\n        \"value\": \"940,438.83元\",\n        \"evidence\": \"表格中'其他应付款'行，'2008年12月31日'列对应值为'940,438.83'。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 387,
+      "total_tokens": 1539
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"2007年12月31日应收账款余额\",\n        \"value\": \"1,360,235.29元\",\n        \"evidence\": \"表格中'应收账款'行，'2007年12月31日'列对应值为'1,360,235.29'。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年12月31日应付票据余额\",\n        \"value\": \"40,183.47元\",\n        \"evidence\": \"表格中'应付票据'行，'2007年12月31日'列对应值为'40,183.47'。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2009年12月31日预付账款余额\",\n        \"value\": \"7,777,743.45元\",\n        \"evidence\": \"表格中'预付款项'行，'2009年12月31日'列对应值为'7,777,743.45'。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2008年12月31日其他应付款余额\",\n        \"value\": \"940,438.83元\",\n        \"evidence\": \"表格中'其他应付款'行，'2008年12月31日'列对应值为'940,438.83'。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

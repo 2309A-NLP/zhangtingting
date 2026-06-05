@@ -1,0 +1,28 @@
+{
+  "page_number": 397,
+  "logical_page": "396",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e3897462824f5a225e281e7c6e1",
+    "object": "chat.completion",
+    "created": 1780234099,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\n        \"title\": \"武汉市研发人员平均薪酬\",\n        \"value\": \"2017年为15.43万元/人，2018年为14.47万元/人\",\n        \"evidence\": \"表格中'武汉市'行，2017年度为15.43，2018年度为14.47\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图新科研发人员平均薪酬\",\n        \"value\": \"2017年为11.80万元/人，2018年为13.08万元/人\",\n        \"evidence\": \"表格中'兴图新科'行，2017年度为11.80，2018年度为13.08\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图新科研发薪酬水平与行业对比\",\n        \"value\": \"2017年、2018年研发薪酬水平低于行业平均，但差距不断缩小\",\n        \"evidence\": \"文本中'兴图新科2017年、2018年的研发人员平均薪酬为11.80万元、13.08万元，略低于行业水平但差距不断缩小'\",\n        \"type\": \"table_summary\"\n    }\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 306,
+      "total_tokens": 1460
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\n        \"title\": \"武汉市研发人员平均薪酬\",\n        \"value\": \"2017年为15.43万元/人，2018年为14.47万元/人\",\n        \"evidence\": \"表格中'武汉市'行，2017年度为15.43，2018年度为14.47\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图新科研发人员平均薪酬\",\n        \"value\": \"2017年为11.80万元/人，2018年为13.08万元/人\",\n        \"evidence\": \"表格中'兴图新科'行，2017年度为11.80，2018年度为13.08\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"兴图新科研发薪酬水平与行业对比\",\n        \"value\": \"2017年、2018年研发薪酬水平低于行业平均，但差距不断缩小\",\n        \"evidence\": \"文本中'兴图新科2017年、2018年的研发人员平均薪酬为11.80万元、13.08万元，略低于行业水平但差距不断缩小'\",\n        \"type\": \"table_summary\"\n    }\n]"
+}

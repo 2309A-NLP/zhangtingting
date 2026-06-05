@@ -1,0 +1,28 @@
+{
+  "page_number": 220,
+  "logical_page": "219",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e1eab0c75833222d60b51287c39",
+    "object": "chat.completion",
+    "created": 1780232400,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"软件著作权登记列表\",\n        \"value\": \"兴图新科拥有28项软件著作权，涵盖视频管理平台、审讯记录系统、远程视频接访系统、状态监控软件等。\",\n        \"evidence\": \"表格中从第13行至第28行共列出28项软件著作权登记信息。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 93,
+      "total_tokens": 1247
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"软件著作权登记列表\",\n        \"value\": \"兴图新科拥有28项软件著作权，涵盖视频管理平台、审讯记录系统、远程视频接访系统、状态监控软件等。\",\n        \"evidence\": \"表格中从第13行至第28行共列出28项软件著作权登记信息。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

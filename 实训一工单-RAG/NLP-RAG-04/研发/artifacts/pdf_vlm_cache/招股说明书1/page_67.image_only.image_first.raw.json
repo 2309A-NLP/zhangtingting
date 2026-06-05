@@ -1,0 +1,28 @@
+{
+  "page_number": 67,
+  "logical_page": "66",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e10821f9bc5074739d5861fc512",
+    "object": "chat.completion",
+    "created": 1780231472,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"法定代表人\",\"value\":\"程家明\",\"evidence\":\"程家明...任公司董事长、总经理。\",\"type\":\"field\"},\n    {\"title\":\"注册资本\",\"value\":\"2,886.29万股\",\"evidence\":\"程家明直接持有公司2,886.29万股，占比52.29%\",\"type\":\"field\"},\n    {\"title\":\"持股比例\",\"value\":\"52.29%\",\"evidence\":\"程家明直接持有公司2,886.29万股，占比52.29%\",\"type\":\"field\"},\n    {\"title\":\"实际控制人\",\"value\":\"程家明\",\"evidence\":\"程家明...为公司的控股股东、实际控制人。\",\"type\":\"field\"},\n    {\"title\":\"职务\",\"value\":\"董事长、总经理\",\"evidence\":\"程家明...担任公司的董事长、总经理\",\"type\":\"field\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 190,
+      "total_tokens": 1342
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"法定代表人\",\"value\":\"程家明\",\"evidence\":\"程家明...任公司董事长、总经理。\",\"type\":\"field\"},\n    {\"title\":\"注册资本\",\"value\":\"2,886.29万股\",\"evidence\":\"程家明直接持有公司2,886.29万股，占比52.29%\",\"type\":\"field\"},\n    {\"title\":\"持股比例\",\"value\":\"52.29%\",\"evidence\":\"程家明直接持有公司2,886.29万股，占比52.29%\",\"type\":\"field\"},\n    {\"title\":\"实际控制人\",\"value\":\"程家明\",\"evidence\":\"程家明...为公司的控股股东、实际控制人。\",\"type\":\"field\"},\n    {\"title\":\"职务\",\"value\":\"董事长、总经理\",\"evidence\":\"程家明...担任公司的董事长、总经理\",\"type\":\"field\"}\n]"
+}

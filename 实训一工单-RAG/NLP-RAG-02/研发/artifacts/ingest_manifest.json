@@ -1,0 +1,10 @@
+{
+  "pdf": "D:\\Desktop\\NLP-RAG-02\\data\\prospectus.pdf",
+  "mode": "main",
+  "chunks": 1904,
+  "base_chunks": 1904,
+  "embedding_backend": "sentence_transformers:bge-m3",
+  "dimension": 1024,
+  "vector_store": "milvus",
+  "pdf_parser_backend": "parse2"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 100,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e51391964b0f566f145ac4012d5",
+    "object": "chat.completion",
+    "created": 1780235712,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"本公司与竞争对手的差异\",\"value\":\"本公司产品种类更齐全，相比授权分销商和独立分销商，产品种类更全。\",\"evidence\":\"与授权分销商和独立分销商相比，本公司的产品种类更加齐全。\",\"type\":\"table_summary\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 65,
+      "total_tokens": 1217
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"本公司与竞争对手的差异\",\"value\":\"本公司产品种类更齐全，相比授权分销商和独立分销商，产品种类更全。\",\"evidence\":\"与授权分销商和独立分销商相比，本公司的产品种类更加齐全。\",\"type\":\"table_summary\"}\n]\n```"
+}

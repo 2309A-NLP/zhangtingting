@@ -1,0 +1,28 @@
+{
+  "page_number": 361,
+  "logical_page": "360",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e33ba654d2d8b21dd241e9e309d",
+    "object": "chat.completion",
+    "created": 1780233779,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"XT2016077合同回款情况\",\"value\":\"截至2019年9月30日，回款318.48万元，回款比例80%。\",\"evidence\":\"截至2019年9月30日，该合同已回款318.48万元，回款比例80%。\",\"type\":\"table_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 91,
+      "total_tokens": 1245
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"XT2016077合同回款情况\",\"value\":\"截至2019年9月30日，回款318.48万元，回款比例80%。\",\"evidence\":\"截至2019年9月30日，该合同已回款318.48万元，回款比例80%。\",\"type\":\"table_fact\"}]"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 30,
+  "logical_page": "29",
+  "mode": "image_only",
+  "response": {
+    "id": "019e73c844873db000534241391d81cf",
+    "object": "chat.completion",
+    "created": 1780058965,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"募集资金总额\",\"value\":\"40,584.83万元\",\"evidence\":\"以上项目所需募集资金投入合计40,584.83万元。\",\"type\":\"table_summary\"},\n    {\"title\":\"募集资金用途项目1\",\"value\":\"基于云联邦架构的军用视频指挥平台升级及产业化项目\",\"evidence\":\"序号1，项目名称：基于云联邦架构的军用视频指挥平台升级及产业化项目\",\"type\":\"table_fact\"},\n    {\"title\":\"募集资金用途项目2\",\"value\":\"研发中心建设项目\",\"evidence\":\"序号2，项目名称：研发中心建设项目\",\"type\":\"table_fact\"},\n    {\"title\":\"募集资金用途项目3\",\"value\":\"补充流动资金\",\"evidence\":\"序号3，项目名称：补充流动资金\",\"type\":\"table_fact\"},\n    {\"title\":\"项目1募集资金投资金额\",\"value\":\"20,658.33万元\",\"evidence\":\"项目总投资（万元）20,658.33，募集资金投资（万元）20,658.33\",\"type\":\"table_fact\"},\n    {\"title\":\"项目2募集资金投资金额\",\"value\":\"4,926.50万元\",\"evidence\":\"项目总投资（万元）4,926.50，募集资金投资（万元）4,926.50\",\"type\":\"table_fact\"},\n    {\"title\":\"项目3募集资金投资金额\",\"value\":\"15,000.00万元\",\"evidence\":\"项目总投资（万元）15,000.00，募集资金投资（万元）15,000.00\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1076,
+      "completion_tokens": 352,
+      "total_tokens": 1428
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"募集资金总额\",\"value\":\"40,584.83万元\",\"evidence\":\"以上项目所需募集资金投入合计40,584.83万元。\",\"type\":\"table_summary\"},\n    {\"title\":\"募集资金用途项目1\",\"value\":\"基于云联邦架构的军用视频指挥平台升级及产业化项目\",\"evidence\":\"序号1，项目名称：基于云联邦架构的军用视频指挥平台升级及产业化项目\",\"type\":\"table_fact\"},\n    {\"title\":\"募集资金用途项目2\",\"value\":\"研发中心建设项目\",\"evidence\":\"序号2，项目名称：研发中心建设项目\",\"type\":\"table_fact\"},\n    {\"title\":\"募集资金用途项目3\",\"value\":\"补充流动资金\",\"evidence\":\"序号3，项目名称：补充流动资金\",\"type\":\"table_fact\"},\n    {\"title\":\"项目1募集资金投资金额\",\"value\":\"20,658.33万元\",\"evidence\":\"项目总投资（万元）20,658.33，募集资金投资（万元）20,658.33\",\"type\":\"table_fact\"},\n    {\"title\":\"项目2募集资金投资金额\",\"value\":\"4,926.50万元\",\"evidence\":\"项目总投资（万元）4,926.50，募集资金投资（万元）4,926.50\",\"type\":\"table_fact\"},\n    {\"title\":\"项目3募集资金投资金额\",\"value\":\"15,000.00万元\",\"evidence\":\"项目总投资（万元）15,000.00，募集资金投资（万元）15,000.00\",\"type\":\"table_fact\"}\n]"
+}

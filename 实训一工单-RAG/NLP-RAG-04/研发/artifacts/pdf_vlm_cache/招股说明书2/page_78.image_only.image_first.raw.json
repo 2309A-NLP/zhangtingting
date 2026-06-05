@@ -1,0 +1,28 @@
+{
+  "page_number": 78,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4f512cba2b7de546851b9c93b2",
+    "object": "chat.completion",
+    "created": 1780235588,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"分销商的合作对象\",\n        \"value\": \"2009年，中国中型制造商是分销商合作对象中占比最高的群体，占比60%；2008年，中国中型制造商占比57%。\",\n        \"evidence\": \"图表中中国中型制造商2009年占比60%，2008年占比57%。\",\n        \"type\": \"chart_fact\"\n    },\n    {\n        \"title\": \"制造商小批量采购时注重的因素\",\n        \"value\": \"产品品质是制造商小批量采购时最关注的因素，2009年回复比例为34%。\",\n        \"evidence\": \"表格中产品品质排名1，回复比例34%。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 177,
+      "total_tokens": 1328
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"分销商的合作对象\",\n        \"value\": \"2009年，中国中型制造商是分销商合作对象中占比最高的群体，占比60%；2008年，中国中型制造商占比57%。\",\n        \"evidence\": \"图表中中国中型制造商2009年占比60%，2008年占比57%。\",\n        \"type\": \"chart_fact\"\n    },\n    {\n        \"title\": \"制造商小批量采购时注重的因素\",\n        \"value\": \"产品品质是制造商小批量采购时最关注的因素，2009年回复比例为34%。\",\n        \"evidence\": \"表格中产品品质排名1，回复比例34%。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

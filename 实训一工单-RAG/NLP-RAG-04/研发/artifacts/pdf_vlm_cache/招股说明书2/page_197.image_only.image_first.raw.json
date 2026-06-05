@@ -1,0 +1,28 @@
+{
+  "page_number": 197,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e5c09b3526ed2d2374d963f2c72",
+    "object": "chat.completion",
+    "created": 1780236421,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"提名委员会组成\",\n        \"value\": \"由王芹生、邹明春和赵马克3位委员组成，王芹生任主任委员。\",\n        \"evidence\": \"公司董事会提名委员会由王芹生、邹明春和赵马克等3位委员组成，由王芹生任主任委员并负责主持工作。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"薪酬与考核委员会组成\",\n        \"value\": \"由张兆国、邹明春和胡成等3位委员组成，张兆国任主任委员。\",\n        \"evidence\": \"公司董事会薪酬与考核委员会由张兆国、邹明春和胡成等3位委员组成，由张兆国任主任委员并负责主持工作。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 185,
+      "total_tokens": 1337
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"提名委员会组成\",\n        \"value\": \"由王芹生、邹明春和赵马克3位委员组成，王芹生任主任委员。\",\n        \"evidence\": \"公司董事会提名委员会由王芹生、邹明春和赵马克等3位委员组成，由王芹生任主任委员并负责主持工作。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"薪酬与考核委员会组成\",\n        \"value\": \"由张兆国、邹明春和胡成等3位委员组成，张兆国任主任委员。\",\n        \"evidence\": \"公司董事会薪酬与考核委员会由张兆国、邹明春和胡成等3位委员组成，由张兆国任主任委员并负责主持工作。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

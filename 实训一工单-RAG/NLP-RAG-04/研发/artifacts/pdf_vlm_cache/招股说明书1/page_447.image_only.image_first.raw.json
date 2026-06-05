@@ -1,0 +1,28 @@
+{
+  "page_number": 447,
+  "logical_page": "446",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4012b69abb87df1aa19fd17ccc",
+    "object": "chat.completion",
+    "created": 1780234589,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"存货跌价准备计提政策比较\",\"value\":\"发行人2018年末存货跌价准备计提金额为349.70万元，计提比例为10.41%，高于同行业可比公司平均值1,136.85万元（5.42%）\",\"evidence\":\"表格中‘兴图新科’行‘2018年12月31日’列‘计提金额’为349.70，‘计提比例’为10.41%；‘平均值’行‘2018年12月31日’列‘计提金额’为1,136.85，‘计提比例’为5.42%\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 170,
+      "total_tokens": 1324
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"存货跌价准备计提政策比较\",\"value\":\"发行人2018年末存货跌价准备计提金额为349.70万元，计提比例为10.41%，高于同行业可比公司平均值1,136.85万元（5.42%）\",\"evidence\":\"表格中‘兴图新科’行‘2018年12月31日’列‘计提金额’为349.70，‘计提比例’为10.41%；‘平均值’行‘2018年12月31日’列‘计提金额’为1,136.85，‘计提比例’为5.42%\",\"type\":\"table_fact\"}\n]"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 49,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e73ca5e9f7c2e6f49223a148abffb",
+    "object": "chat.completion",
+    "created": 1780059103,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"法定代表人\",\"value\":\"张小莉\",\"evidence\":\"2009年6月23日成立，注册资本530万元，法定代表人张小莉\",\"type\":\"field\"},\n    {\"title\":\"注册资本\",\"value\":\"530万元\",\"evidence\":\"2009年6月23日成立，注册资本530万元\",\"type\":\"field\"},\n    {\"title\":\"出资额(万元)\",\"value\":\"179.06\",\"evidence\":\"序号1，股东李庆堂，出资额(万元)179.06\",\"type\":\"table_fact\"},\n    {\"title\":\"出资比例(%)\",\"value\":\"33.79\",\"evidence\":\"序号1，股东李庆堂，出资比例(%)33.79\",\"type\":\"table_fact\"},\n    {\"title\":\"总资产\",\"value\":\"5,299,971.77元\",\"evidence\":\"项目：总资产，2010年6月30日：5,299,971.77\",\"type\":\"table_fact\"},\n    {\"title\":\"净资产\",\"value\":\"5,287,079.27元\",\"evidence\":\"项目：净资产，2010年6月30日：5,287,079.27\",\"type\":\"table_fact\"},\n    {\"title\":\"净利润\",\"value\":\"-5,074.66元\",\"evidence\":\"项目：净利润，2010年1-6月：-5,074.66\",\"type\":\"table_fact\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1075,
+      "completion_tokens": 346,
+      "total_tokens": 1421
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"法定代表人\",\"value\":\"张小莉\",\"evidence\":\"2009年6月23日成立，注册资本530万元，法定代表人张小莉\",\"type\":\"field\"},\n    {\"title\":\"注册资本\",\"value\":\"530万元\",\"evidence\":\"2009年6月23日成立，注册资本530万元\",\"type\":\"field\"},\n    {\"title\":\"出资额(万元)\",\"value\":\"179.06\",\"evidence\":\"序号1，股东李庆堂，出资额(万元)179.06\",\"type\":\"table_fact\"},\n    {\"title\":\"出资比例(%)\",\"value\":\"33.79\",\"evidence\":\"序号1，股东李庆堂，出资比例(%)33.79\",\"type\":\"table_fact\"},\n    {\"title\":\"总资产\",\"value\":\"5,299,971.77元\",\"evidence\":\"项目：总资产，2010年6月30日：5,299,971.77\",\"type\":\"table_fact\"},\n    {\"title\":\"净资产\",\"value\":\"5,287,079.27元\",\"evidence\":\"项目：净资产，2010年6月30日：5,287,079.27\",\"type\":\"table_fact\"},\n    {\"title\":\"净利润\",\"value\":\"-5,074.66元\",\"evidence\":\"项目：净利润，2010年1-6月：-5,074.66\",\"type\":\"table_fact\"}\n]\n```"
+}

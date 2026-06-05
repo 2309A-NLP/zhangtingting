@@ -1,0 +1,28 @@
+{
+  "page_number": 203,
+  "logical_page": "202",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e1b4ff3aadf0b4990a1c87b063e",
+    "object": "chat.completion",
+    "created": 1780232179,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"主要原材料采购情况\",\"value\":\"公司原材料包括包装耗材、计算机设备及部件、微型投影仪、结构件、显示设备等\",\"evidence\":\"公司产品所需的原材料品种多样、种类繁多，主要包括包装耗材、计算机设备及部件、微型投影仪、结构件、显示设备、包装耗材等。\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 81,
+      "total_tokens": 1235
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"主要原材料采购情况\",\"value\":\"公司原材料包括包装耗材、计算机设备及部件、微型投影仪、结构件、显示设备等\",\"evidence\":\"公司产品所需的原材料品种多样、种类繁多，主要包括包装耗材、计算机设备及部件、微型投影仪、结构件、显示设备、包装耗材等。\",\"type\":\"table_fact\"}\n]"
+}

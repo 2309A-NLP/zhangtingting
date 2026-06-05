@@ -1,0 +1,28 @@
+{
+  "page_number": 512,
+  "logical_page": "511",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e46bdf76d3c90bdde5e650eaf84",
+    "object": "chat.completion",
+    "created": 1780235026,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"股东减持承诺\",\"value\":\"本次发行前持股比例超过5%的股东陈爱民承诺，锁定期满后24个月内减持价格不低于发行价，且减持股份总额不超过相关法规限制。\",\"evidence\":\"(3) 本次发行前持股比例超过5%（含间接持股）的股东陈爱民承诺：...2、本人所持公司股票在锁定期满后24个月内减持的，其减持价格不低于发行价，减持的股份总额不超过相关法律、法规、规章和规范性文件的规定限制，...\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 126,
+      "total_tokens": 1280
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"股东减持承诺\",\"value\":\"本次发行前持股比例超过5%的股东陈爱民承诺，锁定期满后24个月内减持价格不低于发行价，且减持股份总额不超过相关法规限制。\",\"evidence\":\"(3) 本次发行前持股比例超过5%（含间接持股）的股东陈爱民承诺：...2、本人所持公司股票在锁定期满后24个月内减持的，其减持价格不低于发行价，减持的股份总额不超过相关法律、法规、规章和规范性文件的规定限制，...\",\"type\":\"field\"}]"
+}

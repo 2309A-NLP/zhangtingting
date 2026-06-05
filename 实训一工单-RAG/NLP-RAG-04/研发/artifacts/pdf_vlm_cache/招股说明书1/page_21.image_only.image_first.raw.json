@@ -1,0 +1,28 @@
+{
+  "page_number": 21,
+  "logical_page": "20",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e0909a1c015a639f36095240eac",
+    "object": "chat.completion",
+    "created": 1780230982,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"术语定义表\",\"value\":\"页面为术语定义表，包含鲁棒性、FPGA、泊松融合、行人重识别、空间域、时间域、谱聚类算法、DDN专线等术语及其定义。\",\"evidence\":\"页面表格中列出多个术语及其对应定义，如‘鲁棒性’定义为‘健壮性、抗变换性’，‘FPGA’定义为‘现场可编程门阵列’等。\",\"type\":\"table_summary\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 111,
+      "total_tokens": 1263
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"术语定义表\",\"value\":\"页面为术语定义表，包含鲁棒性、FPGA、泊松融合、行人重识别、空间域、时间域、谱聚类算法、DDN专线等术语及其定义。\",\"evidence\":\"页面表格中列出多个术语及其对应定义，如‘鲁棒性’定义为‘健壮性、抗变换性’，‘FPGA’定义为‘现场可编程门阵列’等。\",\"type\":\"table_summary\"}\n]\n```"
+}

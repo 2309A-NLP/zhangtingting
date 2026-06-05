@@ -1,0 +1,28 @@
+{
+  "page_number": 214,
+  "logical_page": "213",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e1e05813266e15b50d02ba236b3",
+    "object": "chat.completion",
+    "created": 1780232357,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"主要无形资产账面价值\",\"value\":\"39.41万元\",\"evidence\":\"截至2019年6月30日，兴图新科无形资产账面价值为39.41万元\",\"type\":\"table_fact\"},\n    {\"title\":\"主要无形资产累计摊销\",\"value\":\"87.09万元\",\"evidence\":\"截至2019年6月30日，兴图新科无形资产累计摊销为87.09万元\",\"type\":\"table_fact\"},\n    {\"title\":\"商标权数量\",\"value\":\"45件\",\"evidence\":\"截至2019年6月30日，公司及其子公司共取得45件注册商标\",\"type\":\"table_fact\"},\n    {\"title\":\"兴图新科商标数量\",\"value\":\"2件\",\"evidence\":\"截至2019年6月30日，兴图新科2件\",\"type\":\"table_fact\"},\n    {\"title\":\"武汉启目商标数量\",\"value\":\"24件\",\"evidence\":\"截至2019年6月30日，武汉启目24件\",\"type\":\"table_fact\"},\n    {\"title\":\"华创兴图商标数量\",\"value\":\"19件\",\"evidence\":\"截至2019年6月30日，华创兴图19件\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 292,
+      "total_tokens": 1446
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"主要无形资产账面价值\",\"value\":\"39.41万元\",\"evidence\":\"截至2019年6月30日，兴图新科无形资产账面价值为39.41万元\",\"type\":\"table_fact\"},\n    {\"title\":\"主要无形资产累计摊销\",\"value\":\"87.09万元\",\"evidence\":\"截至2019年6月30日，兴图新科无形资产累计摊销为87.09万元\",\"type\":\"table_fact\"},\n    {\"title\":\"商标权数量\",\"value\":\"45件\",\"evidence\":\"截至2019年6月30日，公司及其子公司共取得45件注册商标\",\"type\":\"table_fact\"},\n    {\"title\":\"兴图新科商标数量\",\"value\":\"2件\",\"evidence\":\"截至2019年6月30日，兴图新科2件\",\"type\":\"table_fact\"},\n    {\"title\":\"武汉启目商标数量\",\"value\":\"24件\",\"evidence\":\"截至2019年6月30日，武汉启目24件\",\"type\":\"table_fact\"},\n    {\"title\":\"华创兴图商标数量\",\"value\":\"19件\",\"evidence\":\"截至2019年6月30日，华创兴图19件\",\"type\":\"table_fact\"}\n]"
+}

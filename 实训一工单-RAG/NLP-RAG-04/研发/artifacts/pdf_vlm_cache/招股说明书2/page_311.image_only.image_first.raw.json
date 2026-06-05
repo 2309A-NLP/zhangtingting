@@ -1,0 +1,28 @@
+{
+  "page_number": 311,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6bd756517be1b54e31cb914a24",
+    "object": "chat.completion",
+    "created": 1780237457,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"BOM单配套满足率目标\",\"value\":\"配套满足率达到40%以上\",\"evidence\":\"对客户BOM单的配套满足率达到40%以上时，分销商就对客户具有了较大吸引力\",\"type\":\"field\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 60,
+      "total_tokens": 1212
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"BOM单配套满足率目标\",\"value\":\"配套满足率达到40%以上\",\"evidence\":\"对客户BOM单的配套满足率达到40%以上时，分销商就对客户具有了较大吸引力\",\"type\":\"field\"}\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 218,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e5fae11866fc190982013baa331",
+    "object": "chat.completion",
+    "created": 1780236660,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"2008年度母公司所有者权益变动表\",\n        \"value\": \"2008年度母公司所有者权益合计为73,710,061.71元。\",\n        \"evidence\": \"表中'四、本期期末余额'行，'所有者权益合计'列数值为73,710,061.71。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"2008年度母公司所有者权益变动表\",\n        \"value\": \"2008年度母公司所有者权益合计为73,710,061.71元。\",\n        \"evidence\": \"表中'四、本期期末余额'行，'所有者权益合计'列数值为73,710,061.71。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 206,
+      "total_tokens": 1358
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"2008年度母公司所有者权益变动表\",\n        \"value\": \"2008年度母公司所有者权益合计为73,710,061.71元。\",\n        \"evidence\": \"表中'四、本期期末余额'行，'所有者权益合计'列数值为73,710,061.71。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"2008年度母公司所有者权益变动表\",\n        \"value\": \"2008年度母公司所有者权益合计为73,710,061.71元。\",\n        \"evidence\": \"表中'四、本期期末余额'行，'所有者权益合计'列数值为73,710,061.71。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

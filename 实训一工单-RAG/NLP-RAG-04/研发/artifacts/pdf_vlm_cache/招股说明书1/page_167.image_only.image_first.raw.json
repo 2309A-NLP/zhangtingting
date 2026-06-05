@@ -1,0 +1,28 @@
+{
+  "page_number": 167,
+  "logical_page": "166",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e17f818069720f4d5ad956228a0",
+    "object": "chat.completion",
+    "created": 1780231960,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"核心技术\",\"value\":\"带宽侦测与拥塞探测技术\",\"evidence\":\"核心技术: 带宽侦测与拥塞探测技术\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 40,
+      "total_tokens": 1194
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"核心技术\",\"value\":\"带宽侦测与拥塞探测技术\",\"evidence\":\"核心技术: 带宽侦测与拥塞探测技术\",\"type\":\"field\"}]"
+}

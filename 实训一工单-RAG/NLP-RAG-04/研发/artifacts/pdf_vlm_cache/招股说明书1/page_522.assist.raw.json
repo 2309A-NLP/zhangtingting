@@ -1,0 +1,28 @@
+{
+  "page_number": 522,
+  "logical_page": "521",
+  "mode": "full",
+  "response": {
+    "id": "019e7e4732396b40562cfe5361149089",
+    "object": "chat.completion",
+    "created": 1780235056,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"董事、高级管理人员承诺内容\",\n        \"value\": \"承诺不无偿输送利益、约束职务消费、不滥用公司资产、薪酬与填补回报挂钩、股权激励条件与填补回报挂钩。\",\n        \"evidence\": \"本地正文及表格中明确列出了5条具体承诺内容。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1585,
+      "completion_tokens": 83,
+      "total_tokens": 1668
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"董事、高级管理人员承诺内容\",\n        \"value\": \"承诺不无偿输送利益、约束职务消费、不滥用公司资产、薪酬与填补回报挂钩、股权激励条件与填补回报挂钩。\",\n        \"evidence\": \"本地正文及表格中明确列出了5条具体承诺内容。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

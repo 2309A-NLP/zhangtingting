@@ -1,0 +1,28 @@
+{
+  "page_number": 233,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e60c398b0aecd93e957b9eda355",
+    "object": "chat.completion",
+    "created": 1780236731,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"无形资产的计价方法\",\n        \"value\": \"无形资产按实际支付的价款和相关支出作为实际成本；合同或协议约定价值不公允的，按公允价值确定；自行开发的无形资产，成本为达到预定用途所发生的支出总额。\",\n        \"evidence\": \"按照成本进行初始计量。购入的无形资产，按实际支付的价款和相关支出作为实际成本。投资者投入的无形资产，按投资合同或协议约定的价值确定实际成本，但合同或协议约定价值不公允的，按公允价值确定实际成本。自行开发的无形资产，其成本为达到预定用途前所发生的支出总额。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 166,
+      "total_tokens": 1318
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"无形资产的计价方法\",\n        \"value\": \"无形资产按实际支付的价款和相关支出作为实际成本；合同或协议约定价值不公允的，按公允价值确定；自行开发的无形资产，成本为达到预定用途所发生的支出总额。\",\n        \"evidence\": \"按照成本进行初始计量。购入的无形资产，按实际支付的价款和相关支出作为实际成本。投资者投入的无形资产，按投资合同或协议约定的价值确定实际成本，但合同或协议约定价值不公允的，按公允价值确定实际成本。自行开发的无形资产，其成本为达到预定用途前所发生的支出总额。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

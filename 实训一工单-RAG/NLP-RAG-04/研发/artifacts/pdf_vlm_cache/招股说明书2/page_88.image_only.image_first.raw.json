@@ -1,0 +1,28 @@
+{
+  "page_number": 88,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e502fadb0872fed14039c2093c6",
+    "object": "chat.completion",
+    "created": 1780235645,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"上游行业市场份额集中度\",\n        \"value\": \"前20大IC原厂市场份额合计62.8%，前10大IC原厂市场份额合计47%。\",\n        \"evidence\": \"根据isuppli发布的数据，2009年，前20大IC原厂的市场份额合计为62.8%，其中前10大IC原厂的市场份额合计为47%。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 113,
+      "total_tokens": 1264
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"上游行业市场份额集中度\",\n        \"value\": \"前20大IC原厂市场份额合计62.8%，前10大IC原厂市场份额合计47%。\",\n        \"evidence\": \"根据isuppli发布的数据，2009年，前20大IC原厂的市场份额合计为62.8%，其中前10大IC原厂的市场份额合计为47%。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 134,
+  "logical_page": null,
+  "mode": "full",
+  "response": {
+    "id": "019e7e54508b8a30c141ae5d9d9daa0c",
+    "object": "chat.completion",
+    "created": 1780235916,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"技术团队构成\",\"value\":\"公司已建立包括设计工程师(DAE)、产品工程师(PAE)、现场应用工程师(FAE)三个层面的技术服务团队。\",\"evidence\":\"本地正文：'公司已建立起一支包括设计工程师(DAE)、产品工程师(PAE)、现场应用工程师(FAE)三个层面的技术服务团队'\",\"type\":\"field\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1689,
+      "completion_tokens": 88,
+      "total_tokens": 1777
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"技术团队构成\",\"value\":\"公司已建立包括设计工程师(DAE)、产品工程师(PAE)、现场应用工程师(FAE)三个层面的技术服务团队。\",\"evidence\":\"本地正文：'公司已建立起一支包括设计工程师(DAE)、产品工程师(PAE)、现场应用工程师(FAE)三个层面的技术服务团队'\",\"type\":\"field\"}\n]\n```"
+}

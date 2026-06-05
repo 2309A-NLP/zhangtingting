@@ -1,0 +1,32 @@
+[
+  {
+    "title": "合同金额",
+    "value": "260.58万元",
+    "evidence": "XT2015095行，金额列显示260.58，单位为万元",
+    "type": "table_fact"
+  },
+  {
+    "title": "合同金额",
+    "value": "260.00万元",
+    "evidence": "XT2016108行，金额列显示260.00，单位为万元",
+    "type": "table_fact"
+  },
+  {
+    "title": "合同金额",
+    "value": "214.84万元",
+    "evidence": "XT2016105行，金额列显示214.84，单位为万元",
+    "type": "table_fact"
+  },
+  {
+    "title": "合同金额",
+    "value": "198.70万元",
+    "evidence": "ZCX2015-4338/W338行，金额列显示198.70，单位为万元",
+    "type": "table_fact"
+  },
+  {
+    "title": "合同金额",
+    "value": "190.74万元",
+    "evidence": "XT2015100行，金额列显示190.74，单位为万元",
+    "type": "table_fact"
+  }
+]

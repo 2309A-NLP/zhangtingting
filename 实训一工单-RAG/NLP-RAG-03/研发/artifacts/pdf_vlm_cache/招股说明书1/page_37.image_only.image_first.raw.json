@@ -1,0 +1,28 @@
+{
+  "page_number": 37,
+  "logical_page": "36",
+  "mode": "image_only",
+  "response": {
+    "id": "019e73c83e056ad4f9e5b2707ff55b14",
+    "object": "chat.completion",
+    "created": 1780058964,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"营业收入变动率1%时的营业利润变动额\",\"value\":\"38.78万元\",\"evidence\":\"营业收入变动率1%时的营业利润变动额 38.78\",\"type\":\"table_fact\"},{\"title\":\"营业收入变动率1%时的营业利润变动率\",\"value\":\"30.99%\",\"evidence\":\"营业收入变动率1%时的营业利润变动率 30.99%\",\"type\":\"table_fact\"},{\"title\":\"营业收入变动率-1%时的营业利润变动额\",\"value\":\"-38.78万元\",\"evidence\":\"营业收入变动率-1%时的营业利润变动额 -38.78\",\"type\":\"table_fact\"},{\"title\":\"营业收入变动率-1%时的营业利润变动率\",\"value\":\"-30.99%\",\"evidence\":\"营业收入变动率-1%时的营业利润变动率 -30.99%\",\"type\":\"table_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1076,
+      "completion_tokens": 207,
+      "total_tokens": 1283
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"营业收入变动率1%时的营业利润变动额\",\"value\":\"38.78万元\",\"evidence\":\"营业收入变动率1%时的营业利润变动额 38.78\",\"type\":\"table_fact\"},{\"title\":\"营业收入变动率1%时的营业利润变动率\",\"value\":\"30.99%\",\"evidence\":\"营业收入变动率1%时的营业利润变动率 30.99%\",\"type\":\"table_fact\"},{\"title\":\"营业收入变动率-1%时的营业利润变动额\",\"value\":\"-38.78万元\",\"evidence\":\"营业收入变动率-1%时的营业利润变动额 -38.78\",\"type\":\"table_fact\"},{\"title\":\"营业收入变动率-1%时的营业利润变动率\",\"value\":\"-30.99%\",\"evidence\":\"营业收入变动率-1%时的营业利润变动率 -30.99%\",\"type\":\"table_fact\"}]"
+}

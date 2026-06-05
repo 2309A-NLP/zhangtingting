@@ -1,0 +1,28 @@
+{
+  "page_number": 70,
+  "logical_page": "69",
+  "mode": "full",
+  "response": {
+    "id": "019e7e10e67c351acc976e75d5ec7a2a",
+    "object": "chat.completion",
+    "created": 1780231497,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"法定代表人\",\"value\":\"武汉鑫盛达投资管理有限公司\",\"evidence\":\"执行事务合伙人：武汉鑫盛达投资管理有限公司\",\"type\":\"field\"},\n    {\"title\":\"注册资本\",\"value\":\"3,236.84万元\",\"evidence\":\"认缴出资额：3,236.84万元\",\"type\":\"field\"},\n    {\"title\":\"重要供应商领域\",\"value\":\"股权投资业务\",\"evidence\":\"经营范围：主要从事非证券类股权投资活动及相关的咨询服务业务\",\"type\":\"field\"},\n    {\"title\":\"组织结构图层级\",\"value\":\"普通合伙人1名，有限合伙人4名\",\"evidence\":\"合伙人列表中普通合伙人1家，有限合伙人4家\",\"type\":\"org_chart_summary\"},\n    {\"title\":\"合伙人出资比例\",\"value\":\"武汉科峰投资有限公司出资比例最高，为44.55%\",\"evidence\":\"序号2，武汉科峰投资有限公司，出资比例44.55%\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2440,
+      "completion_tokens": 208,
+      "total_tokens": 2648
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"法定代表人\",\"value\":\"武汉鑫盛达投资管理有限公司\",\"evidence\":\"执行事务合伙人：武汉鑫盛达投资管理有限公司\",\"type\":\"field\"},\n    {\"title\":\"注册资本\",\"value\":\"3,236.84万元\",\"evidence\":\"认缴出资额：3,236.84万元\",\"type\":\"field\"},\n    {\"title\":\"重要供应商领域\",\"value\":\"股权投资业务\",\"evidence\":\"经营范围：主要从事非证券类股权投资活动及相关的咨询服务业务\",\"type\":\"field\"},\n    {\"title\":\"组织结构图层级\",\"value\":\"普通合伙人1名，有限合伙人4名\",\"evidence\":\"合伙人列表中普通合伙人1家，有限合伙人4家\",\"type\":\"org_chart_summary\"},\n    {\"title\":\"合伙人出资比例\",\"value\":\"武汉科峰投资有限公司出资比例最高，为44.55%\",\"evidence\":\"序号2，武汉科峰投资有限公司，出资比例44.55%\",\"type\":\"table_fact\"}\n]"
+}

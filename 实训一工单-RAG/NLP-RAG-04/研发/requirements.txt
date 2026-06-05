@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+pymupdf
+pdfplumber
+paddleocr
+paddlepaddle
+pymilvus
+numpy
+pandas
+requests
+scikit-learn
+gradio
+sentence-transformers
+transformers
+torch
+faster-whisper
+soundfile

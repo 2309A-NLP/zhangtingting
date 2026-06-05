@@ -1,0 +1,8 @@
+[
+  {
+    "title": "专业术语定义",
+    "value": "C4ISR系统指指挥、控制、通信、计算机、情报、监视、侦察的缩写，是美国军事指挥当局作出重大战略决策以及战略部队的指挥员对其所属部队实施指挥控制、进行管理时所用的设备、器材、程序的总称。",
+    "evidence": "C4ISR 系统 | 指 | 指挥（Command）、控制（Control）、通信（Communication）、计算机（Computer）、情报（Intelligence）、监视（Surveillance）、侦察（Reconnaissance）的缩写。C4ISR 系统是美国军事指挥当局作出重大战略决策以及战略部队的指挥员对其所属部队实施指挥控制、进行管理时所用的设备、器材、程序的总称。",
+    "type": "table_fact"
+  }
+]

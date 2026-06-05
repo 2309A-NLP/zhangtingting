@@ -1,0 +1,28 @@
+{
+  "page_number": 444,
+  "logical_page": "443",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e3fe4bf38ae6b0e9eaffa1f512a",
+    "object": "chat.completion",
+    "created": 1780234577,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\n        \"title\": \"前期研发资本化项目明细\",\n        \"value\": \"某总部集采测试项目：合同金额4500.00万元，前期研发投入355.57万元；某军种视频会议项目：合同金额2346.91万元，前期研发投入263.55万元。\",\n        \"evidence\": \"表格中列出了两个项目的合同金额、前期研发投入金额及签约日期。\",\n        \"type\": \"table_fact\"\n    }\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 109,
+      "total_tokens": 1263
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\n        \"title\": \"前期研发资本化项目明细\",\n        \"value\": \"某总部集采测试项目：合同金额4500.00万元，前期研发投入355.57万元；某军种视频会议项目：合同金额2346.91万元，前期研发投入263.55万元。\",\n        \"evidence\": \"表格中列出了两个项目的合同金额、前期研发投入金额及签约日期。\",\n        \"type\": \"table_fact\"\n    }\n]"
+}

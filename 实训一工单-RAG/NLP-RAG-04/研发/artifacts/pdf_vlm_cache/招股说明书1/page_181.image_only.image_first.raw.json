@@ -1,0 +1,28 @@
+{
+  "page_number": 181,
+  "logical_page": "180",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e18fa652a64aa94dff7b2f2173c",
+    "object": "chat.completion",
+    "created": 1780232026,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"省级奖项列表\",\"value\":\"公司获得的省级奖项包括：基于云计算的一体化音视频服务平台（2013年）、湖北省企业技术中心（2018年）、网络化视频指挥系统（2018年）\",\"evidence\":\"表格中序号1-3对应的成果、荣誉、来源和时间\",\"type\":\"table_summary\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 82,
+      "total_tokens": 1236
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"省级奖项列表\",\"value\":\"公司获得的省级奖项包括：基于云计算的一体化音视频服务平台（2013年）、湖北省企业技术中心（2018年）、网络化视频指挥系统（2018年）\",\"evidence\":\"表格中序号1-3对应的成果、荣誉、来源和时间\",\"type\":\"table_summary\"}\n]"
+}

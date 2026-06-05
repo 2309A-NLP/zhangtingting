@@ -1,0 +1,28 @@
+{
+  "page_number": 133,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e544029519d23b7591c78dfe47c",
+    "object": "chat.completion",
+    "created": 1780235911,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"技术服务特点\",\"value\":\"技术服务具有针对性、原创性和前瞻性\",\"evidence\":\"本公司技术服务具有三个特点：其一，针对性...其二，原创性...其三，前瞻性...\",\"type\":\"field\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 53,
+      "total_tokens": 1205
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"技术服务特点\",\"value\":\"技术服务具有针对性、原创性和前瞻性\",\"evidence\":\"本公司技术服务具有三个特点：其一，针对性...其二，原创性...其三，前瞻性...\",\"type\":\"field\"}\n]\n```"
+}

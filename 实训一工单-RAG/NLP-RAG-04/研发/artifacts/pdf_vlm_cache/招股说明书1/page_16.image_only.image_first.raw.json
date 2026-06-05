@@ -1,0 +1,28 @@
+{
+  "page_number": 16,
+  "logical_page": "15",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e08ce8107b11394a6fb042b6c14",
+    "object": "chat.completion",
+    "created": 1780230967,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"目录结构\",\n        \"value\": \"第十二节 有关声明包含八项声明内容，起始页码为533。\",\n        \"evidence\": \"第十二节 有关声明 ... 533\",\n        \"type\": \"layout_fix\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 70,
+      "total_tokens": 1222
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"目录结构\",\n        \"value\": \"第十二节 有关声明包含八项声明内容，起始页码为533。\",\n        \"evidence\": \"第十二节 有关声明 ... 533\",\n        \"type\": \"layout_fix\"\n    }\n]\n```"
+}

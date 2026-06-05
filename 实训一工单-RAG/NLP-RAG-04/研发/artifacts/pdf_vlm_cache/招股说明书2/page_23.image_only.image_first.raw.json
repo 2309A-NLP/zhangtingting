@@ -1,0 +1,28 @@
+{
+  "page_number": 23,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4af18244781ae5e0e0ea482f1f",
+    "object": "chat.completion",
+    "created": 1780235301,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"注册资本\",\"value\":\"人民币5,000万元\",\"evidence\":\"3、注册资本：人民币5,000万元\",\"type\":\"field\"},\n    {\"title\":\"法定代表人\",\"value\":\"赵马克\",\"evidence\":\"4、法定代表人：赵马克\",\"type\":\"field\"},\n    {\"title\":\"公司成立日期\",\"value\":\"2001年8月9日\",\"evidence\":\"5、公司成立日期：2001年8月9日\",\"type\":\"field\"},\n    {\"title\":\"整体变更为股份有限公司日期\",\"value\":\"2009年12月8日\",\"evidence\":\"6、整体变更为股份有限公司日期：2009年12月8日\",\"type\":\"field\"},\n    {\"title\":\"住所\",\"value\":\"武汉市洪山区珞瑜路424号洪山创业大厦\",\"evidence\":\"7、住所：武汉市洪山区珞瑜路424号洪山创业大厦\",\"type\":\"field\"},\n    {\"title\":\"公司网站\",\"value\":\"http://www.icbase.com\",\"evidence\":\"11、公司网址：http://www.icbase.com\",\"type\":\"field\"},\n    {\"title\":\"信息披露和投资者关系负责部门\",\"value\":\"证券部\",\"evidence\":\"12、信息披露和投资者关系负责部门：证券部\",\"type\":\"field\"},\n    {\"title\":\"经营范围\",\"value\":\"电子产品、电子元器件、信息技术及相关成套产品方案的开发、研制、生产、销售及技术服务。\",\"evidence\":\"13、经营范围：电子产品、电子元器件、信息技术及相关成套产品方案的开发、研制、生产、销售及技术服务。\",\"type\":\"field\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 351,
+      "total_tokens": 1502
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"注册资本\",\"value\":\"人民币5,000万元\",\"evidence\":\"3、注册资本：人民币5,000万元\",\"type\":\"field\"},\n    {\"title\":\"法定代表人\",\"value\":\"赵马克\",\"evidence\":\"4、法定代表人：赵马克\",\"type\":\"field\"},\n    {\"title\":\"公司成立日期\",\"value\":\"2001年8月9日\",\"evidence\":\"5、公司成立日期：2001年8月9日\",\"type\":\"field\"},\n    {\"title\":\"整体变更为股份有限公司日期\",\"value\":\"2009年12月8日\",\"evidence\":\"6、整体变更为股份有限公司日期：2009年12月8日\",\"type\":\"field\"},\n    {\"title\":\"住所\",\"value\":\"武汉市洪山区珞瑜路424号洪山创业大厦\",\"evidence\":\"7、住所：武汉市洪山区珞瑜路424号洪山创业大厦\",\"type\":\"field\"},\n    {\"title\":\"公司网站\",\"value\":\"http://www.icbase.com\",\"evidence\":\"11、公司网址：http://www.icbase.com\",\"type\":\"field\"},\n    {\"title\":\"信息披露和投资者关系负责部门\",\"value\":\"证券部\",\"evidence\":\"12、信息披露和投资者关系负责部门：证券部\",\"type\":\"field\"},\n    {\"title\":\"经营范围\",\"value\":\"电子产品、电子元器件、信息技术及相关成套产品方案的开发、研制、生产、销售及技术服务。\",\"evidence\":\"13、经营范围：电子产品、电子元器件、信息技术及相关成套产品方案的开发、研制、生产、销售及技术服务。\",\"type\":\"field\"}\n]\n```"
+}

@@ -1,0 +1,35 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20260531135557
+用户名: LAPTOP-558CMQSE\25921
+RunAs 用户: LAPTOP-558CMQSE\25921
+配置名称: 
+计算机: LAPTOP-558CMQSE (Microsoft Windows NT 10.0.26200.0)
+主机应用程序: powershell.exe -ExecutionPolicy Bypass -File D:\Desktop\NLP-RAG-04\rebuild_full_trace.ps1
+进程 ID: 51548
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+[01_health_check] started at 13:55:57
+[01_health_check] finished in 0.55 s
+
+Name                           Value
+----                           -----
+host                           127.0.0.1
+port                           8000
+ready                          True
+
+[02_clear_artifacts] started at 13:55:57
+[02_clear_artifacts] finished in 0.04 s
+removed                        {artifacts\parsed_pages.json, artifacts\parsed_pages_redacted.json}
+missing                        {artifacts\ingest_manifest.json, artifacts\enhance_manifest.json, artifacts\pdf_vlm_last_failure.js...
+
+[03_reset_collection] started at 13:55:57
+PS>TerminatingError(ConvertFrom-Json):“找不到与参数名称“Depth”匹配的参数。”

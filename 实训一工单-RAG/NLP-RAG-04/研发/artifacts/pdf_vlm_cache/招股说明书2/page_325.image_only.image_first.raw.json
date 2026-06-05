@@ -1,0 +1,28 @@
+{
+  "page_number": 325,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6cc5768afd6917301a99179504",
+    "object": "chat.completion",
+    "created": 1780237519,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"研发项目投资概算\",\n        \"value\": \"项目总投资1,526.38万元，其中建安工程费910.12万元，占比约59.6%。\",\n        \"evidence\": \"投资概算表中合计为1,526.38万元，建安工程费合计910.12万元。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"研发项目投资分年度\",\n        \"value\": \"第一年投资120.00万元，第二年投资754.84万元，第三年投资651.54万元。\",\n        \"evidence\": \"投资概算表中第一年合计120.00万元，第二年754.84万元，第三年651.54万元。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"研发项目主要投资构成\",\n        \"value\": \"建安工程费占总投资的59.6%，是最大单项支出。\",\n        \"evidence\": \"投资概算表中建安工程费合计910.12万元，总投资1,526.38万元，910.12/1526.38≈59.6%。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 307,
+      "total_tokens": 1459
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"研发项目投资概算\",\n        \"value\": \"项目总投资1,526.38万元，其中建安工程费910.12万元，占比约59.6%。\",\n        \"evidence\": \"投资概算表中合计为1,526.38万元，建安工程费合计910.12万元。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"研发项目投资分年度\",\n        \"value\": \"第一年投资120.00万元，第二年投资754.84万元，第三年投资651.54万元。\",\n        \"evidence\": \"投资概算表中第一年合计120.00万元，第二年754.84万元，第三年651.54万元。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"研发项目主要投资构成\",\n        \"value\": \"建安工程费占总投资的59.6%，是最大单项支出。\",\n        \"evidence\": \"投资概算表中建安工程费合计910.12万元，总投资1,526.38万元，910.12/1526.38≈59.6%。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

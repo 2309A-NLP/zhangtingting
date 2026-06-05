@@ -1,0 +1,28 @@
+{
+  "page_number": 101,
+  "logical_page": "100",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e13615b24d29e53732fa0a78433",
+    "object": "chat.completion",
+    "created": 1780231660,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"视频预警控制系列产品\",\"value\":\"包含监狱安防集成应急指挥系统\",\"evidence\":\"(2)视频预警控制系列产品 ①监狱安防集成应急指挥系统\",\"type\":\"chart_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 45,
+      "total_tokens": 1199
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"视频预警控制系列产品\",\"value\":\"包含监狱安防集成应急指挥系统\",\"evidence\":\"(2)视频预警控制系列产品 ①监狱安防集成应急指挥系统\",\"type\":\"chart_summary\"}]"
+}

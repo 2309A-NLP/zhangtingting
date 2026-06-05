@@ -1,0 +1,28 @@
+{
+  "page_number": 57,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4d85485248ba90e99012950e5a",
+    "object": "chat.completion",
+    "created": 1780235470,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\n        \"title\": \"联众聚源持股比例\",\n        \"value\": \"8.52%\",\n        \"evidence\": \"股权转让完成后，联众聚源持有本公司股份426.00万股，持股比例为8.52%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"联众聚源股东数量\",\n        \"value\": \"21位\",\n        \"evidence\": \"表格中序号从1到21，共列出21位股东。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"联众聚源股东在本公司任职情况\",\n        \"value\": \"部分股东在本公司任职，如翟立华、詹继军、程晨、胡涛、吴小文、易敏等。\",\n        \"evidence\": \"表格中'在本公司任职情况'列显示，部分股东如翟立华、詹继军、程晨、胡涛、吴小文、易敏等在本公司任职。\",\n        \"type\": \"table_fact\"\n    }\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 232,
+      "total_tokens": 1383
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\n        \"title\": \"联众聚源持股比例\",\n        \"value\": \"8.52%\",\n        \"evidence\": \"股权转让完成后，联众聚源持有本公司股份426.00万股，持股比例为8.52%。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"联众聚源股东数量\",\n        \"value\": \"21位\",\n        \"evidence\": \"表格中序号从1到21，共列出21位股东。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"联众聚源股东在本公司任职情况\",\n        \"value\": \"部分股东在本公司任职，如翟立华、詹继军、程晨、胡涛、吴小文、易敏等。\",\n        \"evidence\": \"表格中'在本公司任职情况'列显示，部分股东如翟立华、詹继军、程晨、胡涛、吴小文、易敏等在本公司任职。\",\n        \"type\": \"table_fact\"\n    }\n]"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 53,
+  "logical_page": "52",
+  "mode": "image_only",
+  "response": {
+    "id": "019e71315437d82bab65cbd7bc54a81a",
+    "object": "chat.completion",
+    "created": 1780015519,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"设立时注册资本\",\"value\":\"50万元\",\"evidence\":\"17日以货币资金和实物资产共同出资设立，成立时注册资本50万元。\",\"type\":\"field\"},\n    {\"title\":\"实物资产评估总值\",\"value\":\"305,800.00元\",\"evidence\":\"合计 305,800.00\",\"type\":\"table_fact\"},\n    {\"title\":\"程家明出资金额\",\"value\":\"35.00万元\",\"evidence\":\"序号 1，股东姓名 程家明，出资金额（万元） 35.00\",\"type\":\"table_fact\"},\n    {\"title\":\"程家明出资比例\",\"value\":\"70.00%\",\"evidence\":\"序号 1，股东姓名 程家明，出资比例（%） 70.00\",\"type\":\"table_fact\"},\n    {\"title\":\"陈爱民出资金额\",\"value\":\"15.00万元\",\"evidence\":\"序号 2，股东姓名 陈爱民，出资金额（万元） 15.00\",\"type\":\"table_fact\"},\n    {\"title\":\"陈爱民出资比例\",\"value\":\"30.00%\",\"evidence\":\"序号 2，股东姓名 陈爱民，出资比例（%） 30.00\",\"type\":\"table_fact\"},\n    {\"title\":\"兴图新科成立时股权结构\",\"value\":\"程家明持股70%，陈爱民持股30%\",\"evidence\":\"序号 1 程家明 70.00%，序号 2 陈爱民 30.00%\",\"type\":\"table_summary\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1076,
+      "completion_tokens": 365,
+      "total_tokens": 1441
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"设立时注册资本\",\"value\":\"50万元\",\"evidence\":\"17日以货币资金和实物资产共同出资设立，成立时注册资本50万元。\",\"type\":\"field\"},\n    {\"title\":\"实物资产评估总值\",\"value\":\"305,800.00元\",\"evidence\":\"合计 305,800.00\",\"type\":\"table_fact\"},\n    {\"title\":\"程家明出资金额\",\"value\":\"35.00万元\",\"evidence\":\"序号 1，股东姓名 程家明，出资金额（万元） 35.00\",\"type\":\"table_fact\"},\n    {\"title\":\"程家明出资比例\",\"value\":\"70.00%\",\"evidence\":\"序号 1，股东姓名 程家明，出资比例（%） 70.00\",\"type\":\"table_fact\"},\n    {\"title\":\"陈爱民出资金额\",\"value\":\"15.00万元\",\"evidence\":\"序号 2，股东姓名 陈爱民，出资金额（万元） 15.00\",\"type\":\"table_fact\"},\n    {\"title\":\"陈爱民出资比例\",\"value\":\"30.00%\",\"evidence\":\"序号 2，股东姓名 陈爱民，出资比例（%） 30.00\",\"type\":\"table_fact\"},\n    {\"title\":\"兴图新科成立时股权结构\",\"value\":\"程家明持股70%，陈爱民持股30%\",\"evidence\":\"序号 1 程家明 70.00%，序号 2 陈爱民 30.00%\",\"type\":\"table_summary\"}\n]"
+}

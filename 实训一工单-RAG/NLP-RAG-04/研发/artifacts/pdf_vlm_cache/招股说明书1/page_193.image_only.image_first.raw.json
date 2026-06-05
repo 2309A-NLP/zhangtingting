@@ -1,0 +1,28 @@
+{
+  "page_number": 193,
+  "logical_page": "192",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e1a3936d438ec9d0be1e194c81c",
+    "object": "chat.completion",
+    "created": 1780232108,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"对奥维通信股份有限公司不构成依赖\",\"value\":\"公司不构成对奥维通信股份有限公司的依赖，因核心系统产品供应商少，集成商数量多且实力强，能加快采购和部署速度。\",\"evidence\":\"5、对奥维通信股份有限公司不构成依赖；（1）核心系统的产品提供商少，而集成商数量较多；集成商资金实力较强，能够加快对核心设备及配套设备的采购，同时集成整合实力较强，能够加快系统部署速度，但不承担系统开发设计等工作。\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 125,
+      "total_tokens": 1279
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"对奥维通信股份有限公司不构成依赖\",\"value\":\"公司不构成对奥维通信股份有限公司的依赖，因核心系统产品供应商少，集成商数量多且实力强，能加快采购和部署速度。\",\"evidence\":\"5、对奥维通信股份有限公司不构成依赖；（1）核心系统的产品提供商少，而集成商数量较多；集成商资金实力较强，能够加快对核心设备及配套设备的采购，同时集成整合实力较强，能够加快系统部署速度，但不承担系统开发设计等工作。\",\"type\":\"table_summary\"}]"
+}

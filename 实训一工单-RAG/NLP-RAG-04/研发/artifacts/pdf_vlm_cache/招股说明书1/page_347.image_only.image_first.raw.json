@@ -1,0 +1,28 @@
+{
+  "page_number": 347,
+  "logical_page": "346",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e3149629eabac76894dc245811a",
+    "object": "chat.completion",
+    "created": 1780233620,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"合同金额\",\"value\":\"4,500.00万元\",\"evidence\":\"合同编号XT2018077对应的合同金额为4,500.00\",\"type\":\"table_fact\"},\n    {\"title\":\"合同金额\",\"value\":\"4,202.02万元\",\"evidence\":\"合同编号XT2018013对应的合同金额为4,202.02\",\"type\":\"table_fact\"},\n    {\"title\":\"合同金额\",\"value\":\"2,346.91万元\",\"evidence\":\"合同编号XT2018142对应的合同金额为2,346.91\",\"type\":\"table_fact\"},\n    {\"title\":\"合同金额\",\"value\":\"1,483.63万元\",\"evidence\":\"合同编号XT2018148对应的合同金额为1,483.63\",\"type\":\"table_fact\"},\n    {\"title\":\"合同金额\",\"value\":\"956.70万元\",\"evidence\":\"合同编号XT2018116对应的合同金额为956.70\",\"type\":\"table_fact\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 252,
+      "total_tokens": 1406
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"合同金额\",\"value\":\"4,500.00万元\",\"evidence\":\"合同编号XT2018077对应的合同金额为4,500.00\",\"type\":\"table_fact\"},\n    {\"title\":\"合同金额\",\"value\":\"4,202.02万元\",\"evidence\":\"合同编号XT2018013对应的合同金额为4,202.02\",\"type\":\"table_fact\"},\n    {\"title\":\"合同金额\",\"value\":\"2,346.91万元\",\"evidence\":\"合同编号XT2018142对应的合同金额为2,346.91\",\"type\":\"table_fact\"},\n    {\"title\":\"合同金额\",\"value\":\"1,483.63万元\",\"evidence\":\"合同编号XT2018148对应的合同金额为1,483.63\",\"type\":\"table_fact\"},\n    {\"title\":\"合同金额\",\"value\":\"956.70万元\",\"evidence\":\"合同编号XT2018116对应的合同金额为956.70\",\"type\":\"table_fact\"}\n]\n```"
+}

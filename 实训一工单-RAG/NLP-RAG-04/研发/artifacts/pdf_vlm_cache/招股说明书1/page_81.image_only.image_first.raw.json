@@ -1,0 +1,28 @@
+{
+  "page_number": 81,
+  "logical_page": "80",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e11cad74ee0759e96fe294ae00d",
+    "object": "chat.completion",
+    "created": 1780231555,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"董事、监事及高级管理人员任职情况\",\"value\":\"陈爱民担任董事、副总经理；姚小华担任董事、董事会秘书、副总经理；黄加担任董事；王清刚、崔华强、李云钢担任独立董事。\",\"evidence\":\"表格中列出各人员的职务。\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 73,
+      "total_tokens": 1225
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"董事、监事及高级管理人员任职情况\",\"value\":\"陈爱民担任董事、副总经理；姚小华担任董事、董事会秘书、副总经理；黄加担任董事；王清刚、崔华强、李云钢担任独立董事。\",\"evidence\":\"表格中列出各人员的职务。\",\"type\":\"table_fact\"}\n]"
+}

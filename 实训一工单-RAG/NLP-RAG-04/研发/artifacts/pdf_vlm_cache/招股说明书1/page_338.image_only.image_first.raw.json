@@ -1,0 +1,28 @@
+{
+  "page_number": 338,
+  "logical_page": "337",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e2fe50be851b62004e35dc1697a",
+    "object": "chat.completion",
+    "created": 1780233529,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"2017年单位合同金额\",\n        \"value\": \"221.86万元\",\n        \"evidence\": \"2017年单位合同金额为221.86万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2017年单位合同金额较2016年增长\",\n        \"value\": \"133.68万元\",\n        \"evidence\": \"较2016年提高了133.68万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2018年单位合同金额\",\n        \"value\": \"198.81万元\",\n        \"evidence\": \"2018年单位合同金额198.81万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2018年单位合同金额较2017年下降\",\n        \"value\": \"23.05万元\",\n        \"evidence\": \"较2017年下降23.05万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2019年上半年视频指挥控制类产品收入\",\n        \"value\": \"4,508.18万元\",\n        \"evidence\": \"2019年上半年视频指挥控制类产品收入金额4,508.18万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2016年视频预警控制类产品收入\",\n        \"value\": \"1,578.46万元\",\n        \"evidence\": \"2016年视频预警控制类产品营业收入分别为1,578.46万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2017年视频预警控制类产品收入\",\n        \"value\": \"469.99万元\",\n        \"evidence\": \"2017年视频预警控制类产品营业收入分别为...469.99万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2018年视频预警控制类产品收入\",\n        \"value\": \"656.09万元\",\n        \"evidence\": \"2018年视频预警控制类产品营业收入分别为...656.09万元\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 527,
+      "total_tokens": 1681
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"2017年单位合同金额\",\n        \"value\": \"221.86万元\",\n        \"evidence\": \"2017年单位合同金额为221.86万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2017年单位合同金额较2016年增长\",\n        \"value\": \"133.68万元\",\n        \"evidence\": \"较2016年提高了133.68万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2018年单位合同金额\",\n        \"value\": \"198.81万元\",\n        \"evidence\": \"2018年单位合同金额198.81万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2018年单位合同金额较2017年下降\",\n        \"value\": \"23.05万元\",\n        \"evidence\": \"较2017年下降23.05万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2019年上半年视频指挥控制类产品收入\",\n        \"value\": \"4,508.18万元\",\n        \"evidence\": \"2019年上半年视频指挥控制类产品收入金额4,508.18万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2016年视频预警控制类产品收入\",\n        \"value\": \"1,578.46万元\",\n        \"evidence\": \"2016年视频预警控制类产品营业收入分别为1,578.46万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2017年视频预警控制类产品收入\",\n        \"value\": \"469.99万元\",\n        \"evidence\": \"2017年视频预警控制类产品营业收入分别为...469.99万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"2018年视频预警控制类产品收入\",\n        \"value\": \"656.09万元\",\n        \"evidence\": \"2018年视频预警控制类产品营业收入分别为...656.09万元\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

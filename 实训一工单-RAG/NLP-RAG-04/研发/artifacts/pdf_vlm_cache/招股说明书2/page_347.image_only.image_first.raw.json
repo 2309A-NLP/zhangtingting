@@ -1,0 +1,28 @@
+{
+  "page_number": 347,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6ee013369918c8826b9c7cf769",
+    "object": "chat.completion",
+    "created": 1780237656,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"会计师事务所声明签署日期\",\"value\":\"2010年12月23日\",\"evidence\":\"2010年12月23日\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 45,
+      "total_tokens": 1197
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"会计师事务所声明签署日期\",\"value\":\"2010年12月23日\",\"evidence\":\"2010年12月23日\",\"type\":\"field\"}]"
+}

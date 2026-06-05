@@ -1,0 +1,28 @@
+{
+  "page_number": 49,
+  "logical_page": "48",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e0db4acbac9adac3c2dc5753641",
+    "object": "chat.completion",
+    "created": 1780231288,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"截至2019年6月30日公司固定资产和无形资产账面价值\",\"value\":\"847.27万元\",\"evidence\":\"截至2019年6月30日，公司固定资产和无形资产账面价值为847.27万元。\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 74,
+      "total_tokens": 1226
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"截至2019年6月30日公司固定资产和无形资产账面价值\",\"value\":\"847.27万元\",\"evidence\":\"截至2019年6月30日，公司固定资产和无形资产账面价值为847.27万元。\",\"type\":\"table_fact\"}\n]"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 210,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e5e2996a79b7245375f47379a35",
+    "object": "chat.completion",
+    "created": 1780236561,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"2008年度合并所有者权益变动表\",\"value\":\"2008年度合并所有者权益变动表\",\"evidence\":\"表头标题\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 43,
+      "total_tokens": 1195
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"2008年度合并所有者权益变动表\",\"value\":\"2008年度合并所有者权益变动表\",\"evidence\":\"表头标题\",\"type\":\"table_summary\"}]"
+}

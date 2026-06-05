@@ -1,0 +1,28 @@
+{
+  "page_number": 313,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6bf8bcb9ea5c8b9371cf5a5cad",
+    "object": "chat.completion",
+    "created": 1780237466,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"研发中心\",\"value\":\"页面标题为“2、研发中心”\",\"evidence\":\"2、研发中心\",\"type\":\"field\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 34,
+      "total_tokens": 1186
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"研发中心\",\"value\":\"页面标题为“2、研发中心”\",\"evidence\":\"2、研发中心\",\"type\":\"field\"}\n]\n```"
+}

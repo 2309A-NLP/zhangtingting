@@ -1,0 +1,28 @@
+{
+  "page_number": 469,
+  "logical_page": "468",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4211e0da106f3dd9a33715be06",
+    "object": "chat.completion",
+    "created": 1780234720,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"股权转让情况\",\"value\":\"2019年6月，程家明转让134.15万元股权给30名骨干员工，转让价格5.30元/股；刘勇转让34.40万元股权给程家明，转让价格7.78元/股。\",\"evidence\":\"表格中序号1和2的转让金额、价格及受让方信息；正文①和②对两次转让的描述。\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 113,
+      "total_tokens": 1267
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"股权转让情况\",\"value\":\"2019年6月，程家明转让134.15万元股权给30名骨干员工，转让价格5.30元/股；刘勇转让34.40万元股权给程家明，转让价格7.78元/股。\",\"evidence\":\"表格中序号1和2的转让金额、价格及受让方信息；正文①和②对两次转让的描述。\",\"type\":\"table_fact\"}\n]"
+}

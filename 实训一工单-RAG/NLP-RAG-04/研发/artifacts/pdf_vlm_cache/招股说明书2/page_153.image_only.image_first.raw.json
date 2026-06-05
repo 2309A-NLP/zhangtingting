@@ -1,0 +1,28 @@
+{
+  "page_number": 153,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e56c76afe7e6f6cdb1d901621ef",
+    "object": "chat.completion",
+    "created": 1780236077,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"产品方案类型与目标市场\",\n        \"value\": \"公司提供四种产品方案：完整设计方案（新行业、新应用）、参考设计方案（传统产品改造）、芯片产品应用方案（金融、收费系统）、新技术应用方案（节能领域）。\",\n        \"evidence\": \"3、全面性部分的(1)至(4)条描述。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 97,
+      "total_tokens": 1249
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"产品方案类型与目标市场\",\n        \"value\": \"公司提供四种产品方案：完整设计方案（新行业、新应用）、参考设计方案（传统产品改造）、芯片产品应用方案（金融、收费系统）、新技术应用方案（节能领域）。\",\n        \"evidence\": \"3、全面性部分的(1)至(4)条描述。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 17,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4ab628b8c3cdd9baede8ac215d",
+    "object": "chat.completion",
+    "created": 1780235286,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"行业地位\",\"value\":\"自2003年度至今，本公司连续多年入选《国际电子商情》“读者最满意IC分销商”。\",\"evidence\":\"(四)发行人的行业地位：自2003年度至今，本公司连续多年入选《国际电子商情》“读者最满意IC分销商”。\",\"type\":\"table_summary\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 85,
+      "total_tokens": 1236
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"行业地位\",\"value\":\"自2003年度至今，本公司连续多年入选《国际电子商情》“读者最满意IC分销商”。\",\"evidence\":\"(四)发行人的行业地位：自2003年度至今，本公司连续多年入选《国际电子商情》“读者最满意IC分销商”。\",\"type\":\"table_summary\"}\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 52,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e73cae4a2278aeeb73d26a25e6ee9",
+    "object": "chat.completion",
+    "created": 1780059137,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"注册资本\",\"value\":\"2,000万元\",\"evidence\":\"2006年12月18日成立，注册资本2,000万元\",\"type\":\"field\"},{\"title\":\"法定代表人\",\"value\":\"胡桃栢\",\"evidence\":\"法定代表人胡桃栢\",\"type\":\"field\"},{\"title\":\"持股比例\",\"value\":\"4.8%\",\"evidence\":\"江通动画股份有限公司，持股比例(%) 4.8\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1075,
+      "completion_tokens": 104,
+      "total_tokens": 1179
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"注册资本\",\"value\":\"2,000万元\",\"evidence\":\"2006年12月18日成立，注册资本2,000万元\",\"type\":\"field\"},{\"title\":\"法定代表人\",\"value\":\"胡桃栢\",\"evidence\":\"法定代表人胡桃栢\",\"type\":\"field\"},{\"title\":\"持股比例\",\"value\":\"4.8%\",\"evidence\":\"江通动画股份有限公司，持股比例(%) 4.8\",\"type\":\"field\"}]"
+}

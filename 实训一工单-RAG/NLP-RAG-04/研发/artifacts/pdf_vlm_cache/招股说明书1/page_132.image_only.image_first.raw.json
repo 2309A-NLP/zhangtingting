@@ -1,0 +1,28 @@
+{
+  "page_number": 132,
+  "logical_page": "131",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e158424e9d9dd343e209cab0fc4",
+    "object": "chat.completion",
+    "created": 1780231800,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"核心技术突破\",\n        \"value\": \"公司核心技术包括超低延时编解码技术、高并发下的带宽侦测技术和高精度可用带宽探测技术。\",\n        \"evidence\": \"B. 超低延时编解码技术... C. 高精度可用带宽探测技术... 通过单向时延梯度和客户端实际媒体接收码率计算网络可用带宽...\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"超低延时编解码技术性能\",\n        \"value\": \"实现了端到端超低延时（小于20ms）方案。\",\n        \"evidence\": \"A. 超低延时编解码技术... 实现了端到端超低延时（小于20ms）方案。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"高并发带宽侦测能力\",\n        \"value\": \"每路2Mbps，提升了16倍以上。\",\n        \"evidence\": \"B. 高并发下的带宽侦测技术... 提升了带宽媒体流并发能力（128路并发，每路2Mbps）16倍以上。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"高精度可用带宽探测误差\",\n        \"value\": \"在丢包30%环境下，误差始终小于1%。\",\n        \"evidence\": \"C. 高精度可用带宽探测技术... 在丢包30%环境下，误差始终小于1%。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 351,
+      "total_tokens": 1505
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"核心技术突破\",\n        \"value\": \"公司核心技术包括超低延时编解码技术、高并发下的带宽侦测技术和高精度可用带宽探测技术。\",\n        \"evidence\": \"B. 超低延时编解码技术... C. 高精度可用带宽探测技术... 通过单向时延梯度和客户端实际媒体接收码率计算网络可用带宽...\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"超低延时编解码技术性能\",\n        \"value\": \"实现了端到端超低延时（小于20ms）方案。\",\n        \"evidence\": \"A. 超低延时编解码技术... 实现了端到端超低延时（小于20ms）方案。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"高并发带宽侦测能力\",\n        \"value\": \"每路2Mbps，提升了16倍以上。\",\n        \"evidence\": \"B. 高并发下的带宽侦测技术... 提升了带宽媒体流并发能力（128路并发，每路2Mbps）16倍以上。\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"高精度可用带宽探测误差\",\n        \"value\": \"在丢包30%环境下，误差始终小于1%。\",\n        \"evidence\": \"C. 高精度可用带宽探测技术... 在丢包30%环境下，误差始终小于1%。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 309,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6b761b3fe0c8fea345b146ddae",
+    "object": "chat.completion",
+    "created": 1780237432,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"销售网点数量\",\"value\":\"1家子公司、1家分公司、6个销售处、26个合作零售网点\",\"evidence\":\"目前拥有设在武汉的目录销售中心以及遍布全国的1家子公司、1家分公司、6个销售处、26个合作零售网点\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 71,
+      "total_tokens": 1223
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"销售网点数量\",\"value\":\"1家子公司、1家分公司、6个销售处、26个合作零售网点\",\"evidence\":\"目前拥有设在武汉的目录销售中心以及遍布全国的1家子公司、1家分公司、6个销售处、26个合作零售网点\",\"type\":\"field\"}]"
+}

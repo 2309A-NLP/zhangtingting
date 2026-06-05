@@ -1,0 +1,28 @@
+{
+  "page_number": 91,
+  "logical_page": "90",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e12c857d6104c89be71e84e0231",
+    "object": "chat.completion",
+    "created": 1780231620,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"员工人数\",\"value\":\"412人\",\"evidence\":\"截至报告期末，兴图新科员工岗位分布情况表中合计为412\",\"type\":\"table_fact\"},\n    {\"title\":\"研发人员占比\",\"value\":\"44.90%\",\"evidence\":\"专业构成表中研发人员占员工总数比例为44.90%\",\"type\":\"table_fact\"},\n    {\"title\":\"社会保险缴纳比例\",\"value\":\"96.84%\",\"evidence\":\"2019年6月30日基本养老保险、基本医疗保险、失业保险、工伤保险的缴费人数占比均为96.84%\",\"type\":\"table_fact\"},\n    {\"title\":\"住房公积金缴纳比例\",\"value\":\"90.29%\",\"evidence\":\"2019年6月30日住房公积金缴费人数占比为90.29%\",\"type\":\"table_fact\"},\n    {\"title\":\"未缴纳社保人数\",\"value\":\"13人\",\"evidence\":\"截至2019年6月30日，未缴纳社会保险共13人\",\"type\":\"table_fact\"},\n    {\"title\":\"未缴纳公积金人数\",\"value\":\"40人\",\"evidence\":\"截至2019年6月30日，未缴纳住房公积金共40人\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 281,
+      "total_tokens": 1433
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"员工人数\",\"value\":\"412人\",\"evidence\":\"截至报告期末，兴图新科员工岗位分布情况表中合计为412\",\"type\":\"table_fact\"},\n    {\"title\":\"研发人员占比\",\"value\":\"44.90%\",\"evidence\":\"专业构成表中研发人员占员工总数比例为44.90%\",\"type\":\"table_fact\"},\n    {\"title\":\"社会保险缴纳比例\",\"value\":\"96.84%\",\"evidence\":\"2019年6月30日基本养老保险、基本医疗保险、失业保险、工伤保险的缴费人数占比均为96.84%\",\"type\":\"table_fact\"},\n    {\"title\":\"住房公积金缴纳比例\",\"value\":\"90.29%\",\"evidence\":\"2019年6月30日住房公积金缴费人数占比为90.29%\",\"type\":\"table_fact\"},\n    {\"title\":\"未缴纳社保人数\",\"value\":\"13人\",\"evidence\":\"截至2019年6月30日，未缴纳社会保险共13人\",\"type\":\"table_fact\"},\n    {\"title\":\"未缴纳公积金人数\",\"value\":\"40人\",\"evidence\":\"截至2019年6月30日，未缴纳住房公积金共40人\",\"type\":\"table_fact\"}\n]"
+}

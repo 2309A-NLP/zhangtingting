@@ -1,0 +1,28 @@
+{
+  "page_number": 27,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4b3f6bb7017c064a348a079cfe",
+    "object": "chat.completion",
+    "created": 1780235321,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"本次发行上市的重要日期\",\n        \"value\": \"初步询价公告刊登日期为2011年1月26日，询价推介时间为2011年1月27日至2011年1月31日，定价公告刊登日期为2011年2月9日，申购日期和缴款日期为2011年2月10日。\",\n        \"evidence\": \"表格中明确列出了各项日期：初步询价公告刊登日期 2011年1月26日；询价推介时间 2011年1月27日—2011年1月31日；定价公告刊登日期 2011年2月9日；申购日期和缴款日期 2011年2月10日。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 202,
+      "total_tokens": 1353
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"本次发行上市的重要日期\",\n        \"value\": \"初步询价公告刊登日期为2011年1月26日，询价推介时间为2011年1月27日至2011年1月31日，定价公告刊登日期为2011年2月9日，申购日期和缴款日期为2011年2月10日。\",\n        \"evidence\": \"表格中明确列出了各项日期：初步询价公告刊登日期 2011年1月26日；询价推介时间 2011年1月27日—2011年1月31日；定价公告刊登日期 2011年2月9日；申购日期和缴款日期 2011年2月10日。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 19,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4a9b8d7e295e0e3b3b99a87850",
+    "object": "chat.completion",
+    "created": 1780235279,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"客户数量\",\"value\":\"拥有100,000多个注册客户和超过7,400个活跃交易客户\",\"evidence\":\"经过多年的辛勤耕耘与积累，本公司目前已拥有100,000多个注册客户和超过7,400个活跃交易客户\",\"type\":\"table_fact\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 78,
+      "total_tokens": 1229
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"客户数量\",\"value\":\"拥有100,000多个注册客户和超过7,400个活跃交易客户\",\"evidence\":\"经过多年的辛勤耕耘与积累，本公司目前已拥有100,000多个注册客户和超过7,400个活跃交易客户\",\"type\":\"table_fact\"}\n]\n```"
+}

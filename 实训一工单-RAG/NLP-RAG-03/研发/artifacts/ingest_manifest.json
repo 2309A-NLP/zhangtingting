@@ -1,0 +1,15 @@
+{
+  "pdfs": [
+    "D:\\Desktop\\NLP-RAG-03\\data\\招股说明书1.pdf",
+    "D:\\Desktop\\NLP-RAG-03\\data\\招股说明书2.pdf"
+  ],
+  "pdf_count": 2,
+  "mode": "main",
+  "chunks": 2624,
+  "base_chunks": 2624,
+  "collection_name": "prospectus_chunks_03",
+  "embedding_backend": "sentence_transformers:bge-m3",
+  "dimension": 1024,
+  "vector_store": "milvus",
+  "pdf_parser_backend": "parse3"
+}

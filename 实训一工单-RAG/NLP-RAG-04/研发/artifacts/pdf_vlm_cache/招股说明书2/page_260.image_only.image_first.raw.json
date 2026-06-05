@@ -1,0 +1,28 @@
+{
+  "page_number": 260,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e62fbde6839838c3e508209bac1",
+    "object": "chat.completion",
+    "created": 1780236877,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"存货结构分析\",\n        \"value\": \"截至2010年6月30日，存货中1-3月库龄占比最高，为67.15%。\",\n        \"evidence\": \"表格显示1-3月库龄余额44,971,552.89元，比例67.15%。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"存货变动原因\",\n        \"value\": \"2010年6月30日存货较2009年12月31日减少95.81万元，降幅1.43%，主要因2010年1-6月销售情况较好，库存消耗较快。\",\n        \"evidence\": \"文本明确说明‘截至2010年6月30日，公司存货余额较2009年未减少了95.81万元，降幅为1.43%，主要原因...库存消耗较快所致。’\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"存货结构分析\",\n        \"value\": \"截至2010年6月30日，存货中12月以上库龄占比最低，为3.56%。\",\n        \"evidence\": \"表格显示12月以上库龄余额2,381,529.61元，比例3.56%。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 331,
+      "total_tokens": 1483
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"存货结构分析\",\n        \"value\": \"截至2010年6月30日，存货中1-3月库龄占比最高，为67.15%。\",\n        \"evidence\": \"表格显示1-3月库龄余额44,971,552.89元，比例67.15%。\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"存货变动原因\",\n        \"value\": \"2010年6月30日存货较2009年12月31日减少95.81万元，降幅1.43%，主要因2010年1-6月销售情况较好，库存消耗较快。\",\n        \"evidence\": \"文本明确说明‘截至2010年6月30日，公司存货余额较2009年未减少了95.81万元，降幅为1.43%，主要原因...库存消耗较快所致。’\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"存货结构分析\",\n        \"value\": \"截至2010年6月30日，存货中12月以上库龄占比最低，为3.56%。\",\n        \"evidence\": \"表格显示12月以上库龄余额2,381,529.61元，比例3.56%。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

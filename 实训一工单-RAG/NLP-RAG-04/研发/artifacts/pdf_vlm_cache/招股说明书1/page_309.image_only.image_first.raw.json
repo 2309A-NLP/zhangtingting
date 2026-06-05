@@ -1,0 +1,28 @@
+{
+  "page_number": 309,
+  "logical_page": "308",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e2a2a8d8e0bd2e7cd7d66bb8aa5",
+    "object": "chat.completion",
+    "created": 1780233153,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"成本核算方法\",\"value\":\"公司采用合同为单位归集和结转营业成本，收入与成本相匹配。\",\"evidence\":\"报告期内，本公司以合同为单位归集和结转营业成本，收入与成本相匹配。\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 62,
+      "total_tokens": 1216
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"成本核算方法\",\"value\":\"公司采用合同为单位归集和结转营业成本，收入与成本相匹配。\",\"evidence\":\"报告期内，本公司以合同为单位归集和结转营业成本，收入与成本相匹配。\",\"type\":\"table_summary\"}]"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 102,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e514820a0fcd027b59c0dfa96be",
+    "object": "chat.completion",
+    "created": 1780235717,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"营销体系\",\n        \"value\": \"公司拥有1个设在武汉的电话/网络销售中心及遍布全国的6个销售处、26个合作零售网点。\",\n        \"evidence\": \"本公司拥有包括1个设在武汉的电话/网络销售中心以及遍布全国的6个销售处、26个合作零售网点的完整销售体系。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 99,
+      "total_tokens": 1251
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"营销体系\",\n        \"value\": \"公司拥有1个设在武汉的电话/网络销售中心及遍布全国的6个销售处、26个合作零售网点。\",\n        \"evidence\": \"本公司拥有包括1个设在武汉的电话/网络销售中心以及遍布全国的6个销售处、26个合作零售网点的完整销售体系。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

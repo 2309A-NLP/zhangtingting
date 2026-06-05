@@ -1,0 +1,28 @@
+{
+  "page_number": 541,
+  "logical_page": "540",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e487e0027f6ecc2daa2530f1555",
+    "object": "chat.completion",
+    "created": 1780235140,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"保荐机构总经理\",\"value\":\"毕玉国\",\"evidence\":\"签名下方标注“保荐机构总经理：毕玉国”\",\"type\":\"field\"},{\"title\":\"保荐机构董事长\",\"value\":\"李玮\",\"evidence\":\"签名下方标注“保荐机构董事长：李玮”\",\"type\":\"field\"},{\"title\":\"保荐机构\",\"value\":\"中泰证券股份有限公司\",\"evidence\":\"印章及文字“保荐机构：中泰证券股份有限公司”\",\"type\":\"field\"},{\"title\":\"声明日期\",\"value\":\"2019年12月16日\",\"evidence\":\"印章下方日期“2019年12月16日”\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 142,
+      "total_tokens": 1296
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"保荐机构总经理\",\"value\":\"毕玉国\",\"evidence\":\"签名下方标注“保荐机构总经理：毕玉国”\",\"type\":\"field\"},{\"title\":\"保荐机构董事长\",\"value\":\"李玮\",\"evidence\":\"签名下方标注“保荐机构董事长：李玮”\",\"type\":\"field\"},{\"title\":\"保荐机构\",\"value\":\"中泰证券股份有限公司\",\"evidence\":\"印章及文字“保荐机构：中泰证券股份有限公司”\",\"type\":\"field\"},{\"title\":\"声明日期\",\"value\":\"2019年12月16日\",\"evidence\":\"印章下方日期“2019年12月16日”\",\"type\":\"field\"}]"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 250,
+  "logical_page": "249",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e217375be06f5aaa9399d649246",
+    "object": "chat.completion",
+    "created": 1780232582,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"公司独立运营情况\",\"value\":\"公司严格按照《公司法》、《证券法》等法律法规和《公司章程》的要求规范运作，在资产、人员、财务、机构及业务等方面与公司控股股东、实际控制人控制的其他企业之间相互独立，具备完整的业务体系及面向市场独立经营的能力。\",\"evidence\":\"七、公司独立运营情况 下的正文内容\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 88,
+      "total_tokens": 1242
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"公司独立运营情况\",\"value\":\"公司严格按照《公司法》、《证券法》等法律法规和《公司章程》的要求规范运作，在资产、人员、财务、机构及业务等方面与公司控股股东、实际控制人控制的其他企业之间相互独立，具备完整的业务体系及面向市场独立经营的能力。\",\"evidence\":\"七、公司独立运营情况 下的正文内容\",\"type\":\"table_summary\"}]"
+}

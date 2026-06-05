@@ -1,0 +1,28 @@
+{
+  "page_number": 287,
+  "logical_page": "286",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e2857d7eb1a86b3a25e1e4523d7",
+    "object": "chat.completion",
+    "created": 1780233033,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 1,
+      "total_tokens": 1155
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[]"
+}

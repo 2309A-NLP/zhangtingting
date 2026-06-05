@@ -1,0 +1,26 @@
+[
+  {
+    "title": "openVone 视音频融合平台 V6.0",
+    "value": "项目进展到集成测试阶段",
+    "evidence": "目前该项目进展到集成测试阶段",
+    "type": "table_fact"
+  },
+  {
+    "title": "网络化视频指挥系统 5.2.0",
+    "value": "项目进展到合格性测试阶段",
+    "evidence": "目前该项目进展到合格性测试阶段",
+    "type": "table_fact"
+  },
+  {
+    "title": "综合节点车任务系统",
+    "value": "项目进展到内场联试阶段",
+    "evidence": "目前该项目进展到内场联试阶段",
+    "type": "table_fact"
+  },
+  {
+    "title": "XTFXS0 编解码阵列",
+    "value": "项目进展到硬件需求阶段",
+    "evidence": "目前该项目进展到硬件需求",
+    "type": "table_fact"
+  }
+]

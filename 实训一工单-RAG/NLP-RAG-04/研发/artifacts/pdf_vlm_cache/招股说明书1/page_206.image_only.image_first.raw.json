@@ -1,0 +1,28 @@
+{
+  "page_number": 206,
+  "logical_page": "205",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e1bab550454769130a7d5aa6bd0",
+    "object": "chat.completion",
+    "created": 1780232203,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"2017年度原材料采购金额合计\",\n        \"value\": \"1,195.98\",\n        \"evidence\": \"2017年度合计行末尾数值为1,195.98\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2016年度原材料采购金额合计\",\n        \"value\": \"91.65\",\n        \"evidence\": \"2016年度合计行末尾数值为91.65\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度板卡类采购金额\",\n        \"value\": \"0.05\",\n        \"evidence\": \"2017年度板卡类行第一列数值为0.05\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2016年度板卡类采购金额\",\n        \"value\": \"0.05\",\n        \"evidence\": \"2016年度板卡类行第一列数值为0.05\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度计算机设备及部件采购金额\",\n        \"value\": \"0.56\",\n        \"evidence\": \"2017年度计算机设备及部件行第一列数值为0.56\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2016年度计算机设备及部件采购金额\",\n        \"value\": \"0.56\",\n        \"evidence\": \"2016年度计算机设备及部件行第一列数值为0.56\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 386,
+      "total_tokens": 1540
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"2017年度原材料采购金额合计\",\n        \"value\": \"1,195.98\",\n        \"evidence\": \"2017年度合计行末尾数值为1,195.98\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2016年度原材料采购金额合计\",\n        \"value\": \"91.65\",\n        \"evidence\": \"2016年度合计行末尾数值为91.65\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度板卡类采购金额\",\n        \"value\": \"0.05\",\n        \"evidence\": \"2017年度板卡类行第一列数值为0.05\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2016年度板卡类采购金额\",\n        \"value\": \"0.05\",\n        \"evidence\": \"2016年度板卡类行第一列数值为0.05\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2017年度计算机设备及部件采购金额\",\n        \"value\": \"0.56\",\n        \"evidence\": \"2017年度计算机设备及部件行第一列数值为0.56\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2016年度计算机设备及部件采购金额\",\n        \"value\": \"0.56\",\n        \"evidence\": \"2016年度计算机设备及部件行第一列数值为0.56\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

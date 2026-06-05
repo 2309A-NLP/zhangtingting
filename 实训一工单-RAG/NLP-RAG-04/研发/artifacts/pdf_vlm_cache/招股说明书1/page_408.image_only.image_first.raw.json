@@ -1,0 +1,28 @@
+{
+  "page_number": 408,
+  "logical_page": "407",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e3ab880b3e6422f6dd52e663da9",
+    "object": "chat.completion",
+    "created": 1780234238,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"流动资产构成\",\"value\":\"2019年6月30日流动资产为23,370.59万元，占总资产94.12%。\",\"evidence\":\"2019.6.30流动资产金额23,370.59万元，比例94.12%\",\"type\":\"table_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 84,
+      "total_tokens": 1238
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"流动资产构成\",\"value\":\"2019年6月30日流动资产为23,370.59万元，占总资产94.12%。\",\"evidence\":\"2019.6.30流动资产金额23,370.59万元，比例94.12%\",\"type\":\"table_fact\"}]"
+}

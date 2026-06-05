@@ -1,0 +1,28 @@
+{
+  "page_number": 125,
+  "logical_page": "124",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e14fed0d4a883b80d0d1dd64859",
+    "object": "chat.completion",
+    "created": 1780231765,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"2019年1-6月直接军方指定采购金额\",\"value\":\"404.20万元\",\"evidence\":\"表格中'直接军方指定采购'行，'2019年1-6月'列，'金额'列值为404.20\",\"type\":\"table_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 76,
+      "total_tokens": 1230
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"2019年1-6月直接军方指定采购金额\",\"value\":\"404.20万元\",\"evidence\":\"表格中'直接军方指定采购'行，'2019年1-6月'列，'金额'列值为404.20\",\"type\":\"table_fact\"}]"
+}

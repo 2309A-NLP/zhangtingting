@@ -1,0 +1,28 @@
+{
+  "page_number": 268,
+  "logical_page": "267",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e23763df901ba515e01677bc698",
+    "object": "chat.completion",
+    "created": 1780232714,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"《公司章程》对关联交易的审议权限\",\"value\":\"股东大会审议单项关联交易金额超过公司上一年度末经审计净资产的5%或绝对值超过1000万元的关联交易。\",\"evidence\":\"第三十八条：审议单项关联交易金额超过公司上一年度末经审计净资产的5%或绝对值超过1000万元的关联交易。\",\"type\":\"table_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 86,
+      "total_tokens": 1240
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"《公司章程》对关联交易的审议权限\",\"value\":\"股东大会审议单项关联交易金额超过公司上一年度末经审计净资产的5%或绝对值超过1000万元的关联交易。\",\"evidence\":\"第三十八条：审议单项关联交易金额超过公司上一年度末经审计净资产的5%或绝对值超过1000万元的关联交易。\",\"type\":\"table_fact\"}]"
+}

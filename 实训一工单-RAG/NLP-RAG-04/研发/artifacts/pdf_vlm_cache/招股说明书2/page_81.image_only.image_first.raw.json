@@ -1,0 +1,28 @@
+{
+  "page_number": 81,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4fc428df82498429d1a8e756f8",
+    "object": "chat.completion",
+    "created": 1780235617,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"行业内的主要企业\",\n        \"value\": \"国际上最大的IC目录销售商是美国的Digi-key；2009年中国读者最满意分销商中，目录销售商为Farnell、力源信息、Mouser、RS，其中力源信息为国内目录销售商，其余三家为国外目录销售商。\",\n        \"evidence\": \"目前，国际上最大的IC目录销售商是美国的Digi-key。根据《国际电子商情》公布的调查结果，2009年中国读者最满意分销商中，目录销售商为Farnell、力源信息、Mouser、RS。其中，力源信息为国内目录销售商，其余三家为国外目录销售商。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 175,
+      "total_tokens": 1326
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"行业内的主要企业\",\n        \"value\": \"国际上最大的IC目录销售商是美国的Digi-key；2009年中国读者最满意分销商中，目录销售商为Farnell、力源信息、Mouser、RS，其中力源信息为国内目录销售商，其余三家为国外目录销售商。\",\n        \"evidence\": \"目前，国际上最大的IC目录销售商是美国的Digi-key。根据《国际电子商情》公布的调查结果，2009年中国读者最满意分销商中，目录销售商为Farnell、力源信息、Mouser、RS。其中，力源信息为国内目录销售商，其余三家为国外目录销售商。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

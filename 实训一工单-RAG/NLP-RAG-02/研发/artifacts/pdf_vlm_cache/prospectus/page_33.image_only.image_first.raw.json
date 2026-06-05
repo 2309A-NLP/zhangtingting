@@ -1,0 +1,28 @@
+{
+  "page_number": 33,
+  "logical_page": "32",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7130b14f85af74f0772a18074af5",
+    "object": "chat.completion",
+    "created": 1780015477,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"拟上市的证券交易所\",\"value\":\"上海证券交易所\",\"evidence\":\"（七）拟上市的证券交易所\\n名称\\n上海证券交易所\",\"type\":\"table_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1076,
+      "completion_tokens": 38,
+      "total_tokens": 1114
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"拟上市的证券交易所\",\"value\":\"上海证券交易所\",\"evidence\":\"（七）拟上市的证券交易所\\n名称\\n上海证券交易所\",\"type\":\"table_fact\"}]"
+}

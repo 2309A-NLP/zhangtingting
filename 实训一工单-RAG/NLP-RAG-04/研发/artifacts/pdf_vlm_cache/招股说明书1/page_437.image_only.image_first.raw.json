@@ -1,0 +1,28 @@
+{
+  "page_number": 437,
+  "logical_page": "436",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e3f68734327e29878b93d72fff2",
+    "object": "chat.completion",
+    "created": 1780234545,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"项目研发成本及项目实施成本具体构成分析\",\"value\":\"截至2019年6月30日，项目研发成本及项目实施成本合计为279.32万元，其中项目实施成本为70.47万元，项目研发成本为208.85万元。\",\"evidence\":\"合计行显示项目成本总额279.32万元，项目实施成本70.47万元，项目研发成本208.85万元。\",\"type\":\"table_summary\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 116,
+      "total_tokens": 1270
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"项目研发成本及项目实施成本具体构成分析\",\"value\":\"截至2019年6月30日，项目研发成本及项目实施成本合计为279.32万元，其中项目实施成本为70.47万元，项目研发成本为208.85万元。\",\"evidence\":\"合计行显示项目成本总额279.32万元，项目实施成本70.47万元，项目研发成本208.85万元。\",\"type\":\"table_summary\"}]"
+}

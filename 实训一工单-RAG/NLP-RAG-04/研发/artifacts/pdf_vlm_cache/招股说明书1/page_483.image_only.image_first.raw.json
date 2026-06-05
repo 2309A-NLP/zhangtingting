@@ -1,0 +1,28 @@
+{
+  "page_number": 483,
+  "logical_page": "482",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e44d50b5835d2dd806edf93fe0d",
+    "object": "chat.completion",
+    "created": 1780234900,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"闲置募集资金使用条件\",\n        \"value\": \"公司可使用闲置募集资金暂时用于补充流动资金，但需满足：不得改变募集资金用途、不影响投资计划正常进行、单次使用不超过12个月、已归还前次用于补充流动资金的募集资金、并经董事会审议及保荐机构、独立董事、监事会出具明确同意意见。\",\n        \"evidence\": \"第二十一条内容及条款（一）至（五）\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 114,
+      "total_tokens": 1268
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"闲置募集资金使用条件\",\n        \"value\": \"公司可使用闲置募集资金暂时用于补充流动资金，但需满足：不得改变募集资金用途、不影响投资计划正常进行、单次使用不超过12个月、已归还前次用于补充流动资金的募集资金、并经董事会审议及保荐机构、独立董事、监事会出具明确同意意见。\",\n        \"evidence\": \"第二十一条内容及条款（一）至（五）\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 162,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e580ea2384e2abe771af82176fc",
+    "object": "chat.completion",
+    "created": 1780236161,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"向力源贸易的采购模式\",\n        \"value\": \"2007年~2008年5月，公司通过力源贸易在香港代购IC芯片，产品到货后由武汉经发向力源贸易采购并办理进口。\",\n        \"evidence\": \"2007年~2008年5月，本公司尚未取得进出口经营权，本公司进口IC芯片的模式为：力源贸易协助本公司在香港接收自海外供应商处采购的货物，产品到货后，武汉经发向力源贸易采购并办理进口，本公司向武汉经发采购。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 151,
+      "total_tokens": 1303
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"向力源贸易的采购模式\",\n        \"value\": \"2007年~2008年5月，公司通过力源贸易在香港代购IC芯片，产品到货后由武汉经发向力源贸易采购并办理进口。\",\n        \"evidence\": \"2007年~2008年5月，本公司尚未取得进出口经营权，本公司进口IC芯片的模式为：力源贸易协助本公司在香港接收自海外供应商处采购的货物，产品到货后，武汉经发向力源贸易采购并办理进口，本公司向武汉经发采购。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

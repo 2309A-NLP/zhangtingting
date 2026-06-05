@@ -1,0 +1,26 @@
+﻿[
+    {
+        "name":  "parsed_pages.json",
+        "exists":  false
+    },
+    {
+        "name":  "parsed_pages_redacted.json",
+        "exists":  false
+    },
+    {
+        "name":  "ingest_manifest.json",
+        "exists":  false
+    },
+    {
+        "name":  "enhance_manifest.json",
+        "exists":  false
+    },
+    {
+        "name":  "pdf_vlm_last_failure.json",
+        "exists":  false
+    },
+    {
+        "name":  "pdf_vlm_cache",
+        "exists":  false
+    }
+]

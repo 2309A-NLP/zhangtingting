@@ -1,0 +1,28 @@
+{
+  "page_number": 308,
+  "logical_page": "307",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e2a33a776c9c8bd56a9cea43984",
+    "object": "chat.completion",
+    "created": 1780233155,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"可比公司收入确认政策\",\n        \"value\": \"公司收入确认依据及具体时点与可比公司不存在重大差异，符合企业会计准则规定。\",\n        \"evidence\": \"公司收入确认依据及具体时点与可比公司不存在重大差异，符合企业会计准则规定。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 85,
+      "total_tokens": 1239
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"可比公司收入确认政策\",\n        \"value\": \"公司收入确认依据及具体时点与可比公司不存在重大差异，符合企业会计准则规定。\",\n        \"evidence\": \"公司收入确认依据及具体时点与可比公司不存在重大差异，符合企业会计准则规定。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

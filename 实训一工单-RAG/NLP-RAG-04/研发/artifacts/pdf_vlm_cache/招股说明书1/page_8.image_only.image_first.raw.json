@@ -1,0 +1,28 @@
+{
+  "page_number": 8,
+  "logical_page": "7",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e082cad46565165dfa6c64350cb",
+    "object": "chat.completion",
+    "created": 1780230925,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"应收账款回款周期较长的风险\",\n        \"value\": \"公司客户主要为军方或服务于军方的大型央企科研院所等单位，最终用户一般为军方。\",\n        \"evidence\": \"（十一）应收账款回款周期较长的风险：公司客户主要为军方或服务于军方的大型央企科研院所等单位，且最终用户一般为军方。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1150,
+      "completion_tokens": 99,
+      "total_tokens": 1249
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"应收账款回款周期较长的风险\",\n        \"value\": \"公司客户主要为军方或服务于军方的大型央企科研院所等单位，最终用户一般为军方。\",\n        \"evidence\": \"（十一）应收账款回款周期较长的风险：公司客户主要为军方或服务于军方的大型央企科研院所等单位，且最终用户一般为军方。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

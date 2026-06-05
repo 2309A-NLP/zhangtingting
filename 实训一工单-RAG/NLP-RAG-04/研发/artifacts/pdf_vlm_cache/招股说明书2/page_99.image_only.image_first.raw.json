@@ -1,0 +1,28 @@
+{
+  "page_number": 99,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e513014e466bd92b940c70b7910",
+    "object": "chat.completion",
+    "created": 1780235710,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"深圳市驰创电子有限公司\",\n        \"value\": \"成立于1996年，总部位于深圳，员工人数超200人，主营SAMSUNG、NEC、AMD、VISHAY等厂商产品。\",\n        \"evidence\": \"该公司成立于1996年，总部位于深圳，在西安、成都、深圳、上海等电子市场设有办事处，员工人数超200人。驰创电子早在1998年就开通了免费电话，并建立了全球分支机构一体化的呼叫中心...主营SAMSUNG、NEC、AMD、VISHAY等厂商产品。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 148,
+      "total_tokens": 1299
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"深圳市驰创电子有限公司\",\n        \"value\": \"成立于1996年，总部位于深圳，员工人数超200人，主营SAMSUNG、NEC、AMD、VISHAY等厂商产品。\",\n        \"evidence\": \"该公司成立于1996年，总部位于深圳，在西安、成都、深圳、上海等电子市场设有办事处，员工人数超200人。驰创电子早在1998年就开通了免费电话，并建立了全球分支机构一体化的呼叫中心...主营SAMSUNG、NEC、AMD、VISHAY等厂商产品。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

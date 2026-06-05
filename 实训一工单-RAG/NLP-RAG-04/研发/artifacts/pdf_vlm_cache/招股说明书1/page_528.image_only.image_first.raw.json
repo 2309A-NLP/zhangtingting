@@ -1,0 +1,28 @@
+{
+  "page_number": 528,
+  "logical_page": "527",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e47b9f2771f155d89c3f007dd13",
+    "object": "chat.completion",
+    "created": 1780235090,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"法定代表人\",\"value\":\"未明确提及法定代表人姓名\",\"evidence\":\"页面内容为关于关联交易的承诺条款，未涉及法定代表人信息\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 40,
+      "total_tokens": 1194
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"法定代表人\",\"value\":\"未明确提及法定代表人姓名\",\"evidence\":\"页面内容为关于关联交易的承诺条款，未涉及法定代表人信息\",\"type\":\"field\"}]"
+}

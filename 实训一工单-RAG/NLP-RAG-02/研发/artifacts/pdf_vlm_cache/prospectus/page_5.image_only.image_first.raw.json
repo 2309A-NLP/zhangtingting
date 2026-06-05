@@ -1,0 +1,28 @@
+{
+  "page_number": 5,
+  "logical_page": "4",
+  "mode": "image_only",
+  "response": {
+    "id": "019e712eec80647faf50688790edafa5",
+    "object": "chat.completion",
+    "created": 1780015361,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"营业收入变动率1%时对营业利润的影响\",\"value\":\"营业利润影响数为38.78万元，占营业利润比例为30.99%\",\"evidence\":\"2019年1-6月，营业收入变动率1%时，营业利润影响数为38.78，占营业利润比例为30.99%\",\"type\":\"table_fact\"},{\"title\":\"营业收入变动率-1%时对营业利润的影响\",\"value\":\"营业利润影响数为-38.78万元，占营业利润比例为-30.99%\",\"evidence\":\"2019年1-6月，营业收入变动率-1%时，营业利润影响数为-38.78，占营业利润比例为-30.99%\",\"type\":\"table_fact\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1074,
+      "completion_tokens": 183,
+      "total_tokens": 1257
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"营业收入变动率1%时对营业利润的影响\",\"value\":\"营业利润影响数为38.78万元，占营业利润比例为30.99%\",\"evidence\":\"2019年1-6月，营业收入变动率1%时，营业利润影响数为38.78，占营业利润比例为30.99%\",\"type\":\"table_fact\"},{\"title\":\"营业收入变动率-1%时对营业利润的影响\",\"value\":\"营业利润影响数为-38.78万元，占营业利润比例为-30.99%\",\"evidence\":\"2019年1-6月，营业收入变动率-1%时，营业利润影响数为-38.78，占营业利润比例为-30.99%\",\"type\":\"table_fact\"}]"
+}

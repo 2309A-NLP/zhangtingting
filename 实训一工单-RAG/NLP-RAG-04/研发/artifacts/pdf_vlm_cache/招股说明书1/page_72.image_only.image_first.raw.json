@@ -1,0 +1,28 @@
+{
+  "page_number": 72,
+  "logical_page": "71",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e11079692c87f4be86fc0e456d6",
+    "object": "chat.completion",
+    "created": 1780231506,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"最近一年新增股东\",\"value\":\"杜成城\",\"evidence\":\"截至本招股意向书签署日，最近一年发行人新增股东为杜成城，其简历如下：杜成城，男，1966年2月出生...\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 61,
+      "total_tokens": 1213
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"最近一年新增股东\",\"value\":\"杜成城\",\"evidence\":\"截至本招股意向书签署日，最近一年发行人新增股东为杜成城，其简历如下：杜成城，男，1966年2月出生...\",\"type\":\"field\"}]"
+}

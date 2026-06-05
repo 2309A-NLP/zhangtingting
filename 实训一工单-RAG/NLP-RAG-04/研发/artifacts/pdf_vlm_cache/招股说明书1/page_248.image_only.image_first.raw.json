@@ -1,0 +1,28 @@
+{
+  "page_number": 248,
+  "logical_page": "247",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e215e350f69650c527b8b77666c",
+    "object": "chat.completion",
+    "created": 1780232576,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"发行人特别表决权股份或类似安排\",\"value\":\"不存在\",\"evidence\":\"截至本招股意向书签署日，发行人不存在特别表决权股份或类似安排的情况。\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 45,
+      "total_tokens": 1199
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"发行人特别表决权股份或类似安排\",\"value\":\"不存在\",\"evidence\":\"截至本招股意向书签署日，发行人不存在特别表决权股份或类似安排的情况。\",\"type\":\"field\"}]"
+}

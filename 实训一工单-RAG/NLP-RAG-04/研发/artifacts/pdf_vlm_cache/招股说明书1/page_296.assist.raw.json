@@ -1,0 +1,28 @@
+{
+  "page_number": 296,
+  "logical_page": "295",
+  "mode": "full",
+  "response": {
+    "id": "019e7e29418d2c8579afc9ec37079cb2",
+    "object": "chat.completion",
+    "created": 1780233093,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"金融资产减值测试方法\",\n        \"value\": \"对持有至到期投资、贷款和应收款，先单独测试单项金额重大的金融资产，再对未减值资产按信用风险组合测试；对可供出售金融资产，按债务工具和权益工具分别列出减值客观证据。\",\n        \"evidence\": \"本地正文第(2)、(3)条及本地表格中①②项内容\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1614,
+      "completion_tokens": 112,
+      "total_tokens": 1726
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"金融资产减值测试方法\",\n        \"value\": \"对持有至到期投资、贷款和应收款，先单独测试单项金额重大的金融资产，再对未减值资产按信用风险组合测试；对可供出售金融资产，按债务工具和权益工具分别列出减值客观证据。\",\n        \"evidence\": \"本地正文第(2)、(3)条及本地表格中①②项内容\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

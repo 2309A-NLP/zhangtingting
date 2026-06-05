@@ -1,0 +1,28 @@
+{
+  "page_number": 27,
+  "logical_page": "26",
+  "mode": "full",
+  "response": {
+    "id": "019e7e0a97e055b1cc7521ee5d4dd0eb",
+    "object": "chat.completion",
+    "created": 1780231084,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"技术标准\",\n        \"value\": \"公司参与制定了全军第一个视频指挥系统技术标准《某视频技术规范1.0》。\",\n        \"evidence\": \"公司目前已经成为军队视频指挥领域的重要供应商，参与制定了全军第一个视频指挥系统技术标准（即《某视频技术规范1.0》）。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"重要供应商领域\",\n        \"value\": \"公司是“某情报、指挥、控制与通信网络一体化工程”网络化视频指挥系统的唯一民营企业参与者。\",\n        \"evidence\": \"根据总体单位、军方用户出具的证明文件和承研合同，民营企业兴图新科是该工程网络化视频指挥系统的唯一参与者。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1723,
+      "completion_tokens": 179,
+      "total_tokens": 1902
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"技术标准\",\n        \"value\": \"公司参与制定了全军第一个视频指挥系统技术标准《某视频技术规范1.0》。\",\n        \"evidence\": \"公司目前已经成为军队视频指挥领域的重要供应商，参与制定了全军第一个视频指挥系统技术标准（即《某视频技术规范1.0》）。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"重要供应商领域\",\n        \"value\": \"公司是“某情报、指挥、控制与通信网络一体化工程”网络化视频指挥系统的唯一民营企业参与者。\",\n        \"evidence\": \"根据总体单位、军方用户出具的证明文件和承研合同，民营企业兴图新科是该工程网络化视频指挥系统的唯一参与者。\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

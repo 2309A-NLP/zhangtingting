@@ -1,0 +1,28 @@
+{
+  "page_number": 6,
+  "logical_page": "5",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e07f6297f2131dc361f48575177",
+    "object": "chat.completion",
+    "created": 1780230911,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\n        \"title\": \"本次募集资金投资项目实施完成后公司折旧费用和摊销费用增加金额\",\n        \"value\": \"约1,450.50万元/年\",\n        \"evidence\": \"截至2019年6月30日，公司将增加固定资产12,961.30万元，无形资产1,020.00万元，相应固定资产折旧费用和摊销费用亦会大幅增加，按照公司会计政策本次募集资金投资项目实施完成后每年将增加折旧费用和摊销费用合计约1,450.50万元。\",\n        \"type\": \"table_fact\"\n    }\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1150,
+      "completion_tokens": 142,
+      "total_tokens": 1292
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\n        \"title\": \"本次募集资金投资项目实施完成后公司折旧费用和摊销费用增加金额\",\n        \"value\": \"约1,450.50万元/年\",\n        \"evidence\": \"截至2019年6月30日，公司将增加固定资产12,961.30万元，无形资产1,020.00万元，相应固定资产折旧费用和摊销费用亦会大幅增加，按照公司会计政策本次募集资金投资项目实施完成后每年将增加折旧费用和摊销费用合计约1,450.50万元。\",\n        \"type\": \"table_fact\"\n    }\n]"
+}

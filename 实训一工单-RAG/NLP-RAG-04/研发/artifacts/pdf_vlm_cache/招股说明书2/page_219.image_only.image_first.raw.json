@@ -1,0 +1,28 @@
+{
+  "page_number": 219,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e5fa9b46fbd44405cae18f840d2",
+    "object": "chat.completion",
+    "created": 1780236659,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"2007年度母公司所有者权益变动表\",\n        \"value\": \"2007年度母公司所有者权益变动表\",\n        \"evidence\": \"表头标题\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"2007年末所有者权益合计\",\n        \"value\": \"62,606,374.49元\",\n        \"evidence\": \"表尾'四、本期期末余额'行'所有者权益合计'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年净利润\",\n        \"value\": \"14,172,708.20元\",\n        \"evidence\": \"表中'三、本期增减变动金额'下'(一)净利润'行'所有者权益合计'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年提取盈余公积\",\n        \"value\": \"2,125,906.23元\",\n        \"evidence\": \"表中'(四)利润分配'下'1.提取盈余公积'行'盈余公积'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年提取职工奖励及福利基金\",\n        \"value\": \"2,125,906.23元\",\n        \"evidence\": \"表中'(四)利润分配'下'2.提取职工奖励及福利基金'行'盈余公积'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年对股东的分配\",\n        \"value\": \"-708,635.41元\",\n        \"evidence\": \"表中'(四)利润分配'下'3.对股东的分配'行'未分配利润'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年资本公积转增股本\",\n        \"value\": \"1,946,100.18元\",\n        \"evidence\": \"表中'(五)所有者权益内部结转'下'1.资本公积转增股本'行'股本'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年盈余公积转增股本\",\n        \"value\": \"1,946,100.18元\",\n        \"evidence\": \"表中'(五)所有者权益内部结转'下'2.盈余公积转增股本'行'股本'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年未分配利润转增股本\",\n        \"value\": \"14,453,899.82元\",\n        \"evidence\": \"表中'(五)所有者权益内部结转'下'4.未分配利润转增股本'行'股本'列数据\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 698,
+      "total_tokens": 1850
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"2007年度母公司所有者权益变动表\",\n        \"value\": \"2007年度母公司所有者权益变动表\",\n        \"evidence\": \"表头标题\",\n        \"type\": \"table_summary\"\n    },\n    {\n        \"title\": \"2007年末所有者权益合计\",\n        \"value\": \"62,606,374.49元\",\n        \"evidence\": \"表尾'四、本期期末余额'行'所有者权益合计'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年净利润\",\n        \"value\": \"14,172,708.20元\",\n        \"evidence\": \"表中'三、本期增减变动金额'下'(一)净利润'行'所有者权益合计'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年提取盈余公积\",\n        \"value\": \"2,125,906.23元\",\n        \"evidence\": \"表中'(四)利润分配'下'1.提取盈余公积'行'盈余公积'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年提取职工奖励及福利基金\",\n        \"value\": \"2,125,906.23元\",\n        \"evidence\": \"表中'(四)利润分配'下'2.提取职工奖励及福利基金'行'盈余公积'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年对股东的分配\",\n        \"value\": \"-708,635.41元\",\n        \"evidence\": \"表中'(四)利润分配'下'3.对股东的分配'行'未分配利润'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年资本公积转增股本\",\n        \"value\": \"1,946,100.18元\",\n        \"evidence\": \"表中'(五)所有者权益内部结转'下'1.资本公积转增股本'行'股本'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年盈余公积转增股本\",\n        \"value\": \"1,946,100.18元\",\n        \"evidence\": \"表中'(五)所有者权益内部结转'下'2.盈余公积转增股本'行'股本'列数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2007年未分配利润转增股本\",\n        \"value\": \"14,453,899.82元\",\n        \"evidence\": \"表中'(五)所有者权益内部结转'下'4.未分配利润转增股本'行'股本'列数据\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

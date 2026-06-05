@@ -1,0 +1,28 @@
+{
+  "page_number": 186,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e5b060952ce7837446abf6a3bc0",
+    "object": "chat.completion",
+    "created": 1780236355,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"董事、监事、高级管理人员任职资格情况\",\n        \"value\": \"公司董事、监事、高级管理人员的任职资格符合《公司法》及国家相关法律法规规定，不存在被中国证监会采取证券市场禁入措施尚在禁入期、最近36个月内受到中国证监会行政处罚或最近12个月内受到证券交易所公开谴责、因涉嫌犯罪被司法机关立案侦查或涉嫌违法违规被中国证监会立案调查且尚未有明确结论意见的情形。\",\n        \"evidence\": \"八、董事、监事、高级管理人员任职资格情况部分的完整文本。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 140,
+      "total_tokens": 1292
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"董事、监事、高级管理人员任职资格情况\",\n        \"value\": \"公司董事、监事、高级管理人员的任职资格符合《公司法》及国家相关法律法规规定，不存在被中国证监会采取证券市场禁入措施尚在禁入期、最近36个月内受到中国证监会行政处罚或最近12个月内受到证券交易所公开谴责、因涉嫌犯罪被司法机关立案侦查或涉嫌违法违规被中国证监会立案调查且尚未有明确结论意见的情形。\",\n        \"evidence\": \"八、董事、监事、高级管理人员任职资格情况部分的完整文本。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 369,
+  "logical_page": "368",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e344382b6e0fb5786cbe6e3dc02",
+    "object": "chat.completion",
+    "created": 1780233815,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"2016年度项目实施成本\",\"value\":\"193.85万元\",\"evidence\":\"2016年度表格中'项目实施成本'行对应数值为193.85\",\"type\":\"table_fact\"},\n    {\"title\":\"2017年度项目实施成本\",\"value\":\"233.77万元\",\"evidence\":\"2017年度表格中'项目实施成本'行对应数值为233.77\",\"type\":\"table_fact\"},\n    {\"title\":\"2018年度项目实施成本\",\"value\":\"510.74万元\",\"evidence\":\"2018年度表格中'项目实施成本'行对应数值为510.74\",\"type\":\"table_fact\"}\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 164,
+      "total_tokens": 1318
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"2016年度项目实施成本\",\"value\":\"193.85万元\",\"evidence\":\"2016年度表格中'项目实施成本'行对应数值为193.85\",\"type\":\"table_fact\"},\n    {\"title\":\"2017年度项目实施成本\",\"value\":\"233.77万元\",\"evidence\":\"2017年度表格中'项目实施成本'行对应数值为233.77\",\"type\":\"table_fact\"},\n    {\"title\":\"2018年度项目实施成本\",\"value\":\"510.74万元\",\"evidence\":\"2018年度表格中'项目实施成本'行对应数值为510.74\",\"type\":\"table_fact\"}\n]"
+}

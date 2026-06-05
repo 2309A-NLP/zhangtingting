@@ -1,0 +1,28 @@
+{
+  "page_number": 334,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6da9221975fb816de0db71a164",
+    "object": "chat.completion",
+    "created": 1780237577,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"扩产产品线策略\",\n        \"value\": \"公司通过提升产品资源市场地位、核心器件供应能力和配套能力来满足客户需求。\",\n        \"evidence\": \"在把握客户需求时需要从以下角度入手：其一，提高公司产品资源的市场地位；其二，提高公司在核心器件上的供应能力；其三，提高公司产品配套能力，一般而言，对客户BOM单的配套满足率达到40%以上时，分销商就对客户具有了较大吸引力。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 126,
+      "total_tokens": 1278
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"扩产产品线策略\",\n        \"value\": \"公司通过提升产品资源市场地位、核心器件供应能力和配套能力来满足客户需求。\",\n        \"evidence\": \"在把握客户需求时需要从以下角度入手：其一，提高公司产品资源的市场地位；其二，提高公司在核心器件上的供应能力；其三，提高公司产品配套能力，一般而言，对客户BOM单的配套满足率达到40%以上时，分销商就对客户具有了较大吸引力。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

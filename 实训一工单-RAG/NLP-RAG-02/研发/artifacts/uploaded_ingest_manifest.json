@@ -1,0 +1,7 @@
+{
+  "pdf": "招股说明书1.pdf",
+  "chunks": 1424,
+  "embedding_backend": "sentence_transformers:bge-m3",
+  "dimension": 1024,
+  "vector_store": "milvus"
+}

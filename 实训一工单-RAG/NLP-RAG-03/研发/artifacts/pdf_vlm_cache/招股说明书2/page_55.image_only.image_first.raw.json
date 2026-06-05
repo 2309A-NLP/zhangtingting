@@ -1,0 +1,28 @@
+{
+  "page_number": 55,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e73cac61d1e3ff5e0d81000115ed9",
+    "object": "chat.completion",
+    "created": 1780059130,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"注册资本\",\"value\":\"5,000万元\",\"evidence\":\"2009年11月23日，武汉市商务局出具武商[2009]435号《市商务局关于武汉力源信息技术有限公司整体改制变更为外商投资股份有限公司的批复》，批准力源有限整体变更为力源信息，注册资本5,000万元。\",\"type\":\"field\"},{\"title\":\"法定代表人\",\"value\":\"赵马克(Mark Zhao)\",\"evidence\":\"本次发行前，本公司自然人股东为赵马克(Mark Zhao)和吴伟钢。目前，赵马克(Mark Zhao)在本公司担任董事长兼总经理。\",\"type\":\"field\"},{\"title\":\"持股比例\",\"value\":\"42.35%\",\"evidence\":\"其中：赵马克(Mark Zhao)持有本公司股份2,117.70万股，占本次发行前公司总股本的42.35%。\",\"type\":\"field\"},{\"title\":\"新增股东\",\"value\":\"听音投资、联众聚源、宁波博润、上海博丰和融冰投资\",\"evidence\":\"最近一年及一期，本公司新增股东为听音投资、联众聚源、宁波博润、上海博丰和融冰投资，新增股东持股情况如下：\",\"type\":\"field\"},{\"title\":\"股东名称\",\"value\":\"融冰投资\",\"evidence\":\"1、融冰投资\",\"type\":\"field\"},{\"title\":\"持股数量(万股)\",\"value\":\"609.50\",\"evidence\":\"融冰投资 609.50\",\"type\":\"field\"},{\"title\":\"持股比例(%)\",\"value\":\"12.19\",\"evidence\":\"融冰投资 12.19\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1075,
+      "completion_tokens": 369,
+      "total_tokens": 1444
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"注册资本\",\"value\":\"5,000万元\",\"evidence\":\"2009年11月23日，武汉市商务局出具武商[2009]435号《市商务局关于武汉力源信息技术有限公司整体改制变更为外商投资股份有限公司的批复》，批准力源有限整体变更为力源信息，注册资本5,000万元。\",\"type\":\"field\"},{\"title\":\"法定代表人\",\"value\":\"赵马克(Mark Zhao)\",\"evidence\":\"本次发行前，本公司自然人股东为赵马克(Mark Zhao)和吴伟钢。目前，赵马克(Mark Zhao)在本公司担任董事长兼总经理。\",\"type\":\"field\"},{\"title\":\"持股比例\",\"value\":\"42.35%\",\"evidence\":\"其中：赵马克(Mark Zhao)持有本公司股份2,117.70万股，占本次发行前公司总股本的42.35%。\",\"type\":\"field\"},{\"title\":\"新增股东\",\"value\":\"听音投资、联众聚源、宁波博润、上海博丰和融冰投资\",\"evidence\":\"最近一年及一期，本公司新增股东为听音投资、联众聚源、宁波博润、上海博丰和融冰投资，新增股东持股情况如下：\",\"type\":\"field\"},{\"title\":\"股东名称\",\"value\":\"融冰投资\",\"evidence\":\"1、融冰投资\",\"type\":\"field\"},{\"title\":\"持股数量(万股)\",\"value\":\"609.50\",\"evidence\":\"融冰投资 609.50\",\"type\":\"field\"},{\"title\":\"持股比例(%)\",\"value\":\"12.19\",\"evidence\":\"融冰投资 12.19\",\"type\":\"field\"}]"
+}

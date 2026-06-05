@@ -1,0 +1,28 @@
+{
+  "page_number": 466,
+  "logical_page": "465",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e41bec8098724639b935b8af4e9",
+    "object": "chat.completion",
+    "created": 1780234698,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"二期投资款金额\",\"value\":\"2,600.00万元\",\"evidence\":\"公司二期投资款2,600.00万元\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 43,
+      "total_tokens": 1197
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"二期投资款金额\",\"value\":\"2,600.00万元\",\"evidence\":\"公司二期投资款2,600.00万元\",\"type\":\"field\"}]"
+}

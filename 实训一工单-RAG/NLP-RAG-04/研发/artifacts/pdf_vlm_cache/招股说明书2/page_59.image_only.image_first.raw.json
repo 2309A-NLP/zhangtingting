@@ -1,0 +1,28 @@
+{
+  "page_number": 59,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4da43e45a2f64f183906b0f4bd",
+    "object": "chat.completion",
+    "created": 1780235479,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"宁波博润注册资本\",\n        \"value\": \"1亿元\",\n        \"evidence\": \"宁波博润于2007年9月26日成立，注册资本为1亿元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润实收资本\",\n        \"value\": \"5千万元\",\n        \"evidence\": \"宁波博润于2007年9月26日成立，实收资本5千万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润法定代表人\",\n        \"value\": \"罗森鹤\",\n        \"evidence\": \"法定代表人为罗森鹤\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润主要股东\",\n        \"value\": \"宁波东方琴业有限公司\",\n        \"evidence\": \"罗森鹤为宁波博润法定代表人，持有宁波博润主要股东宁波东方琴业有限公司55%的股权\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润主要股东出资额\",\n        \"value\": \"2,000万元\",\n        \"evidence\": \"股东名称/姓名：宁波东方琴业有限公司，出资额(万元)：2,000\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"宁波博润主要股东出资比例\",\n        \"value\": \"20%\",\n        \"evidence\": \"股东名称/姓名：宁波东方琴业有限公司，出资比例(%)：20\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"宁波博润主要股东数量\",\n        \"value\": \"7家民营企业和5位自然人\",\n        \"evidence\": \"宁波博润为宁波东方琴业有限公司、宁波市塞纳电热电器有限公司、宁波威盛化纤有限公司等7家民营企业和5位自然人所有的创业投资企业\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 437,
+      "total_tokens": 1588
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"宁波博润注册资本\",\n        \"value\": \"1亿元\",\n        \"evidence\": \"宁波博润于2007年9月26日成立，注册资本为1亿元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润实收资本\",\n        \"value\": \"5千万元\",\n        \"evidence\": \"宁波博润于2007年9月26日成立，实收资本5千万元\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润法定代表人\",\n        \"value\": \"罗森鹤\",\n        \"evidence\": \"法定代表人为罗森鹤\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润主要股东\",\n        \"value\": \"宁波东方琴业有限公司\",\n        \"evidence\": \"罗森鹤为宁波博润法定代表人，持有宁波博润主要股东宁波东方琴业有限公司55%的股权\",\n        \"type\": \"field\"\n    },\n    {\n        \"title\": \"宁波博润主要股东出资额\",\n        \"value\": \"2,000万元\",\n        \"evidence\": \"股东名称/姓名：宁波东方琴业有限公司，出资额(万元)：2,000\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"宁波博润主要股东出资比例\",\n        \"value\": \"20%\",\n        \"evidence\": \"股东名称/姓名：宁波东方琴业有限公司，出资比例(%)：20\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"宁波博润主要股东数量\",\n        \"value\": \"7家民营企业和5位自然人\",\n        \"evidence\": \"宁波博润为宁波东方琴业有限公司、宁波市塞纳电热电器有限公司、宁波威盛化纤有限公司等7家民营企业和5位自然人所有的创业投资企业\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

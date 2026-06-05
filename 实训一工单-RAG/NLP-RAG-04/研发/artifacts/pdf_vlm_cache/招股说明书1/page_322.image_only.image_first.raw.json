@@ -1,0 +1,28 @@
+{
+  "page_number": 322,
+  "logical_page": "321",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e2be62f7abc2aec83593ac4ffdb",
+    "object": "chat.completion",
+    "created": 1780233266,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\n        \"title\": \"企业所得税优惠\",\n        \"value\": \"2016年度企业所得税税率为15%。\",\n        \"evidence\": \"本页（逻辑页321）中“（二）税收优惠”部分明确指出：‘2016年度企业所得税按15%征收’。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"企业所得税优惠\",\n        \"value\": \"公司持有高新技术企业证书，有效期三年。\",\n        \"evidence\": \"本页（逻辑页321）中“（二）税收优惠”部分明确指出：‘本公司于2014年10月14日通过高新技术企业认定并取得编号为GR201442000473的高新技术企业证书，有效期为三年。’\",\n        \"type\": \"table_fact\"\n    }\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 191,
+      "total_tokens": 1345
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\n        \"title\": \"企业所得税优惠\",\n        \"value\": \"2016年度企业所得税税率为15%。\",\n        \"evidence\": \"本页（逻辑页321）中“（二）税收优惠”部分明确指出：‘2016年度企业所得税按15%征收’。\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"企业所得税优惠\",\n        \"value\": \"公司持有高新技术企业证书，有效期三年。\",\n        \"evidence\": \"本页（逻辑页321）中“（二）税收优惠”部分明确指出：‘本公司于2014年10月14日通过高新技术企业认定并取得编号为GR201442000473的高新技术企业证书，有效期为三年。’\",\n        \"type\": \"table_fact\"\n    }\n]"
+}

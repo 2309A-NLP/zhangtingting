@@ -1,0 +1,28 @@
+{
+  "page_number": 292,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e697b1b9c32e67bebb41d3c62e3",
+    "object": "chat.completion",
+    "created": 1780237302,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\"title\":\"本公司销售净利率\",\"value\":\"11.50%\",\"evidence\":\"2009年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"相似行业上市公司平均净利率\",\"value\":\"5.07%\",\"evidence\":\"2009年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年度公司净利率\",\"value\":\"11.50%\",\"evidence\":\"2009年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2008年度公司净利率\",\"value\":\"11.29%\",\"evidence\":\"2008年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2007年度公司净利率\",\"value\":\"15.65%\",\"evidence\":\"2007年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年度相似行业平均净利率\",\"value\":\"6.61%\",\"evidence\":\"2009年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2008年度相似行业平均净利率\",\"value\":\"6.61%\",\"evidence\":\"2008年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2007年度相似行业平均净利率\",\"value\":\"5.89%\",\"evidence\":\"2007年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年度Premier Farnell净利率\",\"value\":\"4.72%\",\"evidence\":\"2009年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2008年度Premier Farnell净利率\",\"value\":\"6.43%\",\"evidence\":\"2008年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2007年度Premier Farnell净利率\",\"value\":\"4.87%\",\"evidence\":\"2007年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年度Electrocomponents plc净利率\",\"value\":\"5.41%\",\"evidence\":\"2009年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2008年度Electrocomponents plc净利率\",\"value\":\"6.79%\",\"evidence\":\"2008年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2007年度Electrocomponents plc净利率\",\"value\":\"6.91%\",\"evidence\":\"2007年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年度公司所得税费用/利润总额\",\"value\":\"16.59%\",\"evidence\":\"2010年6月30日对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年度公司所得税费用/利润总额\",\"value\":\"15.41%\",\"evidence\":\"2009年12月31日对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2008年度公司所得税费用/利润总额\",\"value\":\"15.78%\",\"evidence\":\"2008年12月31日对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2007年度公司所得税费用/利润总额\",\"value\":\"-1.43%\",\"evidence\":\"2007年12月31日对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2010年6月30日公司所得税费用\",\"value\":\"2,538,135.97元\",\"evidence\":\"2010年6月30日对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年12月31日公司所得税费用\",\"value\":\"3,572,740.81元\",\"evidence\":\"2009年12月31日对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2008年12月31日公司所得税费用\",\"value\":\"2,870,644.37元\",\"evidence\":\"2008年12月31日对应行\",\"type\":\"table_fact\"},\n"
+        },
+        "finish_reason": "length"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 900,
+      "total_tokens": 2052
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\"title\":\"本公司销售净利率\",\"value\":\"11.50%\",\"evidence\":\"2009年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"相似行业上市公司平均净利率\",\"value\":\"5.07%\",\"evidence\":\"2009年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年度公司净利率\",\"value\":\"11.50%\",\"evidence\":\"2009年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2008年度公司净利率\",\"value\":\"11.29%\",\"evidence\":\"2008年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2007年度公司净利率\",\"value\":\"15.65%\",\"evidence\":\"2007年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年度相似行业平均净利率\",\"value\":\"6.61%\",\"evidence\":\"2009年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2008年度相似行业平均净利率\",\"value\":\"6.61%\",\"evidence\":\"2008年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2007年度相似行业平均净利率\",\"value\":\"5.89%\",\"evidence\":\"2007年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年度Premier Farnell净利率\",\"value\":\"4.72%\",\"evidence\":\"2009年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2008年度Premier Farnell净利率\",\"value\":\"6.43%\",\"evidence\":\"2008年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2007年度Premier Farnell净利率\",\"value\":\"4.87%\",\"evidence\":\"2007年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年度Electrocomponents plc净利率\",\"value\":\"5.41%\",\"evidence\":\"2009年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2008年度Electrocomponents plc净利率\",\"value\":\"6.79%\",\"evidence\":\"2008年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2007年度Electrocomponents plc净利率\",\"value\":\"6.91%\",\"evidence\":\"2007年度对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年度公司所得税费用/利润总额\",\"value\":\"16.59%\",\"evidence\":\"2010年6月30日对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年度公司所得税费用/利润总额\",\"value\":\"15.41%\",\"evidence\":\"2009年12月31日对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2008年度公司所得税费用/利润总额\",\"value\":\"15.78%\",\"evidence\":\"2008年12月31日对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2007年度公司所得税费用/利润总额\",\"value\":\"-1.43%\",\"evidence\":\"2007年12月31日对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2010年6月30日公司所得税费用\",\"value\":\"2,538,135.97元\",\"evidence\":\"2010年6月30日对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2009年12月31日公司所得税费用\",\"value\":\"3,572,740.81元\",\"evidence\":\"2009年12月31日对应行\",\"type\":\"table_fact\"},\n    {\"title\":\"2008年12月31日公司所得税费用\",\"value\":\"2,870,644.37元\",\"evidence\":\"2008年12月31日对应行\",\"type\":\"table_fact\"},\n"
+}

@@ -1,0 +1,215 @@
+{
+  "pdfs": [
+    "D:\\Desktop\\NLP-RAG-03\\data\\招股说明书1.pdf",
+    "D:\\Desktop\\NLP-RAG-03\\data\\招股说明书2.pdf"
+  ],
+  "pdf_count": 2,
+  "mode": "enhancement",
+  "chunks": 2989,
+  "base_chunks": 2624,
+  "enhanced_chunks": 243,
+  "vlm_enhanced_chunks": 122,
+  "vlm_selected_pages": [
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 5
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 11
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 23
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 30
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 37
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 38
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 53
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 54
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 55
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 58
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 59
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 63
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 34
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 43
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 47
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 48
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 49
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 50
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 51
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 52
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 55
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 56
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 57
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 59
+    }
+  ],
+  "vlm_failed_pages": [],
+  "vlm_cache_hit_pages": [],
+  "vlm_api_success_pages": [
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 5
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 11
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 23
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 30
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 37
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 38
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 53
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 54
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 55
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 58
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 59
+    },
+    {
+      "source_pdf": "招股说明书1.pdf",
+      "page_number": 63
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 34
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 43
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 47
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 48
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 49
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 50
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 51
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 52
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 55
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 56
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 57
+    },
+    {
+      "source_pdf": "招股说明书2.pdf",
+      "page_number": 59
+    }
+  ],
+  "collection_name": "prospectus_chunks_03",
+  "embedding_backend": "sentence_transformers:bge-m3",
+  "dimension": 1024,
+  "vector_store": "milvus",
+  "pdf_parser_backend": "parse3"
+}

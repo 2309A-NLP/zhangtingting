@@ -1,0 +1,62 @@
+[
+  {
+    "title": "客户名称",
+    "value": "山东神沃",
+    "evidence": "客户名称列显示“山东神沃”",
+    "type": "field"
+  },
+  {
+    "title": "合同编号",
+    "value": "XT2018148",
+    "evidence": "合同编号列显示“XT2018148”",
+    "type": "field"
+  },
+  {
+    "title": "收入金额",
+    "value": "1,278.99万元",
+    "evidence": "收入金额合计行显示“1,278.99”",
+    "type": "field"
+  },
+  {
+    "title": "毛利额",
+    "value": "1,173.33万元",
+    "evidence": "毛利额合计行显示“1,173.33”",
+    "type": "field"
+  },
+  {
+    "title": "毛利率",
+    "value": "91.74%",
+    "evidence": "毛利率合计行显示“91.74%”",
+    "type": "field"
+  },
+  {
+    "title": "客户名称",
+    "value": "擎天讯达",
+    "evidence": "客户名称列显示“擎天讯达”",
+    "type": "field"
+  },
+  {
+    "title": "合同编号",
+    "value": "XT2018147",
+    "evidence": "合同编号列显示“XT2018147”",
+    "type": "field"
+  },
+  {
+    "title": "收入金额",
+    "value": "468.38万元",
+    "evidence": "收入金额合计行显示“468.38”",
+    "type": "field"
+  },
+  {
+    "title": "毛利额",
+    "value": "596.30万元",
+    "evidence": "毛利额合计行显示“596.30”",
+    "type": "field"
+  },
+  {
+    "title": "毛利率",
+    "value": "95.36%",
+    "evidence": "毛利率合计行显示“95.36%”",
+    "type": "field"
+  }
+]

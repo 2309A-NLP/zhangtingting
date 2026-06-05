@@ -1,0 +1,28 @@
+{
+  "page_number": 137,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e5477af30fbbd32a51db00814d6",
+    "object": "chat.completion",
+    "created": 1780235926,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[\n    {\n        \"title\": \"2009年销售额\",\n        \"value\": \"9.27亿美元\",\n        \"evidence\": \"Digi-Key 是全球著名的电子元器件目录销售商，在 2009 年的销售额为 9.27 亿美元。\",\n        \"type\": \"chart_fact\"\n    },\n    {\n        \"title\": \"2009年年增长率\",\n        \"value\": \"-5.70%\",\n        \"evidence\": \"图表中 2009 年对应的年增长率数据为 -5.70%。\",\n        \"type\": \"chart_fact\"\n    },\n    {\n        \"title\": \"2000年销售额\",\n        \"value\": \"370百万美元\",\n        \"evidence\": \"图表中 2000 年对应的销售额数据为 370（单位：百万美元）。\",\n        \"type\": \"chart_fact\"\n    },\n    {\n        \"title\": \"2009年销售额\",\n        \"value\": \"927百万美元\",\n        \"evidence\": \"图表中 2009 年对应的销售额数据为 927（单位：百万美元）。\",\n        \"type\": \"chart_fact\"\n    },\n    {\n        \"title\": \"2000年年增长率\",\n        \"value\": \"66.12%\",\n        \"evidence\": \"图表中 2000 年对应的年增长率数据为 66.12%。\",\n        \"type\": \"chart_fact\"\n    },\n    {\n        \"title\": \"2009年销售额\",\n        \"value\": \"9.27亿美元\",\n        \"evidence\": \"图表中 2009 年对应的销售额数据为 927（单位：百万美元），即 9.27 亿美元。\",\n        \"type\": \"chart_fact\"\n    }\n]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 403,
+      "total_tokens": 1555
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[\n    {\n        \"title\": \"2009年销售额\",\n        \"value\": \"9.27亿美元\",\n        \"evidence\": \"Digi-Key 是全球著名的电子元器件目录销售商，在 2009 年的销售额为 9.27 亿美元。\",\n        \"type\": \"chart_fact\"\n    },\n    {\n        \"title\": \"2009年年增长率\",\n        \"value\": \"-5.70%\",\n        \"evidence\": \"图表中 2009 年对应的年增长率数据为 -5.70%。\",\n        \"type\": \"chart_fact\"\n    },\n    {\n        \"title\": \"2000年销售额\",\n        \"value\": \"370百万美元\",\n        \"evidence\": \"图表中 2000 年对应的销售额数据为 370（单位：百万美元）。\",\n        \"type\": \"chart_fact\"\n    },\n    {\n        \"title\": \"2009年销售额\",\n        \"value\": \"927百万美元\",\n        \"evidence\": \"图表中 2009 年对应的销售额数据为 927（单位：百万美元）。\",\n        \"type\": \"chart_fact\"\n    },\n    {\n        \"title\": \"2000年年增长率\",\n        \"value\": \"66.12%\",\n        \"evidence\": \"图表中 2000 年对应的年增长率数据为 66.12%。\",\n        \"type\": \"chart_fact\"\n    },\n    {\n        \"title\": \"2009年销售额\",\n        \"value\": \"9.27亿美元\",\n        \"evidence\": \"图表中 2009 年对应的销售额数据为 927（单位：百万美元），即 9.27 亿美元。\",\n        \"type\": \"chart_fact\"\n    }\n]"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 344,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e6e9d1fa4d1bf2dd9ff801aee7c",
+    "object": "chat.completion",
+    "created": 1780237639,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"全体高级管理人员签名\",\"value\":\"赵马克、胡找、吴伟钢、戴大盛、骆敏健、易国平、王晓东\",\"evidence\":\"页面显示“全体高级管理人员签名”下方有七位签名，对应姓名分别为赵马克、胡找、吴伟钢、戴大盛、骆敏健、易国平、王晓东\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 86,
+      "total_tokens": 1238
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"全体高级管理人员签名\",\"value\":\"赵马克、胡找、吴伟钢、戴大盛、骆敏健、易国平、王晓东\",\"evidence\":\"页面显示“全体高级管理人员签名”下方有七位签名，对应姓名分别为赵马克、胡找、吴伟钢、戴大盛、骆敏健、易国平、王晓东\",\"type\":\"field\"}]"
+}

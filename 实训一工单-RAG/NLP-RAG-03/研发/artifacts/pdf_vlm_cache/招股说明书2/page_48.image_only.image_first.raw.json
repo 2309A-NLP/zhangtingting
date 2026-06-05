@@ -1,0 +1,28 @@
+{
+  "page_number": 48,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e73ca59283ee7332fb378da283bb1",
+    "object": "chat.completion",
+    "created": 1780059101,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\"title\":\"法定代表人\",\"value\":\"胡戎\",\"evidence\":\"法定代表人胡戎，住所：洪山区珞瑜路424号洪山科技创业大厦9068号\",\"type\":\"field\"},\n    {\"title\":\"注册资本\",\"value\":\"6,095,100元\",\"evidence\":\"注册资本6,095,100元\",\"type\":\"field\"},\n    {\"title\":\"出资额(万元)\",\"value\":\"327.50\",\"evidence\":\"出资额(万元) 327.50\",\"type\":\"table_fact\"},\n    {\"title\":\"出资比例(%)\",\"value\":\"53.73\",\"evidence\":\"出资比例(%) 53.73\",\"type\":\"table_fact\"},\n    {\"title\":\"出资额(万元)\",\"value\":\"282.01\",\"evidence\":\"出资额(万元) 282.01\",\"type\":\"table_fact\"},\n    {\"title\":\"出资比例(%)\",\"value\":\"46.27\",\"evidence\":\"出资比例(%) 46.27\",\"type\":\"table_fact\"},\n    {\"title\":\"合计出资额(万元)\",\"value\":\"609.51\",\"evidence\":\"合计 609.51\",\"type\":\"table_fact\"},\n    {\"title\":\"合计出资比例(%)\",\"value\":\"100.00\",\"evidence\":\"合计 100.00\",\"type\":\"table_fact\"},\n    {\"title\":\"持股比例\",\"value\":\"12.19%\",\"evidence\":\"融冰投资持有公司609.50万股股份，持股比例为12.19%\",\"type\":\"field\"}\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1075,
+      "completion_tokens": 359,
+      "total_tokens": 1434
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\"title\":\"法定代表人\",\"value\":\"胡戎\",\"evidence\":\"法定代表人胡戎，住所：洪山区珞瑜路424号洪山科技创业大厦9068号\",\"type\":\"field\"},\n    {\"title\":\"注册资本\",\"value\":\"6,095,100元\",\"evidence\":\"注册资本6,095,100元\",\"type\":\"field\"},\n    {\"title\":\"出资额(万元)\",\"value\":\"327.50\",\"evidence\":\"出资额(万元) 327.50\",\"type\":\"table_fact\"},\n    {\"title\":\"出资比例(%)\",\"value\":\"53.73\",\"evidence\":\"出资比例(%) 53.73\",\"type\":\"table_fact\"},\n    {\"title\":\"出资额(万元)\",\"value\":\"282.01\",\"evidence\":\"出资额(万元) 282.01\",\"type\":\"table_fact\"},\n    {\"title\":\"出资比例(%)\",\"value\":\"46.27\",\"evidence\":\"出资比例(%) 46.27\",\"type\":\"table_fact\"},\n    {\"title\":\"合计出资额(万元)\",\"value\":\"609.51\",\"evidence\":\"合计 609.51\",\"type\":\"table_fact\"},\n    {\"title\":\"合计出资比例(%)\",\"value\":\"100.00\",\"evidence\":\"合计 100.00\",\"type\":\"table_fact\"},\n    {\"title\":\"持股比例\",\"value\":\"12.19%\",\"evidence\":\"融冰投资持有公司609.50万股股份，持股比例为12.19%\",\"type\":\"field\"}\n]\n```"
+}

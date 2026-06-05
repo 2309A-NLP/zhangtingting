@@ -1,0 +1,28 @@
+{
+  "page_number": 61,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4e071ff5e1948e349e16110550",
+    "object": "chat.completion",
+    "created": 1780235503,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"专业结构\",\n        \"value\": \"截至2010年6月30日，销售人员占比最高，为40.48%；技术人员占比22.03%；管理人员占比4.24%。\",\n        \"evidence\": \"表格中显示销售人员48人（40.48%），技术人员26人（22.03%），管理人员5人（4.24%）。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 118,
+      "total_tokens": 1269
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"专业结构\",\n        \"value\": \"截至2010年6月30日，销售人员占比最高，为40.48%；技术人员占比22.03%；管理人员占比4.24%。\",\n        \"evidence\": \"表格中显示销售人员48人（40.48%），技术人员26人（22.03%），管理人员5人（4.24%）。\",\n        \"type\": \"table_summary\"\n    }\n]\n```"
+}

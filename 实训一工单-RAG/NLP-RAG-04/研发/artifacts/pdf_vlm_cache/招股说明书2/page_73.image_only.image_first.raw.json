@@ -1,0 +1,28 @@
+{
+  "page_number": 73,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4ebfeff291473e02fae7d925b6",
+    "object": "chat.completion",
+    "created": 1780235551,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"供应商选择标准\",\n        \"value\": \"电子产品制造商在选择供应商时，除进价外，主要看重产品质量、服务和供货能力。\",\n        \"evidence\": \"目前，在对于供应商的选择标准方面，除与成本密切相关的进货价格以外，电子产品制造商主要看重产品质量、服务、供货能力。\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 86,
+      "total_tokens": 1237
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"供应商选择标准\",\n        \"value\": \"电子产品制造商在选择供应商时，除进价外，主要看重产品质量、服务和供货能力。\",\n        \"evidence\": \"目前，在对于供应商的选择标准方面，除与成本密切相关的进货价格以外，电子产品制造商主要看重产品质量、服务、供货能力。\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

@@ -1,0 +1,28 @@
+{
+  "page_number": 47,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e73ca3aacbbaa5cba093d621a207c",
+    "object": "chat.completion",
+    "created": 1780059095,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"注册资本\",\"value\":\"50万港元\",\"evidence\":\"注册资本：50万港元\",\"type\":\"field\"},{\"title\":\"实收资本\",\"value\":\"10万港元\",\"evidence\":\"实收资本：10万港元\",\"type\":\"field\"},{\"title\":\"法定代表人\",\"value\":\"赵马克、陈新\",\"evidence\":\"董事：赵马克、陈新\",\"type\":\"field\"},{\"title\":\"股本结构\",\"value\":\"赵马克出资74,000港元（占74.00%）；陈新出资25,000港元（占25.00%）；区国雄出资1,000港元（占1.00%）\",\"evidence\":\"股本结构：赵马克出资74,000港元，占实收资本的74.00%；陈新出资25,000港元，占实收资本的25.00%；区国雄出资1,000港元，占实收资本的1.00%。\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1075,
+      "completion_tokens": 240,
+      "total_tokens": 1315
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"注册资本\",\"value\":\"50万港元\",\"evidence\":\"注册资本：50万港元\",\"type\":\"field\"},{\"title\":\"实收资本\",\"value\":\"10万港元\",\"evidence\":\"实收资本：10万港元\",\"type\":\"field\"},{\"title\":\"法定代表人\",\"value\":\"赵马克、陈新\",\"evidence\":\"董事：赵马克、陈新\",\"type\":\"field\"},{\"title\":\"股本结构\",\"value\":\"赵马克出资74,000港元（占74.00%）；陈新出资25,000港元（占25.00%）；区国雄出资1,000港元（占1.00%）\",\"evidence\":\"股本结构：赵马克出资74,000港元，占实收资本的74.00%；陈新出资25,000港元，占实收资本的25.00%；区国雄出资1,000港元，占实收资本的1.00%。\",\"type\":\"field\"}]"
+}

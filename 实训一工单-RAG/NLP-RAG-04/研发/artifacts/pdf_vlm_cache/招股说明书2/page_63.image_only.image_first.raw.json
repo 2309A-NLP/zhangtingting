@@ -1,0 +1,28 @@
+{
+  "page_number": 63,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e4df942f455959daaf40b5ac8ba",
+    "object": "chat.completion",
+    "created": 1780235500,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"2010年1~6月养老保险缴纳金额\",\n        \"value\": \"632,009.72元\",\n        \"evidence\": \"表格中2010年1~6月养老保险行数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2009年9~12月医疗险缴纳金额\",\n        \"value\": \"36,169.70元\",\n        \"evidence\": \"上海分公司表格中2009年9~12月医疗险行数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2010年1~6月住房公积金合计金额\",\n        \"value\": \"236,606.46元\",\n        \"evidence\": \"表格中2010年1~6月住房公积金行数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2009年9~12月住房公积金合计金额\",\n        \"value\": \"123,929.40元\",\n        \"evidence\": \"上海分公司表格中2009年9~12月住房公积金行数据\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1151,
+      "completion_tokens": 291,
+      "total_tokens": 1442
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"2010年1~6月养老保险缴纳金额\",\n        \"value\": \"632,009.72元\",\n        \"evidence\": \"表格中2010年1~6月养老保险行数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2009年9~12月医疗险缴纳金额\",\n        \"value\": \"36,169.70元\",\n        \"evidence\": \"上海分公司表格中2009年9~12月医疗险行数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2010年1~6月住房公积金合计金额\",\n        \"value\": \"236,606.46元\",\n        \"evidence\": \"表格中2010年1~6月住房公积金行数据\",\n        \"type\": \"table_fact\"\n    },\n    {\n        \"title\": \"2009年9~12月住房公积金合计金额\",\n        \"value\": \"123,929.40元\",\n        \"evidence\": \"上海分公司表格中2009年9~12月住房公积金行数据\",\n        \"type\": \"table_fact\"\n    }\n]\n```"
+}

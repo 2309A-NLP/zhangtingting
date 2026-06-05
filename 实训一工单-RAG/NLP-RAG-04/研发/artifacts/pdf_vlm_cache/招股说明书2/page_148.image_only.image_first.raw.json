@@ -1,0 +1,28 @@
+{
+  "page_number": 148,
+  "logical_page": null,
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e567297ae18cb3613dddd559684",
+    "object": "chat.completion",
+    "created": 1780236055,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n[\n    {\n        \"title\": \"核心技术情况\",\n        \"value\": \"公司核心技术表现为产品定位能力、推广能力和销售服务平台及系统。\",\n        \"evidence\": \"七、主要产品的核心技术情况\\n(一)产品定位能力\\n...公司的核心技术表现为产品定位能力、推广能力，以及销售服务平台和系统：\",\n        \"type\": \"field\"\n    }\n]\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 82,
+      "total_tokens": 1234
+    },
+    "system_fingerprint": ""
+  },
+  "content": "```json\n[\n    {\n        \"title\": \"核心技术情况\",\n        \"value\": \"公司核心技术表现为产品定位能力、推广能力和销售服务平台及系统。\",\n        \"evidence\": \"七、主要产品的核心技术情况\\n(一)产品定位能力\\n...公司的核心技术表现为产品定位能力、推广能力，以及销售服务平台和系统：\",\n        \"type\": \"field\"\n    }\n]\n```"
+}

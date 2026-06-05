@@ -1,0 +1,28 @@
+{
+  "page_number": 364,
+  "logical_page": "363",
+  "mode": "image_only",
+  "response": {
+    "id": "019e7e33a97498806a5f0d501230f31d",
+    "object": "chat.completion",
+    "created": 1780233776,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "[{\"title\":\"页面标题\",\"value\":\"7、发货或验收日期早于合同签订日期的合同情况\",\"evidence\":\"7、发货或验收日期早于合同签订日期的合同情况\",\"type\":\"field\"}]"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1154,
+      "completion_tokens": 47,
+      "total_tokens": 1201
+    },
+    "system_fingerprint": ""
+  },
+  "content": "[{\"title\":\"页面标题\",\"value\":\"7、发货或验收日期早于合同签订日期的合同情况\",\"evidence\":\"7、发货或验收日期早于合同签订日期的合同情况\",\"type\":\"field\"}]"
+}
