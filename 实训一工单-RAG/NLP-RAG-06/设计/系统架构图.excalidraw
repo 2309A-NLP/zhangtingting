@@ -1,0 +1,549 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "rectangle", "id": "bg", "x": 0, "y": 0,
+      "width": 1200, "height": 1000,
+      "backgroundColor": "#f8f9fa", "fillStyle": "solid",
+      "strokeColor": "#e9ecef", "strokeWidth": 1,
+      "roughness": 0
+    },
+
+    {
+      "type": "rectangle", "id": "user", "x": 30, "y": 80,
+      "width": 120, "height": 60,
+      "backgroundColor": "#ffd8a8", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_user", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_user", "x": 55, "y": 95,
+      "width": 70, "height": 25,
+      "text": "用户", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "user", "originalText": "用户", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_user_gradio", "x": 150, "y": 110,
+      "width": 100, "height": 0,
+      "points": [[0,0],[100,0]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "rectangle", "id": "gradio", "x": 250, "y": 80,
+      "width": 160, "height": 60,
+      "backgroundColor": "#a5d8ff", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_gradio", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_gradio", "x": 275, "y": 92,
+      "width": 110, "height": 25,
+      "text": "Gradio 前端", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "gradio", "originalText": "Gradio 前端", "autoResize": true
+    },
+    {
+      "type": "text", "id": "t_gradio_sub", "x": 265, "y": 130,
+      "width": 130, "height": 16,
+      "text": "Web界面 语音输入", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#868e96", "originalText": "Web界面 语音输入", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_gradio_fastapi", "x": 410, "y": 110,
+      "width": 100, "height": 0,
+      "points": [[0,0],[100,0]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "rectangle", "id": "fastapi", "x": 510, "y": 70,
+      "width": 170, "height": 80,
+      "backgroundColor": "#d0bfff", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_fastapi", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_fastapi", "x": 545, "y": 82,
+      "width": 100, "height": 25,
+      "text": "FastAPI 后端", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "fastapi", "originalText": "FastAPI 后端", "autoResize": true
+    },
+    {
+      "type": "text", "id": "t_fastapi_sub", "x": 530, "y": 115,
+      "width": 130, "height": 16,
+      "text": "/api/query /api/ingest", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#868e96", "originalText": "/api/query /api/ingest", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "router", "x": 510, "y": 200,
+      "width": 170, "height": 50,
+      "backgroundColor": "#fff3bf", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_router", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_router", "x": 540, "y": 212,
+      "width": 110, "height": 25,
+      "text": "API 路由层", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "router", "originalText": "API 路由层", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_fastapi_router", "x": 595, "y": 150,
+      "width": 0, "height": 50,
+      "points": [[0,0],[0,50]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "rectangle", "id": "qu", "x": 250, "y": 200,
+      "width": 170, "height": 70,
+      "backgroundColor": "#b2f2bb", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_qu", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_qu", "x": 275, "y": 210,
+      "width": 120, "height": 25,
+      "text": "Query Understanding", "fontSize": 18, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "qu", "originalText": "Query Understanding", "autoResize": true
+    },
+    {
+      "type": "text", "id": "t_qu_sub", "x": 270, "y": 240,
+      "width": 130, "height": 16,
+      "text": "意图分析 字段检测", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#868e96", "originalText": "意图分析 字段检测", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_router_qu", "x": 510, "y": 225,
+      "width": 90, "height": 0,
+      "points": [[0,0],[-90,0]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "rectangle", "id": "rag", "x": 510, "y": 300,
+      "width": 170, "height": 70,
+      "backgroundColor": "#ffc9c9", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_rag", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_rag", "x": 530, "y": 308,
+      "width": 130, "height": 25,
+      "text": "RAG Pipeline", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "rag", "originalText": "RAG Pipeline", "autoResize": true
+    },
+    {
+      "type": "text", "id": "t_rag_sub", "x": 525, "y": 340,
+      "width": 140, "height": 16,
+      "text": "检索 重排 生成", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#868e96", "originalText": "检索 重排 生成", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_router_rag", "x": 595, "y": 250,
+      "width": 0, "height": 50,
+      "points": [[0,0],[0,50]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "rectangle", "id": "milvus", "x": 760, "y": 300,
+      "width": 150, "height": 70,
+      "backgroundColor": "#c3fae8", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_milvus", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_milvus", "x": 785, "y": 308,
+      "width": 100, "height": 25,
+      "text": "Milvus 向量库", "fontSize": 18, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "milvus", "originalText": "Milvus 向量库", "autoResize": true
+    },
+    {
+      "type": "text", "id": "t_milvus_sub", "x": 775, "y": 340,
+      "width": 120, "height": 16,
+      "text": "Dense + BM25", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#868e96", "originalText": "Dense + BM25", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_rag_milvus", "x": 680, "y": 335,
+      "width": 80, "height": 0,
+      "points": [[0,0],[80,0]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "rectangle", "id": "reranker", "x": 760, "y": 420,
+      "width": 150, "height": 60,
+      "backgroundColor": "#d0bfff", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_reranker", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_reranker", "x": 785, "y": 432,
+      "width": 100, "height": 25,
+      "text": "Reranker 重排", "fontSize": 18, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "reranker", "originalText": "Reranker 重排", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_milvus_reranker", "x": 835, "y": 370,
+      "width": 0, "height": 50,
+      "points": [[0,0],[0,50]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "rectangle", "id": "llm", "x": 760, "y": 530,
+      "width": 150, "height": 60,
+      "backgroundColor": "#ffd8a8", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_llm", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_llm", "x": 785, "y": 542,
+      "width": 100, "height": 25,
+      "text": "LLM 生成", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "llm", "originalText": "LLM 生成", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_reranker_llm", "x": 835, "y": 480,
+      "width": 0, "height": 50,
+      "points": [[0,0],[0,50]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "rectangle", "id": "answer", "x": 510, "y": 450,
+      "width": 170, "height": 60,
+      "backgroundColor": "#b2f2bb", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_answer", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_answer", "x": 545, "y": 462,
+      "width": 100, "height": 25,
+      "text": "答案+引用", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "answer", "originalText": "答案+引用", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_rag_answer", "x": 595, "y": 370,
+      "width": 0, "height": 80,
+      "points": [[0,0],[0,80]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "arrow", "id": "a_llm_answer", "x": 760, "y": 560,
+      "width": 80, "height": 0,
+      "points": [[0,0],[-80,0]], "endArrowhead": "arrow",
+      "startBinding": { "elementId": "llm", "fixedPoint": [0, 0.5] },
+      "endBinding": { "elementId": "answer", "fixedPoint": [1, 0.5] }
+    },
+
+    {
+      "type": "rectangle", "id": "stt", "x": 250, "y": 320,
+      "width": 170, "height": 60,
+      "backgroundColor": "#a5d8ff", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_stt", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_stt", "x": 270, "y": 332,
+      "width": 130, "height": 25,
+      "text": "Speech-to-Text", "fontSize": 18, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "stt", "originalText": "Speech-to-Text", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_gradio_stt", "x": 330, "y": 140,
+      "width": 0, "height": 180,
+      "points": [[0,0],[0,180]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "rectangle", "id": "ingest", "x": 510, "y": 560,
+      "width": 170, "height": 70,
+      "backgroundColor": "#c3fae8", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_ingest", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_ingest", "x": 530, "y": 568,
+      "width": 130, "height": 25,
+      "text": "PDF 解析管线", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "ingest", "originalText": "PDF 解析管线", "autoResize": true
+    },
+    {
+      "type": "text", "id": "t_ingest_sub", "x": 525, "y": 600,
+      "width": 140, "height": 16,
+      "text": "Parser OCR VLM 分块", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#868e96", "originalText": "Parser OCR VLM 分块", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_router_ingest", "x": 595, "y": 250,
+      "width": 0, "height": 310,
+      "points": [[0,0],[0,310]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "rectangle", "id": "vlm", "x": 250, "y": 420,
+      "width": 170, "height": 60,
+      "backgroundColor": "#fff3bf", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_vlm", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_vlm", "x": 270, "y": 432,
+      "width": 130, "height": 25,
+      "text": "PDF VLM 增强", "fontSize": 18, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "vlm", "originalText": "PDF VLM 增强", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_ingest_vlm", "x": 510, "y": 590,
+      "width": 90, "height": 0,
+      "points": [[0,0],[-90,0]], "endArrowhead": "arrow",
+      "strokeStyle": "dashed"
+    },
+
+    {
+      "type": "rectangle", "id": "embedding", "x": 250, "y": 530,
+      "width": 170, "height": 60,
+      "backgroundColor": "#d0bfff", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_embed", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_embed", "x": 270, "y": 542,
+      "width": 130, "height": 25,
+      "text": "Embedding 服务", "fontSize": 18, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "embedding", "originalText": "Embedding 服务", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_ingest_embed", "x": 420, "y": 590,
+      "width": 80, "height": 0,
+      "points": [[0,0],[80,0]], "endArrowhead": "arrow",
+      "startBinding": { "elementId": "ingest", "fixedPoint": [0, 0.5] },
+      "endBinding": { "elementId": "embedding", "fixedPoint": [1, 0.5] }
+    },
+
+    {
+      "type": "arrow", "id": "a_qu_stt", "x": 250, "y": 235,
+      "width": 0, "height": 85,
+      "points": [[0,0],[0,85]], "endArrowhead": "arrow",
+      "strokeStyle": "dashed"
+    },
+
+    {
+      "type": "rectangle", "id": "docker_title", "x": 450, "y": 680,
+      "width": 320, "height": 40,
+      "backgroundColor": "#f8f9fa", "fillStyle": "solid",
+      "strokeColor": "#adb5bd", "strokeWidth": 1,
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_docker_title", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_docker_title", "x": 520, "y": 690,
+      "width": 180, "height": 25,
+      "text": "Docker 基础设施层", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#495057",
+      "containerId": "docker_title", "originalText": "Docker 基础设施层", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "etcd", "x": 180, "y": 750,
+      "width": 120, "height": 50,
+      "backgroundColor": "#dee2e6", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_etcd", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_etcd", "x": 205, "y": 762,
+      "width": 70, "height": 25,
+      "text": "etcd", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "etcd", "originalText": "etcd", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "minio_box", "x": 340, "y": 750,
+      "width": 120, "height": 50,
+      "backgroundColor": "#dee2e6", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_minio", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_minio", "x": 365, "y": 762,
+      "width": 70, "height": 25,
+      "text": "MinIO", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "minio_box", "originalText": "MinIO", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_etcd_minio", "x": 300, "y": 775,
+      "width": 40, "height": 0,
+      "points": [[0,0],[40,0]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "rectangle", "id": "milvus_box", "x": 500, "y": 750,
+      "width": 120, "height": 50,
+      "backgroundColor": "#dee2e6", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_milvus_box", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_milvus_box", "x": 515, "y": 762,
+      "width": 90, "height": 25,
+      "text": "Milvus", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "milvus_box", "originalText": "Milvus", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_minio_milvus", "x": 460, "y": 775,
+      "width": 40, "height": 0,
+      "points": [[0,0],[40,0]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "rectangle", "id": "attu", "x": 660, "y": 750,
+      "width": 120, "height": 50,
+      "backgroundColor": "#dee2e6", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_attu", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_attu", "x": 685, "y": 762,
+      "width": 70, "height": 25,
+      "text": "Attu", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "attu", "originalText": "Attu", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_milvus_attu", "x": 620, "y": 775,
+      "width": 40, "height": 0,
+      "points": [[0,0],[40,0]], "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "rectangle", "id": "vllm_box", "x": 820, "y": 750,
+      "width": 120, "height": 50,
+      "backgroundColor": "#dee2e6", "fillStyle": "solid",
+      "roundness": { "type": 3 },
+      "boundElements": [{ "id": "t_vllm", "type": "text" }]
+    },
+    {
+      "type": "text", "id": "t_vllm", "x": 840, "y": 762,
+      "width": 80, "height": 25,
+      "text": "vLLM", "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "containerId": "vllm_box", "originalText": "vLLM", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a_milvus_vllm", "x": 620, "y": 810,
+      "width": 240, "height": 0,
+      "points": [[0,0],[240,0]], "endArrowhead": "arrow",
+      "strokeStyle": "dashed"
+    },
+
+    {
+      "type": "text", "id": "legend_title", "x": 45, "y": 700,
+      "width": 80, "height": 20,
+      "text": "图例", "fontSize": 18, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "originalText": "图例", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "legend_input", "x": 45, "y": 730,
+      "width": 18, "height": 18,
+      "backgroundColor": "#a5d8ff", "fillStyle": "solid"
+    },
+    {
+      "type": "text", "id": "l1", "x": 70, "y": 730,
+      "width": 60, "height": 18,
+      "text": "输入层", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "originalText": "输入层", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "legend_process", "x": 45, "y": 760,
+      "width": 18, "height": 18,
+      "backgroundColor": "#d0bfff", "fillStyle": "solid"
+    },
+    {
+      "type": "text", "id": "l2", "x": 70, "y": 760,
+      "width": 60, "height": 18,
+      "text": "处理层", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "originalText": "处理层", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "legend_data", "x": 45, "y": 790,
+      "width": 18, "height": 18,
+      "backgroundColor": "#c3fae8", "fillStyle": "solid"
+    },
+    {
+      "type": "text", "id": "l3", "x": 70, "y": 790,
+      "width": 60, "height": 18,
+      "text": "数据层", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "originalText": "数据层", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "legend_output", "x": 45, "y": 820,
+      "width": 18, "height": 18,
+      "backgroundColor": "#b2f2bb", "fillStyle": "solid"
+    },
+    {
+      "type": "text", "id": "l4", "x": 70, "y": 820,
+      "width": 60, "height": 18,
+      "text": "输出层", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "originalText": "输出层", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "legend_infra", "x": 45, "y": 850,
+      "width": 18, "height": 18,
+      "backgroundColor": "#dee2e6", "fillStyle": "solid"
+    },
+    {
+      "type": "text", "id": "l5", "x": 70, "y": 850,
+      "width": 60, "height": 18,
+      "text": "基础设施", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "originalText": "基础设施", "autoResize": true
+    },
+
+    {
+      "type": "text", "id": "note1", "x": 45, "y": 890,
+      "width": 380, "height": 18,
+      "text": "虚线箭头 = 可选/条件触发（VLM增强按需调用）", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#868e96", "originalText": "虚线箭头 = 可选/条件触发（VLM增强按需调用）", "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}
