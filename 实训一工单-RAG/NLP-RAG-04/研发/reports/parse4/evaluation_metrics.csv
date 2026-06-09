@@ -1,0 +1,11 @@
+metric,metric_zh,value,numerator,denominator
+rag_correct_rate,RAG 正确率,93.75%,15,16
+llm_correct_rate,纯 LLM 正确率,18.75%,3,16
+rag_page_hit_rate,RAG 页码命中率,81.25%,13,16
+rag_evidence_hit_rate,RAG 证据命中率,93.75%,15,16
+rag_faithfulness_rate,RAG 忠实度,100.00%,16,16
+llm_hallucination_rate,纯 LLM 幻觉率,75.00%,12,16
+llm_refusal_rate,纯 LLM 拒答率,0.00%,0,16
+rag_win_rate,RAG 胜出率,81.25%,13,16
+llm_win_rate,纯 LLM 胜出率,0.00%,0,16
+tie_rate,平局率,18.75%,3,16

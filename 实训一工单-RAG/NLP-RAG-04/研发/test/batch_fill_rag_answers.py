@@ -9,8 +9,8 @@ from urllib import error, request
 import time
 
 DEFAULT_API_URL = "http://127.0.0.1:8000/api/query"
-DEFAULT_INPUT = Path(r"D:\Desktop\NLP-RAG-04\test\parse4\test4.csv")
-DEFAULT_OUTPUT = Path(r"D:\Desktop\NLP-RAG-04\test\parse4\test4_result.csv")
+DEFAULT_INPUT = Path(r"D:\Desktop\NLP-RAG-04\reports\parse4\evaluation_result_template.csv")
+DEFAULT_OUTPUT = Path(r"D:\Desktop\NLP-RAG-04\reports\parse4\evaluation_result.csv")
 
 
 def parse_args() -> argparse.Namespace:
@@ -100,13 +100,50 @@ def build_page_string(citations: List[Dict[str, Any]]) -> str:
 
 
 def build_preview_string(citations: List[Dict[str, Any]]) -> str:
-    previews = [normalize_preview(str(item.get("text") or "")) for item in citations[:5]]
+    previews: List[str] = []
+    for item in citations[:5]:
+        text = str(item.get("text") or "").strip()
+        if text:
+            previews.append(normalize_preview(text))
+            continue
+        metadata = dict(item.get("metadata") or {})
+        object_id = (
+            metadata.get("table_id")
+            or metadata.get("visual_id")
+            or metadata.get("chunk_id")
+            or item.get("chunk_id")
+            or ""
+        )
+        parts: List[str] = []
+        if metadata.get("doc_name"):
+            parts.append(f"doc={metadata['doc_name']}")
+        if metadata.get("profile"):
+            parts.append(f"profile={metadata['profile']}")
+        if metadata.get("page_type"):
+            parts.append(f"type={metadata['page_type']}")
+        if object_id:
+            parts.append(f"id={object_id}")
+        if item.get("page_number"):
+            parts.append(f"page={item['page_number']}")
+        fallback = " | ".join(parts)
+        if fallback:
+            previews.append(normalize_preview(fallback))
     previews = [preview for preview in previews if preview]
     return ",".join(previews)
 
 
 def ensure_columns(rows: List[Dict[str, str]], fieldnames: List[str]) -> List[str]:
-    required = ["rag_answer", "rag_pages", "rag_evidence_preview"]
+    required = [
+        "rag_answer",
+        "rag_pages",
+        "rag_evidence_preview",
+        "rag_grounded",
+        "rag_retrieval_mode",
+        "rag_latency_ms",
+        "rag_citation_profiles",
+        "rag_citation_types",
+        "rag_citation_ids",
+    ]
     names = list(fieldnames)
     for column in required:
         if column not in names:
@@ -114,6 +151,41 @@ def ensure_columns(rows: List[Dict[str, str]], fieldnames: List[str]) -> List[st
             for row in rows:
                 row[column] = ""
     return names
+
+
+def join_unique(values: List[str], limit: int = 5) -> str:
+    ordered: List[str] = []
+    for value in values:
+        normalized = str(value or "").strip()
+        if normalized and normalized not in ordered:
+            ordered.append(normalized)
+    return "|".join(ordered[:limit])
+
+
+def build_profile_string(citations: List[Dict[str, Any]]) -> str:
+    profiles = [str((item.get("metadata") or {}).get("profile") or "") for item in citations[:5]]
+    return join_unique(profiles)
+
+
+def build_citation_type_string(citations: List[Dict[str, Any]]) -> str:
+    page_types = [str((item.get("metadata") or {}).get("page_type") or "") for item in citations[:5]]
+    return join_unique(page_types)
+
+
+def build_citation_id_string(citations: List[Dict[str, Any]]) -> str:
+    ids: List[str] = []
+    for item in citations[:5]:
+        metadata = dict(item.get("metadata") or {})
+        ids.append(
+            str(
+                metadata.get("table_id")
+                or metadata.get("visual_id")
+                or metadata.get("chunk_id")
+                or item.get("chunk_id")
+                or ""
+            )
+        )
+    return join_unique(ids)
 
 
 def main() -> int:
@@ -152,6 +224,12 @@ def main() -> int:
             row["rag_answer"] = str(result.get("answer") or "")
             row["rag_pages"] = build_page_string(citations)
             row["rag_evidence_preview"] = build_preview_string(citations)
+            row["rag_grounded"] = str(bool(result.get("grounded"))).lower()
+            row["rag_retrieval_mode"] = str(result.get("retrieval_mode") or "")
+            row["rag_latency_ms"] = str(result.get("latency_ms") or "")
+            row["rag_citation_profiles"] = build_profile_string(citations)
+            row["rag_citation_types"] = build_citation_type_string(citations)
+            row["rag_citation_ids"] = build_citation_id_string(citations)
             end=time.time()
             print(f"[{index}/{total}] ok,timelong={end-start}")
         except error.HTTPError as exc:
@@ -159,11 +237,23 @@ def main() -> int:
             row["rag_answer"] = f"[HTTP {exc.code}] {detail or exc.reason}"
             row["rag_pages"] = ""
             row["rag_evidence_preview"] = ""
+            row["rag_grounded"] = ""
+            row["rag_retrieval_mode"] = ""
+            row["rag_latency_ms"] = ""
+            row["rag_citation_profiles"] = ""
+            row["rag_citation_types"] = ""
+            row["rag_citation_ids"] = ""
             print(f"[{index}/{total}] http error {exc.code}")
         except Exception as exc:  # pragma: no cover
             row["rag_answer"] = f"[ERROR] {exc}"
             row["rag_pages"] = ""
             row["rag_evidence_preview"] = ""
+            row["rag_grounded"] = ""
+            row["rag_retrieval_mode"] = ""
+            row["rag_latency_ms"] = ""
+            row["rag_citation_profiles"] = ""
+            row["rag_citation_types"] = ""
+            row["rag_citation_ids"] = ""
             print(f"[{index}/{total}] error: {exc}")
 
     output_path.parent.mkdir(parents=True, exist_ok=True)

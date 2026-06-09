@@ -13,6 +13,7 @@ import pdfplumber
 
 from app.config import settings
 from app.services.external_pdf_parser import ExternalPDFParser
+from app.services.pdf_intelligence import PDFIntelligencePipeline
 from app.services.redaction import redact_sensitive_text
 from app.services.text_utils import dedupe_preserve_order, derive_content_tags, normalize_whitespace
 
@@ -47,6 +48,7 @@ class PDFParser:
         self.ocr_lang = ocr_lang
         self._ocr = None
         self.external_parser = ExternalPDFParser()
+        self.intelligence_pipeline = PDFIntelligencePipeline() if settings.pdf_intelligence_enabled else None
 
     def _get_ocr(self):
         if self._ocr is None and PaddleOCR is not None:
@@ -325,6 +327,116 @@ class PDFParser:
             )
         return processed
 
+    def _infer_page_from_element_id(self, element_id: str) -> int | None:
+        match = re.search(r"_(\d{3})", element_id or "")
+        if not match:
+            return None
+        try:
+            return int(match.group(1))
+        except ValueError:
+            return None
+
+    def _apply_pdf_intelligence(
+        self,
+        *,
+        pdf_path: Path,
+        pages: List[Dict[str, object]],
+    ) -> List[Dict[str, object]]:
+        if not self.intelligence_pipeline or not pages:
+            return pages
+
+        intelligence_payload = self.intelligence_pipeline.run(
+            pdf_path=pdf_path,
+            base_pages=pages,
+            force=False,
+        )
+        stage0_map = {
+            int(item.get("page_index") or 0): item
+            for item in list(intelligence_payload.get("stage0") or [])
+            if int(item.get("page_index") or 0) > 0
+        }
+        stage1_map = {
+            int(item.get("page_index") or 0): item
+            for item in list(intelligence_payload.get("stage1") or [])
+            if int(item.get("page_index") or 0) > 0
+        }
+
+        context_by_page: Dict[int, List[Dict[str, object]]] = {}
+        for link in list(intelligence_payload.get("stage3") or []):
+            page_index = self._infer_page_from_element_id(str(link.get("element_id") or ""))
+            if not page_index:
+                continue
+            context_by_page.setdefault(page_index, []).append(link)
+
+        facts_by_page: Dict[int, List[Dict[str, object]]] = {}
+        for fact in list(intelligence_payload.get("stage4") or []):
+            page_index = int(fact.get("page_number") or 0)
+            if page_index <= 0:
+                continue
+            facts_by_page.setdefault(page_index, []).append(fact)
+
+        enriched_pages: List[Dict[str, object]] = []
+        for page in pages:
+            page_number = int(page["page_number"])
+            stage0 = stage0_map.get(page_number, {})
+            stage1 = stage1_map.get(page_number, {})
+            structured_facts = list(facts_by_page.get(page_number, []))
+            context_links = list(context_by_page.get(page_number, []))
+            parse_metadata = dict(page.get("parse_metadata") or {})
+            parse_metadata.update(
+                {
+                    "pdf_intelligence_enabled": True,
+                    "filter_region_count": len(list(stage0.get("filter_regions") or [])),
+                    "layout_element_count": len(list(stage1.get("elements") or [])),
+                    "context_link_count": len(context_links),
+                    "structured_fact_count": len(structured_facts),
+                    "stage0_page_type": str(stage0.get("page_type") or ""),
+                    "ocr_required": bool(stage0.get("ocr_required") or False),
+                    "ocr_decision_reason": str(stage0.get("ocr_decision_reason") or ""),
+                    "text_span_count": int(stage0.get("text_span_count") or 0),
+                    "text_line_count": int(stage0.get("text_line_count") or 0),
+                    "text_block_count": int(stage0.get("text_block_count") or 0),
+                    "text_char_count": int(stage0.get("text_char_count") or 0),
+                    "image_coverage_ratio": float(stage0.get("image_coverage_ratio") or 0.0),
+                    "watermark_score": float(stage0.get("watermark_score") or 0.0),
+                }
+            )
+            layout_tags = dedupe_preserve_order(
+                [
+                    *list(page.get("layout_tags") or []),
+                    "pdf_intelligence",
+                    "filtered_regions" if stage0.get("filter_regions") else "",
+                    "layout_analyzed" if stage1.get("elements") else "",
+                    "structured_facts" if structured_facts else "",
+                ]
+            )
+            content_tags = dedupe_preserve_order(
+                [
+                    *list(page.get("content_tags") or []),
+                    "table_structured" if any(str(item.get("fact_type") or "").startswith("table") for item in structured_facts) else "",
+                    "figure_structured" if any(item.get("primary_type") == "figure" for item in structured_facts) else "",
+                ]
+            )
+            enriched_pages.append(
+                {
+                    **page,
+                    "parse_metadata": parse_metadata,
+                    "layout_tags": layout_tags,
+                    "content_tags": content_tags,
+                    "filter_regions": list(stage0.get("filter_regions") or []),
+                    "layout_elements": list(stage1.get("elements") or []),
+                    "context_links": context_links,
+                    "structured_facts": structured_facts,
+                    "pdf_intelligence": {
+                        "stage0": stage0,
+                        "stage1": stage1,
+                        "context_links": context_links,
+                        "structured_facts": structured_facts,
+                    },
+                }
+            )
+        return enriched_pages
+
     def _parse_builtin(self, pdf_path: Path) -> List[Dict[str, object]]:
         doc = fitz.open(str(pdf_path))
         header_pages = [doc.load_page(i) for i in range(min(20, doc.page_count))]
@@ -389,8 +501,10 @@ class PDFParser:
         if self.external_parser.is_enabled():
             try:
                 pages = self.external_parser.parse(pdf_path)
-                return self._post_process_pages(pages, source="parse2", pdf_path=pdf_path)
+                processed = self._post_process_pages(pages, source="parse2", pdf_path=pdf_path)
+                return self._apply_pdf_intelligence(pdf_path=pdf_path, pages=processed)
             except Exception:
                 if settings.pdf_parser_backend.lower() == "parse2":
                     raise
-        return self._parse_builtin(pdf_path)
+        processed = self._parse_builtin(pdf_path)
+        return self._apply_pdf_intelligence(pdf_path=pdf_path, pages=processed)

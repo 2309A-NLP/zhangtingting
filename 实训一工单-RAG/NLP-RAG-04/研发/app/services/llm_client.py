@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import re
 from typing import Dict, List, Optional
+from urllib.parse import urlparse
 
 import requests
 
@@ -12,6 +13,24 @@ from app.services.text_utils import dedupe_preserve_order
 
 
 class LLMClient:
+    @staticmethod
+    def _resolve_api_key(api_url: str, api_key: str) -> str:
+        explicit_key = api_key.strip()
+        if explicit_key:
+            return explicit_key
+
+        pdf_vlm_key = str(getattr(settings, "pdf_vlm_api_key", "") or "").strip()
+        pdf_vlm_url = str(getattr(settings, "pdf_vlm_api_url", "") or "").strip()
+        current_url = (api_url or "").strip()
+        if not pdf_vlm_key:
+            return ""
+
+        if pdf_vlm_url and current_url and current_url == pdf_vlm_url:
+            return pdf_vlm_key
+        if "api.siliconflow.cn" in current_url:
+            return pdf_vlm_key
+        return ""
+
     def __init__(
         self,
         provider: str,
@@ -24,16 +43,28 @@ class LLMClient:
     ) -> None:
         self.provider = provider
         self.api_url = api_url.strip()
-        self.api_key = api_key.strip()
+        self.api_key = self._resolve_api_key(self.api_url, api_key)
         self.model_name = model_name.strip()
         self.fallback_api_url = fallback_api_url.strip()
-        self.fallback_api_key = fallback_api_key.strip()
+        self.fallback_api_key = self._resolve_api_key(self.fallback_api_url, fallback_api_key)
         self.fallback_model_name = fallback_model_name.strip()
+        self.last_call_details: Dict[str, object] = {}
 
     def _get_intent_attr(self, intent: object | None, name: str, default):
         if intent is None:
             return default
         return getattr(intent, name, default)
+
+    def _is_local_url(self, url: str) -> bool:
+        current = (url or "").strip()
+        if not current:
+            return False
+        try:
+            parsed = urlparse(current)
+            host = (parsed.hostname or "").strip().lower()
+        except Exception:
+            return False
+        return host in {"127.0.0.1", "localhost", "::1"}
 
     def _normalize_payload(self, text: str) -> str:
         return re.sub(r"\s+", " ", text or "").strip()
@@ -374,14 +405,15 @@ class LLMClient:
     def _answer_related_party(self, query: str, contexts: List[Dict[str, object]]) -> str:
         joined = "\n".join(self._normalize_payload(str(item.get("text") or "")) for item in contexts)
         if "不存在控制关系" in query or "不受同一控制" in query:
-            candidates = ["融冰投资", "武汉博润", "上海博润", "听音投资", "联众聚源", "力源贸易", "普芯达"]
-            hits = [name for name in candidates if name in joined]
+            hits = dedupe_preserve_order(
+                re.findall(r"[\u4e00-\u9fffA-Za-z0-9]{2,20}(?:投资|贸易|博润|聚源|芯达|有限公司|合伙企业)", joined)
+            )
             if hits:
                 return self._clean_answer_text(f"与公司不存在控制关系的关联方企业有：{'、'.join(dedupe_preserve_order(hits))}。{self._citation_text(contexts)}")
             return ""
 
         if "存在控制关系" in query:
-            name = self._extract_first_match(contexts, [r"(赵马克)"])
+            name = self._extract_first_match(contexts, [r"([\u4e00-\u9fff]{2,12})持有本公司股份", r"([\u4e00-\u9fff]{2,12})，?持股比例", r"([\u4e00-\u9fff]{2,12}).{0,10}(?:控股股东|实际控制人)"])
             ratio = self._extract_first_match(contexts, [r"占本公司总股本的([0-9,\.]+%)", r"持股比例[^0-9]{0,8}([0-9,\.]+%)"])
             relation = self._extract_first_match(contexts, [r"(控股股东)", r"(实际控制人)"])
             if name and ratio and relation:
@@ -406,10 +438,8 @@ class LLMClient:
 
     def _answer_org_structure(self, contexts: List[Dict[str, object]]) -> str:
         joined = "\n".join(self._normalize_payload(str(item.get("text") or "")) for item in contexts)
-        department_names = ["电话及网络销售部", "渠道销售部", "大客户销售部", "国际贸易部"]
-        sale_offices = ["珠海销售处", "深圳销售处", "北京销售处", "武汉销售处", "广州销售处", "成都销售处"]
-        department_hits = [name for name in department_names if name in joined]
-        office_hits = [name for name in sale_offices if name in joined]
+        department_hits = dedupe_preserve_order(re.findall(r"[\u4e00-\u9fffA-Za-z0-9]{2,20}销售部", joined))
+        office_hits = dedupe_preserve_order(re.findall(r"[\u4e00-\u9fffA-Za-z0-9]{2,20}销售处", joined))
         if department_hits and office_hits:
             return self._clean_answer_text(
                 f"销售部由{len(department_hits)}个部门构成：{'、'.join(department_hits)}；其中大客户销售部由{len(office_hits)}个销售处构成：{'、'.join(office_hits)}。{self._citation_text(contexts)}"
@@ -420,11 +450,24 @@ class LLMClient:
 
     def _answer_chart_trend(self, contexts: List[Dict[str, object]]) -> str:
         joined = "\n".join(self._normalize_payload(str(item.get("text") or "")) for item in contexts)
-        fastest = ""
-        negative = ""
-        if "汽车行业" in joined or "汽车电子" in joined:
+        fastest = self._extract_first_match(
+            contexts,
+            [
+                r"增长率最快的是([\u4e00-\u9fffA-Za-z0-9]+行业)",
+                r"增长率最高的是([\u4e00-\u9fffA-Za-z0-9]+行业)",
+                r"([\u4e00-\u9fffA-Za-z0-9]+行业)增长率最高",
+            ],
+        )
+        negative = self._extract_first_match(
+            contexts,
+            [
+                r"负增长的是([\u4e00-\u9fffA-Za-z0-9]+行业)",
+                r"([\u4e00-\u9fffA-Za-z0-9]+行业)为负增长",
+            ],
+        )
+        if not fastest and ("汽车行业" in joined or "汽车电子" in joined):
             fastest = "汽车行业"
-        if "IC卡行业" in joined or "IC卡" in joined:
+        if not negative and ("IC卡行业" in joined or "IC卡" in joined):
             negative = "IC卡行业"
         if fastest and negative:
             return self._clean_answer_text(f"增长率最快的是{fastest}，负增长的是{negative}。{self._citation_text(contexts)}")
@@ -433,17 +476,15 @@ class LLMClient:
     def _answer_upstream_downstream(self, query: str, contexts: List[Dict[str, object]]) -> str:
         joined = "\n".join(self._normalize_payload(str(item.get("text") or "")) for item in contexts)
         if "上游" in query:
-            hits = []
-            for candidate in ["电子元器件制造企业", "金属壳体制造企业"]:
-                if candidate in joined:
-                    hits.append(candidate)
+            hits = dedupe_preserve_order(
+                re.findall(r"[\u4e00-\u9fffA-Za-z0-9]{2,24}(?:制造企业|行业企业|终端用户|机关|军队|能源)", joined)
+            )
             if hits:
                 return self._clean_answer_text(f"根据招股意向书，电子信息行业的上游涉及：{'、'.join(hits)}。{self._citation_text(contexts)}")
         if "下游" in query:
-            hits = []
-            for candidate in ["军队", "政府机关", "能源"]:
-                if candidate in joined:
-                    hits.append(candidate)
+            hits = dedupe_preserve_order(
+                re.findall(r"[\u4e00-\u9fffA-Za-z0-9]{2,24}(?:行业企业|终端用户|机关|军队|能源)", joined)
+            )
             if hits:
                 return self._clean_answer_text(f"根据招股意向书，电子信息行业的下游主要包括：{'、'.join(hits)}等行业企业。{self._citation_text(contexts)}")
         return ""
@@ -560,15 +601,70 @@ class LLMClient:
             return str(data["choices"][0]["message"]["content"])
         return str(data)
 
+    def _summarize_request_exception(self, exc: requests.RequestException) -> str:
+        response = getattr(exc, "response", None)
+        if response is None:
+            return f"{type(exc).__name__}: {exc}"
+        status_code = getattr(response, "status_code", "")
+        body_text = ""
+        try:
+            body_text = response.text or ""
+        except Exception:
+            body_text = ""
+        body_text = re.sub(r"\s+", " ", body_text).strip()
+        if len(body_text) > 300:
+            body_text = body_text[:297] + "..."
+        if body_text:
+            return f"{type(exc).__name__}: status={status_code} body={body_text}"
+        return f"{type(exc).__name__}: status={status_code} {exc}"
+
     def _call_primary_then_fallback(self, prompt: str, system_prompt: str, max_tokens: int) -> Optional[str]:
+        self.last_call_details = {
+            "status": "not_attempted",
+            "prompt_chars": len(prompt or ""),
+            "max_tokens": int(max_tokens),
+            "attempts": [],
+        }
+        primary_error_summary = ""
         if self.provider != "extractive" and self.api_url and self.model_name:
             try:
-                return self._post_chat(self.api_url, self.api_key, self.model_name, prompt, system_prompt, max_tokens)
-            except requests.RequestException:
-                pass
+                content = self._post_chat(self.api_url, self.api_key, self.model_name, prompt, system_prompt, max_tokens)
+                self.last_call_details = {
+                    **self.last_call_details,
+                    "status": "primary_ok",
+                    "selected_route": "primary",
+                    "attempts": [
+                        {
+                            "route": "primary",
+                            "api_url": self.api_url,
+                            "model_name": self.model_name,
+                            "result": "ok",
+                        }
+                    ],
+                }
+                return content
+            except requests.RequestException as exc:
+                primary_error_summary = self._summarize_request_exception(exc)
+                self.last_call_details["attempts"] = [
+                    {
+                        "route": "primary",
+                        "api_url": self.api_url,
+                        "model_name": self.model_name,
+                        "result": "error",
+                        "error": primary_error_summary,
+                    }
+                ]
+        if self._is_local_url(self.fallback_api_url):
+            self.last_call_details = {
+                **self.last_call_details,
+                "status": "all_failed" if primary_error_summary else "no_route_available",
+                "selected_route": "",
+                "last_error": primary_error_summary or "Local fallback disabled: no local LLM service expected.",
+            }
+            return None
         if self.fallback_api_url and self.fallback_model_name:
             try:
-                return self._post_chat(
+                content = self._post_chat(
                     self.fallback_api_url,
                     self.fallback_api_key,
                     self.fallback_model_name,
@@ -576,8 +672,46 @@ class LLMClient:
                     system_prompt,
                     max_tokens,
                 )
-            except requests.RequestException:
-                pass
+                attempts = list(self.last_call_details.get("attempts") or [])
+                attempts.append(
+                    {
+                        "route": "fallback",
+                        "api_url": self.fallback_api_url,
+                        "model_name": self.fallback_model_name,
+                        "result": "ok",
+                    }
+                )
+                self.last_call_details = {
+                    **self.last_call_details,
+                    "status": "fallback_ok",
+                    "selected_route": "fallback",
+                    "attempts": attempts,
+                }
+                return content
+            except requests.RequestException as exc:
+                attempts = list(self.last_call_details.get("attempts") or [])
+                attempts.append(
+                    {
+                        "route": "fallback",
+                        "api_url": self.fallback_api_url,
+                        "model_name": self.fallback_model_name,
+                        "result": "error",
+                        "error": self._summarize_request_exception(exc),
+                    }
+                )
+                self.last_call_details = {
+                    **self.last_call_details,
+                    "status": "all_failed",
+                    "selected_route": "",
+                    "attempts": attempts,
+                    "last_error": attempts[-1]["error"],
+                }
+                return None
+        self.last_call_details = {
+            **self.last_call_details,
+            "status": "no_route_available",
+            "selected_route": "",
+        }
         return None
 
     def answer(self, query: str, contexts: List[Dict[str, object]], intent: object | None = None) -> str:

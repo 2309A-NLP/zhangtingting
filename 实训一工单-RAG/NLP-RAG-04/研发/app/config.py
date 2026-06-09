@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import os
+import json
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Iterable
@@ -35,6 +36,16 @@ def _find_first_matching_dir(base: Path, required_files: Iterable[str]) -> str:
     return ""
 
 
+def _load_json_config(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    return payload if isinstance(payload, dict) else {}
+
+
 _load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
 
@@ -45,6 +56,7 @@ class Settings:
     model_dir: Path = field(init=False)
     artifact_dir: Path = field(init=False)
     report_dir: Path = field(init=False)
+    artifact_root_dir: Path = field(init=False)
     pdf_path: Path = field(init=False)
     pdf_paths: list[Path] = field(init=False)
 
@@ -55,8 +67,26 @@ class Settings:
     max_context_chars: int = field(default_factory=lambda: int(os.getenv("MAX_CONTEXT_CHARS", "420")))
     max_new_tokens: int = field(default_factory=lambda: int(os.getenv("MAX_NEW_TOKENS", "260")))
     collection_name: str = field(default_factory=lambda: os.getenv("COLLECTION_NAME", "prospectus_chunks_04"))
+    artifact_namespace: str = field(default_factory=lambda: os.getenv("ARTIFACT_NAMESPACE", "").strip())
+    text_vector_collection_name: str = field(default_factory=lambda: os.getenv("TEXT_VECTOR_COLLECTION_NAME", "").strip())
+    visual_vector_collection_name: str = field(default_factory=lambda: os.getenv("VISUAL_VECTOR_COLLECTION_NAME", "").strip())
 
     milvus_uri: str = field(default_factory=lambda: os.getenv("MILVUS_URI", "http://127.0.0.1:19531"))
+    mongodb_uri: str = field(default_factory=lambda: os.getenv("MONGODB_URI", "mongodb://127.0.0.1:27017"))
+    mongodb_db_name: str = field(default_factory=lambda: os.getenv("MONGODB_DB_NAME", "nlp_rag"))
+    mongodb_table_collection: str = field(
+        default_factory=lambda: os.getenv("MONGODB_TABLE_COLLECTION", "prospectus_tables_04")
+    )
+    minio_endpoint: str = field(default_factory=lambda: os.getenv("MINIO_ENDPOINT", "127.0.0.1:9100"))
+    minio_access_key: str = field(default_factory=lambda: os.getenv("MINIO_ACCESS_KEY", "minioadmin"))
+    minio_secret_key: str = field(default_factory=lambda: os.getenv("MINIO_SECRET_KEY", "minioadmin"))
+    minio_secure: bool = field(default_factory=lambda: os.getenv("MINIO_SECURE", "0") == "1")
+    minio_bucket_visuals: str = field(
+        default_factory=lambda: os.getenv("MINIO_BUCKET_VISUALS", "prospectus-visuals")
+    )
+    minio_bucket_artifacts: str = field(
+        default_factory=lambda: os.getenv("MINIO_BUCKET_ARTIFACTS", "prospectus-artifacts")
+    )
     llm_provider: str = field(default_factory=lambda: os.getenv("LLM_PROVIDER", "openai_compatible"))
     llm_api_url: str = field(default_factory=lambda: os.getenv("LLM_API_URL", ""))
     llm_api_key: str = field(default_factory=lambda: os.getenv("LLM_API_KEY", ""))
@@ -108,6 +138,21 @@ class Settings:
     pdf_parser_timeout: int = field(default_factory=lambda: int(os.getenv("PDF_PARSER_TIMEOUT", "600")))
     docling_enabled: bool = field(default_factory=lambda: os.getenv("DOCLING_ENABLED", "0") == "1")
 
+    pdf_intelligence_enabled: bool = field(
+        default_factory=lambda: os.getenv("PDF_INTELLIGENCE_ENABLED", "1") == "1"
+    )
+    cross_page_merge_low: float = field(default_factory=lambda: float(os.getenv("CROSS_PAGE_MERGE_LOW", "0.6")))
+    cross_page_merge_high: float = field(default_factory=lambda: float(os.getenv("CROSS_PAGE_MERGE_HIGH", "0.8")))
+    table_partition_max_rows: int = field(
+        default_factory=lambda: int(os.getenv("TABLE_PARTITION_MAX_ROWS", "50"))
+    )
+    multimodal_upgrade_threshold: float = field(
+        default_factory=lambda: float(os.getenv("MULTIMODAL_UPGRADE_THRESHOLD", "0.7"))
+    )
+    max_fallback_calls_per_doc: int = field(
+        default_factory=lambda: int(os.getenv("MAX_FALLBACK_CALLS_PER_DOC", "10"))
+    )
+
     hybrid_dense_weight: float = field(default_factory=lambda: float(os.getenv("HYBRID_DENSE_WEIGHT", "0.58")))
     hybrid_lexical_weight: float = field(default_factory=lambda: float(os.getenv("HYBRID_LEXICAL_WEIGHT", "0.30")))
     hybrid_overlap_weight: float = field(default_factory=lambda: float(os.getenv("HYBRID_OVERLAP_WEIGHT", "0.12")))
@@ -133,11 +178,49 @@ class Settings:
     def __post_init__(self) -> None:
         self.data_dir = self.project_root / "data"
         self.model_dir = self.project_root / "model"
-        self.artifact_dir = self.project_root / "artifacts"
+        self.artifact_root_dir = self.project_root / "artifacts"
+        self.artifact_dir = (
+            self.artifact_root_dir / self.artifact_namespace
+            if self.artifact_namespace
+            else self.artifact_root_dir
+        )
         self.report_dir = self.project_root / "reports"
+        self.pdf_intelligence_config_path = self.project_root / "config" / "pdf_intelligence_config.json"
+        self.watermark_patterns_path = self.project_root / "config" / "watermark_patterns.json"
+        self.pdf_intelligence_output_dir = self.artifact_dir / "pdf_intelligence_output"
+        if not self.text_vector_collection_name:
+            self.text_vector_collection_name = f"{self.collection_name}_text"
+        if not self.visual_vector_collection_name:
+            self.visual_vector_collection_name = f"{self.collection_name}_visual"
         pdf_candidates = sorted(self.data_dir.glob("*.pdf"))
         self.pdf_paths = pdf_candidates
         self.pdf_path = pdf_candidates[0] if pdf_candidates else self.data_dir / "prospectus.pdf"
+        self.pdf_intelligence_output_dir.mkdir(parents=True, exist_ok=True)
+
+        pdf_intelligence_defaults = _load_json_config(self.pdf_intelligence_config_path)
+        if "CROSS_PAGE_MERGE_LOW" not in os.environ:
+            self.cross_page_merge_low = float(
+                pdf_intelligence_defaults.get("cross_page_merge_low", self.cross_page_merge_low)
+            )
+        if "CROSS_PAGE_MERGE_HIGH" not in os.environ:
+            self.cross_page_merge_high = float(
+                pdf_intelligence_defaults.get("cross_page_merge_high", self.cross_page_merge_high)
+            )
+        if "TABLE_PARTITION_MAX_ROWS" not in os.environ:
+            self.table_partition_max_rows = int(
+                pdf_intelligence_defaults.get("table_partition_max_rows", self.table_partition_max_rows)
+            )
+        if "MULTIMODAL_UPGRADE_THRESHOLD" not in os.environ:
+            self.multimodal_upgrade_threshold = float(
+                pdf_intelligence_defaults.get(
+                    "multimodal_upgrade_threshold",
+                    self.multimodal_upgrade_threshold,
+                )
+            )
+        if "MAX_FALLBACK_CALLS_PER_DOC" not in os.environ:
+            self.max_fallback_calls_per_doc = int(
+                pdf_intelligence_defaults.get("max_fallback_calls_per_doc", self.max_fallback_calls_per_doc)
+            )
 
         if not self.embedding_model_path:
             self.embedding_model_path = _find_first_matching_dir(

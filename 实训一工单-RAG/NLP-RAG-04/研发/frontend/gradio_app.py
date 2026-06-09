@@ -31,17 +31,44 @@ def _pick_port(default_port: int = 7860, max_tries: int = 20) -> int:
 
 
 def _format_citations(items) -> str:
-    return json.dumps(
-        [
+    formatted = []
+    for item in items:
+        metadata = item.get("metadata", {}) or {}
+        chunk_id = item.get("chunk_id", "")
+        preview_text = (item.get("text") or "").strip()
+        page_type = metadata.get("page_type", "")
+        object_id = (
+            metadata.get("table_id")
+            or metadata.get("visual_id")
+            or chunk_id
+        )
+        if not preview_text:
+            preview_parts = []
+            if metadata.get("doc_name"):
+                preview_parts.append(f"doc={metadata['doc_name']}")
+            if metadata.get("profile"):
+                preview_parts.append(f"profile={metadata['profile']}")
+            if page_type:
+                preview_parts.append(f"type={page_type}")
+            if object_id:
+                preview_parts.append(f"id={object_id}")
+            preview_text = " | ".join(preview_parts)
+        formatted.append(
             {
                 "page_number": item["page_number"],
                 "logical_page": item.get("logical_page"),
                 "score": round(item["score"], 4),
-                "preview": item["text"][:180],
-                "corpus": item.get("metadata", {}).get("corpus", "default"),
+                "chunk_id": chunk_id,
+                "page_type": page_type,
+                "object_id": object_id,
+                "doc_name": metadata.get("doc_name", ""),
+                "profile": metadata.get("profile", ""),
+                "corpus": metadata.get("corpus", "default"),
+                "preview": preview_text[:180],
             }
-            for item in items
-        ],
+        )
+    return json.dumps(
+        formatted,
         ensure_ascii=False,
         indent=2,
     )

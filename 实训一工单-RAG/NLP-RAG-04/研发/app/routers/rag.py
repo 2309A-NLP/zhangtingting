@@ -19,6 +19,7 @@ from app.schemas import (
     TranscriptionResponse,
     UploadPdfResponse,
 )
+from app.retrieval.unified_query_service import UnifiedDefaultQueryService
 from app.services.rag_pipeline import RAGPipeline
 from app.services.speech_to_text import SpeechToTextService
 
@@ -34,6 +35,11 @@ def get_pipeline() -> RAGPipeline:
 @lru_cache(maxsize=1)
 def get_stt_service() -> SpeechToTextService:
     return SpeechToTextService()
+
+
+@lru_cache(maxsize=1)
+def get_unified_query_service() -> UnifiedDefaultQueryService:
+    return UnifiedDefaultQueryService(project_root=Path(__file__).resolve().parents[2])
 
 
 @router.get("/health", response_model=HealthResponse)
@@ -107,12 +113,19 @@ def upload_pdf(pdf: UploadFile = File(...)) -> UploadPdfResponse:
 def query(request: QueryRequest) -> QueryResponse:
     started = time.perf_counter()
     try:
-        result = get_pipeline().ask(
-            request.query,
-            top_k=request.top_k,
-            use_llm=request.use_llm,
-            corpus=request.corpus,
-        )
+        if request.corpus == "default":
+            result = get_unified_query_service().ask(
+                request.query,
+                top_k=request.top_k,
+                use_llm=request.use_llm,
+            )
+        else:
+            result = get_pipeline().ask(
+                request.query,
+                top_k=request.top_k,
+                use_llm=request.use_llm,
+                corpus=request.corpus,
+            )
         elapsed_ms = int((time.perf_counter() - started) * 1000)
         print(
             f"[query] ok elapsed_ms={elapsed_ms} corpus={request.corpus} use_llm={request.use_llm} "
@@ -165,12 +178,19 @@ def query_audio(
     try:
         temp_path = _save_upload_to_temp(audio)
         transcript = get_stt_service().transcribe(temp_path)
-        query_response = get_pipeline().ask(
-            str(transcript["text"]),
-            top_k=top_k,
-            use_llm=use_llm,
-            corpus="uploaded" if corpus == "uploaded" else "default",
-        )
+        if corpus == "uploaded":
+            query_response = get_pipeline().ask(
+                str(transcript["text"]),
+                top_k=top_k,
+                use_llm=use_llm,
+                corpus="uploaded",
+            )
+        else:
+            query_response = get_unified_query_service().ask(
+                str(transcript["text"]),
+                top_k=top_k,
+                use_llm=use_llm,
+            )
         return AudioQueryResponse(
             transcript=TranscriptionResponse(
                 text=str(transcript["text"]),

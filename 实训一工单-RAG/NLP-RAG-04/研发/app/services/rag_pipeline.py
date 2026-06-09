@@ -36,7 +36,7 @@ CorpusName = Literal["default", "uploaded"]
 class RAGPipeline:
     def __init__(self) -> None:
         self.parser = PDFParser(ocr_lang=settings.ocr_lang)
-        self.embedder = EmbeddingService(settings.model_dir, configured_path=settings.embedding_model_path)
+        self.embedder = EmbeddingService(settings.model_dir / "embedding", configured_path=settings.embedding_model_path)
         self.vector_store = MilvusVectorStore(settings.milvus_uri, settings.collection_name, self.embedder.dimension)
         self.uploaded_vector_store = MilvusVectorStore(
             settings.milvus_uri,
@@ -624,6 +624,66 @@ class RAGPipeline:
     def _build_main_chunks(self, pages: List[Dict[str, object]]) -> List[Chunk]:
         return build_chunks(pages, settings.chunk_size, settings.chunk_overlap)
 
+    def _build_pdf_intelligence_chunks(self, pages: List[Dict[str, object]]) -> List[Chunk]:
+        intelligence_chunks: List[Chunk] = []
+        for page in pages:
+            structured_items = list(page.get("structured_facts") or [])
+            if not structured_items:
+                continue
+            for index, item in enumerate(structured_items):
+                title = str(item.get("title") or item.get("fact_type") or "structured_fact").strip()
+                value = str(item.get("value") or "").strip()
+                evidence = str(item.get("evidence") or "").strip()
+                fact_type = str(item.get("fact_type") or "structured_fact").strip()
+                primary_type = str(item.get("primary_type") or page.get("primary_type") or "text").strip()
+                sub_type = str(item.get("sub_type") or page.get("sub_type") or "paragraph").strip()
+                if not value:
+                    continue
+
+                text = (
+                    f"字段：{title}\n"
+                    f"值：{value}\n"
+                    f"证据：{evidence}\n"
+                    f"页码：{page['page_number']}"
+                ).strip()
+                chunk_id = stable_chunk_id(
+                    int(page["page_number"]),
+                    400000 + index,
+                    text,
+                    namespace=str(page.get("source_pdf") or ""),
+                )
+                extra_tags = [
+                    "pdf_intelligence",
+                    fact_type,
+                    str(item.get("section_title") or "").strip(),
+                ]
+                intelligence_chunks.append(
+                    self._build_structured_chunk(
+                        chunk_id=chunk_id,
+                        text=text,
+                        page=page,
+                        page_type="structured",
+                        field_title=title,
+                        field_type=fact_type,
+                        source="pdf_intelligence",
+                        primary_type=primary_type,
+                        sub_type=sub_type,
+                        extra_content_tags=[tag for tag in extra_tags if tag],
+                        structured_facts=[
+                            {
+                                "title": title,
+                                "value": value,
+                                "evidence": evidence,
+                                "type": fact_type,
+                                "source_element_id": str(item.get("source_element_id") or ""),
+                                "marker_in_text": str(item.get("marker_in_text") or ""),
+                            }
+                        ],
+                        confidence=float(item.get("confidence") or 0.86),
+                    )
+                )
+        return intelligence_chunks
+
     def _build_structured_chunk(
         self,
         *,
@@ -920,6 +980,7 @@ class RAGPipeline:
             pages_by_pdf.setdefault(group_key, []).append(page)
 
         base_chunks = self._build_main_chunks(pages)
+        intelligence_chunks = self._build_pdf_intelligence_chunks(pages)
         enhanced_chunks = self._build_enhanced_chunks(pages)
 
         vlm_chunks: List[Chunk] = []
@@ -947,7 +1008,7 @@ class RAGPipeline:
             vlm_cache_hit_pages.extend({"source_pdf": pdf_path.name, "page_number": page_number} for page_number in current_cache_hit_pages)
             vlm_api_success_pages.extend({"source_pdf": pdf_path.name, "page_number": page_number} for page_number in current_api_success_pages)
 
-        all_chunks = base_chunks + enhanced_chunks + vlm_chunks
+        all_chunks = base_chunks + intelligence_chunks + enhanced_chunks + vlm_chunks
         embeddings = self.embedder.embed_texts(chunk.text for chunk in all_chunks)
         self.vector_store.clear()
         inserted = self.vector_store.upsert_chunks(all_chunks, embeddings)
@@ -957,6 +1018,7 @@ class RAGPipeline:
             "mode": "heavy_unified",
             "chunks": inserted,
             "base_chunks": len(base_chunks),
+            "pdf_intelligence_chunks": len(intelligence_chunks),
             "enhanced_chunks": len(enhanced_chunks),
             "vlm_enhanced_chunks": len(vlm_chunks),
             "vlm_selected_pages": vlm_selected_pages,
@@ -1030,7 +1092,7 @@ class RAGPipeline:
         if not pages:
             return
 
-        chunks = self._build_main_chunks(pages)
+        chunks = self._build_main_chunks(pages) + self._build_pdf_intelligence_chunks(pages)
         self.vector_store.load_runtime_chunks(chunks)
         self.pdf_company_map = self._build_pdf_company_map(pages)
         if not self.pdf_company_map:
@@ -1141,8 +1203,20 @@ class RAGPipeline:
         primary_type: str | None = None,
         sub_type: str | None = None,
         source: str = "page_fallback",
+        structured_facts: List[Dict[str, str]] | None = None,
+        content_tags: List[str] | None = None,
     ) -> Dict[str, object]:
         page_text = str(text or page.get("text") or page.get("tables_markdown") or "")
+        derived_content_tags = dedupe_preserve_order(
+            [
+                *(content_tags or []),
+                *derive_content_tags(
+                    str(page.get("section_title") or ""),
+                    field_title,
+                    page_text,
+                ),
+            ]
+        )
         metadata = {
             "source_pdf": str(page.get("source_pdf") or ""),
             "source_pdf_path": str(page.get("source_pdf_path") or ""),
@@ -1151,8 +1225,9 @@ class RAGPipeline:
             "sub_type": sub_type or str(page.get("sub_type") or "paragraph"),
             "section_title": str(page.get("section_title") or ""),
             "field_title": field_title,
-            "content_tags": str(page.get("content_tags") or ""),
+            "content_tags": "|".join(derived_content_tags),
             "source": source,
+            "structured_facts": json.dumps(structured_facts or [], ensure_ascii=False) if structured_facts else "",
         }
         chunk_id = stable_chunk_id(
             int(page.get("page_number") or 0),
@@ -1214,6 +1289,21 @@ class RAGPipeline:
             primary_type="figure" if vlm_page_type in {"org_chart_summary", "chart_summary"} else "form",
             sub_type=vlm_sub_type,
             source="pdf_vlm_cache",
+            structured_facts=[
+                {
+                    "title": title,
+                    "value": value,
+                    "evidence": evidence,
+                    "type": item_type,
+                }
+            ],
+            content_tags=(
+                ["organization_structure"]
+                if item_type.startswith("org_chart")
+                else ["chart_analysis"]
+                if item_type.startswith("chart_")
+                else []
+            ),
         )
 
     def _load_pdf_vlm_items(self, source_pdf: str, page_numbers: List[int] | None = None) -> List[Dict[str, object]]:
@@ -1292,310 +1382,97 @@ class RAGPipeline:
             )
         return candidates
 
-    def _deterministic_answer_candidates(self, intent, target_pdfs: List[str], top_k: int) -> List[Dict[str, object]]:
-        query = str(intent.rewritten_query or "")
-        target_company = str(intent.target_company or "")
-        field_keys = list(intent.field_keys or [])
-        query_tags = list(intent.query_tags or [])
-        question_type = str(intent.question_type or "")
-        candidates: List[Dict[str, object]] = []
+    def _score_structured_candidate(self, intent, item: Dict[str, object], target_pdfs: List[str]) -> float:
+        metadata = dict(item.get("metadata") or {})
+        source_pdf = str(metadata.get("source_pdf") or "")
+        raw_score = 0.18
+        if target_pdfs and source_pdf in target_pdfs:
+            raw_score += 0.18
+        raw_score += self._answerability_bonus(intent, item)
+        raw_score += self._answer_context_bonus(intent, item)
+        if str(metadata.get("page_type") or "") in {"structured", "vlm_structured", "table_analysis", "org_chart_summary", "chart_summary"}:
+            raw_score += 0.12
+        if str(metadata.get("primary_type") or "") == "table":
+            raw_score += 0.06
+        if str(metadata.get("sub_type") or "") in {"org_chart", "chart_summary"}:
+            raw_score += 0.08
+        text = str(item.get("text") or "")
+        field_title = str(metadata.get("field_title") or "")
+        payload = self._normalize_lookup_text(f"{field_title}\n{text}")
+        for field_key in list(intent.field_keys or []):
+            normalized_key = self._normalize_lookup_text(field_key)
+            if normalized_key and normalized_key in payload:
+                raw_score += 0.10
+        for tag in list(intent.query_tags or []):
+            if tag == "fundraising" and any(token in payload for token in map(self._normalize_lookup_text, ["募集资金", "募投项目", "补充流动资金"])):
+                raw_score += 0.08
+            if tag == "related_party" and any(token in payload for token in map(self._normalize_lookup_text, ["关联方", "控股股东", "实际控制人", "持股比例"])):
+                raw_score += 0.08
+            if tag == "military_revenue" and any(token in payload for token in map(self._normalize_lookup_text, ["军用领域", "国防客户", "主营业务收入比重"])):
+                raw_score += 0.08
+            if tag == "technical_standard" and any(token in payload for token in map(self._normalize_lookup_text, ["参与制定", "技术标准", "规范"])):
+                raw_score += 0.08
+            if tag == "org_chart" and any(token in payload for token in map(self._normalize_lookup_text, ["组织结构", "销售部", "销售处", "下设"])):
+                raw_score += 0.08
+            if tag == "chart_analysis" and any(token in payload for token in map(self._normalize_lookup_text, ["增长率", "负增长", "最快", "图"])):
+                raw_score += 0.08
+        return raw_score
 
+    def _retrieve_structured_candidates(self, intent, target_pdfs: List[str], top_k: int) -> List[Dict[str, object]]:
+        target_company = str(intent.target_company or "")
         if not target_pdfs:
             target_pdfs = self._resolve_target_pdfs(target_company)
 
-        is_liyuan = "武汉力源信息技术股份有限公司" in target_company
-        is_xingtu = "武汉兴图新科电子股份有限公司" in target_company
+        candidates: List[Dict[str, object]] = []
+        pages = self._ensure_pages_cache_loaded()
+        for page in pages:
+            source_pdf = str(page.get("source_pdf") or "")
+            if target_pdfs and source_pdf not in target_pdfs:
+                continue
 
-        if is_liyuan:
-            if "issuance" in query_tags:
-                candidates.extend(
-                    self._match_company_pages(
-                        target_pdfs,
-                        required_terms=["1,670万股", "25.04%"],
-                        score=1.46,
-                        field_title="本次发行股数",
-                    )
+            text = str(page.get("text") or "").strip()
+            if text:
+                page_candidate = self._build_candidate_from_page(
+                    page,
+                    text=text,
+                    score=0.32,
+                    source="parsed_page_structured",
                 )
-            if "fundraising" in query_tags:
-                page = self._find_page_record("招股说明书2.pdf", 22)
-                if page is not None:
-                    candidates.append(
-                        self._build_candidate_from_page(
-                            page,
-                            text=(
-                                "字段：募集资金项目\n"
-                                "值：仓储及物流中心、研发中心、电子商务平台、扩充产品种类和数量、其他与主营业务相关的营运资金。\n"
-                                "证据：本次募集资金拟投资的项目分别为仓储及物流中心、研发中心、电子商务平台、扩充产品种类和数量、其他与主营业务相关的营运资金。\n"
-                                "页码：22"
-                            ),
-                            score=1.52,
-                            field_title="募集资金项目",
-                            page_type="structured",
-                            primary_type="form",
-                            sub_type="field_summary",
-                            source="deterministic_fallback",
-                        )
-                    )
-                candidates.extend(
-                    self._match_company_pages(
-                        target_pdfs,
-                        required_terms=["仓储及物流中心", "电子商务平台"],
-                        score=1.44,
-                        field_title="募集资金项目",
-                    )
-                )
-            if "related_party" in query_tags and "存在控制关系" in query:
-                candidates.extend(
-                    self._match_company_pages(
-                        target_pdfs,
-                        required_terms=["赵马克", "42.35%", "控股股东"],
-                        score=1.45,
-                        field_title="控制关系关联方",
-                    )
-                )
-                page = self._find_page_record("招股说明书2.pdf", 21)
-                if page is not None:
-                    candidates.append(
-                        self._build_candidate_from_page(
-                            page,
-                            text="字段：控制关系关联方\n值：赵马克，42.35%，控股股东\n证据：赵马克持有本公司股份2,117.70万股，占本公司总股本的42.35%，为本公司控股股东及实际控制人。\n页码：21",
-                            score=1.5,
-                            field_title="控制关系关联方",
-                            page_type="structured",
-                            primary_type="form",
-                            sub_type="field_summary",
-                            source="deterministic_fallback",
-                        )
-                    )
-            if "related_party" in query_tags and ("不存在控制关系" in query or "不受同一控制" in query):
-                page = self._find_page_record("招股说明书2.pdf", 157) or self._find_page_record("招股说明书2.pdf", 158)
-                if page is not None:
-                    candidates.append(
-                        self._build_candidate_from_page(
-                            page,
-                            text="字段：非控制关系关联方\n值：融冰投资、武汉博润、上海博润、听音投资、联众聚源、力源贸易、普芯达\n证据：与公司不存在控制关系的关联方企业包括融冰投资、武汉博润、上海博润、听音投资、联众聚源、力源贸易、普芯达。\n页码：157",
-                            score=1.5,
-                            field_title="非控制关系关联方",
-                            page_type="structured",
-                            primary_type="form",
-                            sub_type="field_summary",
-                            source="deterministic_fallback",
-                        )
-                    )
-            if question_type == "org_structure":
-                candidates.extend(self._load_pdf_vlm_items("招股说明书2.pdf", [39, 40]))
-                page = self._find_page_record("招股说明书2.pdf", 40) or self._find_page_record("招股说明书2.pdf", 39)
-                if page is not None:
-                    candidates.append(
-                        self._build_candidate_from_page(
-                            page,
-                            text="字段：销售部构成\n值：销售部下设渠道销售部、电话及网络销售部、大客户销售部和国际贸易部；大客户销售部下设珠海、深圳、北京、武汉、广州、成都6个销售处。\n证据：销售部下设渠道销售部、电话及网络销售部、大客户销售部和国际贸易部；大客户销售部下设珠海、深圳、北京、武汉、广州、成都6个销售处。\n页码：40",
-                            score=1.52,
-                            field_title="销售部构成",
-                            page_type="org_chart_summary",
-                            primary_type="figure",
-                            sub_type="org_chart",
-                            source="deterministic_fallback",
-                        )
-                    )
-            if question_type == "chart_trend" and "2008" in query and "IC" in query:
-                page = self._find_page_record("招股说明书2.pdf", 310) or self._find_page_record("招股说明书2.pdf", 309)
-                if page is not None:
-                    candidates.append(
-                        self._build_candidate_from_page(
-                            page,
-                            text="字段：2008年中国IC市场增长率\n值：增长率最快的是汽车行业，负增长的是IC卡行业。\n证据：2008年中国IC市场应用结构与增长图显示，汽车行业增长率最高，IC卡行业为负增长。\n页码：310",
-                            score=1.54,
-                            field_title="2008年中国IC市场增长率",
-                            page_type="chart_summary",
-                            primary_type="figure",
-                            sub_type="chart_summary",
-                            source="deterministic_fallback",
-                        )
-                    )
+                page_candidate["raw_score"] = self._score_structured_candidate(intent, page_candidate, target_pdfs)
+                page_candidate["score"] = min(1.0, float(page_candidate["raw_score"]))
+                page_candidate["specialized_score"] = float(page_candidate["raw_score"])
+                candidates.append(page_candidate)
 
-        if is_xingtu:
-            if "军用领域收入" in field_keys or "military_revenue" in query_tags:
-                page = self._find_page_record("招股说明书1.pdf", 40) or self._find_page_record("招股说明书1.pdf", 129)
-                if page is not None:
-                    candidates.append(
-                        self._build_candidate_from_page(
-                            page,
-                            text=(
-                                "字段：军用领域收入\n"
-                                "值：6,464.51万元、14,414.16万元、18,780.67万元、4,627.14万元；"
-                                "占主营业务收入比重分别为82.10%、97.31%、94.84%、94.34%。\n"
-                                "证据：间接向国防客户的销售额合计分别为6,464.51万元、14,414.16万元、18,780.67万元和4,627.14万元，"
-                                "占主营业务收入的比重分别为82.10%、97.31%、94.84%和94.34%。\n"
-                                "页码：40"
-                            ),
-                            score=1.52,
-                            field_title="军用领域收入",
-                            page_type="structured",
-                            primary_type="form",
-                            sub_type="field_summary",
-                            source="deterministic_fallback",
-                        )
-                    )
-                candidates.extend(
-                    self._match_company_pages(
-                        target_pdfs,
-                        required_terms=["6,464.51", "82.10%", "94.34%"],
-                        score=1.48,
-                        field_title="军用领域收入",
-                    )
+            table_text = str(page.get("tables_markdown") or "").strip()
+            if table_text:
+                table_candidate = self._build_candidate_from_page(
+                    page,
+                    text=table_text,
+                    score=0.36,
+                    page_type="table_markdown",
+                    primary_type="table",
+                    sub_type=str(page.get("sub_type") or "simple_table"),
+                    source="parsed_table_structured",
                 )
-            if "技术标准" in field_keys:
-                candidates.extend(self._load_pdf_vlm_items("招股说明书1.pdf", [26, 27, 173, 181, 241]))
-                candidates.extend(
-                    self._match_company_pages(
-                        target_pdfs,
-                        required_terms=["某视频技术规范", "参与制定"],
-                        score=1.47,
-                        field_title="技术标准",
-                    )
-                )
-            if any(field in field_keys for field in ["上游行业", "下游行业"]):
-                candidates.extend(self._load_pdf_vlm_items("招股说明书1.pdf", [152]))
-                page = self._find_page_record("招股说明书1.pdf", 152)
-                if page is not None:
-                    candidates.append(
-                        self._build_candidate_from_page(
-                            page,
-                            text=(
-                                "字段：行业上下游\n"
-                                "值：上游涉及电子元器件制造企业、金属壳体制造企业；"
-                                "下游主要包括军队、政府机关、能源等行业企业。\n"
-                                "证据：电子信息行业的上游涉及信息系统相关的电子元器件制造企业，以及机箱、机柜等金属壳体制造企业。"
-                                "下游行业为各类终端用户，覆盖范围广泛，主要包括军队、政府机关、能源等行业企业。\n"
-                                "页码：152"
-                            ),
-                            score=1.5,
-                            field_title="行业上下游",
-                            page_type="structured",
-                            primary_type="form",
-                            sub_type="field_summary",
-                            source="deterministic_fallback",
-                        )
-                    )
-                candidates.extend(
-                    self._match_company_pages(
-                        target_pdfs,
-                        required_terms=["电子元器件制造企业", "军队", "政府机关", "能源"],
-                        score=1.45,
-                        field_title="行业上下游",
-                    )
-                )
-            if "重要供应商领域" in field_keys or "重要供应商" in query:
-                page = self._find_page_record("招股说明书1.pdf", 154) or self._find_page_record("招股说明书1.pdf", 26)
-                if page is not None:
-                    candidates.append(
-                        self._build_candidate_from_page(
-                            page,
-                            text=(
-                                "字段：重要供应商领域\n"
-                                "值：国防军队视频指挥领域。\n"
-                                "证据：兴图新科目前已经成为国防军队视频指挥领域的重要供应商。\n"
-                                f"页码：{page.get('page_number')}"
-                            ),
-                            score=1.5,
-                            field_title="重要供应商领域",
-                            page_type="structured",
-                            primary_type="form",
-                            sub_type="field_summary",
-                            source="deterministic_fallback",
-                        )
-                    )
-                candidates.extend(
-                    self._match_company_pages(
-                        target_pdfs,
-                        required_terms=["国防军队视频指挥领域"],
-                        score=1.46,
-                        field_title="重要供应商领域",
-                    )
-                )
-            if "一等奖工程" in field_keys:
-                page = self._find_page_record("招股说明书1.pdf", 181)
-                if page is not None:
-                    candidates.append(
-                        self._build_candidate_from_page(
-                            page,
-                            text=(
-                                "字段：一等奖工程\n"
-                                "值：某情报、指挥、控制与通信网络一体化工程。\n"
-                                "证据：某大型研究所牵头承担的“某情报、指挥、控制与通信网络一体化工程”荣获国家科技进步一等奖。\n"
-                                "页码：181"
-                            ),
-                            score=1.5,
-                            field_title="一等奖工程",
-                            page_type="structured",
-                            primary_type="form",
-                            sub_type="field_summary",
-                            source="deterministic_fallback",
-                        )
-                    )
-                candidates.extend(
-                    self._match_company_pages(
-                        target_pdfs,
-                        required_terms=["某情报、指挥、控制与通信网络一体化工程", "国家科技进步一等奖"],
-                        score=1.47,
-                        field_title="一等奖工程",
-                    )
-                )
-            if "补充流动资金" in field_keys:
-                page = self._find_page_record("招股说明书1.pdf", 479)
-                if page is not None:
-                    candidates.append(
-                        self._build_candidate_from_page(
-                            page,
-                            text=(
-                                "字段：补充流动资金\n"
-                                "值：15,000.00万元。\n"
-                                "证据：本次发行募集资金投资项目中，补充流动资金拟投入募集资金为15,000.00万元。\n"
-                                "页码：479"
-                            ),
-                            score=1.52,
-                            field_title="补充流动资金",
-                            page_type="structured",
-                            primary_type="table",
-                            sub_type="fundraising_amount",
-                            source="deterministic_fallback",
-                        )
-                    )
-                candidates.extend(
-                    self._match_company_pages(
-                        target_pdfs,
-                        required_terms=["补充流动资金", "15,000.00"],
-                        score=1.45,
-                        field_title="补充流动资金",
-                    )
-                )
-            if "注册资本" in field_keys:
-                candidates.extend(
-                    self._match_company_pages(
-                        target_pdfs,
-                        required_terms=["注册资本", "5,520"],
-                        score=1.42,
-                        field_title="注册资本",
-                    )
-                )
-            if "法定代表人" in field_keys:
-                candidates.extend(
-                    self._match_company_pages(
-                        target_pdfs,
-                        required_terms=["法定代表人", "程家明"],
-                        score=1.42,
-                        field_title="法定代表人",
-                    )
-                )
+                table_candidate["raw_score"] = self._score_structured_candidate(intent, table_candidate, target_pdfs) + 0.06
+                table_candidate["score"] = min(1.0, float(table_candidate["raw_score"]))
+                table_candidate["specialized_score"] = float(table_candidate["raw_score"])
+                candidates.append(table_candidate)
+
+        for source_pdf in target_pdfs:
+            for item in self._load_pdf_vlm_items(source_pdf):
+                enriched = dict(item)
+                raw_score = self._score_structured_candidate(intent, enriched, target_pdfs) + 0.10
+                enriched["raw_score"] = raw_score
+                enriched["score"] = min(1.0, raw_score)
+                enriched["specialized_score"] = raw_score
+                candidates.append(enriched)
 
         deduped: Dict[str, Dict[str, object]] = {}
         for item in candidates:
             chunk_id = str(item.get("chunk_id"))
-            if chunk_id not in deduped:
-                deduped[chunk_id] = item
-                continue
-            if float(item.get("raw_score", 0.0)) > float(deduped[chunk_id].get("raw_score", 0.0)):
+            existing = deduped.get(chunk_id)
+            if existing is None or float(item.get("raw_score", 0.0)) > float(existing.get("raw_score", 0.0)):
                 deduped[chunk_id] = item
 
         ranked = list(deduped.values())
@@ -1611,7 +1488,7 @@ class RAGPipeline:
     def ingest_uploaded_pdf(self, pdf_path: Path, original_filename: str) -> int:
         pages = self.parser.parse(pdf_path)
         self.uploaded_vector_store.clear()
-        chunks = self._build_main_chunks(pages)
+        chunks = self._build_main_chunks(pages) + self._build_pdf_intelligence_chunks(pages)
         embeddings = self.embedder.embed_texts(chunk.text for chunk in chunks)
         inserted = self.uploaded_vector_store.upsert_chunks(chunks, embeddings)
         (settings.artifact_dir / "uploaded_ingest_manifest.json").write_text(
@@ -1794,9 +1671,9 @@ class RAGPipeline:
             top_k=top_k,
             target_pdfs=target_pdfs,
         )
-        deterministic_matches = self._deterministic_answer_candidates(intent, target_pdfs, top_k)
+        structured_matches = self._retrieve_structured_candidates(intent, target_pdfs, top_k)
         matches = self._merge_specialized_matches(matches, specialized_matches, top_k)
-        matches = self._merge_specialized_matches(matches, deterministic_matches, top_k)
+        matches = self._merge_specialized_matches(matches, structured_matches, top_k)
         matches = self._apply_company_routing(matches, target_pdfs, top_k)
         rerank_query = query if intent.rewrite_strategy == "decomposed" else intent.rewritten_query
         if self.reranker is not None and self.reranker.is_enabled() and matches:
