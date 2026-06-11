@@ -1,0 +1,251 @@
+"""Application configuration for the PDF RAG system."""
+
+# 工单编号：人工智能 NLP-RAG-图像内容解析及检索优化
+from __future__ import annotations
+
+import os
+import json
+from dataclasses import dataclass, field
+from pathlib import Path
+from typing import Iterable
+
+
+def _load_dotenv(path: Path) -> None:
+    if not path.exists():
+        return
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        if line.startswith("export "):
+            line = line[7:].strip()
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+def _find_first_matching_dir(base: Path, required_files: Iterable[str]) -> str:
+    if not base.exists():
+        return ""
+    required = list(required_files)
+    for candidate in [base, *base.rglob("*")]:
+        if candidate.is_dir() and all((candidate / file_name).exists() for file_name in required):
+            return str(candidate)
+    return ""
+
+
+def _load_json_config(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    return payload if isinstance(payload, dict) else {}
+
+
+_load_dotenv(Path(__file__).resolve().parents[1] / ".env")
+
+
+@dataclass
+class Settings:
+    project_root: Path = field(default_factory=lambda: Path(__file__).resolve().parents[1])
+    data_dir: Path = field(init=False)
+    model_dir: Path = field(init=False)
+    artifact_dir: Path = field(init=False)
+    report_dir: Path = field(init=False)
+    artifact_root_dir: Path = field(init=False)
+    pdf_path: Path = field(init=False)
+    pdf_paths: list[Path] = field(init=False)
+
+    chunk_size: int = field(default_factory=lambda: int(os.getenv("CHUNK_SIZE", "512")))
+    chunk_overlap: int = field(default_factory=lambda: int(os.getenv("CHUNK_OVERLAP", "50")))
+    top_k: int = field(default_factory=lambda: int(os.getenv("TOP_K", "5")))
+    generation_top_n: int = field(default_factory=lambda: int(os.getenv("GENERATION_TOP_N", "3")))
+    max_context_chars: int = field(default_factory=lambda: int(os.getenv("MAX_CONTEXT_CHARS", "420")))
+    max_new_tokens: int = field(default_factory=lambda: int(os.getenv("MAX_NEW_TOKENS", "260")))
+    collection_name: str = field(default_factory=lambda: os.getenv("COLLECTION_NAME", "prospectus_chunks_04"))
+    artifact_namespace: str = field(default_factory=lambda: os.getenv("ARTIFACT_NAMESPACE", "").strip())
+    text_vector_collection_name: str = field(default_factory=lambda: os.getenv("TEXT_VECTOR_COLLECTION_NAME", "").strip())
+    visual_vector_collection_name: str = field(default_factory=lambda: os.getenv("VISUAL_VECTOR_COLLECTION_NAME", "").strip())
+
+    milvus_uri: str = field(default_factory=lambda: os.getenv("MILVUS_URI", "http://127.0.0.1:19531"))
+    mongodb_uri: str = field(default_factory=lambda: os.getenv("MONGODB_URI", "mongodb://127.0.0.1:27017"))
+    mongodb_db_name: str = field(default_factory=lambda: os.getenv("MONGODB_DB_NAME", "nlp_rag"))
+    mongodb_table_collection: str = field(
+        default_factory=lambda: os.getenv("MONGODB_TABLE_COLLECTION", "prospectus_tables_04")
+    )
+    minio_endpoint: str = field(default_factory=lambda: os.getenv("MINIO_ENDPOINT", "127.0.0.1:9100"))
+    minio_access_key: str = field(default_factory=lambda: os.getenv("MINIO_ACCESS_KEY", "minioadmin"))
+    minio_secret_key: str = field(default_factory=lambda: os.getenv("MINIO_SECRET_KEY", "minioadmin"))
+    minio_secure: bool = field(default_factory=lambda: os.getenv("MINIO_SECURE", "0") == "1")
+    minio_bucket_visuals: str = field(
+        default_factory=lambda: os.getenv("MINIO_BUCKET_VISUALS", "prospectus-visuals")
+    )
+    minio_bucket_artifacts: str = field(
+        default_factory=lambda: os.getenv("MINIO_BUCKET_ARTIFACTS", "prospectus-artifacts")
+    )
+    llm_provider: str = field(default_factory=lambda: os.getenv("LLM_PROVIDER", "openai_compatible"))
+    llm_api_url: str = field(default_factory=lambda: os.getenv("LLM_API_URL", ""))
+    llm_api_key: str = field(default_factory=lambda: os.getenv("LLM_API_KEY", ""))
+    llm_model_name: str = field(default_factory=lambda: os.getenv("LLM_MODEL_NAME", ""))
+    llm_fallback_api_url: str = field(
+        default_factory=lambda: os.getenv("LLM_FALLBACK_API_URL", "http://127.0.0.1:8002/v1/chat/completions")
+    )
+    llm_fallback_api_key: str = field(default_factory=lambda: os.getenv("LLM_FALLBACK_API_KEY", ""))
+    llm_fallback_model_name: str = field(
+        default_factory=lambda: os.getenv("LLM_FALLBACK_MODEL_NAME", "Qwen2.5-0.5B-Instruct")
+    )
+    llm_request_timeout: int = field(default_factory=lambda: int(os.getenv("LLM_REQUEST_TIMEOUT", "30")))
+    ragas_api_url: str = field(default_factory=lambda: os.getenv("RAGAS_API_URL", "").strip())
+    ragas_api_key: str = field(default_factory=lambda: os.getenv("RAGAS_API_KEY", "").strip())
+    ragas_model_name: str = field(default_factory=lambda: os.getenv("RAGAS_MODEL_NAME", "").strip())
+    ragas_embedding_model_name: str = field(default_factory=lambda: os.getenv("RAGAS_EMBEDDING_MODEL_NAME", "").strip())
+    ragas_request_timeout: int = field(default_factory=lambda: int(os.getenv("RAGAS_REQUEST_TIMEOUT", "60")))
+
+    pdf_vlm_provider: str = field(default_factory=lambda: os.getenv("PDF_VLM_PROVIDER", "openai_compatible"))
+    pdf_vlm_api_url: str = field(default_factory=lambda: os.getenv("PDF_VLM_API_URL", ""))
+    pdf_vlm_api_key: str = field(default_factory=lambda: os.getenv("PDF_VLM_API_KEY", ""))
+    pdf_vlm_model_name: str = field(default_factory=lambda: os.getenv("PDF_VLM_MODEL_NAME", ""))
+    pdf_vlm_local_first: bool = field(default_factory=lambda: os.getenv("PDF_VLM_LOCAL_FIRST", "1") == "1")
+    pdf_vlm_fallback_enabled: bool = field(default_factory=lambda: os.getenv("PDF_VLM_FALLBACK_ENABLED", "1") == "1")
+    pdf_vlm_request_timeout: int = field(default_factory=lambda: int(os.getenv("PDF_VLM_REQUEST_TIMEOUT", "60")))
+    pdf_vlm_max_pages: int = field(default_factory=lambda: int(os.getenv("PDF_VLM_MAX_PAGES", "40")))
+    pdf_vlm_min_text_chars: int = field(default_factory=lambda: int(os.getenv("PDF_VLM_MIN_TEXT_CHARS", "80")))
+    pdf_vlm_table_trigger_chars: int = field(default_factory=lambda: int(os.getenv("PDF_VLM_TABLE_TRIGGER_CHARS", "120")))
+    pdf_vlm_image_trigger_count: int = field(default_factory=lambda: int(os.getenv("PDF_VLM_IMAGE_TRIGGER_COUNT", "6")))
+    pdf_vlm_render_scale: float = field(default_factory=lambda: float(os.getenv("PDF_VLM_RENDER_SCALE", "1.35")))
+    pdf_vlm_retry_count: int = field(default_factory=lambda: int(os.getenv("PDF_VLM_RETRY_COUNT", "3")))
+    pdf_vlm_retry_backoff: float = field(default_factory=lambda: float(os.getenv("PDF_VLM_RETRY_BACKOFF", "2.0")))
+    pdf_vlm_strict_mode: bool = field(default_factory=lambda: os.getenv("PDF_VLM_STRICT_MODE", "1") == "1")
+    reranker_model_path: str = field(default_factory=lambda: os.getenv("RERANKER_MODEL_PATH", ""))
+    reranker_top_n: int = field(default_factory=lambda: int(os.getenv("RERANKER_TOP_N", "5")))
+    reranker_candidate_limit: int = field(default_factory=lambda: int(os.getenv("RERANKER_CANDIDATE_LIMIT", "20")))
+    reranker_enabled: bool = field(default_factory=lambda: os.getenv("RERANKER_ENABLED", "1") == "1")
+
+    embedding_model_path: str = field(default_factory=lambda: os.getenv("EMBEDDING_MODEL_PATH", ""))
+    llm_local_model_path: str = field(default_factory=lambda: os.getenv("LLM_LOCAL_MODEL_PATH", ""))
+    asr_model_path: str = field(default_factory=lambda: os.getenv("ASR_MODEL_PATH", ""))
+
+    asr_model_name: str = field(default_factory=lambda: os.getenv("ASR_MODEL_NAME", "small"))
+    asr_device: str = field(default_factory=lambda: os.getenv("ASR_DEVICE", "auto"))
+    asr_compute_type: str = field(default_factory=lambda: os.getenv("ASR_COMPUTE_TYPE", "int8"))
+
+    ocr_lang: str = field(default_factory=lambda: os.getenv("OCR_LANG", "ch"))
+    max_ocr_pages_per_pdf: int = field(default_factory=lambda: int(os.getenv("MAX_OCR_PAGES_PER_PDF", "20")))
+    large_pdf_page_threshold: int = field(default_factory=lambda: int(os.getenv("LARGE_PDF_PAGE_THRESHOLD", "200")))
+
+    pdf_parser_backend: str = field(default_factory=lambda: os.getenv("PDF_PARSER_BACKEND", "auto"))
+    pdf_parser_python: str = field(default_factory=lambda: os.getenv("PDF_PARSER_PYTHON", ""))
+    pdf_parser_conda_env: str = field(default_factory=lambda: os.getenv("PDF_PARSER_CONDA_ENV", ""))
+    pdf_parser_timeout: int = field(default_factory=lambda: int(os.getenv("PDF_PARSER_TIMEOUT", "600")))
+    docling_enabled: bool = field(default_factory=lambda: os.getenv("DOCLING_ENABLED", "0") == "1")
+
+    pdf_intelligence_enabled: bool = field(
+        default_factory=lambda: os.getenv("PDF_INTELLIGENCE_ENABLED", "1") == "1"
+    )
+    cross_page_merge_low: float = field(default_factory=lambda: float(os.getenv("CROSS_PAGE_MERGE_LOW", "0.6")))
+    cross_page_merge_high: float = field(default_factory=lambda: float(os.getenv("CROSS_PAGE_MERGE_HIGH", "0.8")))
+    table_partition_max_rows: int = field(
+        default_factory=lambda: int(os.getenv("TABLE_PARTITION_MAX_ROWS", "50"))
+    )
+    multimodal_upgrade_threshold: float = field(
+        default_factory=lambda: float(os.getenv("MULTIMODAL_UPGRADE_THRESHOLD", "0.7"))
+    )
+    max_fallback_calls_per_doc: int = field(
+        default_factory=lambda: int(os.getenv("MAX_FALLBACK_CALLS_PER_DOC", "10"))
+    )
+
+    hybrid_dense_weight: float = field(default_factory=lambda: float(os.getenv("HYBRID_DENSE_WEIGHT", "0.58")))
+    hybrid_lexical_weight: float = field(default_factory=lambda: float(os.getenv("HYBRID_LEXICAL_WEIGHT", "0.30")))
+    hybrid_overlap_weight: float = field(default_factory=lambda: float(os.getenv("HYBRID_OVERLAP_WEIGHT", "0.12")))
+    bm25_k1: float = field(default_factory=lambda: float(os.getenv("BM25_K1", "1.5")))
+    bm25_b: float = field(default_factory=lambda: float(os.getenv("BM25_B", "0.75")))
+    multi_query_enabled: bool = field(default_factory=lambda: os.getenv("MULTI_QUERY_ENABLED", "1") == "1")
+    multi_query_max_queries: int = field(default_factory=lambda: int(os.getenv("MULTI_QUERY_MAX_QUERIES", "4")))
+    multi_query_top_k: int = field(default_factory=lambda: int(os.getenv("MULTI_QUERY_TOP_K", "12")))
+    rrf_k: int = field(default_factory=lambda: int(os.getenv("RRF_K", "60")))
+    retrieval_candidate_limit: int = field(default_factory=lambda: int(os.getenv("RETRIEVAL_CANDIDATE_LIMIT", "20")))
+    llm_enhancement_enabled: bool = field(default_factory=lambda: os.getenv("LLM_ENHANCEMENT_ENABLED", "1") == "1")
+    llm_enhancement_max_pages: int = field(default_factory=lambda: int(os.getenv("LLM_ENHANCEMENT_MAX_PAGES", "80")))
+    llm_table_analysis_enabled: bool = field(default_factory=lambda: os.getenv("LLM_TABLE_ANALYSIS_ENABLED", "1") == "1")
+    enable_redaction: bool = field(default_factory=lambda: os.getenv("ENABLE_REDACTION", "0") == "1")
+    answer_include_table_markdown: bool = field(
+        default_factory=lambda: os.getenv("ANSWER_INCLUDE_TABLE_MARKDOWN", "0") == "1"
+    )
+
+    host: str = field(default_factory=lambda: os.getenv("APP_HOST", "0.0.0.0"))
+    port: int = field(default_factory=lambda: int(os.getenv("APP_PORT", "8000")))
+    request_timeout: int = field(default_factory=lambda: int(os.getenv("REQUEST_TIMEOUT", "30")))
+    conversation_store_backend: str = field(default_factory=lambda: os.getenv("CONVERSATION_STORE_BACKEND", "memory"))
+    redis_uri: str = field(default_factory=lambda: os.getenv("REDIS_URI", "redis://127.0.0.1:6379/0"))
+    conversation_ttl_seconds: int = field(default_factory=lambda: int(os.getenv("CONVERSATION_TTL_SECONDS", "7200")))
+    conversation_history_limit: int = field(default_factory=lambda: int(os.getenv("CONVERSATION_HISTORY_LIMIT", "6")))
+
+    def __post_init__(self) -> None:
+        self.data_dir = self.project_root / "data"
+        self.model_dir = self.project_root / "model"
+        self.artifact_root_dir = self.project_root / "artifacts"
+        self.artifact_dir = (
+            self.artifact_root_dir / self.artifact_namespace
+            if self.artifact_namespace
+            else self.artifact_root_dir
+        )
+        self.report_dir = self.project_root / "reports"
+        self.pdf_intelligence_config_path = self.project_root / "config" / "pdf_intelligence_config.json"
+        self.watermark_patterns_path = self.project_root / "config" / "watermark_patterns.json"
+        self.pdf_intelligence_output_dir = self.artifact_dir / "pdf_intelligence_output"
+        if not self.text_vector_collection_name:
+            self.text_vector_collection_name = f"{self.collection_name}_text"
+        if not self.visual_vector_collection_name:
+            self.visual_vector_collection_name = f"{self.collection_name}_visual"
+        pdf_candidates = sorted(self.data_dir.glob("*.pdf"))
+        self.pdf_paths = pdf_candidates
+        self.pdf_path = pdf_candidates[0] if pdf_candidates else self.data_dir / "prospectus.pdf"
+        self.pdf_intelligence_output_dir.mkdir(parents=True, exist_ok=True)
+
+        pdf_intelligence_defaults = _load_json_config(self.pdf_intelligence_config_path)
+        if "CROSS_PAGE_MERGE_LOW" not in os.environ:
+            self.cross_page_merge_low = float(
+                pdf_intelligence_defaults.get("cross_page_merge_low", self.cross_page_merge_low)
+            )
+        if "CROSS_PAGE_MERGE_HIGH" not in os.environ:
+            self.cross_page_merge_high = float(
+                pdf_intelligence_defaults.get("cross_page_merge_high", self.cross_page_merge_high)
+            )
+        if "TABLE_PARTITION_MAX_ROWS" not in os.environ:
+            self.table_partition_max_rows = int(
+                pdf_intelligence_defaults.get("table_partition_max_rows", self.table_partition_max_rows)
+            )
+        if "MULTIMODAL_UPGRADE_THRESHOLD" not in os.environ:
+            self.multimodal_upgrade_threshold = float(
+                pdf_intelligence_defaults.get(
+                    "multimodal_upgrade_threshold",
+                    self.multimodal_upgrade_threshold,
+                )
+            )
+        if "MAX_FALLBACK_CALLS_PER_DOC" not in os.environ:
+            self.max_fallback_calls_per_doc = int(
+                pdf_intelligence_defaults.get("max_fallback_calls_per_doc", self.max_fallback_calls_per_doc)
+            )
+
+        if not self.embedding_model_path:
+            self.embedding_model_path = _find_first_matching_dir(
+                self.model_dir / "embedding",
+                ["config.json", "tokenizer.json"],
+            )
+        if not self.llm_local_model_path:
+            self.llm_local_model_path = _find_first_matching_dir(
+                self.model_dir / "llm",
+                ["config.json", "tokenizer.json"],
+            )
+        if not self.asr_model_path:
+            self.asr_model_path = _find_first_matching_dir(
+                self.model_dir / "asr",
+                ["config.json"],
+            )
+
+
+settings = Settings()

@@ -1,0 +1,108 @@
+{
+  "items": [
+    {
+      "upload_id": "2020-02-14_平安银行股份有限公司_c1311f2f",
+      "filename": "2020-02-14__平安银行股份有限公司 .pdf",
+      "stored_pdf_path": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\2020-02-14_平安银行股份有限公司_c1311f2f\\source\\2020-02-14__平安银行股份有限公司 .pdf",
+      "artifact_dir": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\2020-02-14_平安银行股份有限公司_c1311f2f\\artifacts",
+      "text_collection_name": "pdf_text_uploaded_2020_02_14_c1311f2f",
+      "visual_collection_name": "pdf_visual_uploaded_2020_02_14_c1311f2f",
+      "mongo_collection_name": "pdf_tables_2020_02_14__平安银行股份有限公司_2020_02_14_平安银行股份有限公司_c1311f2f",
+      "chunks": 1135,
+      "file_sha1": "4148249bae08c15f63139dabbbb9b32d1346fc82",
+      "uploaded_at": 1781093884,
+      "status": "ready"
+    },
+    {
+      "upload_id": "Agent_本质就_5_行循环代码_4acf546e",
+      "filename": "Agent 本质就 5 行循环代码.pdf",
+      "stored_pdf_path": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\Agent_本质就_5_行循环代码_4acf546e\\source\\Agent 本质就 5 行循环代码.pdf",
+      "artifact_dir": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\Agent_本质就_5_行循环代码_4acf546e\\artifacts",
+      "text_collection_name": "pdf_text_uploaded_Agent_5_4acf546e",
+      "visual_collection_name": "pdf_visual_uploaded_Agent_5_4acf546e",
+      "mongo_collection_name": "pdf_tables_Agent_本质就_5_行循环代码_Agent_本质就_5_行循环代码_4acf546e",
+      "chunks": 44,
+      "file_sha1": "ceb0f6b6a3da18d20ac6180242ca8f1763a4de38",
+      "uploaded_at": 1781084791,
+      "status": "ready"
+    },
+    {
+      "upload_id": "Agent_本质就_5_行循环代码_53980d86",
+      "filename": "Agent 本质就 5 行循环代码.pdf",
+      "stored_pdf_path": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\Agent_本质就_5_行循环代码_53980d86\\source\\Agent 本质就 5 行循环代码.pdf",
+      "artifact_dir": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\Agent_本质就_5_行循环代码_53980d86\\artifacts",
+      "text_collection_name": "",
+      "visual_collection_name": "",
+      "mongo_collection_name": "",
+      "chunks": 0,
+      "file_sha1": "ceb0f6b6a3da18d20ac6180242ca8f1763a4de38",
+      "uploaded_at": 1781083716,
+      "status": "processing"
+    },
+    {
+      "upload_id": "Agent_本质就_5_行循环代码_166344bd",
+      "filename": "Agent 本质就 5 行循环代码.pdf",
+      "stored_pdf_path": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\Agent_本质就_5_行循环代码_166344bd\\source\\Agent 本质就 5 行循环代码.pdf",
+      "artifact_dir": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\Agent_本质就_5_行循环代码_166344bd\\artifacts",
+      "text_collection_name": "",
+      "visual_collection_name": "",
+      "mongo_collection_name": "",
+      "chunks": 0,
+      "file_sha1": "ceb0f6b6a3da18d20ac6180242ca8f1763a4de38",
+      "uploaded_at": 1781082758,
+      "status": "processing"
+    },
+    {
+      "upload_id": "Agent_本质就_5_行循环代码_66b9899c",
+      "filename": "Agent 本质就 5 行循环代码.pdf",
+      "stored_pdf_path": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\Agent_本质就_5_行循环代码_66b9899c\\source\\Agent 本质就 5 行循环代码.pdf",
+      "artifact_dir": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\Agent_本质就_5_行循环代码_66b9899c\\artifacts",
+      "text_collection_name": "",
+      "visual_collection_name": "",
+      "mongo_collection_name": "",
+      "chunks": 0,
+      "file_sha1": "ceb0f6b6a3da18d20ac6180242ca8f1763a4de38",
+      "uploaded_at": 1781082342,
+      "status": "processing"
+    },
+    {
+      "upload_id": "Agent_本质就_5_行循环代码_6df3263e",
+      "filename": "Agent 本质就 5 行循环代码.pdf",
+      "stored_pdf_path": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\Agent_本质就_5_行循环代码_6df3263e\\source\\Agent 本质就 5 行循环代码.pdf",
+      "artifact_dir": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\Agent_本质就_5_行循环代码_6df3263e\\artifacts",
+      "text_collection_name": "",
+      "visual_collection_name": "",
+      "mongo_collection_name": "",
+      "chunks": 0,
+      "file_sha1": "ceb0f6b6a3da18d20ac6180242ca8f1763a4de38",
+      "uploaded_at": 1781081925,
+      "status": "processing"
+    },
+    {
+      "upload_id": "2020-02-14_平安银行股份有限公司_32fddcdc",
+      "filename": "2020-02-14__平安银行股份有限公司 .pdf",
+      "stored_pdf_path": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\2020-02-14_平安银行股份有限公司_32fddcdc\\source\\2020-02-14__平安银行股份有限公司 .pdf",
+      "artifact_dir": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\2020-02-14_平安银行股份有限公司_32fddcdc\\artifacts",
+      "text_collection_name": "",
+      "visual_collection_name": "",
+      "mongo_collection_name": "",
+      "chunks": 0,
+      "file_sha1": "4148249bae08c15f63139dabbbb9b32d1346fc82",
+      "uploaded_at": 1781069691,
+      "status": "processing"
+    },
+    {
+      "upload_id": "2020-02-14_平安银行股份有限公司_a7a3c0a0",
+      "filename": "2020-02-14__平安银行股份有限公司 .pdf",
+      "stored_pdf_path": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\2020-02-14_平安银行股份有限公司_a7a3c0a0\\source\\2020-02-14__平安银行股份有限公司 .pdf",
+      "artifact_dir": "D:\\Desktop\\NLP-RAG-05\\artifacts\\uploaded_documents\\2020-02-14_平安银行股份有限公司_a7a3c0a0\\artifacts",
+      "text_collection_name": "",
+      "visual_collection_name": "",
+      "mongo_collection_name": "",
+      "chunks": 0,
+      "file_sha1": "4148249bae08c15f63139dabbbb9b32d1346fc82",
+      "uploaded_at": 1781057759,
+      "status": "processing"
+    }
+  ]
+}

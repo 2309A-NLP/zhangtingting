@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "input_csv": "D:\\Desktop\\NLP-RAG-05\\ragas_test.csv",
+  "output_csv": "D:\\Desktop\\NLP-RAG-05\\ragas_test.ragas.csv",
+  "dataset_jsonl": "D:\\Desktop\\NLP-RAG-05\\ragas_test.ragas.dataset.jsonl",
+  "summary_json": "D:\\Desktop\\NLP-RAG-05\\ragas_test.ragas.summary.json",
+  "total_rows": 10,
+  "evaluated_rows": 10,
+  "skipped_rows": 0,
+  "corpus": "uploaded",
+  "upload_id": "2020-02-14_平安银行股份有限公司_c1311f2f",
+  "use_llm": true,
+  "metrics": {
+    "context_precision": 0.847083,
+    "context_recall": 0.86,
+    "faithfulness": 0.663333,
+    "answer_relevancy": 0.521726
+  }
+}
