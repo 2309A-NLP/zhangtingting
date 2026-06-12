@@ -1,0 +1,11 @@
+{
+  "ocr_confidence_threshold": 0.8,
+  "cross_page_merge_high": 0.8,
+  "cross_page_merge_low": 0.6,
+  "table_partition_max_rows": 50,
+  "multimodal_upgrade_threshold": 0.7,
+  "max_fallback_calls_per_doc": 10,
+  "default_chunk_size": 350,
+  "default_chunk_overlap": 50,
+  "checkpoint_retention_days": 7
+}
