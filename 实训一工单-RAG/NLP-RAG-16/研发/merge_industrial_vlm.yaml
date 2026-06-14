@@ -1,0 +1,11 @@
+### model
+model_name_or_path: Qwen/Qwen3-VL-2B-Instruct
+adapter_name_or_path: saves/qwen3-vl-industrial/lora/sft
+template: qwen3_vl
+trust_remote_code: true
+
+### export
+export_dir: models/Qwen3-VL-Industrial-Finetuned
+export_size: 2
+export_device: cpu
+export_legacy_format: false
