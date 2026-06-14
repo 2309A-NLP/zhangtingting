@@ -1,0 +1,432 @@
+2026-06-11 15:44:02,068 INFO     69 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-06-11 15:44:02,069 INFO     69 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-06-11 15:44:02,107 INFO     69 RAGFlow admin version: v0.25.6
+2026-06-11 15:44:02,107 INFO     69 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 2881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 2881}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis:6379'}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+2026-06-11 15:44:02,117 INFO     69 GET http://es01:9200/ [status:200 duration:0.007s]
+2026-06-11 15:44:02,121 INFO     69 HEAD http://es01:9200/ [status:200 duration:0.003s]
+2026-06-11 15:44:02,122 INFO     69 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 15:44:02,122 INFO     69 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 15:44:02,123 INFO     69 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 15:44:02,123 INFO     69 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 15:44:02,126 WARNING  69 Load term.freq FAIL!
+2026-06-11 15:45:01,147 INFO     63 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-06-11 15:45:01,148 INFO     63 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-06-11 15:45:01,175 INFO     63 RAGFlow admin version: v0.25.6
+2026-06-11 15:45:01,175 INFO     63 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 2881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 2881}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis:6379'}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+2026-06-11 15:45:01,182 INFO     63 GET http://es01:9200/ [status:200 duration:0.005s]
+2026-06-11 15:45:01,185 INFO     63 HEAD http://es01:9200/ [status:200 duration:0.002s]
+2026-06-11 15:45:01,185 INFO     63 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 15:45:01,186 INFO     63 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 15:45:01,186 INFO     63 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 15:45:01,187 INFO     63 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 15:45:01,190 WARNING  63 Load term.freq FAIL!
+2026-06-11 18:31:06,438 INFO     53 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-06-11 18:31:06,439 INFO     53 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-06-11 18:31:06,471 INFO     53 RAGFlow admin version: v0.25.6
+2026-06-11 18:31:06,472 INFO     53 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 2881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 2881}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis:6379'}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+2026-06-11 18:31:06,482 INFO     53 GET http://es01:9200/ [status:200 duration:0.007s]
+2026-06-11 18:31:06,485 INFO     53 HEAD http://es01:9200/ [status:200 duration:0.002s]
+2026-06-11 18:31:06,486 INFO     53 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 18:31:06,486 INFO     53 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 18:31:06,487 INFO     53 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 18:31:06,487 INFO     53 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 18:31:06,490 WARNING  53 Load term.freq FAIL!
+2026-06-11 18:45:24,522 INFO     63 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-06-11 18:45:24,523 INFO     63 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-06-11 18:45:24,556 INFO     63 RAGFlow admin version: v0.25.6
+2026-06-11 18:45:24,556 INFO     63 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 2881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 2881}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis:6379'}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+2026-06-11 18:45:24,567 INFO     63 GET http://es01:9200/ [status:200 duration:0.007s]
+2026-06-11 18:45:24,571 INFO     63 HEAD http://es01:9200/ [status:200 duration:0.003s]
+2026-06-11 18:45:24,572 INFO     63 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 18:45:24,572 INFO     63 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 18:45:24,573 INFO     63 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 18:45:24,573 INFO     63 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 18:45:24,577 WARNING  63 Load term.freq FAIL!
+2026-06-11 19:12:05,181 INFO     67 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-06-11 19:12:05,181 INFO     67 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-06-11 19:12:05,216 INFO     67 RAGFlow admin version: v0.25.6
+2026-06-11 19:12:05,217 INFO     67 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 2881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 2881}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis', 'port': 6379}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+2026-06-11 19:12:05,226 INFO     67 GET http://es01:9200/ [status:200 duration:0.007s]
+2026-06-11 19:12:05,229 INFO     67 HEAD http://es01:9200/ [status:200 duration:0.002s]
+2026-06-11 19:12:05,229 INFO     67 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 19:12:05,230 INFO     67 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 19:12:05,230 INFO     67 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 19:12:05,230 INFO     67 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 19:12:05,233 WARNING  67 Load term.freq FAIL!
+2026-06-11 19:12:05,238 WARNING  67 Realtime synonym is disabled, since no redis connection.
+2026-06-11 19:12:05,243 WARNING  67 Load term.freq FAIL!
+2026-06-11 19:12:05,248 WARNING  67 Realtime synonym is disabled, since no redis connection.
+2026-06-11 19:12:05,289 INFO     67 Added tenant for email: admin@ragflow.io, A default tenant has been set; changing the default models after login is strongly recommended.
+2026-06-11 19:12:05,293 WARNING  67 Unknown configuration key: os
+2026-06-11 19:12:05,293 WARNING  67 Unknown configuration key: oceanbase
+2026-06-11 19:12:05,293 WARNING  67 Unknown configuration key: seekdb
+2026-06-11 19:33:16,208 INFO     61 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-06-11 19:33:16,208 INFO     61 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-06-11 19:33:16,234 INFO     61 RAGFlow admin version: v0.25.6
+2026-06-11 19:33:16,234 INFO     61 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 2881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 2881}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis', 'port': 6379}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+2026-06-11 19:33:16,243 INFO     61 GET http://es01:9200/ [status:200 duration:0.006s]
+2026-06-11 19:33:16,245 INFO     61 HEAD http://es01:9200/ [status:200 duration:0.002s]
+2026-06-11 19:33:16,246 INFO     61 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 19:33:16,246 INFO     61 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 19:33:16,247 INFO     61 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 19:33:16,247 INFO     61 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 19:33:16,250 WARNING  61 Load term.freq FAIL!
+2026-06-11 19:33:16,254 WARNING  61 Realtime synonym is disabled, since no redis connection.
+2026-06-11 19:33:16,259 WARNING  61 Load term.freq FAIL!
+2026-06-11 19:33:16,264 WARNING  61 Realtime synonym is disabled, since no redis connection.
+2026-06-11 19:33:16,277 WARNING  61 Unknown configuration key: os
+2026-06-11 19:33:16,277 WARNING  61 Unknown configuration key: oceanbase
+2026-06-11 19:33:16,278 WARNING  61 Unknown configuration key: seekdb
+2026-06-11 19:42:06,315 INFO     61 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-06-11 19:42:06,315 INFO     61 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-06-11 19:42:06,346 INFO     61 RAGFlow admin version: v0.25.6
+2026-06-11 19:42:06,346 INFO     61 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 2881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 2881}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis', 'port': 6379}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+2026-06-11 19:42:06,356 INFO     61 GET http://es01:9200/ [status:200 duration:0.006s]
+2026-06-11 19:42:06,359 INFO     61 HEAD http://es01:9200/ [status:200 duration:0.002s]
+2026-06-11 19:42:06,359 INFO     61 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 19:42:06,360 INFO     61 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 19:42:06,360 INFO     61 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 19:42:06,360 INFO     61 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 19:42:06,363 WARNING  61 Load term.freq FAIL!
+2026-06-11 19:42:06,367 WARNING  61 Realtime synonym is disabled, since no redis connection.
+2026-06-11 19:42:06,372 WARNING  61 Load term.freq FAIL!
+2026-06-11 19:42:06,377 WARNING  61 Realtime synonym is disabled, since no redis connection.
+2026-06-11 19:42:06,391 WARNING  61 Unknown configuration key: os
+2026-06-11 19:42:06,391 WARNING  61 Unknown configuration key: oceanbase
+2026-06-11 19:42:06,392 WARNING  61 Unknown configuration key: seekdb
+2026-06-11 19:48:53,972 INFO     62 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-06-11 19:48:53,972 INFO     62 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-06-11 19:48:54,001 INFO     62 RAGFlow admin version: v0.25.6
+2026-06-11 19:48:54,001 INFO     62 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 2881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 2881}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis', 'port': 6379}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+2026-06-11 19:48:54,009 INFO     62 GET http://es01:9200/ [status:200 duration:0.004s]
+2026-06-11 19:48:54,011 INFO     62 HEAD http://es01:9200/ [status:200 duration:0.002s]
+2026-06-11 19:48:54,011 INFO     62 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 19:48:54,012 INFO     62 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 19:48:54,012 INFO     62 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 19:48:54,012 INFO     62 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 19:48:54,016 WARNING  62 Load term.freq FAIL!
+2026-06-11 19:48:54,027 WARNING  62 Load term.freq FAIL!
+2026-06-11 19:48:54,044 WARNING  62 Unknown configuration key: os
+2026-06-11 19:48:54,044 WARNING  62 Unknown configuration key: oceanbase
+2026-06-11 19:48:54,045 WARNING  62 Unknown configuration key: seekdb
+2026-06-11 20:02:53,417 INFO     62 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-06-11 20:02:53,417 INFO     62 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-06-11 20:02:53,447 INFO     62 RAGFlow admin version: v0.25.6
+2026-06-11 20:02:53,447 INFO     62 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 2881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 2881}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis', 'port': 6379}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+2026-06-11 20:02:53,457 INFO     62 GET http://es01:9200/ [status:200 duration:0.007s]
+2026-06-11 20:02:53,461 INFO     62 HEAD http://es01:9200/ [status:200 duration:0.002s]
+2026-06-11 20:02:53,461 INFO     62 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 20:02:53,462 INFO     62 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 20:02:53,462 INFO     62 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 20:02:53,463 INFO     62 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 20:02:53,466 WARNING  62 Load term.freq FAIL!
+2026-06-11 20:02:53,471 WARNING  62 Realtime synonym is disabled, since no redis connection.
+2026-06-11 20:02:53,476 WARNING  62 Load term.freq FAIL!
+2026-06-11 20:02:53,481 WARNING  62 Realtime synonym is disabled, since no redis connection.
+2026-06-11 20:02:53,495 WARNING  62 Unknown configuration key: os
+2026-06-11 20:02:53,495 WARNING  62 Unknown configuration key: oceanbase
+2026-06-11 20:02:53,496 WARNING  62 Unknown configuration key: seekdb
+2026-06-11 20:08:06,768 INFO     60 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-06-11 20:08:06,768 INFO     60 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-06-11 20:08:06,797 INFO     60 RAGFlow admin version: v0.25.6
+2026-06-11 20:08:06,798 INFO     60 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 2881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 2881}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis', 'port': 6379}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+2026-06-11 20:08:06,808 INFO     60 GET http://es01:9200/ [status:200 duration:0.007s]
+2026-06-11 20:08:06,811 INFO     60 HEAD http://es01:9200/ [status:200 duration:0.003s]
+2026-06-11 20:08:06,812 INFO     60 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 20:08:06,812 INFO     60 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 20:08:06,813 INFO     60 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 20:08:06,813 INFO     60 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 20:08:06,816 WARNING  60 Load term.freq FAIL!
+2026-06-11 20:08:06,820 WARNING  60 Realtime synonym is disabled, since no redis connection.
+2026-06-11 20:08:06,825 WARNING  60 Load term.freq FAIL!
+2026-06-11 20:08:06,829 WARNING  60 Realtime synonym is disabled, since no redis connection.
+2026-06-11 20:08:06,850 WARNING  60 Unknown configuration key: os
+2026-06-11 20:08:06,850 WARNING  60 Unknown configuration key: oceanbase
+2026-06-11 20:08:06,851 WARNING  60 Unknown configuration key: seekdb
+2026-06-11 20:23:43,682 INFO     71 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-06-11 20:23:43,683 INFO     71 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-06-11 20:23:43,717 INFO     71 RAGFlow admin version: v0.25.6
+2026-06-11 20:23:43,718 INFO     71 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 2881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 2881}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis:6379', 'port': 6379}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+2026-06-11 20:23:43,725 INFO     71 GET http://es01:9200/ [status:200 duration:0.004s]
+2026-06-11 20:23:43,727 INFO     71 HEAD http://es01:9200/ [status:200 duration:0.002s]
+2026-06-11 20:23:43,728 INFO     71 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 20:23:43,728 INFO     71 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 20:23:43,728 INFO     71 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-11 20:23:43,729 INFO     71 Elasticsearch http://es01:9200 is healthy.
+2026-06-11 20:23:43,732 WARNING  71 Load term.freq FAIL!
+2026-06-11 20:23:43,742 WARNING  71 Load term.freq FAIL!
+2026-06-11 20:23:43,757 WARNING  71 Unknown configuration key: os
+2026-06-11 20:23:43,757 WARNING  71 Unknown configuration key: oceanbase
+2026-06-11 20:23:43,758 WARNING  71 Unknown configuration key: seekdb
+2026-06-11 20:23:43,758 WARNING  71 Unknown configuration key: user_default_llm
+2026-06-11 20:23:43,758 INFO     71 RAGFlow admin is ready after 22.324275970458984s initialization.
+2026-06-11 20:23:43,760 INFO     71 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9381
+ * Running on http://172.18.0.6:9381
+2026-06-11 20:23:43,760 INFO     71 [33mPress CTRL+C to quit[0m
+2026-06-13 07:52:24,892 INFO     66 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-06-13 07:52:24,892 INFO     66 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-06-13 07:52:24,929 INFO     66 RAGFlow admin version: v0.25.6
+2026-06-13 07:52:24,930 INFO     66 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 2881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 2881}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis:6379', 'port': 6379}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+2026-06-13 07:52:24,940 INFO     66 GET http://es01:9200/ [status:200 duration:0.007s]
+2026-06-13 07:52:24,943 INFO     66 HEAD http://es01:9200/ [status:200 duration:0.002s]
+2026-06-13 07:52:24,943 INFO     66 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-13 07:52:24,943 INFO     66 Elasticsearch http://es01:9200 is healthy.
+2026-06-13 07:52:24,944 INFO     66 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-13 07:52:24,944 INFO     66 Elasticsearch http://es01:9200 is healthy.
+2026-06-13 07:52:24,947 WARNING  66 Load term.freq FAIL!
+2026-06-13 07:52:24,960 WARNING  66 Load term.freq FAIL!
+2026-06-13 07:52:24,978 WARNING  66 Unknown configuration key: os
+2026-06-13 07:52:24,978 WARNING  66 Unknown configuration key: oceanbase
+2026-06-13 07:52:24,978 WARNING  66 Unknown configuration key: seekdb
+2026-06-13 07:52:24,979 WARNING  66 Unknown configuration key: user_default_llm
+2026-06-13 07:52:24,979 INFO     66 RAGFlow admin is ready after 16.285510778427124s initialization.
+2026-06-13 07:52:24,980 INFO     66 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9381
+ * Running on http://172.18.0.6:9381
+2026-06-13 07:52:24,981 INFO     66 [33mPress CTRL+C to quit[0m
+2026-06-14 18:31:32,811 INFO     65 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-06-14 18:31:32,811 INFO     65 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-06-14 18:31:32,845 INFO     65 RAGFlow admin version: v0.25.6
+2026-06-14 18:31:32,845 INFO     65 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 2881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 2881}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis:6379', 'port': 6379}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+2026-06-14 18:31:32,856 INFO     65 GET http://es01:9200/ [status:200 duration:0.008s]
+2026-06-14 18:31:32,859 INFO     65 HEAD http://es01:9200/ [status:200 duration:0.002s]
+2026-06-14 18:31:32,859 INFO     65 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-14 18:31:32,860 INFO     65 Elasticsearch http://es01:9200 is healthy.
+2026-06-14 18:31:32,860 INFO     65 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-06-14 18:31:32,861 INFO     65 Elasticsearch http://es01:9200 is healthy.
+2026-06-14 18:31:32,864 WARNING  65 Load term.freq FAIL!
+2026-06-14 18:31:32,875 WARNING  65 Load term.freq FAIL!
+2026-06-14 18:31:32,893 WARNING  65 Unknown configuration key: os
+2026-06-14 18:31:32,894 WARNING  65 Unknown configuration key: oceanbase
+2026-06-14 18:31:32,894 WARNING  65 Unknown configuration key: seekdb
+2026-06-14 18:31:32,895 WARNING  65 Unknown configuration key: user_default_llm
+2026-06-14 18:31:32,895 INFO     65 RAGFlow admin is ready after 18.069796085357666s initialization.
+2026-06-14 18:31:32,897 INFO     65 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9381
+ * Running on http://172.18.0.6:9381
+2026-06-14 18:31:32,897 INFO     65 [33mPress CTRL+C to quit[0m
