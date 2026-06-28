@@ -1,0 +1,81 @@
+[project]
+name = "fund-qa-agent"
+version = "1.0.0"
+description = "基于大语言模型的基金数据问答智能体系统（NL2SQL）"
+requires-python = ">=3.10"
+authors = [
+    { name = "八维文化与产业研究院", email = "dev@bw.edu" },
+]
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.27.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "langchain>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "chromadb>=0.5.0",
+    "sentence-transformers>=2.2.0",
+    "loguru>=0.7.0",
+    "httpx>=0.27.0",
+    "python-multipart>=0.0.6",
+    "sse-starlette>=2.0.0",
+    "orjson>=3.9.0",
+    "pyyaml>=6.0",
+    "redis>=5.0.0",
+    "tiktoken>=0.5.0",
+    "prometheus-client>=0.19.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+    "flake8>=7.0.0",
+    "black>=24.0.0",
+    "isort>=5.13.0",
+    "mypy>=1.8.0",
+    "pre-commit>=3.6.0",
+]
+eval = [
+    "jieba>=0.42.1",
+    "scikit-learn>=1.4.0",
+    "numpy>=1.26.0",
+]
+gpu = [
+    "torch>=2.1.0",
+    "transformers>=4.36.0",
+    "accelerate>=0.25.0",
+    "bitsandbytes>=0.41.0",
+]
+all = [
+    "fund-qa-agent[dev]",
+    "fund-qa-agent[eval]",
+    "fund-qa-agent[gpu]",
+]
+
+[tool.setuptools.packages.find]
+include = ["config*", "src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+asyncio_mode = "auto"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+ignore_missing_imports = true
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"

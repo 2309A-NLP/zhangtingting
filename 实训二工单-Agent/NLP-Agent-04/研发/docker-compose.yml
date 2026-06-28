@@ -1,0 +1,41 @@
+# ============================================
+# 基金数据问答智能体系统 — Docker Compose
+# ============================================
+version: "3.8"
+
+services:
+  api:
+    build: .
+    container_name: fund-qa-agent
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./.env:/app/.env
+    environment:
+      - TZ=Asia/Shanghai
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # Redis 缓存（可选）
+  redis:
+    image: redis:7-alpine
+    container_name: fund-qa-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    profiles:
+      - with-cache
+
+volumes:
+  redis-data:
